@@ -1,0 +1,7 @@
+D:\GitHub\jd2_work\project-structure\database\src\main\java\by\itacademy\database\entity\User.java
+D:\GitHub\jd2_work\project-structure\database\src\main\java\by\itacademy\database\dao\PersonDao.java
+D:\GitHub\jd2_work\project-structure\database\src\main\java\by\itacademy\database\dao\UserDao.java
+D:\GitHub\jd2_work\project-structure\database\src\main\java\by\itacademy\database\connection\ConnectionPool.java
+D:\GitHub\jd2_work\project-structure\database\src\main\java\by\itacademy\database\util\PropertyManager.java
+D:\GitHub\jd2_work\project-structure\database\src\main\java\by\itacademy\database\entity\PersonRole.java
+D:\GitHub\jd2_work\project-structure\database\src\main\java\by\itacademy\database\entity\Person.java

@@ -1,7 +1,7 @@
 package by.itacademy.web.servlet;
 
-import by.itacademy.database.entity.User;
-import by.itacademy.service.service.UserService;
+import by.itacademy.service.service.PersonService;
+import by.itacademy.web.util.JspPath;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,19 +10,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/user")
-public class UserServlet extends HttpServlet {
+@WebServlet("/person")
+public class PersonServlet extends HttpServlet {
 
-    private final UserService userService = UserService.getUserService();
+    private PersonService personService = PersonService.getPersonService();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        User defaultUser = userService.getDefaultUser();
-        req.setAttribute("user", defaultUser);
+        req.setAttribute("person", personService.findAll());
 
         getServletContext()
-                .getRequestDispatcher("/WEB-INF/jsp/user.jsp")
+                .getRequestDispatcher(JspPath.get("person"))
                 .forward(req, resp);
     }
 }
-

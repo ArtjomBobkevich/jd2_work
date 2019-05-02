@@ -3,14 +3,14 @@ package by.itacademy.database.entity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 @Builder
-public class User {
+@Accessors(chain = true)
+public class PersonRole {
 
     private Long id;
-    private String name;
+    private String nameOfRole;
 }
