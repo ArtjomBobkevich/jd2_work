@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class ViewPersonFullInfoDto {
 
+    private String avatar;
     private String login;
     private String firstName;
     private String lastName;

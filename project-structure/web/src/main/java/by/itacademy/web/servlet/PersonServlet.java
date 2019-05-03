@@ -17,7 +17,7 @@ public class PersonServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("person", personService.findAll());
+        req.setAttribute("persons", personService.findAll());
 
         getServletContext()
                 .getRequestDispatcher(JspPath.get("person"))

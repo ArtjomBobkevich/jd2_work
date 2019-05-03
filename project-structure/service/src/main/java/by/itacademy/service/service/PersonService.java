@@ -14,14 +14,15 @@ public class PersonService {
 
     public List<ViewPersonFullInfoDto> findAll() {
         return PersonDao.getPersonDao().findAll().stream()
-                .map(it -> new ViewPersonFullInfoDto(it.getLogin(), it.getFirstName(), it.getLastName(), it.getAge(),
+                .map(it -> new ViewPersonFullInfoDto(it.getAvatar(), it.getLogin(), it.getFirstName(), it.getLastName(), it.getAge(),
                         it.getMail(), it.getPassword(), it.getPersonRole().getNameOfRole()))
                 .collect(Collectors.toList());
     }
 
-    public ViewPersonFullInfoDto findById(String login) {
-        return PersonDao.getPersonDao().findById(login)
+    public ViewPersonFullInfoDto findById(Long id) {
+        return PersonDao.getPersonDao().findById(id)
                 .map(it -> ViewPersonFullInfoDto.builder()
+                        .avatar(it.getAvatar())
                         .login(it.getLogin())
                         .firstName(it.getFirstName())
                         .lastName(it.getLastName())

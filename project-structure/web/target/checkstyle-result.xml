@@ -7,9 +7,6 @@
 <error line="0" severity="info" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="13" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 </file>
-<file name="D:\GitHub\jd2_work\project-structure\web\src\main\java\by\itacademy\web\servlet\UserServlet.java">
-<error line="14" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
-</file>
 <file name="D:\GitHub\jd2_work\project-structure\web\src\main\java\by\itacademy\web\util\JspPath.java">
 <error line="6" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 </file>

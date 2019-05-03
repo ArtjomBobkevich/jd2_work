@@ -17,8 +17,8 @@ public class PersonInfoServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String login = req.getParameter("login");
-        req.setAttribute("person", personService.findById(login));
+        String id = req.getParameter("id");
+        req.setAttribute("person", personService.findById(Long.parseLong(id)));
 
         getServletContext()
                 .getRequestDispatcher(JspPath.get("person-info"))

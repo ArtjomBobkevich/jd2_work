@@ -14,6 +14,7 @@ import lombok.experimental.Accessors;
 public class Person {
 
     private Long id;
+    private String avatar;
     private String login;
     private String firstName;
     private String lastName;

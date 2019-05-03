@@ -11,6 +11,7 @@
     <title></title>
 </head>
 <body>
+<span>${requestScope.person.avatar}</span><br>
 <span>${requestScope.person.login}</span><br>
 <span>${requestScope.person.firstName}</span><br>
  <span>${requestScope.person.lastName}</span><br>

@@ -21,6 +21,8 @@ public class PersonDao {
                     +
                     "p.id AS person_id, "
                     +
+                    "p.avatar AS avatar, "
+                    +
                     "p.login AS login, "
                     +
                     "p.first_name AS firstName, "
@@ -48,14 +50,14 @@ public class PersonDao {
     private static final String FIND_ONE =
             FIND_ALL
                     +
-                    "WHERE p.login=?";
+                    "WHERE p.id=?";
 
     @SneakyThrows
-    public Optional<Person> findById(String login) {
+    public Optional<Person> findById(Long id) {
         Optional<Person> person = Optional.empty();
         try (Connection connection = ConnectionPool.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(FIND_ONE)) {
-            preparedStatement.setString(1, login);
+            preparedStatement.setLong(1, id);
 
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
@@ -83,6 +85,7 @@ public class PersonDao {
     private Person getPersonFromResultSet(ResultSet resultSet) {
         return Person.builder()
                 .id(resultSet.getLong("person_id"))
+                .avatar(resultSet.getString("avatar"))
                 .login(resultSet.getString("login"))
                 .firstName(resultSet.getString("firstName"))
                 .lastName(resultSet.getString("lastName"))

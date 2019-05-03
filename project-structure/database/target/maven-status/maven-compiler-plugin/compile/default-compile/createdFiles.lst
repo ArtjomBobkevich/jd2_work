@@ -1,0 +1,7 @@
+by\itacademy\database\entity\PersonRole.class
+by\itacademy\database\connection\ConnectionPool.class
+by\itacademy\database\dao\PersonDao.class
+by\itacademy\database\util\PropertyManager.class
+by\itacademy\database\entity\Person.class
+by\itacademy\database\entity\Person$PersonBuilder.class
+by\itacademy\database\entity\PersonRole$PersonRoleBuilder.class
