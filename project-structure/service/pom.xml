@@ -15,7 +15,6 @@
         <dependency>
             <groupId>by-itacademy-jd2</groupId>
             <artifactId>database</artifactId>
-            <version>1.0</version>
         </dependency>
     </dependencies>
 
