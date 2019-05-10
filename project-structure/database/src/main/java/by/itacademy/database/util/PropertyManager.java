@@ -2,8 +2,8 @@ package by.itacademy.database.util;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
+import lombok.SneakyThrows;
 
-import java.io.IOException;
 import java.util.Properties;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
@@ -11,15 +11,17 @@ public final class PropertyManager {
 
     private static final Properties PROPERTIES = new Properties();
 
+
     static {
         loadApplicationProperties();
     }
 
-    private static void loadApplicationProperties() {
+    @SneakyThrows
+    private static void loadApplicationProperties(){
         try {
             PROPERTIES.load(Thread.currentThread().getContextClassLoader().getResourceAsStream("application.properties"));
-        } catch (IOException e) {
-            e.printStackTrace();
+        } finally {
+            PROPERTIES.load(Thread.currentThread().getContextClassLoader().getResourceAsStream("application.properties"));
         }
     }
 

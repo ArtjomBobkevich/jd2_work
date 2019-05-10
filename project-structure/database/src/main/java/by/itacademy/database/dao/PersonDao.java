@@ -18,34 +18,20 @@ public class PersonDao {
     private static final PersonDao PERSON_DAO = new PersonDao();
     private static final String FIND_ALL =
             "SELECT "
-                    +
-                    "p.id AS person_id, "
-                    +
-                    "p.avatar AS avatar, "
-                    +
-                    "p.login AS login, "
-                    +
-                    "p.first_name AS firstName, "
-                    +
-                    "p.last_name AS lastName, "
-                    +
-                    "p.age AS age, "
-                    +
-                    "p.mail AS mail, "
-                    +
-                    "p.password AS password, "
-                    +
-                    "p.role AS role, "
-                    +
-                    "pr.id AS id, "
-                    +
-                    "pr.role AS role_name "
-                    +
-                    "FROM flea_market.person p "
-                    +
-                    "LEFT JOIN flea_market.person_role pr "
-                    +
-                    "ON p.role=pr.id ";
+                    + "p.id AS person_id, "
+                    + "p.avatar AS avatar, "
+                    + "p.login AS login, "
+                    + "p.first_name AS firstName, "
+                    + "p.last_name AS lastName, "
+                    + "p.age AS age, "
+                    + "p.mail AS mail, "
+                    + "p.password AS password, "
+                    + "p.role AS role, "
+                    + "pr.id AS id, "
+                    + "pr.role AS role_name "
+                    + "FROM flea_market.person p "
+                    + "LEFT JOIN flea_market.person_role pr "
+                    + "ON p.role=pr.id ";
 
     private static final String FIND_ONE =
             FIND_ALL
