@@ -64,28 +64,118 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="flea_market: schema" type="a16502c0:PostgresImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="flea_market: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="flea_market: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="flea_market: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d97e98fa-53f3-4969-9dc7-1bc0a50f0db9/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="159" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DATABASE/d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.SCHEMA:flea_market.flea_market" pinned="false" current-in-tab="true">
+        <entry file="uml://DATABASE/d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.SCHEMA:flea_market.flea_market">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>DATABASE</ID>
+              <OriginalElement>d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.SCHEMA:flea_market.flea_market</OriginalElement>
+              <nodes>
+                <node x="108.49999999999997" y="424.0">d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource</node>
+                <node x="323.8125" y="690.5">d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.store_basket</node>
+                <node x="53.0" y="0.0">d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.category</node>
+                <node x="505.8125" y="668.0">d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.comment</node>
+                <node x="141.81249999999997" y="690.5">d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource_person</node>
+                <node x="0.0" y="212.0">d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.heading</node>
+                <node x="356.2847222222222" y="146.0">d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person</node>
+                <node x="374.7847222222222" y="11.0">d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person_role</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.store_basket" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person">
+                  <point x="40.5" y="-36.5" />
+                  <point x="445.3125" y="404.0" />
+                  <point x="468.7847222222222" y="404.0" />
+                  <point x="22.5" y="114.0" />
+                </edge>
+                <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.heading">
+                  <point x="-68.66666666666666" y="-92.0" />
+                  <point x="142.83333333333331" y="404.0" />
+                  <point x="100.5" y="404.0" />
+                  <point x="0.0" y="48.0" />
+                </edge>
+                <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.comment" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource">
+                  <point x="-39.25" y="-59.0" />
+                  <point x="545.0625" y="628.0" />
+                  <point x="280.16666666666663" y="628.0" />
+                  <point x="68.66666666666666" y="92.0" />
+                </edge>
+                <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person_role">
+                  <point x="0.0" y="-114.0" />
+                  <point x="0.0" y="37.0" />
+                </edge>
+                <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.category">
+                  <point x="2.8421709430404007E-14" y="-92.0" />
+                  <point x="211.5" y="121.0" />
+                  <point x="207.5" y="121.0" />
+                  <point x="51.5" y="48.0" />
+                </edge>
+                <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource_person" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource">
+                  <point x="-40.5" y="-36.5" />
+                  <point x="182.31249999999997" y="648.0" />
+                  <point x="142.83333333333331" y="648.0" />
+                  <point x="-68.66666666666666" y="92.0" />
+                </edge>
+                <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.store_basket" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource">
+                  <point x="-40.5" y="-36.5" />
+                  <point x="364.3125" y="638.0" />
+                  <point x="211.5" y="638.0" />
+                  <point x="2.8421709430404007E-14" y="92.0" />
+                </edge>
+                <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person">
+                  <point x="68.66666666666671" y="-92.0" />
+                  <point x="280.1666666666667" y="394.0" />
+                  <point x="378.7847222222222" y="394.0" />
+                  <point x="-67.5" y="114.0" />
+                </edge>
+                <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.heading" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.category">
+                  <point x="0.0" y="-48.0" />
+                  <point x="100.5" y="121.0" />
+                  <point x="104.5" y="121.0" />
+                  <point x="-51.5" y="48.0" />
+                </edge>
+                <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.comment" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person">
+                  <point x="39.25000000000003" y="-59.0" />
+                  <point x="623.5625" y="404.0" />
+                  <point x="513.7847222222222" y="404.0" />
+                  <point x="67.49999999999999" y="114.0" />
+                </edge>
+                <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource_person" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person">
+                  <point x="40.5" y="-36.5" />
+                  <point x="263.3125" y="648.0" />
+                  <point x="325.0" y="648.0" />
+                  <point x="325.0" y="404.0" />
+                  <point x="423.7847222222222" y="404.0" />
+                  <point x="-22.5" y="114.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.46029776674937967" x="331.5" y="434.0" />
+              <SelectedNodes>
+                <node>d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person_role</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Key columns</Category>
+                <Category>Columns</Category>
+              </Categories>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -128,10 +218,10 @@
         <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/util/PropertyManager.java" />
         <option value="$PROJECT_DIR$/database/src/main/resources/hibernate.cfg.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c9167b71-7eb0-41d2-a23a-3832d501fb74/console.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d97e98fa-53f3-4969-9dc7-1bc0a50f0db9/console.sql" />
         <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Person.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/database/pom.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d97e98fa-53f3-4969-9dc7-1bc0a50f0db9/console.sql" />
       </list>
     </option>
   </component>
@@ -216,7 +306,6 @@
     <panes>
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -291,6 +380,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,8 +388,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL&#10;SQL Server (jTds)" />
-    <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="D:/MyWork/ServletDemo" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -537,14 +627,16 @@
       <workItem from="1556950525889" duration="2310000" />
       <workItem from="1557485539644" duration="1812000" />
       <workItem from="1557503426052" duration="5464000" />
+      <workItem from="1557655490380" duration="578000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63605000" />
+    <option name="totallyTimeSpent" value="64183000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -553,7 +645,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" weight="0.32987747" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.20131771" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.20131771" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -566,9 +658,9 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32799247" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32799247" />
-      <window_info id="Persistence" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" order="9" weight="0.32857144" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21156661" />
+      <window_info id="Persistence" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="9" visible="true" weight="0.32857144" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21156661" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -588,13 +680,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -636,20 +721,8 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3b8aca87-61b1-4521-91b9-686f1883786f/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b271f309-7d61-44f2-a183-2addca745fa8/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9898cb46-0a66-4346-bdff-ec11e698a01f/console.sql" />
-    <entry file="das://deea2293-f25e-42a4-b8a5-60f37098c900/database/flea_market/schema/flea_market/table/person_role">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://deea2293-f25e-42a4-b8a5-60f37098c900/database/flea_market/schema/flea_market/table/resource">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://deea2293-f25e-42a4-b8a5-60f37098c900/database/flea_market/schema/flea_market/table/person_role" />
+    <entry file="das://deea2293-f25e-42a4-b8a5-60f37098c900/database/flea_market/schema/flea_market/table/resource" />
     <entry file="file://$PROJECT_DIR$/database/target/checkstyle-checker.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -802,13 +875,7 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/deea2293-f25e-42a4-b8a5-60f37098c900/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://deea2293-f25e-42a4-b8a5-60f37098c900/database/flea_market/schema/flea_market/table/person">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://deea2293-f25e-42a4-b8a5-60f37098c900/database/flea_market/schema/flea_market/table/person" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c9167b71-7eb0-41d2-a23a-3832d501fb74/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -820,13 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d97e98fa-53f3-4969-9dc7-1bc0a50f0db9/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="158" column="18" selection-start-line="158" selection-start-column="18" selection-end-line="158" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -865,6 +925,108 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="63" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d97e98fa-53f3-4969-9dc7-1bc0a50f0db9/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="159" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.SCHEMA:flea_market.flea_market">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.SCHEMA:flea_market.flea_market</OriginalElement>
+          <nodes>
+            <node x="108.49999999999997" y="424.0">d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource</node>
+            <node x="323.8125" y="690.5">d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.store_basket</node>
+            <node x="53.0" y="0.0">d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.category</node>
+            <node x="505.8125" y="668.0">d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.comment</node>
+            <node x="141.81249999999997" y="690.5">d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource_person</node>
+            <node x="0.0" y="212.0">d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.heading</node>
+            <node x="356.2847222222222" y="146.0">d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person</node>
+            <node x="374.7847222222222" y="11.0">d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person_role</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.store_basket" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person">
+              <point x="40.5" y="-36.5" />
+              <point x="445.3125" y="404.0" />
+              <point x="468.7847222222222" y="404.0" />
+              <point x="22.5" y="114.0" />
+            </edge>
+            <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.heading">
+              <point x="-68.66666666666666" y="-92.0" />
+              <point x="142.83333333333331" y="404.0" />
+              <point x="100.5" y="404.0" />
+              <point x="0.0" y="48.0" />
+            </edge>
+            <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.comment" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource">
+              <point x="-39.25" y="-59.0" />
+              <point x="545.0625" y="628.0" />
+              <point x="280.16666666666663" y="628.0" />
+              <point x="68.66666666666666" y="92.0" />
+            </edge>
+            <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person_role">
+              <point x="0.0" y="-114.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.category">
+              <point x="2.8421709430404007E-14" y="-92.0" />
+              <point x="211.5" y="121.0" />
+              <point x="207.5" y="121.0" />
+              <point x="51.5" y="48.0" />
+            </edge>
+            <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource_person" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource">
+              <point x="-40.5" y="-36.5" />
+              <point x="182.31249999999997" y="648.0" />
+              <point x="142.83333333333331" y="648.0" />
+              <point x="-68.66666666666666" y="92.0" />
+            </edge>
+            <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.store_basket" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource">
+              <point x="-40.5" y="-36.5" />
+              <point x="364.3125" y="638.0" />
+              <point x="211.5" y="638.0" />
+              <point x="2.8421709430404007E-14" y="92.0" />
+            </edge>
+            <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person">
+              <point x="68.66666666666671" y="-92.0" />
+              <point x="280.1666666666667" y="394.0" />
+              <point x="378.7847222222222" y="394.0" />
+              <point x="-67.5" y="114.0" />
+            </edge>
+            <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.heading" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.category">
+              <point x="0.0" y="-48.0" />
+              <point x="100.5" y="121.0" />
+              <point x="104.5" y="121.0" />
+              <point x="-51.5" y="48.0" />
+            </edge>
+            <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.comment" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person">
+              <point x="39.25000000000003" y="-59.0" />
+              <point x="623.5625" y="404.0" />
+              <point x="513.7847222222222" y="404.0" />
+              <point x="67.49999999999999" y="114.0" />
+            </edge>
+            <edge source="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.resource_person" target="d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person">
+              <point x="40.5" y="-36.5" />
+              <point x="263.3125" y="648.0" />
+              <point x="325.0" y="648.0" />
+              <point x="325.0" y="404.0" />
+              <point x="423.7847222222222" y="404.0" />
+              <point x="-22.5" y="114.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.46029776674937967" x="331.5" y="434.0" />
+          <SelectedNodes>
+            <node>d97e98fa-53f3-4969-9dc7-1bc0a50f0db9.TABLE:flea_market.flea_market.person_role</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
         </state>
       </provider>
     </entry>

@@ -1,4 +1,6 @@
-﻿SET SEARCH_PATH = flea_market;
+﻿CREATE SCHEMA flea_market;
+
+SET SEARCH_PATH = flea_market;
 
 CREATE TABLE person_role (
   id   SERIAL PRIMARY KEY,
@@ -53,6 +55,7 @@ CREATE TABLE store_basket (
 
 CREATE TABLE comment (
   id          SERIAL PRIMARY KEY,
+  person_id    INTEGER REFERENCES person (id) ON DELETE CASCADE ON UPDATE CASCADE,
   resource_id INTEGER REFERENCES resource (id) ON DELETE CASCADE ON UPDATE CASCADE,
   text        VARCHAR(500)
 );
