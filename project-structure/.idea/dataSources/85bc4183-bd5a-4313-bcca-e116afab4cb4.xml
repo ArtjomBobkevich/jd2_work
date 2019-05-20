@@ -55,8 +55,8 @@
     </role>
     <schema id="11" parent="3" name="flea_market">
       <ObjectId>24577</ObjectId>
-      <IntrospectionTimestamp>2019-05-13.14:40:43.867</IntrospectionTimestamp>
-      <IntrospectionStateNumber>1013</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2019-05-20.16:09:52.209</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1015</IntrospectionStateNumber>
       <Visible>1</Visible>
     </schema>
     <schema id="12" parent="3" name="information_schema">
@@ -180,7 +180,7 @@
     </table>
     <table id="33" parent="11" name="person">
       <ObjectId>25054</ObjectId>
-      <StateNumber>1013</StateNumber>
+      <StateNumber>1015</StateNumber>
     </table>
     <table id="34" parent="11" name="person_role">
       <ObjectId>25044</ObjectId>
@@ -188,15 +188,15 @@
     </table>
     <table id="35" parent="11" name="resource">
       <ObjectId>25097</ObjectId>
-      <StateNumber>1013</StateNumber>
+      <StateNumber>1015</StateNumber>
     </table>
     <table id="36" parent="11" name="resource_person">
       <ObjectId>25121</ObjectId>
       <StateNumber>996</StateNumber>
     </table>
     <table id="37" parent="11" name="store_basket">
-      <ObjectId>25136</ObjectId>
-      <StateNumber>997</StateNumber>
+      <ObjectId>32768</ObjectId>
+      <StateNumber>1015</StateNumber>
     </table>
     <column id="38" parent="30" name="id">
       <Position>1</Position>
@@ -625,35 +625,42 @@ person_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="99" parent="37" name="person_id">
+    <column id="99" parent="37" name="foto">
       <Position>1</Position>
-      <DataType>integer|0s</DataType>
+      <DataType>varchar(124)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>997</StateNumber>
-      <TypeId>23</TypeId>
+      <StateNumber>1015</StateNumber>
+      <TypeId>1043</TypeId>
     </column>
-    <column id="100" parent="37" name="resources_id">
+    <column id="100" parent="37" name="person_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>997</StateNumber>
+      <StateNumber>1015</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="101" parent="37" name="store_basket_pkey">
-      <ObjectId>25139</ObjectId>
+    <column id="101" parent="37" name="resources_id">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1015</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="102" parent="37" name="store_basket_pkey">
+      <ObjectId>32771</ObjectId>
       <ColNames>person_id
 resources_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="102" parent="37" name="store_basket_pkey">
-      <ObjectId>25140</ObjectId>
+    <key id="103" parent="37" name="store_basket_pkey">
+      <ObjectId>32772</ObjectId>
       <ColNames>person_id
 resources_id</ColNames>
       <UnderlyingIndexName>store_basket_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="103" parent="37" name="store_basket_person_id_fkey">
-      <ObjectId>25141</ObjectId>
+    <foreign-key id="104" parent="37" name="store_basket_person_id_fkey">
+      <ObjectId>32773</ObjectId>
       <ColNames>person_id</ColNames>
       <RefTableId>25054</RefTableId>
       <RefColPositions>1</RefColPositions>
@@ -663,8 +670,8 @@ resources_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="104" parent="37" name="store_basket_resources_id_fkey">
-      <ObjectId>25146</ObjectId>
+    <foreign-key id="105" parent="37" name="store_basket_resources_id_fkey">
+      <ObjectId>32778</ObjectId>
       <ColNames>resources_id</ColNames>
       <RefTableId>25097</RefTableId>
       <RefColPositions>1</RefColPositions>
