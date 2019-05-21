@@ -25,7 +25,7 @@ public class Person extends BaseEntity <Long> {
     private String mail;
     @Column(name = "password", nullable = false)
     private String password;
-    @Column(name = "role")
     @ManyToOne
+    @JoinColumn(name = "role")
     private PersonRole personRole;
 }
