@@ -11,8 +11,7 @@ import java.io.Serializable;
 
 import static org.junit.Assert.assertNotNull;
 
-
-public class PersonRoleTest {
+public class CategoryTest {
 
     private static final SessionFactory FACTORY =new Configuration().configure().buildSessionFactory();
 
@@ -25,8 +24,8 @@ public class PersonRoleTest {
     public void checkSaveFactory () {
         try (Session session = FACTORY.openSession()) {
 
-            PersonRole role = new PersonRole("test");
-            Serializable id = session.save(role);
+            Category category = new Category("test","url");
+            Serializable id = session.save(category);
             assertNotNull(id);
         }
     }
@@ -35,20 +34,21 @@ public class PersonRoleTest {
     public void checkGetFactory () {
         try (Session session = FACTORY.openSession()) {
 
-            PersonRole role = new PersonRole("test");
+            Category category = new Category("test","url");
 
-            Serializable id = session.save(role);
+            Serializable id = session.save(category);
             session.get(PersonRole.class,id);
         }
     }
 
     @Before
     public void cleanTable() {
-       try (Session session = FACTORY.openSession()){
-           session.beginTransaction();
-           int count = session.createQuery("delete from PersonRole pr").executeUpdate();
-           System.out.println("Deleted rows: "+count);
-           session.getTransaction().commit();
-       }
+        try (Session session = FACTORY.openSession()){
+            session.beginTransaction();
+            int count = session.createQuery("delete from Category c").executeUpdate();
+            System.out.println("Deleted rows: "+count);
+            session.getTransaction().commit();
+        }
     }
+
 }

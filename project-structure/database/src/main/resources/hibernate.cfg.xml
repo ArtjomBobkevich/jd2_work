@@ -12,7 +12,8 @@
     <property name="show_sql">true</property>
     <property name="format_sql">true</property>
 
-    <mapping class="by.itacademy.database.entity.Person"/>
     <mapping class="by.itacademy.database.entity.PersonRole"/>
+    <mapping class="by.itacademy.database.entity.Category"/>
+    <mapping class="by.itacademy.database.entity.Person"/>
   </session-factory>
 </hibernate-configuration>

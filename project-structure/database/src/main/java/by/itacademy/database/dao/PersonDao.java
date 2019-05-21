@@ -1,21 +1,8 @@
-//package by.itacademy.database.dao;
-//
-//import by.itacademy.database.connection.ConnectionPool;
-//import by.itacademy.database.entity.Person;
-//import by.itacademy.database.entity.PersonRole;
-//import lombok.SneakyThrows;
-//
-//import java.sql.Connection;
-//import java.sql.PreparedStatement;
-//import java.sql.ResultSet;
-//import java.sql.Statement;
-//import java.util.ArrayList;
-//import java.util.List;
-//import java.util.Optional;
-//
-//public class PersonDao {
-//
-//    private static final PersonDao PERSON_DAO = new PersonDao();
+package by.itacademy.database.dao;
+
+public class PersonDao {
+
+    private static final PersonDao PERSON_DAO = new PersonDao();
 //    private static final String FIND_ALL =
 //            "SELECT "
 //                    + "p.id AS person_id, "
@@ -37,7 +24,7 @@
 //            FIND_ALL
 //                    +
 //                    "WHERE p.id=?";
-//
+
 //    @SneakyThrows
 //    public Optional<Person> findById(Long id) {
 //        Optional<Person> person = Optional.empty();
@@ -52,7 +39,7 @@
 //        }
 //        return person;
 //    }
-//
+
 //    @SneakyThrows
 //    public List<Person> findAll() {
 //        List<Person> personList = new ArrayList<>();
@@ -66,26 +53,26 @@
 //        }
 //        return personList;
 //    }
-//
-////    @SneakyThrows
-////    private Person getPersonFromResultSet(ResultSet resultSet) {
-////        return Person.builder()
-////                .id(resultSet.getLong("person_id"))
-////                .avatar(resultSet.getString("avatar"))
-////                .login(resultSet.getString("login"))
-////                .firstName(resultSet.getString("firstName"))
-////                .lastName(resultSet.getString("lastName"))
-////                .age(resultSet.getString("age"))
-////                .mail(resultSet.getString("mail"))
-////                .password(resultSet.getString("password"))
-////                .personRole(PersonRole.builder()
-////                        .id(resultSet.getLong("id"))
-////                        .nameOfRole(resultSet.getString("role_name"))
-////                        .build())
-////                .build();
-////    }
-//
-//    public static PersonDao getPersonDao() {
-//        return PERSON_DAO;
+
+//    @SneakyThrows
+//    private Person getPersonFromResultSet(ResultSet resultSet) {
+//        return Person.builder()
+//                .id(resultSet.getLong("person_id"))
+//                .avatar(resultSet.getString("avatar"))
+//                .login(resultSet.getString("login"))
+//                .firstName(resultSet.getString("firstName"))
+//                .lastName(resultSet.getString("lastName"))
+//                .age(resultSet.getString("age"))
+//                .mail(resultSet.getString("mail"))
+//                .password(resultSet.getString("password"))
+//                .personRole(PersonRole.builder()
+//                        .id(resultSet.getLong("id"))
+//                        .nameOfRole(resultSet.getString("role_name"))
+//                        .build())
+//                .build();
 //    }
-//}
+
+    public static PersonDao getPersonDao() {
+        return PERSON_DAO;
+    }
+}
