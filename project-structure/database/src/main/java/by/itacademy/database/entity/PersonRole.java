@@ -11,11 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @Table(name = "person_role", schema = "flea_market")
-public class PersonRole {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class PersonRole extends BaseEntity<Long> {
 
     @Column(name = "role", unique = true, nullable = false)
     private String nameOfRole;
