@@ -1,5 +1,6 @@
 package by.itacademy.database.entity;
 
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -9,6 +10,7 @@ import javax.persistence.*;
 @Data
 @EqualsAndHashCode(of = "id")
 @NoArgsConstructor
+@Builder
 @Entity
 @Table(name = "person_role", schema = "flea_market")
 public class PersonRole extends BaseEntity<Long> {

@@ -13,8 +13,8 @@
 <body>
 <span>${requestScope.person.avatar}</span><br>
 <span>${requestScope.person.login}</span><br>
-<span>${requestScope.person.firstName}</span><br>
- <span>${requestScope.person.lastName}</span><br>
+<span>${requestScope.person.identification}</span><br>
+ <%--<span>${requestScope.person.lastName}</span><br>--%>
 <span>${requestScope.person.age}</span><br>
  <span>${requestScope.person.mail}</span><br>
  <span>${requestScope.person.personRole}</span><br>

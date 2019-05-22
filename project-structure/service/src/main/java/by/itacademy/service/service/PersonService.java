@@ -14,7 +14,7 @@ public class PersonService {
 
     public List<ViewPersonFullInfoDto> findAll() {
         return PersonDao.getPersonDao().findAll().stream()
-                .map(it -> new ViewPersonFullInfoDto(it.getAvatar(), it.getLogin(), it.getFirstName(), it.getLastName(), it.getAge(),
+                .map(it -> new ViewPersonFullInfoDto(it.getAvatar(), it.getLogin(), it.getIdentification(), it.getAge(),
                         it.getMail(), it.getPassword(), it.getPersonRole().getNameOfRole()))
                 .collect(Collectors.toList());
     }
@@ -24,8 +24,7 @@ public class PersonService {
                 .map(it -> ViewPersonFullInfoDto.builder()
                         .avatar(it.getAvatar())
                         .login(it.getLogin())
-                        .firstName(it.getFirstName())
-                        .lastName(it.getLastName())
+                        .identification(it.getIdentification())
                         .age(it.getAge())
                         .mail(it.getMail())
                         .password(it.getPassword())

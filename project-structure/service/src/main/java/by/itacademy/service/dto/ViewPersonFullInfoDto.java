@@ -1,5 +1,6 @@
 package by.itacademy.service.dto;
 
+import by.itacademy.database.entity.Identification;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,9 +14,8 @@ public class ViewPersonFullInfoDto {
 
     private String avatar;
     private String login;
-    private String firstName;
-    private String lastName;
-    private String age;
+    private Identification identification;
+    private Integer age;
     private String mail;
     private String password;
     private String personRole;
