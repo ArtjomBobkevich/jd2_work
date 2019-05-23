@@ -10,7 +10,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@EqualsAndHashCode(of = "id")
+@EqualsAndHashCode(callSuper = true)
 @Entity
 @Table(name = "person", schema = "flea_market")
 public class Person extends BaseEntity <Long> {
@@ -32,7 +32,7 @@ public class Person extends BaseEntity <Long> {
     private PersonRole personRole;
 
     @ManyToMany
-    @JoinTable (name = "resource_person",schema = "flea_market",joinColumns = @JoinColumn(name = "resources_id_id"),
+    @JoinTable (name = "resource_person",schema = "flea_market",joinColumns = @JoinColumn(name = "resources_id"),
             inverseJoinColumns = @JoinColumn(name = "person_id"))
     private List<Resource> resources = new ArrayList<>();
 }

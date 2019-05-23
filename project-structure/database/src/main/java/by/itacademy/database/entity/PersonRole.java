@@ -1,14 +1,16 @@
 package by.itacademy.database.entity;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 @Data
-@EqualsAndHashCode(of = "id")
+@ToString(exclude = "personList")
+@EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @Builder
 @Entity
@@ -18,6 +20,8 @@ public class PersonRole extends BaseEntity<Long> {
     @Column(name = "role", unique = true, nullable = false)
     private String nameOfRole;
 
+    @OneToMany(mappedBy = "personRole")
+    private List<Person> personList = new ArrayList<>();
 
     public PersonRole(String nameOfRole) {
         this.nameOfRole = nameOfRole;

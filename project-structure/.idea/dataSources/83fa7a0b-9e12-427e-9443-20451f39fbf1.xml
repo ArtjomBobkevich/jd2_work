@@ -55,8 +55,8 @@
     </role>
     <schema id="11" parent="3" name="flea_market">
       <ObjectId>24577</ObjectId>
-      <IntrospectionTimestamp>2019-05-22.09:03:53.294</IntrospectionTimestamp>
-      <IntrospectionStateNumber>1015</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2019-05-23.08:22:38.612</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1026</IntrospectionStateNumber>
       <Visible>1</Visible>
     </schema>
     <schema id="12" parent="3" name="information_schema">
@@ -132,8 +132,8 @@
       <DataType>integer</DataType>
     </sequence>
     <sequence id="25" parent="11" name="comment_id_seq">
-      <ObjectId>25169</ObjectId>
-      <StateNumber>1013</StateNumber>
+      <ObjectId>32841</ObjectId>
+      <StateNumber>1026</StateNumber>
       <SequenceIdentity>1..2147483647</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>integer</DataType>
@@ -160,43 +160,43 @@
       <DataType>integer</DataType>
     </sequence>
     <sequence id="29" parent="11" name="resource_id_seq">
-      <ObjectId>25095</ObjectId>
-      <StateNumber>995</StateNumber>
+      <ObjectId>32785</ObjectId>
+      <StateNumber>1023</StateNumber>
       <SequenceIdentity>1..2147483647</SequenceIdentity>
       <CacheSize>1</CacheSize>
       <DataType>integer</DataType>
     </sequence>
     <table id="30" parent="11" name="category">
       <ObjectId>25074</ObjectId>
-      <StateNumber>995</StateNumber>
+      <StateNumber>1023</StateNumber>
     </table>
     <table id="31" parent="11" name="comment">
-      <ObjectId>25171</ObjectId>
-      <StateNumber>1013</StateNumber>
+      <ObjectId>32843</ObjectId>
+      <StateNumber>1026</StateNumber>
     </table>
     <table id="32" parent="11" name="heading">
       <ObjectId>25084</ObjectId>
-      <StateNumber>995</StateNumber>
+      <StateNumber>1023</StateNumber>
     </table>
     <table id="33" parent="11" name="person">
       <ObjectId>25054</ObjectId>
-      <StateNumber>1015</StateNumber>
+      <StateNumber>1026</StateNumber>
     </table>
     <table id="34" parent="11" name="person_role">
       <ObjectId>25044</ObjectId>
       <StateNumber>992</StateNumber>
     </table>
     <table id="35" parent="11" name="resource">
-      <ObjectId>25097</ObjectId>
-      <StateNumber>1015</StateNumber>
+      <ObjectId>32787</ObjectId>
+      <StateNumber>1026</StateNumber>
     </table>
     <table id="36" parent="11" name="resource_person">
-      <ObjectId>25121</ObjectId>
-      <StateNumber>996</StateNumber>
+      <ObjectId>32811</ObjectId>
+      <StateNumber>1024</StateNumber>
     </table>
     <table id="37" parent="11" name="store_basket">
-      <ObjectId>32768</ObjectId>
-      <StateNumber>1015</StateNumber>
+      <ObjectId>32826</ObjectId>
+      <StateNumber>1025</StateNumber>
     </table>
     <column id="38" parent="30" name="id">
       <Position>1</Position>
@@ -245,7 +245,7 @@
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1013</StateNumber>
+      <StateNumber>1026</StateNumber>
       <DefaultExpression>nextval(&apos;comment_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
       <SequenceName>flea_market.comment_id_seq</SequenceName>
@@ -253,34 +253,34 @@
     <column id="46" parent="31" name="person_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>1013</StateNumber>
+      <StateNumber>1026</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="47" parent="31" name="resource_id">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>1013</StateNumber>
+      <StateNumber>1026</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="48" parent="31" name="text">
       <Position>4</Position>
       <DataType>varchar(500)|0s</DataType>
-      <StateNumber>1013</StateNumber>
+      <StateNumber>1026</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <index id="49" parent="31" name="comment_pkey">
-      <ObjectId>25178</ObjectId>
+      <ObjectId>32850</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="50" parent="31" name="comment_pkey">
-      <ObjectId>25179</ObjectId>
+      <ObjectId>32851</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>comment_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <foreign-key id="51" parent="31" name="comment_person_id_fkey">
-      <ObjectId>25180</ObjectId>
+      <ObjectId>32852</ObjectId>
       <ColNames>person_id</ColNames>
       <RefTableId>25054</RefTableId>
       <RefColPositions>1</RefColPositions>
@@ -291,9 +291,9 @@
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
     <foreign-key id="52" parent="31" name="comment_resource_id_fkey">
-      <ObjectId>25185</ObjectId>
+      <ObjectId>32857</ObjectId>
       <ColNames>resource_id</ColNames>
-      <RefTableId>25097</RefTableId>
+      <RefTableId>32787</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>resource</RefTableName>
       <RefKeyName>resource_pkey</RefKeyName>
@@ -490,7 +490,7 @@
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>995</StateNumber>
+      <StateNumber>1023</StateNumber>
       <DefaultExpression>nextval(&apos;resource_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
       <SequenceName>flea_market.resource_id_seq</SequenceName>
@@ -499,52 +499,59 @@
       <Position>2</Position>
       <DataType>varchar(124)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>995</StateNumber>
+      <StateNumber>1023</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="83" parent="35" name="foto">
       <Position>3</Position>
       <DataType>varchar(1024)|0s</DataType>
-      <StateNumber>995</StateNumber>
+      <StateNumber>1023</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="84" parent="35" name="heading_id">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>995</StateNumber>
+      <StateNumber>1023</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="85" parent="35" name="category_id">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>995</StateNumber>
+      <StateNumber>1023</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="86" parent="35" name="author">
       <Position>6</Position>
       <DataType>varchar(124)|0s</DataType>
-      <StateNumber>995</StateNumber>
+      <StateNumber>1023</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="87" parent="35" name="price">
       <Position>7</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>995</StateNumber>
+      <StateNumber>1023</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="88" parent="35" name="resource_pkey">
-      <ObjectId>25104</ObjectId>
+    <column id="88" parent="35" name="text">
+      <Position>8</Position>
+      <DataType>varchar(1024)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1023</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="89" parent="35" name="resource_pkey">
+      <ObjectId>32794</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="89" parent="35" name="resource_pkey">
-      <ObjectId>25105</ObjectId>
+    <key id="90" parent="35" name="resource_pkey">
+      <ObjectId>32795</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>resource_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="90" parent="35" name="resource_heading_id_fkey">
-      <ObjectId>25106</ObjectId>
+    <foreign-key id="91" parent="35" name="resource_heading_id_fkey">
+      <ObjectId>32796</ObjectId>
       <ColNames>heading_id</ColNames>
       <RefTableId>25084</RefTableId>
       <RefColPositions>1</RefColPositions>
@@ -554,8 +561,8 @@
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="91" parent="35" name="resource_category_id_fkey">
-      <ObjectId>25111</ObjectId>
+    <foreign-key id="92" parent="35" name="resource_category_id_fkey">
+      <ObjectId>32801</ObjectId>
       <ColNames>category_id</ColNames>
       <RefTableId>25074</RefTableId>
       <RefColPositions>1</RefColPositions>
@@ -565,8 +572,8 @@
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="92" parent="35" name="resource_author_fkey">
-      <ObjectId>25116</ObjectId>
+    <foreign-key id="93" parent="35" name="resource_author_fkey">
+      <ObjectId>32806</ObjectId>
       <ColNames>author</ColNames>
       <RefTableId>25054</RefTableId>
       <RefColPositions>3</RefColPositions>
@@ -576,37 +583,37 @@
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="93" parent="36" name="resources_id">
+    <column id="94" parent="36" name="resources_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>996</StateNumber>
+      <StateNumber>1024</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="94" parent="36" name="person_id">
+    <column id="95" parent="36" name="person_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>996</StateNumber>
+      <StateNumber>1024</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="95" parent="36" name="resource_person_pkey">
-      <ObjectId>25124</ObjectId>
+    <index id="96" parent="36" name="resource_person_pkey">
+      <ObjectId>32814</ObjectId>
       <ColNames>resources_id
 person_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="96" parent="36" name="resource_person_pkey">
-      <ObjectId>25125</ObjectId>
+    <key id="97" parent="36" name="resource_person_pkey">
+      <ObjectId>32815</ObjectId>
       <ColNames>resources_id
 person_id</ColNames>
       <UnderlyingIndexName>resource_person_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="97" parent="36" name="resource_person_resources_id_fkey">
-      <ObjectId>25126</ObjectId>
+    <foreign-key id="98" parent="36" name="resource_person_resources_id_fkey">
+      <ObjectId>32816</ObjectId>
       <ColNames>resources_id</ColNames>
-      <RefTableId>25097</RefTableId>
+      <RefTableId>32787</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>resource</RefTableName>
       <RefKeyName>resource_pkey</RefKeyName>
@@ -614,8 +621,8 @@ person_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="98" parent="36" name="resource_person_person_id_fkey">
-      <ObjectId>25131</ObjectId>
+    <foreign-key id="99" parent="36" name="resource_person_person_id_fkey">
+      <ObjectId>32821</ObjectId>
       <ColNames>person_id</ColNames>
       <RefTableId>25054</RefTableId>
       <RefColPositions>1</RefColPositions>
@@ -625,42 +632,42 @@ person_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <column id="99" parent="37" name="foto">
+    <column id="100" parent="37" name="foto">
       <Position>1</Position>
       <DataType>varchar(124)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1015</StateNumber>
+      <StateNumber>1025</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="100" parent="37" name="person_id">
+    <column id="101" parent="37" name="person_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1015</StateNumber>
+      <StateNumber>1025</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="101" parent="37" name="resources_id">
+    <column id="102" parent="37" name="resources_id">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1015</StateNumber>
+      <StateNumber>1025</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="102" parent="37" name="store_basket_pkey">
-      <ObjectId>32771</ObjectId>
+    <index id="103" parent="37" name="store_basket_pkey">
+      <ObjectId>32829</ObjectId>
       <ColNames>person_id
 resources_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="103" parent="37" name="store_basket_pkey">
-      <ObjectId>32772</ObjectId>
+    <key id="104" parent="37" name="store_basket_pkey">
+      <ObjectId>32830</ObjectId>
       <ColNames>person_id
 resources_id</ColNames>
       <UnderlyingIndexName>store_basket_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="104" parent="37" name="store_basket_person_id_fkey">
-      <ObjectId>32773</ObjectId>
+    <foreign-key id="105" parent="37" name="store_basket_person_id_fkey">
+      <ObjectId>32831</ObjectId>
       <ColNames>person_id</ColNames>
       <RefTableId>25054</RefTableId>
       <RefColPositions>1</RefColPositions>
@@ -670,10 +677,10 @@ resources_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
     </foreign-key>
-    <foreign-key id="105" parent="37" name="store_basket_resources_id_fkey">
-      <ObjectId>32778</ObjectId>
+    <foreign-key id="106" parent="37" name="store_basket_resources_id_fkey">
+      <ObjectId>32836</ObjectId>
       <ColNames>resources_id</ColNames>
-      <RefTableId>25097</RefTableId>
+      <RefTableId>32787</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>resource</RefTableName>
       <RefKeyName>resource_pkey</RefKeyName>

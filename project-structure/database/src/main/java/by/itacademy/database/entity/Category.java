@@ -1,14 +1,14 @@
 package by.itacademy.database.entity;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
-@EqualsAndHashCode(of = "id")
+@ToString(exclude = "headings")
+@EqualsAndHashCode(callSuper = true)
 //@EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @Builder
@@ -22,6 +22,8 @@ public class Category extends BaseEntity<Long>{
     @Column(name = "foto")
     private String fotoUrl;
 
+    @OneToMany(mappedBy = "category")
+    private List<Heading> headings = new ArrayList<>();
 
     public Category(String categoryName, String fotoUrl) {
         this.categoryName = categoryName;

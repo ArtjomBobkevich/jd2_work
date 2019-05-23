@@ -38,8 +38,11 @@ CREATE TABLE resource (
   heading_id    INTEGER REFERENCES heading (id) ON DELETE CASCADE ON UPDATE CASCADE,
   category_id   INTEGER REFERENCES category (id) ON DELETE CASCADE ON UPDATE CASCADE,
   author        VARCHAR(124) REFERENCES person (login) ON DELETE CASCADE ON UPDATE CASCADE,
-  price         INTEGER
+  price         INTEGER,
+  text          VARCHAR(1024) NOT NULL
 );
+
+DROP TABLE resource;
 
 CREATE TABLE resource_person (
   resources_id INTEGER REFERENCES resource (id) ON DELETE CASCADE ON UPDATE CASCADE,

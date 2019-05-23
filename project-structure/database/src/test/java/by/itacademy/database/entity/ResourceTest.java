@@ -49,6 +49,7 @@ public class ResourceTest {
                             .password("password")
                             .build())
                     .price(300)
+                    .text("tratatata")
                     .build();
             Serializable id = session.save(resource);
             assertNotNull(id);
