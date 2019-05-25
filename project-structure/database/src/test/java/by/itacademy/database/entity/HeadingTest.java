@@ -12,7 +12,7 @@ import java.io.Serializable;
 import static org.junit.Assert.assertNotNull;
 
 public class HeadingTest {
-    private static final SessionFactory FACTORY =new Configuration().configure().buildSessionFactory();
+    private static final SessionFactory FACTORY = new Configuration().configure().buildSessionFactory();
 
     @AfterClass
     public static void close() {
@@ -20,7 +20,7 @@ public class HeadingTest {
     }
 
     @Test
-    public void checkSaveFactory () {
+    public void checkSaveFactory() {
         try (Session session = FACTORY.openSession()) {
 
             Heading heading = Heading.builder()
@@ -36,7 +36,7 @@ public class HeadingTest {
     }
 
     @Test
-    public void checkGetFactory () {
+    public void checkGetFactory() {
         try (Session session = FACTORY.openSession()) {
 
             Heading heading = Heading.builder()
@@ -47,16 +47,17 @@ public class HeadingTest {
                             .build())
                     .build();
             Serializable id = session.save(heading);
-            session.get(Heading.class,id);
+            Heading heading1 = session.get(Heading.class, id);
+            assertNotNull(heading1);
         }
     }
 
     @Before
     public void cleanTable() {
-        try (Session session = FACTORY.openSession()){
+        try (Session session = FACTORY.openSession()) {
             session.beginTransaction();
             int count = session.createQuery("delete from Heading h").executeUpdate();
-            System.out.println("Deleted rows: "+count);
+            System.out.println("Deleted rows: " + count);
             session.getTransaction().commit();
         }
     }

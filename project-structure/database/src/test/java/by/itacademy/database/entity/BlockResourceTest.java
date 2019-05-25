@@ -11,8 +11,7 @@ import java.io.Serializable;
 
 import static org.junit.Assert.assertNotNull;
 
-public class CategoryTest {
-
+public class BlockResourceTest {
     private static final SessionFactory FACTORY = new Configuration().configure().buildSessionFactory();
 
     @AfterClass
@@ -24,8 +23,8 @@ public class CategoryTest {
     public void checkSaveFactory() {
         try (Session session = FACTORY.openSession()) {
 
-            Category category = new Category("test", "url");
-            Serializable id = session.save(category);
+            Serializable id = session.save(new BlockResource("222", "asfdsdf", (new Heading())
+                    , (new Category()), (new Person()), 3, "sdfs", "qwe"));
             assertNotNull(id);
         }
     }
@@ -34,11 +33,10 @@ public class CategoryTest {
     public void checkGetFactory() {
         try (Session session = FACTORY.openSession()) {
 
-            Category category = new Category("test", "url");
-
-            Serializable id = session.save(category);
-            Category category1 = session.get(Category.class, id);
-            assertNotNull(category1);
+            Serializable id = session.save(new BlockResource("222", "asfdsdf", (new Heading())
+                    , (new Category()), (new Person()), 3, "sdfs", "qwe"));
+            BlockResource blockResource = session.get(BlockResource.class, id);
+            assertNotNull(blockResource);
         }
     }
 
@@ -46,7 +44,7 @@ public class CategoryTest {
     public void cleanTable() {
         try (Session session = FACTORY.openSession()) {
             session.beginTransaction();
-            int count = session.createQuery("delete from Category c").executeUpdate();
+            int count = session.createQuery("delete from BlockResource r").executeUpdate();
             System.out.println("Deleted rows: " + count);
             session.getTransaction().commit();
         }

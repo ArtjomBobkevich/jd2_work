@@ -12,7 +12,7 @@ import java.io.Serializable;
 import static org.junit.Assert.assertNotNull;
 
 public class CommentTest {
-    private static final SessionFactory FACTORY =new Configuration().configure().buildSessionFactory();
+    private static final SessionFactory FACTORY = new Configuration().configure().buildSessionFactory();
 
     @AfterClass
     public static void close() {
@@ -20,7 +20,7 @@ public class CommentTest {
     }
 
     @Test
-    public void checkSaveFactory () {
+    public void checkSaveFactory() {
         try (Session session = FACTORY.openSession()) {
 
             Comment comment = Comment.builder()
@@ -70,7 +70,7 @@ public class CommentTest {
     }
 
     @Test
-    public void checkGetFactory () {
+    public void checkGetFactory() {
         try (Session session = FACTORY.openSession()) {
 
             Comment comment = Comment.builder()
@@ -115,16 +115,17 @@ public class CommentTest {
                     .build();
 
             Serializable id = session.save(comment);
-            session.get(Comment.class,id);
+            Comment comment1 = session.get(Comment.class, id);
+            assertNotNull(comment1);
         }
     }
 
     @Before
     public void cleanTable() {
-        try (Session session = FACTORY.openSession()){
+        try (Session session = FACTORY.openSession()) {
             session.beginTransaction();
             int count = session.createQuery("delete from Comment c").executeUpdate();
-            System.out.println("Deleted rows: "+count);
+            System.out.println("Deleted rows: " + count);
             session.getTransaction().commit();
         }
     }

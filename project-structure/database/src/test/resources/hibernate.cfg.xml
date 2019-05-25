@@ -13,12 +13,12 @@
         <property name="format_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">create-drop</property>
 
+        <mapping class="by.itacademy.database.entity.BlockResource"/>
         <mapping class="by.itacademy.database.entity.PersonRole"/>
         <mapping class="by.itacademy.database.entity.Category"/>
         <mapping class="by.itacademy.database.entity.Person"/>
         <mapping class="by.itacademy.database.entity.Heading"/>
         <mapping class="by.itacademy.database.entity.Resource"/>
         <mapping class="by.itacademy.database.entity.Comment"/>
-        <mapping class="by.itacademy.database.entity.StoreBasket"/>
     </session-factory>
 </hibernate-configuration>

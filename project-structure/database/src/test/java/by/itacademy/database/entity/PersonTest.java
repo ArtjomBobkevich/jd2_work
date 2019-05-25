@@ -13,7 +13,7 @@ import static org.junit.Assert.assertNotNull;
 
 public class PersonTest {
 
-    private static final SessionFactory FACTORY =new Configuration().configure().buildSessionFactory();
+    private static final SessionFactory FACTORY = new Configuration().configure().buildSessionFactory();
 
     @AfterClass
     public static void close() {
@@ -21,10 +21,11 @@ public class PersonTest {
     }
 
     @Test
-    public void checkSaveFactory () {
+    public void checkSaveFactory() {
         try (Session session = FACTORY.openSession()) {
 
             Person person = Person.builder()
+                    .id(1L)
                     .avatar("url")
                     .login("login")
                     .identification(Identification.builder()
@@ -44,10 +45,11 @@ public class PersonTest {
     }
 
     @Test
-    public void checkGetFactory () {
+    public void checkGetFactory() {
         try (Session session = FACTORY.openSession()) {
 
             Person person = Person.builder()
+                    .id(1L)
                     .avatar("url")
                     .login("login")
                     .identification(Identification.builder()
@@ -62,16 +64,17 @@ public class PersonTest {
                             .build())
                     .build();
             Serializable id = session.save(person);
-            session.get(Person.class,id);
+            Person person1 = session.get(Person.class, id);
+            assertNotNull(person1);
         }
     }
 
     @Before
     public void cleanTable() {
-        try (Session session = FACTORY.openSession()){
+        try (Session session = FACTORY.openSession()) {
             session.beginTransaction();
             int count = session.createQuery("delete from Person p").executeUpdate();
-            System.out.println("Deleted rows: "+count);
+            System.out.println("Deleted rows: " + count);
             session.getTransaction().commit();
         }
     }

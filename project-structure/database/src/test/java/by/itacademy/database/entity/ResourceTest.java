@@ -12,7 +12,7 @@ import java.io.Serializable;
 import static org.junit.Assert.assertNotNull;
 
 public class ResourceTest {
-    private static final SessionFactory FACTORY =new Configuration().configure().buildSessionFactory();
+    private static final SessionFactory FACTORY = new Configuration().configure().buildSessionFactory();
 
     @AfterClass
     public static void close() {
@@ -20,7 +20,7 @@ public class ResourceTest {
     }
 
     @Test
-    public void checkSaveFactory () {
+    public void checkSaveFactory() {
         try (Session session = FACTORY.openSession()) {
 
             Resource resource = Resource.builder()
@@ -57,7 +57,7 @@ public class ResourceTest {
     }
 
     @Test
-    public void checkGetFactory () {
+    public void checkGetFactory() {
         try (Session session = FACTORY.openSession()) {
 
             Resource resource = Resource.builder()
@@ -88,16 +88,17 @@ public class ResourceTest {
                     .price(300)
                     .build();
             Serializable id = session.save(resource);
-            session.get(Person.class,id);
+            Resource resource1 = session.get(Resource.class, id);
+            assertNotNull(resource1);
         }
     }
 
     @Before
     public void cleanTable() {
-        try (Session session = FACTORY.openSession()){
+        try (Session session = FACTORY.openSession()) {
             session.beginTransaction();
             int count = session.createQuery("delete from Resource r").executeUpdate();
-            System.out.println("Deleted rows: "+count);
+            System.out.println("Deleted rows: " + count);
             session.getTransaction().commit();
         }
     }
