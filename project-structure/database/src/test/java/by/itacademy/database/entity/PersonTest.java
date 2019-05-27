@@ -23,23 +23,7 @@ public class PersonTest {
     @Test
     public void checkSaveFactory() {
         try (Session session = FACTORY.openSession()) {
-
-            Person person = Person.builder()
-                    .id(1L)
-                    .avatar("url")
-                    .login("login")
-                    .identification(Identification.builder()
-                            .firstName("was")
-                            .lastName("gen")
-                            .build())
-                    .age(16)
-                    .mail("mail")
-                    .password("password")
-                    .personRole(PersonRole.builder()
-                            .nameOfRole("test")
-                            .build())
-                    .build();
-            Serializable id = session.save(person);
+            Serializable id = session.save(createPerson());
             assertNotNull(id);
         }
     }
@@ -47,24 +31,8 @@ public class PersonTest {
     @Test
     public void checkGetFactory() {
         try (Session session = FACTORY.openSession()) {
-
-            Person person = Person.builder()
-                    .id(1L)
-                    .avatar("url")
-                    .login("login")
-                    .identification(Identification.builder()
-                            .firstName("was")
-                            .lastName("gen")
-                            .build())
-                    .age(16)
-                    .mail("mail")
-                    .password("password")
-                    .personRole(PersonRole.builder()
-                            .nameOfRole("test")
-                            .build())
-                    .build();
-            Serializable id = session.save(person);
-            Person person1 = session.get(Person.class, id);
+            Serializable id = session.save(createPerson());
+            Person person1 = session.load(Person.class, id);
             assertNotNull(person1);
         }
     }
@@ -73,10 +41,27 @@ public class PersonTest {
     public void cleanTable() {
         try (Session session = FACTORY.openSession()) {
             session.beginTransaction();
-            int count = session.createQuery("delete from Person p").executeUpdate();
-            System.out.println("Deleted rows: " + count);
+            session.createQuery("delete from Person p").executeUpdate();
             session.getTransaction().commit();
         }
     }
 
+    private static Person createPerson () {
+        Person person = Person.builder()
+                .id(1L)
+                .avatar("url")
+                .login("login")
+                .identification(Identification.builder()
+                        .firstName("was")
+                        .lastName("gen")
+                        .build())
+                .age(16)
+                .mail("mail")
+                .password("password")
+                .personRole(PersonRole.builder()
+                        .nameOfRole("test")
+                        .build())
+                .build();
+        return person;
+    }
 }

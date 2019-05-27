@@ -6,17 +6,23 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title></title>
 </head>
 <body>
-<span>${requestScope.person.avatar}</span><br>
-<span>${requestScope.person.login}</span><br>
-<span>${requestScope.person.identification}</span><br>
- <%--<span>${requestScope.person.lastName}</span><br>--%>
-<span>${requestScope.person.age}</span><br>
- <span>${requestScope.person.mail}</span><br>
- <span>${requestScope.person.personRole}</span><br>
+<div>
+    <c:forEach var="list" items="${requestScope.person}">
+        <a>${list.avatar}</a><br>
+        <a>${list.login}</a><br>
+        <a>${list.identification}</a><br>
+        <%--<a>${list.lastName}</a><br>--%>
+        <a>${list.age}</a><br>
+        <a>${list.mail}</a><br>
+        <a>${list.personRole}</a><br>
+        <a>--------------------------</a><br>
+    </c:forEach>
+</div>
 </body>
 </html>

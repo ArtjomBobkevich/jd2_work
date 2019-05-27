@@ -20,8 +20,8 @@ public class BlockResource extends Resource {
     @Column(name = "block")
     private String block;
 
-    public BlockResource(String resourceName, String foto, Heading heading, Category category, Person person
-            , Integer price, String text, String block) {
+    public BlockResource(String resourceName, String foto, Heading heading, Category category, Person person,
+                         Integer price, String text, String block) {
         super(resourceName, foto, heading, category, person, price, text);
         this.block = block;
     }

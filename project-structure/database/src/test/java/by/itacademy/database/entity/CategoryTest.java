@@ -37,7 +37,7 @@ public class CategoryTest {
             Category category = new Category("test", "url");
 
             Serializable id = session.save(category);
-            Category category1 = session.get(Category.class, id);
+            Category category1 = session.load(Category.class, id);
             assertNotNull(category1);
         }
     }
@@ -46,8 +46,7 @@ public class CategoryTest {
     public void cleanTable() {
         try (Session session = FACTORY.openSession()) {
             session.beginTransaction();
-            int count = session.createQuery("delete from Category c").executeUpdate();
-            System.out.println("Deleted rows: " + count);
+            session.createQuery("delete from Category c").executeUpdate();
             session.getTransaction().commit();
         }
     }

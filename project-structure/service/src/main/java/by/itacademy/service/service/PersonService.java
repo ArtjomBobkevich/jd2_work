@@ -1,6 +1,7 @@
 package by.itacademy.service.service;
 
 import by.itacademy.database.dao.PersonDao;
+import by.itacademy.database.entity.Person;
 import by.itacademy.service.dto.ViewPersonFullInfoDto;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
@@ -14,23 +15,20 @@ public class PersonService {
 
     public List<ViewPersonFullInfoDto> findAll() {
         return PersonDao.getPersonDao().findAll().stream()
-                .map(it -> new ViewPersonFullInfoDto(it.getAvatar(), it.getLogin(), it.getIdentification(), it.getAge(),
+                .map(it -> new ViewPersonFullInfoDto(it.getId(),it.getAvatar(), it.getLogin(), it.getIdentification(), it.getAge(),
                         it.getMail(), it.getPassword(), it.getPersonRole().getNameOfRole()))
                 .collect(Collectors.toList());
     }
 
-    public ViewPersonFullInfoDto findById(Long id) {
-        return PersonDao.getPersonDao().findById(id)
-                .map(it -> ViewPersonFullInfoDto.builder()
-                        .avatar(it.getAvatar())
-                        .login(it.getLogin())
-                        .identification(it.getIdentification())
-                        .age(it.getAge())
-                        .mail(it.getMail())
-                        .password(it.getPassword())
-                        .personRole(it.getPersonRole().getNameOfRole())
-                        .build())
-                .orElse(null);
+    public List<ViewPersonFullInfoDto> findById(Long id) {
+        return PersonDao.getPersonDao().findById(id).stream()
+                .map(it -> new ViewPersonFullInfoDto(it.getId(),it.getAvatar(), it.getLogin(), it.getIdentification(), it.getAge(),
+                it.getMail(), it.getPassword(), it.getPersonRole().getNameOfRole()))
+                .collect(Collectors.toList());
+    }
+
+    public boolean delete (Person person){
+        return PersonDao.getPersonDao().delete(person);
     }
 
     public static PersonService getPersonService() {

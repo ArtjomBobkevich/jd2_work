@@ -81,21 +81,107 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="flea_market: schema" type="a16502c0:PostgresImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="resource: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+        <item name="person: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HibernateRunner.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/HibernateRunner.java">
+      <file leaf-file-name="PersonDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/dao/PersonDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+            <state relative-caret-position="471">
+              <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1279#1280#0" expanded="true" />
+                <element signature="e#1312#1313#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/by/itacademy/service/service/PersonService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+              <folding>
+                <element signature="e#1259#1260#0" expanded="true" />
+                <element signature="e#1290#1291#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonDeleteServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/by/itacademy/web/servlet/PersonDeleteServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="505">
+              <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete-person.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/delete-person.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0bc91a84-3ddb-487b-a9c0-54ba81c1d83b/console.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="person" pinned="false" current-in-tab="false">
+        <entry file="das://0bc91a84-3ddb-487b-a9c0-54ba81c1d83b/database/flea_market/schema/flea_market/table/person">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewPersonFullInfoDto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/by/itacademy/service/dto/ViewPersonFullInfoDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/by/itacademy/web/servlet/PersonServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="person.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="person-info.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-info.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -105,19 +191,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/src/main/java/by/itacademy/web/servlet/util/JspPath.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/by/itacademy/service/dto/ViewPersonLogin.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/by/itacademy/web/util/UserServlet.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/by/itacademy/web/util/PersonServlet.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/by/itacademy/web/util/JspPath.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/by/itacademy/web/servlet/UserServlet.java" />
@@ -130,16 +213,11 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d97e98fa-53f3-4969-9dc7-1bc0a50f0db9/console.sql" />
         <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/connection/ConnectionPool.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/85bc4183-bd5a-4313-bcca-e116afab4cb4/console.sql" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/database/pom.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/97d53da4-b137-4c52-8e8d-8183c3db3328/console.sql" />
         <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Name.java" />
         <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Identification.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/by/itacademy/service/dto/ViewPersonFullInfoDto.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/by/itacademy/web/servlet/PersonServlet.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/by/itacademy/service/service/PersonService.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-info.jsp" />
         <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Resourse.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/83fa7a0b-9e12-427e-9443-20451f39fbf1/console.sql" />
         <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/StoreBasket.java" />
@@ -149,23 +227,31 @@
         <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/BaseEntityOld.java" />
         <option value="$PROJECT_DIR$/database/src/test/resources/hibernate.cfg.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/df053fa2-c87b-4946-9e2a-99ba6517e00b/console.sql" />
-        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/BlockResourceTest.java" />
-        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/CategoryTest.java" />
-        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/CommentTest.java" />
-        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/HeadingTest.java" />
-        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/PersonRoleTest.java" />
-        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/PersonTest.java" />
-        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/ResourceTest.java" />
         <option value="$PROJECT_DIR$/database/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/dao/PersonDao.java" />
-        <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/BlockResource.java" />
         <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Category.java" />
         <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Comment.java" />
         <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Heading.java" />
         <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Person.java" />
         <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/PersonRole.java" />
-        <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Resource.java" />
         <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/HibernateRunner.java" />
+        <option value="$PROJECT_DIR$/database/pom.xml" />
+        <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/BlockResource.java" />
+        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/HeadingTest.java" />
+        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/PersonRoleTest.java" />
+        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/PersonTest.java" />
+        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/ResourceTest.java" />
+        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/CategoryTest.java" />
+        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/CommentTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/BlockResourceTest.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/dao/BaseDao.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Resource.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-info.jsp" />
+        <option value="$PROJECT_DIR$/service/src/main/java/by/itacademy/service/dto/ViewPersonFullInfoDto.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/delete-person.jsp" />
+        <option value="$PROJECT_DIR$/service/src/main/java/by/itacademy/service/service/PersonService.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/by/itacademy/web/servlet/PersonDeleteServlet.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/dao/PersonDao.java" />
       </list>
     </option>
   </component>
@@ -239,8 +325,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1176" />
+    <option name="width" value="1932" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -249,7 +335,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -260,67 +348,6 @@
             <path>
               <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -352,6 +379,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
@@ -397,6 +434,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
@@ -429,19 +476,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="mav&#9;ACTION&#9;ActivateMavenProjectsToolWindow&#10;INIT&#9;PSI&#9;JAVA://by.itacademy.database.connection.ConnectionPool#initConnectionPool&#10;database&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;maven&#9;ACTION&#9;ActivateMavenProjectsToolWindow&#10;data&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;mave&#9;ACTION&#9;ActivateMavenProjectsToolWindow&#10;ma&#9;ACTION&#9;ActivateMavenProjectsToolWindow&#10;te&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow" />
+    <property name="SearchEverywhereHistoryKey" value="database&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;mav&#9;ACTION&#9;ActivateMavenProjectsToolWindow&#10;INIT&#9;PSI&#9;JAVA://by.itacademy.database.connection.ConnectionPool#initConnectionPool&#10;ter&#9;ACTION&#9;ActivateTerminalToolWindow&#10;maven&#9;ACTION&#9;ActivateMavenProjectsToolWindow&#10;data&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;mave&#9;ACTION&#9;ActivateMavenProjectsToolWindow&#10;ma&#9;ACTION&#9;ActivateMavenProjectsToolWindow&#10;te&#9;ACTION&#9;ActivateTerminalToolWindow&#10;termi&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL&#10;H2&#10;SQL Server (jTds)" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../MyWork/ServletDemo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -453,13 +498,6 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="by.itacademy.database.entity" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\jd2_work\project-structure\database\src\main\java\by\itacademy\database" />
-      <recent name="D:\GitHub\project-structure\web\src\main" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="by.itacademy.web.servlet" />
       <recent name="by.itacademy.service.dto" />
@@ -470,6 +508,13 @@
       <recent name="D:\GitHub\jd2_work\project-structure\database\src\test" />
       <recent name="D:\GitHub\jd2_work\project-structure\web\src\main\webapp\WEB-INF\jsp" />
       <recent name="D:\GitHub\jd2_work\project-structure\database\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\jd2_work\project-structure\database\src\main\java\by\itacademy\database" />
+      <recent name="D:\GitHub\project-structure\web\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -485,17 +530,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed">
-    <configuration name="HibernateRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="by.itacademy.database.HibernateRunner" />
-      <module name="database" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.itacademy.database.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -545,7 +579,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="CategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CommentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="database" />
       <extension name="coverage">
         <pattern>
@@ -556,9 +590,32 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="by.itacademy.database.entity" />
-      <option name="MAIN_CLASS_NAME" value="by.itacademy.database.entity.CategoryTest" />
+      <option name="MAIN_CLASS_NAME" value="by.itacademy.database.entity.CommentTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="CommentTest.checkGetFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="database" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.itacademy.database.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="by.itacademy.database.entity" />
+      <option name="MAIN_CLASS_NAME" value="by.itacademy.database.entity.CommentTest" />
+      <option name="METHOD_NAME" value="checkGetFactory" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -703,19 +760,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Unnamed" />
-      <item itemvalue="JUnit.CategoryTest" />
-      <item itemvalue="Application.HibernateRunner" />
       <item itemvalue="JUnit.PersonTest.checkResourcePerson" />
       <item itemvalue="JUnit.BlockResourceTest.checkSaveFactory" />
       <item itemvalue="JUnit.BlockResourceTest.checkGetFactory" />
+      <item itemvalue="JUnit.CommentTest" />
+      <item itemvalue="JUnit.CommentTest.checkGetFactory" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BlockResourceTest.checkGetFactory" />
+        <item itemvalue="JUnit.CommentTest.checkGetFactory" />
+        <item itemvalue="JUnit.CommentTest" />
         <item itemvalue="JUnit.BlockResourceTest.checkSaveFactory" />
         <item itemvalue="JUnit.PersonTest.checkResourcePerson" />
-        <item itemvalue="Application.HibernateRunner" />
-        <item itemvalue="JUnit.CategoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -759,81 +816,82 @@
       <workItem from="1558723068657" duration="7000000" />
       <workItem from="1558780845029" duration="5263000" />
       <workItem from="1558804220930" duration="8455000" />
+      <workItem from="1558948288450" duration="11973000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ResourceTest - 2019.05.25 at 20h 00m 26s.xml">
-      <configuration name="ResourceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest - 2019.05.25 at 20h 00m 41s.xml">
-      <configuration name="PersonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonRoleTest - 2019.05.25 at 20h 00m 54s.xml">
-      <configuration name="PersonRoleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HeadingTest - 2019.05.25 at 20h 01m 06s.xml">
-      <configuration name="HeadingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CommentTest - 2019.05.25 at 20h 01m 18s.xml">
-      <configuration name="CommentTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CategoryTest - 2019.05.25 at 20h 01m 29s.xml">
-      <configuration name="CategoryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest_checkResourcePerson - 2019.05.25 at 20h 12m 10s.xml">
-      <configuration name="PersonTest.checkResourcePerson" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest_checkResourcePerson - 2019.05.25 at 20h 13m 32s.xml">
-      <configuration name="PersonTest.checkResourcePerson" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BlockResourceTest_checkSaveFactory - 2019.05.25 at 21h 12m 49s.xml">
       <configuration name="BlockResourceTest.checkSaveFactory" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BlockResourceTest_checkGetFactory - 2019.05.25 at 21h 14m 12s.xml">
       <configuration name="BlockResourceTest.checkGetFactory" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CommentTest - 2019.05.27 at 12h 25m 29s.xml">
+      <configuration name="CommentTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommentTest - 2019.05.27 at 12h 25m 50s.xml">
+      <configuration name="CommentTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommentTest_checkGetFactory - 2019.05.27 at 12h 28m 17s.xml">
+      <configuration name="CommentTest.checkGetFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommentTest_checkGetFactory - 2019.05.27 at 12h 28m 29s.xml">
+      <configuration name="CommentTest.checkGetFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommentTest_checkGetFactory - 2019.05.27 at 12h 29m 24s.xml">
+      <configuration name="CommentTest.checkGetFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommentTest_checkGetFactory - 2019.05.27 at 12h 29m 59s.xml">
+      <configuration name="CommentTest.checkGetFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlockResourceTest_checkGetFactory - 2019.05.27 at 13h 28m 51s.xml">
+      <configuration name="BlockResourceTest.checkGetFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlockResourceTest_checkGetFactory - 2019.05.27 at 13h 29m 11s.xml">
+      <configuration name="BlockResourceTest.checkGetFactory" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141841000" />
+    <option name="totallyTimeSpent" value="153814000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005208" side_tool="true" weight="0.32799247" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32987747" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.16325037" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.16302083" />
       <window_info anchor="bottom" id="Database Changes" order="7" weight="0.32987747" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" weight="0.18594436" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.1859375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.37142858" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.37134778" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2873016" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28652215" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32799247" />
       <window_info id="Persistence" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="9" sideWeight="0.49947917" weight="0.32539684" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22693998" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2265625" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -844,175 +902,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://85bc4183-bd5a-4313-bcca-e116afab4cb4/database/flea_market/schema/flea_market/table/person" />
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/connection/ConnectionPool.java" />
-    <entry file="das://85bc4183-bd5a-4313-bcca-e116afab4cb4/database/flea_market/schema/flea_market/table/category" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/85bc4183-bd5a-4313-bcca-e116afab4cb4/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/97d53da4-b137-4c52-8e8d-8183c3db3328/console.sql" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://83fa7a0b-9e12-427e-9443-20451f39fbf1/database/flea_market/schema/flea_market/table/person" />
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-info.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/by/itacademy/web/servlet/PersonServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/by/itacademy/web/servlet/PersonInfoServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/by/itacademy/service/service/PersonService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/by/itacademy/service/dto/ViewPersonFullInfoDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/83fa7a0b-9e12-427e-9443-20451f39fbf1">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>83fa7a0b-9e12-427e-9443-20451f39fbf1</OriginalElement>
-          <nodes>
-            <node x="0.0" y="212.0">83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.heading</node>
-            <node x="410.25" y="701.0">83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.store_basket</node>
-            <node x="115.72916666666669" y="434.0">83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.resource</node>
-            <node x="304.2013888888889" y="11.0">83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.person_role</node>
-            <node x="285.7013888888889" y="146.0">83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.person</node>
-            <node x="57.00000000000003" y="0.0">83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.category</node>
-            <node x="233.25000000000003" y="690.0">83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.comment</node>
-            <node x="39.416666666666686" y="712.5">83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.resource_person</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.resource" target="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.heading">
-              <point x="-68.66666666666669" y="-103.0" />
-              <point x="150.0625" y="394.0" />
-              <point x="100.5" y="394.0" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.resource" target="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.person">
-              <point x="68.66666666666669" y="-103.0" />
-              <point x="287.39583333333337" y="414.0" />
-              <point x="353.2013888888889" y="414.0" />
-              <point x="-22.5" y="114.0" />
-            </edge>
-            <edge source="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.heading" target="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.category">
-              <point x="0.0" y="-48.0" />
-              <point x="100.5" y="121.0" />
-              <point x="108.50000000000003" y="121.0" />
-              <point x="-51.5" y="48.0" />
-            </edge>
-            <edge source="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.store_basket" target="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.person">
-              <point x="40.5" y="-48.0" />
-              <point x="531.75" y="414.0" />
-              <point x="443.2013888888889" y="414.0" />
-              <point x="67.50000000000001" y="114.0" />
-            </edge>
-            <edge source="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.resource" target="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.category">
-              <point x="0.0" y="-103.0" />
-              <point x="218.72916666666669" y="394.0" />
-              <point x="211.50000000000003" y="394.0" />
-              <point x="51.5" y="48.0" />
-            </edge>
-            <edge source="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.comment" target="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.person">
-              <point x="39.25" y="-59.0" />
-              <point x="351.0" y="670.0" />
-              <point x="398.2013888888889" y="670.0" />
-              <point x="22.5" y="114.0" />
-            </edge>
-            <edge source="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.comment" target="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.resource">
-              <point x="-39.25" y="-59.0" />
-              <point x="272.5" y="670.0" />
-              <point x="218.72916666666669" y="670.0" />
-              <point x="0.0" y="103.0" />
-            </edge>
-            <edge source="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.person" target="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.person_role">
-              <point x="0.0" y="-114.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.resource_person" target="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.resource">
-              <point x="40.5" y="-36.5" />
-              <point x="160.91666666666669" y="670.0" />
-              <point x="150.0625" y="670.0" />
-              <point x="-68.66666666666669" y="103.0" />
-            </edge>
-            <edge source="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.resource_person" target="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.person">
-              <point x="-40.5" y="-36.5" />
-              <point x="79.91666666666669" y="670.0" />
-              <point x="98.00000000000003" y="670.0" />
-              <point x="98.00000000000003" y="404.0" />
-              <point x="308.2013888888889" y="404.0" />
-              <point x="-67.5" y="114.0" />
-            </edge>
-            <edge source="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.store_basket" target="83fa7a0b-9e12-427e-9443-20451f39fbf1.TABLE:flea_market.flea_market.resource">
-              <point x="-40.5" y="-48.0" />
-              <point x="450.75" y="660.0" />
-              <point x="287.39583333333337" y="660.0" />
-              <point x="68.66666666666669" y="103.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-37.0" y="129.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/83fa7a0b-9e12-427e-9443-20451f39fbf1/console.sql" />
     <entry file="uml://DATABASE/df053fa2-c87b-4946-9e2a-99ba6517e00b">
       <provider selected="true" editor-type-id="UmlEditorProvider">
@@ -1065,13 +958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://df053fa2-c87b-4946-9e2a-99ba6517e00b/database/flea_market/schema/flea_market/table/person">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://df053fa2-c87b-4946-9e2a-99ba6517e00b/database/flea_market/schema/flea_market/table/heading">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1086,16 +972,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/BaseEntityOld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/BaseEntityOld.java" />
     <entry file="das://df053fa2-c87b-4946-9e2a-99ba6517e00b/database/flea_market/schema/flea_market/table/resource_person">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1103,97 +980,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/df053fa2-c87b-4946-9e2a-99ba6517e00b/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="168" column="7" lean-forward="true" selection-start-line="168" selection-start-column="7" selection-end-line="168" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/df053fa2-c87b-4946-9e2a-99ba6517e00b/console.sql" />
     <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Identification.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/BlockResourceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/CategoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/CommentTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="101" column="15" selection-start-line="101" selection-start-column="15" selection-end-line="101" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/HeadingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/PersonRoleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/PersonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/ResourceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="90" column="28" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1211,40 +1002,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/dao/PersonDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/BaseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/BlockResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1268,30 +1029,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" selection-start-column="37" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/PersonRole.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Resource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" selection-start-column="37" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1305,12 +1046,229 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/HibernateRunner.java">
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/HibernateRunner.java" />
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/BlockResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        <state relative-caret-position="272">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/PersonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/ResourceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/CommentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/CategoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/BlockResourceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="36" column="73" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Resource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="75" column="76" selection-start-line="75" selection-start-column="76" selection-end-line="75" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/hibernate-intro (6)/hibernate-intro/src/test/java/com/matveyenka/hibernate/entity/EmployeeTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/PersonRoleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/HeadingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/dao/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-start-column="2" selection-end-line="17" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../MyWork/ServletDemo/src/com/itacademy/bobkevich/servlet/service/PersonService.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/by/itacademy/web/servlet/PersonInfoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-info.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/by/itacademy/web/servlet/PersonServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/by/itacademy/service/dto/ViewPersonFullInfoDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://df053fa2-c87b-4946-9e2a-99ba6517e00b/database/flea_market/schema/flea_market/table/person">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/delete-person.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0bc91a84-3ddb-487b-a9c0-54ba81c1d83b/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://0bc91a84-3ddb-487b-a9c0-54ba81c1d83b/database/flea_market/schema/flea_market/table/person">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/by/itacademy/web/servlet/PersonDeleteServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/by/itacademy/database/dao/PersonDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
+            <element signature="e#1312#1313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/by/itacademy/service/service/PersonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <element signature="e#1259#1260#0" expanded="true" />
+            <element signature="e#1290#1291#0" expanded="true" />
           </folding>
         </state>
       </provider>

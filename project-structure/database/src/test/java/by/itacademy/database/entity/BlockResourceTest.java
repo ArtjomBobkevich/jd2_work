@@ -23,8 +23,8 @@ public class BlockResourceTest {
     public void checkSaveFactory() {
         try (Session session = FACTORY.openSession()) {
 
-            Serializable id = session.save(new BlockResource("222", "asfdsdf", (new Heading())
-                    , (new Category()), (new Person()), 3, "sdfs", "qwe"));
+            Serializable id = session.save(new BlockResource("222", "asfdsdf", (new Heading()),
+                    (new Category()), (new Person()), 3, "sdfs", "qwe"));
             assertNotNull(id);
         }
     }
@@ -33,9 +33,9 @@ public class BlockResourceTest {
     public void checkGetFactory() {
         try (Session session = FACTORY.openSession()) {
 
-            Serializable id = session.save(new BlockResource("222", "asfdsdf", (new Heading())
-                    , (new Category()), (new Person()), 3, "sdfs", "qwe"));
-            BlockResource blockResource = session.get(BlockResource.class, id);
+            Serializable id = session.save(new BlockResource("222", "asfdsdf", (new Heading()),
+                    (new Category()), (new Person()), 3, "sdfs", "qwe"));
+            BlockResource blockResource = session.load(BlockResource.class, id);
             assertNotNull(blockResource);
         }
     }
@@ -44,8 +44,7 @@ public class BlockResourceTest {
     public void cleanTable() {
         try (Session session = FACTORY.openSession()) {
             session.beginTransaction();
-            int count = session.createQuery("delete from BlockResource r").executeUpdate();
-            System.out.println("Deleted rows: " + count);
+            session.createQuery("delete from BlockResource r").executeUpdate();
             session.getTransaction().commit();
         }
     }

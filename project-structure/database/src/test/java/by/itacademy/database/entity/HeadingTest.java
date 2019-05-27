@@ -47,7 +47,7 @@ public class HeadingTest {
                             .build())
                     .build();
             Serializable id = session.save(heading);
-            Heading heading1 = session.get(Heading.class, id);
+            Heading heading1 = session.load(Heading.class, id);
             assertNotNull(heading1);
         }
     }
@@ -56,8 +56,7 @@ public class HeadingTest {
     public void cleanTable() {
         try (Session session = FACTORY.openSession()) {
             session.beginTransaction();
-            int count = session.createQuery("delete from Heading h").executeUpdate();
-            System.out.println("Deleted rows: " + count);
+            session.createQuery("delete from Heading h").executeUpdate();
             session.getTransaction().commit();
         }
     }

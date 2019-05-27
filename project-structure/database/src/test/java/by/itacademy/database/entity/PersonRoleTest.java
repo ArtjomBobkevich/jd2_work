@@ -38,7 +38,7 @@ public class PersonRoleTest {
             PersonRole role = new PersonRole("test");
 
             Serializable id = session.save(role);
-            PersonRole personRole = session.get(PersonRole.class, id);
+            PersonRole personRole = session.load(PersonRole.class, id);
             assertNotNull(personRole);
         }
     }
@@ -47,8 +47,7 @@ public class PersonRoleTest {
     public void cleanTable() {
         try (Session session = FACTORY.openSession()) {
             session.beginTransaction();
-            int count = session.createQuery("delete from PersonRole pr").executeUpdate();
-            System.out.println("Deleted rows: " + count);
+            session.createQuery("delete from PersonRole pr").executeUpdate();
             session.getTransaction().commit();
         }
     }

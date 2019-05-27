@@ -22,49 +22,7 @@ public class CommentTest {
     @Test
     public void checkSaveFactory() {
         try (Session session = FACTORY.openSession()) {
-
-            Comment comment = Comment.builder()
-                    .person(Person.builder()
-                            .avatar("foto")
-                            .login("login")
-                            .identification(Identification.builder()
-                                    .lastName("name")
-                                    .firstName("www")
-                                    .build())
-                            .age(12)
-                            .mail("mail")
-                            .password("password")
-                            .build())
-                    .resource(Resource.builder()
-                            .resourceName("test")
-                            .foto("url")
-                            .heading(Heading.builder()
-                                    .headingName("test")
-                                    .category(Category.builder()
-                                            .categoryName("test")
-                                            .fotoUrl("url")
-                                            .build())
-                                    .build())
-                            .category(Category.builder()
-                                    .categoryName("test")
-                                    .fotoUrl("url")
-                                    .build())
-                            .person(Person.builder()
-                                    .avatar("foto")
-                                    .login("login")
-                                    .identification(Identification.builder()
-                                            .lastName("name")
-                                            .firstName("www")
-                                            .build())
-                                    .age(12)
-                                    .mail("mail")
-                                    .password("password")
-                                    .build())
-                            .price(300)
-                            .build())
-                    .build();
-
-            Serializable id = session.save(comment);
+            Serializable id = session.save(createComment());
             assertNotNull(id);
         }
     }
@@ -72,50 +30,8 @@ public class CommentTest {
     @Test
     public void checkGetFactory() {
         try (Session session = FACTORY.openSession()) {
-
-            Comment comment = Comment.builder()
-                    .person(Person.builder()
-                            .avatar("foto")
-                            .login("login")
-                            .identification(Identification.builder()
-                                    .lastName("name")
-                                    .firstName("www")
-                                    .build())
-                            .age(12)
-                            .mail("mail")
-                            .password("password")
-                            .build())
-                    .resource(Resource.builder()
-                            .resourceName("test")
-                            .foto("url")
-                            .heading(Heading.builder()
-                                    .headingName("test")
-                                    .category(Category.builder()
-                                            .categoryName("test")
-                                            .fotoUrl("url")
-                                            .build())
-                                    .build())
-                            .category(Category.builder()
-                                    .categoryName("test")
-                                    .fotoUrl("url")
-                                    .build())
-                            .person(Person.builder()
-                                    .avatar("foto")
-                                    .login("login")
-                                    .identification(Identification.builder()
-                                            .lastName("name")
-                                            .firstName("www")
-                                            .build())
-                                    .age(12)
-                                    .mail("mail")
-                                    .password("password")
-                                    .build())
-                            .price(300)
-                            .build())
-                    .build();
-
-            Serializable id = session.save(comment);
-            Comment comment1 = session.get(Comment.class, id);
+            Serializable id = session.save(createComment());
+            Comment comment1 = session.load(Comment.class, id);
             assertNotNull(comment1);
         }
     }
@@ -124,9 +40,52 @@ public class CommentTest {
     public void cleanTable() {
         try (Session session = FACTORY.openSession()) {
             session.beginTransaction();
-            int count = session.createQuery("delete from Comment c").executeUpdate();
-            System.out.println("Deleted rows: " + count);
+            session.createQuery("delete from Comment c").executeUpdate();
             session.getTransaction().commit();
         }
+    }
+
+    private static Comment createComment () {
+        Comment comment = Comment.builder()
+                .person(Person.builder()
+                        .avatar("foto")
+                        .login("login")
+                        .identification(Identification.builder()
+                                .lastName("name")
+                                .firstName("www")
+                                .build())
+                        .age(12)
+                        .mail("mail")
+                        .password("password")
+                        .build())
+                .resource(Resource.builder()
+                        .resourceName("test")
+                        .foto("url")
+                        .heading(Heading.builder()
+                                .headingName("test")
+                                .category(Category.builder()
+                                        .categoryName("test")
+                                        .fotoUrl("url")
+                                        .build())
+                                .build())
+                        .category(Category.builder()
+                                .categoryName("test")
+                                .fotoUrl("url")
+                                .build())
+                        .person(Person.builder()
+                                .avatar("foto")
+                                .login("login")
+                                .identification(Identification.builder()
+                                        .lastName("name")
+                                        .firstName("www")
+                                        .build())
+                                .age(12)
+                                .mail("mail")
+                                .password("password")
+                                .build())
+                        .price(300)
+                        .build())
+                .build();
+        return comment;
     }
 }

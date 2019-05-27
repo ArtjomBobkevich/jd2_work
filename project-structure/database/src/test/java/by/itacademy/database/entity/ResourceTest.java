@@ -22,36 +22,7 @@ public class ResourceTest {
     @Test
     public void checkSaveFactory() {
         try (Session session = FACTORY.openSession()) {
-
-            Resource resource = Resource.builder()
-                    .resourceName("test")
-                    .foto("url")
-                    .heading(Heading.builder()
-                            .headingName("test")
-                            .category(Category.builder()
-                                    .categoryName("test")
-                                    .fotoUrl("url")
-                                    .build())
-                            .build())
-                    .category(Category.builder()
-                            .categoryName("test")
-                            .fotoUrl("url")
-                            .build())
-                    .person(Person.builder()
-                            .avatar("foto")
-                            .login("login")
-                            .identification(Identification.builder()
-                                    .lastName("name")
-                                    .firstName("www")
-                                    .build())
-                            .age(12)
-                            .mail("mail")
-                            .password("password")
-                            .build())
-                    .price(300)
-                    .text("tratatata")
-                    .build();
-            Serializable id = session.save(resource);
+            Serializable id = session.save(createResource());
             assertNotNull(id);
         }
     }
@@ -59,36 +30,8 @@ public class ResourceTest {
     @Test
     public void checkGetFactory() {
         try (Session session = FACTORY.openSession()) {
-
-            Resource resource = Resource.builder()
-                    .resourceName("test")
-                    .foto("url")
-                    .heading(Heading.builder()
-                            .headingName("test")
-                            .category(Category.builder()
-                                    .categoryName("test")
-                                    .fotoUrl("url")
-                                    .build())
-                            .build())
-                    .category(Category.builder()
-                            .categoryName("test")
-                            .fotoUrl("url")
-                            .build())
-                    .person(Person.builder()
-                            .avatar("foto")
-                            .login("login")
-                            .identification(Identification.builder()
-                                    .lastName("name")
-                                    .firstName("www")
-                                    .build())
-                            .age(12)
-                            .mail("mail")
-                            .password("password")
-                            .build())
-                    .price(300)
-                    .build();
-            Serializable id = session.save(resource);
-            Resource resource1 = session.get(Resource.class, id);
+            Serializable id = session.save(createResource());
+            Resource resource1 = session.load(Resource.class, id);
             assertNotNull(resource1);
         }
     }
@@ -97,10 +40,39 @@ public class ResourceTest {
     public void cleanTable() {
         try (Session session = FACTORY.openSession()) {
             session.beginTransaction();
-            int count = session.createQuery("delete from Resource r").executeUpdate();
-            System.out.println("Deleted rows: " + count);
+            session.createQuery("delete from Resource r").executeUpdate();
             session.getTransaction().commit();
         }
     }
 
+    private static Resource createResource () {
+        Resource resource = Resource.builder()
+                .resourceName("test")
+                .foto("url")
+                .heading(Heading.builder()
+                        .headingName("test")
+                        .category(Category.builder()
+                                .categoryName("test")
+                                .fotoUrl("url")
+                                .build())
+                        .build())
+                .category(Category.builder()
+                        .categoryName("test")
+                        .fotoUrl("url")
+                        .build())
+                .person(Person.builder()
+                        .avatar("foto")
+                        .login("login")
+                        .identification(Identification.builder()
+                                .lastName("name")
+                                .firstName("www")
+                                .build())
+                        .age(12)
+                        .mail("mail")
+                        .password("password")
+                        .build())
+                .price(300)
+                .build();
+        return resource;
+    }
 }

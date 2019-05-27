@@ -65,7 +65,7 @@ public class Resource implements BaseEntity<Long> {
     @Column(name = "text")
     private String text;
 
-    @ManyToMany(cascade = CascadeType.PERSIST)
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "resource_person", schema = "flea_market", joinColumns = @JoinColumn(name = "person_id"),
             inverseJoinColumns = @JoinColumn(name = "resource_id"))
     private List<Person> personList = new ArrayList<>();
@@ -73,7 +73,7 @@ public class Resource implements BaseEntity<Long> {
     @OneToMany(mappedBy = "resource")
     private List<Comment> comments = new ArrayList<>();
 
-    @ManyToMany(mappedBy = "storeBasketResources", cascade = CascadeType.PERSIST)
+    @ManyToMany(mappedBy = "storeBasketResources", cascade = CascadeType.ALL)
     private List<Person> storeBasketPerson = new ArrayList<>();
 
     public Resource(String resourceName, String foto, Heading heading, Category category, Person person, Integer price, String text) {
