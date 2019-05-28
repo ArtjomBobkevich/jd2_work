@@ -22,7 +22,10 @@ public class CommentTest {
     @Test
     public void checkSaveFactory() {
         try (Session session = FACTORY.openSession()) {
+//            session.getTransaction().begin();
             Serializable id = session.save(createComment());
+//            session.flush();
+//            session.getTransaction().commit();
             assertNotNull(id);
         }
     }
@@ -30,7 +33,9 @@ public class CommentTest {
     @Test
     public void checkGetFactory() {
         try (Session session = FACTORY.openSession()) {
+            session.getTransaction().begin();
             Serializable id = session.save(createComment());
+            session.getTransaction().commit();
             Comment comment1 = session.load(Comment.class, id);
             assertNotNull(comment1);
         }

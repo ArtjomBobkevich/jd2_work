@@ -19,8 +19,8 @@ public class PersonDao {
     @SneakyThrows
     public List<Person> findById(Long id) {
         try (Session session = FACTORY.openSession()) {
-            return session.createQuery("SELECT p FROM Person p WHERE p.id =: id",Person.class)
-                    .setParameter("id",id).list();
+            return session.createQuery("SELECT p FROM Person p WHERE p.id =: id", Person.class)
+                    .setParameter("id", id).list();
         }
     }
 
@@ -32,16 +32,12 @@ public class PersonDao {
     }
 
     @SneakyThrows
-    public boolean delete(Person person) {
-        boolean result = false;
+    public Query delete(Person person) {
+
         @Cleanup Session session = FACTORY.openSession();
-          Query query =  session.createQuery("DELETE FROM Person p WHERE p.login =:login", Person.class)
-                    .setParameter("login",person.getLogin());
-          int count = query.executeUpdate();
-        if (count>0){
-            result=true;
-        }
-        return result;
+        return session.createQuery("DELETE FROM Person p WHERE p.login =:login", Person.class)
+                .setParameter("login", person.getLogin());
+//                .executeUpdate();
     }
 
     @SneakyThrows
@@ -50,14 +46,14 @@ public class PersonDao {
             return session.createQuery("UPDATE  Person  set avatar = :avatar, login =:login, " +
                     "identification.firstName =: firstName, identification.lastName =: lastName, age =: age," +
                     "mail =: mail, password =: password where id =:id", Person.class)
-                    .setParameter("avatar",person.getAvatar())
-                    .setParameter("login",person.getLogin())
-                    .setParameter("firstName",person.getIdentification().getFirstName())
-                    .setParameter("lastName",person.getIdentification().getLastName())
-                    .setParameter("age",person.getAge())
-                    .setParameter("mail",person.getMail())
-                    .setParameter("password",person.getPassword())
-                    .setParameter("id",person.getId()).list();
+                    .setParameter("avatar", person.getAvatar())
+                    .setParameter("login", person.getLogin())
+                    .setParameter("firstName", person.getIdentification().getFirstName())
+                    .setParameter("lastName", person.getIdentification().getLastName())
+                    .setParameter("age", person.getAge())
+                    .setParameter("mail", person.getMail())
+                    .setParameter("password", person.getPassword())
+                    .setParameter("id", person.getId()).list();
         }
     }
 

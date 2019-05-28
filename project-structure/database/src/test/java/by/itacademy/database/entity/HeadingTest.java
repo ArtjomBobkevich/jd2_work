@@ -22,15 +22,14 @@ public class HeadingTest {
     @Test
     public void checkSaveFactory() {
         try (Session session = FACTORY.openSession()) {
-
+            session.getTransaction().begin();
             Heading heading = Heading.builder()
                     .headingName("test")
-                    .category(Category.builder()
-                            .categoryName("test")
-                            .fotoUrl("url")
-                            .build())
+                    .category(session.get(Category.class,1L))
                     .build();
             Serializable id = session.save(heading);
+
+            session.getTransaction().commit();
             assertNotNull(id);
         }
     }

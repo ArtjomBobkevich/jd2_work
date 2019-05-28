@@ -6,6 +6,7 @@ import by.itacademy.service.dto.ViewPersonFullInfoDto;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Query;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -27,7 +28,7 @@ public class PersonService {
                 .collect(Collectors.toList());
     }
 
-    public boolean delete (Person person){
+    public Query delete (Person person){ /*переписать по 1-2 полям определённым*/
         return PersonDao.getPersonDao().delete(person);
     }
 

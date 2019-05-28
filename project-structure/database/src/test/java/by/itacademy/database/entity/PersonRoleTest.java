@@ -24,9 +24,10 @@ public class PersonRoleTest {
     @Test
     public void checkSaveFactory() {
         try (Session session = FACTORY.openSession()) {
-
+            session.getTransaction().begin();
             PersonRole role = new PersonRole("test");
             Serializable id = session.save(role);
+            session.getTransaction().commit();
             assertNotNull(id);
         }
     }
@@ -34,10 +35,10 @@ public class PersonRoleTest {
     @Test
     public void checkGetFactory() {
         try (Session session = FACTORY.openSession()) {
-
+            session.getTransaction().begin();
             PersonRole role = new PersonRole("test");
-
             Serializable id = session.save(role);
+            session.getTransaction().commit();
             PersonRole personRole = session.load(PersonRole.class, id);
             assertNotNull(personRole);
         }
