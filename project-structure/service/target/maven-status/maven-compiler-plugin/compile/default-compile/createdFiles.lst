@@ -1,3 +1,3 @@
-by\itacademy\service\dto\ViewPersonFullInfoDto.class
-by\itacademy\service\dto\ViewPersonFullInfoDto$ViewPersonFullInfoDtoBuilder.class
-by\itacademy\service\service\PersonService.class
+com\itacademy\service\dto\ViewPersonFullInfoDto$ViewPersonFullInfoDtoBuilder.class
+com\itacademy\service\service\PersonService.class
+com\itacademy\service\dto\ViewPersonFullInfoDto.class

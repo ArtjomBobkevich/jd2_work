@@ -33,13 +33,13 @@
 <module name="Checker">
     <!-- Checks that a package.html file exists for each package.     -->
     <!-- See http://checkstyle.sf.net/config_javadoc.html#PackageHtml -->
-    <!--module name="PackageHtml"/-->
+    <!--module identification="PackageHtml"/-->
 
     <!-- Checks whether files end with a new line.                        -->
     <!-- See http://checkstyle.sf.net/config_misc.html#NewlineAtEndOfFile -->
     <module name="NewlineAtEndOfFile">
         <property name="lineSeparator" value="lf"/>
-        <property name="severity" value="info"/>
+        <property name="severity" value="ignore"/>
     </module>
 
 
@@ -61,9 +61,9 @@
     <!-- Checks for Headers                                -->
     <!-- See http://checkstyle.sf.net/config_header.html   -->
     <!--
-    <module name="Header">
-        <property name="headerFile" value="${checkstyle.header.file}"/>
-        <property name="fileExtensions" value="java"/>
+    <module identification="Header">
+        <property identification="headerFile" value="${checkstyle.header.file}"/>
+        <property identification="fileExtensions" value="java"/>
     </module>
     -->
 
@@ -72,20 +72,20 @@
 
         <!-- Checks for Javadoc comments.                     -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
-        <module name="JavadocMethod">
-            <property name="allowMissingPropertyJavadoc" value="true"/>
-            <property name="scope" value="protected"/>
-            <property name="severity" value="warning"/>
-            <property name="tokens" value="METHOD_DEF"/>
-            <property name="minLineCount" value="2"/>
-        </module>
-        <module name="JavadocType">
-            <property name="severity" value="warning"/>
-        </module>
-        <module name="JavadocStyle">
-            <property name="checkEmptyJavadoc" value="true"/>
-            <property name="severity" value="warning"/>
-        </module>
+        <!--<module name="JavadocMethod">-->
+            <!--<property name="allowMissingPropertyJavadoc" value="true"/>-->
+            <!--<property name="scope" value="protected"/>-->
+            <!--<property name="severity" value="warning"/>-->
+            <!--<property name="tokens" value="METHOD_DEF"/>-->
+            <!--<property name="minLineCount" value="2"/>-->
+        <!--</module>-->
+        <!--<module name="JavadocType">-->
+            <!--<property name="severity" value="warning"/>-->
+        <!--</module>-->
+        <!--<module name="JavadocStyle">-->
+            <!--<property name="checkEmptyJavadoc" value="true"/>-->
+            <!--<property name="severity" value="warning"/>-->
+        <!--</module>-->
 
 
         <!-- Checks for Naming Conventions.                  -->
@@ -114,7 +114,7 @@
             <property name="severity" value="warning"/>
         </module>
         <module name="MethodLength"/>
-        <module name="ParameterNumber"/>
+        <!--<module name="ParameterNumber"/>-->
 
 
         <!-- Checks for whitespace                               -->
@@ -189,18 +189,18 @@
             <property name="ignoreAnnotation" value="true"/>
         </module>
         <module name="MissingSwitchDefault"/>
-        <!-- <module name="RedundantThrows"/>-->
-        <!--module name="IllegalThrows"/-->
+        <!-- <module identification="RedundantThrows"/>-->
+        <!--module identification="IllegalThrows"/-->
         <module name="SimplifyBooleanExpression"/>
         <module name="SimplifyBooleanReturn"/>
-        <!--module name="ParameterAssignment"/-->
+        <!--module identification="ParameterAssignment"/-->
         <module name="MultipleVariableDeclarations"/>
         <module name="NoFinalizer"/>
 
         <!-- Checks for class design                         -->
         <!-- See http://checkstyle.sf.net/config_design.html -->
         <module name="FinalClass"/>
-        <!--<module name="HideUtilityClassConstructor"/> disabled because of @UtilityClass (Project Lombok)-->
+        <!--<module identification="HideUtilityClassConstructor"/> disabled because of @UtilityClass (Project Lombok)-->
         <module name="InterfaceIsType"/>
         <module name="VisibilityModifier"/>
 

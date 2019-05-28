@@ -1,3 +1,4 @@
-by\itacademy\web\util\JspPath.class
-by\itacademy\web\servlet\PersonInfoServlet.class
-by\itacademy\web\servlet\PersonServlet.class
+com\itacademy\web\servlet\PersonInfoServlet.class
+com\itacademy\web\util\JspPath.class
+com\itacademy\web\servlet\PersonServlet.class
+com\itacademy\web\servlet\PersonDeleteServlet.class

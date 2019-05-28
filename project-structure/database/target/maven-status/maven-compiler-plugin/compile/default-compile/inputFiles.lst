@@ -1,0 +1,12 @@
+D:\GitHub\jd2_work\project-structure\database\src\main\java\com\itacademy\database\dao\PersonDao.java
+D:\GitHub\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\Heading.java
+D:\GitHub\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\Person.java
+D:\GitHub\jd2_work\project-structure\database\src\main\java\com\itacademy\database\dao\BaseDao.java
+D:\GitHub\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\BaseEntity.java
+D:\GitHub\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\Category.java
+D:\GitHub\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\PersonRole.java
+D:\GitHub\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\BlockResource.java
+D:\GitHub\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\Comment.java
+D:\GitHub\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\Identification.java
+D:\GitHub\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\Resource.java
+D:\GitHub\jd2_work\project-structure\database\src\main\java\com\itacademy\database\HibernateRunner.java

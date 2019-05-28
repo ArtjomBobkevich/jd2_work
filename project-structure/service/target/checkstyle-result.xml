@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="6.18">
-<file name="D:\GitHub\jd2_work\project-structure\service\src\main\java\by\itacademy\service\dto\ViewPersonFullInfoDto.java">
-<error line="8" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+<file name="D:\GitHub\jd2_work\project-structure\service\src\main\java\com\itacademy\service\dto\ViewPersonFullInfoDto.java">
 </file>
-<file name="D:\GitHub\jd2_work\project-structure\service\src\main\java\by\itacademy\service\service\PersonService.java">
-<error line="0" severity="info" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
-<error line="11" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
-<error line="15" column="5" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="22" column="5" severity="warning" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<file name="D:\GitHub\jd2_work\project-structure\service\src\main\java\com\itacademy\service\service\PersonService.java">
 </file>
 </checkstyle>
