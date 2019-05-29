@@ -15,9 +15,9 @@
 <body>
 <form action="${pageContext.request.contextPath}/delete-person" method="post">
     <div>
-        <select name="login" id="login">
-            <c:forEach var="list" items="${requestScope.loginList}">
-                <option value="${list.login}">${list.login}</option>
+        <select name="id" id="id">
+            <c:forEach var="login" items="${requestScope.loginList}">
+                <option value="${login.id}">${login.id}</option>
             </c:forEach>
         </select>
     </div>

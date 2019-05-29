@@ -22,7 +22,6 @@ public class ResourceDao {
         CriteriaQuery<Resource> criteria = cb.createQuery(Resource.class);
         Root<Resource> root = criteria.from(Resource.class);
         Join<Resource, Person> personJoin = root.join(Resource_.PERSON);
-//        Join<Person,Identification> identificationJoin = personJoin.join(Person_.IDENTIFICATION);
         criteria.select(root).where(
                 cb.equal(personJoin.get(Person_.LOGIN), author)
         ).orderBy(

@@ -31,10 +31,9 @@ public class PersonDeleteServlet extends HttpServlet {
 
         req.setCharacterEncoding(StandardCharsets.UTF_8.name());
         Person person = Person.builder()
-                .id(Long.parseLong("id"))
-                .login(req.getParameter("login"))
+                .id(Long.parseLong(req.getParameter("id")))  /*нужно предавать целую сущность?*/
                 .build();
         personService.delete(person);
-        resp.sendRedirect("/delete-info");
+        resp.sendRedirect("/person");
     }
 }

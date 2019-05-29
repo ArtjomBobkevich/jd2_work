@@ -20,14 +20,12 @@
             <input id="author" type="text" name="author" value="${param.author}"/>
         </label><br>
     </div>
-    <input type="submit" value="выбрать">
     <div>
         <p>сколько пропустить</p>
         <label for="offset">
             <input id="offset" type="text" name="offset" value="${param.offset}"/>
         </label><br>
     </div>
-    <input type="submit" value="выбрать">
     <div>
         <p>сколько показать</p>
         <label for="limit">

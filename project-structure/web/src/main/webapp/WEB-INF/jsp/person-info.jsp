@@ -13,16 +13,13 @@
 </head>
 <body>
 <div>
-    <c:forEach var="list" items="${requestScope.person}">
-        <a>${list.avatar}</a><br>
-        <a>${list.login}</a><br>
-        <a>${list.identification}</a><br>
-        <%--<a>${list.lastName}</a><br>--%>
-        <a>${list.age}</a><br>
-        <a>${list.mail}</a><br>
-        <a>${list.personRole}</a><br>
-        <a>--------------------------</a><br>
-    </c:forEach>
+    <span>${requestScope.person.avatar}</span><br>
+    <span>${requestScope.person.login}</span><br>
+    <span>${requestScope.person.identification}</span><br>
+    <span>${requestScope.person.age}</span><br>
+    <span>${requestScope.person.mail}</span><br>
+    <span>${requestScope.person.personRole}</span><br>
+    <a>--------------------------</a><br>
 </div>
 </body>
 </html>
