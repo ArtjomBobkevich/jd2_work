@@ -34,7 +34,8 @@ public class CommentTest {
     public void checkGetFactory() {
         try (Session session = FACTORY.openSession()) {
             session.getTransaction().begin();
-            Comment comment1 = session.load(Comment.class, 1L);
+            Serializable id = session.save(createComment());
+            Comment comment1 = session.get(Comment.class, id);
             session.getTransaction().commit();
             assertNotNull(comment1);
         }

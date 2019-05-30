@@ -38,6 +38,7 @@ public class CategoryTest {
 
             Serializable id = session.save(category);
             Category category1 = session.load(Category.class, id);
+
             assertNotNull(category1);
         }
     }

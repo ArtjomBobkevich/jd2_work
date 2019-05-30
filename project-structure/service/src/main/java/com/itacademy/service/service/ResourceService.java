@@ -12,8 +12,29 @@ import java.util.stream.Collectors;
 public class ResourceService {
     private static final ResourceService RESOURCE_SERVICE = new ResourceService();
 
+    public List<ResourceFullDto> findAll() {
+        return ResourceDao.getResourceDao().getAll().stream()
+                .map(it -> new ResourceFullDto(it.getId(), it.getResourceName(), it.getFoto(), it.getHeading(), it.getCategory(),
+                        it.getPerson(), it.getPrice(), it.getText()))
+                .collect(Collectors.toList());
+    }
+
     public List<ResourceFullDto> findResourceByCriteria(String author, Integer offset, Integer limit) {
         return ResourceDao.getResourceDao().findResourcesOrderByAuthor(author,offset,limit).stream()
+                .map(it -> new ResourceFullDto(it.getId(), it.getResourceName(), it.getFoto(), it.getHeading(), it.getCategory(),
+                        it.getPerson(), it.getPrice(), it.getText()))
+                .collect(Collectors.toList());
+    }
+
+    public List<ResourceFullDto> findResourceByCriteria(String category,String author, Integer offset, Integer limit) {
+        return ResourceDao.getResourceDao().findResourcesOrderByAuthor(category,author,offset,limit).stream()
+                .map(it -> new ResourceFullDto(it.getId(), it.getResourceName(), it.getFoto(), it.getHeading(), it.getCategory(),
+                        it.getPerson(), it.getPrice(), it.getText()))
+                .collect(Collectors.toList());
+    }
+
+    public List<ResourceFullDto> findResourceByCriteria(Integer price,String category,String author, Integer offset, Integer limit) {
+        return ResourceDao.getResourceDao().findResourcesOrderByAuthor(price,category,author,offset,limit).stream()
                 .map(it -> new ResourceFullDto(it.getId(), it.getResourceName(), it.getFoto(), it.getHeading(), it.getCategory(),
                         it.getPerson(), it.getPrice(), it.getText()))
                 .collect(Collectors.toList());

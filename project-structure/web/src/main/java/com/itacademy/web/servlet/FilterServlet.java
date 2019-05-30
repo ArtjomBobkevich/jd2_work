@@ -27,12 +27,13 @@ public class FilterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         req.setCharacterEncoding(StandardCharsets.UTF_8.name());
-
-                String author =req.getParameter("author");
-                Integer offset =Integer.parseInt(req.getParameter("offset"));
-                Integer limit = Integer.parseInt(req.getParameter("limit"));
+        String categoryName = req.getParameter("category");
+        Integer price = Integer.parseInt(req.getParameter("price"));
+        String author = req.getParameter("name");
+        Integer offset = Integer.parseInt(req.getParameter("offset"));
+        Integer limit = Integer.parseInt(req.getParameter("limit"));
 
         resp.sendRedirect("/resources-by-criteria?name=" + author + "&offset=" +
-                offset + "&limit=" + limit);
+                offset + "&limit=" + limit + "&category=" + categoryName + "&price=" + price);
     }
 }

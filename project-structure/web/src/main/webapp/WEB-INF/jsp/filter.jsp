@@ -15,9 +15,21 @@
 <body>
 <form action="${pageContext.request.contextPath}/filter" method="post">
     <div>
+        <p>цена</p>
+        <label for="price">
+            <input id="price" type="text" name="price" value="${param.price}"/>
+        </label><br>
+    </div>
+    <div>
+        <p>категория</p>
+        <label for="category">
+            <input id="category" type="text" name="category" value="${param.category}"/>
+        </label><br>
+    </div>
+    <div>
         <p>автор</p>
-        <label for="author">
-            <input id="author" type="text" name="author" value="${param.author}"/>
+        <label for="name">
+            <input id="name" type="text" name="name" value="${param.name}"/>
         </label><br>
     </div>
     <div>
