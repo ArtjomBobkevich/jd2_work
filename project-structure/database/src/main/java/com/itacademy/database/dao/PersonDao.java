@@ -6,11 +6,6 @@ public class PersonDao extends BaseDaoImpl <Long,Person> {
 
     private static final PersonDao PERSON_DAO = new PersonDao();
 
-    @Override
-    public void delete(Person entity) {
-        super.delete(entity);
-    }
-
     public static PersonDao getPersonDao() {
         return PERSON_DAO;
     }

@@ -1,14 +1,14 @@
-2019-05-29 17:07:20,819 INFO  - HHH000412: Hibernate Core {5.4.2.Final}
-2019-05-29 17:07:21,540 INFO  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-05-29 17:07:22,197 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2019-05-29 17:07:22,225 INFO  - HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:flea_market;INIT=CREATE SCHEMA IF NOT EXISTS flea_market;]
-2019-05-29 17:07:22,225 INFO  - HHH10001001: Connection properties: {user=sa, password=****}
-2019-05-29 17:07:22,225 INFO  - HHH10001003: Autocommit mode: false
-2019-05-29 17:07:22,238 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
-2019-05-29 17:07:22,629 INFO  - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-05-29 17:07:23,990 INFO  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6401d0a0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2019-05-29 17:07:23,996 INFO  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5ff2e84b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2019-05-29 17:07:24,060 INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-05-29 17:07:24,200 INFO  - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2019-05-29 17:07:24,202 INFO  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@41ffaeb8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-2019-05-29 17:07:24,223 INFO  - HHH10001008: Cleaning up connection pool [jdbc:h2:mem:flea_market;INIT=CREATE SCHEMA IF NOT EXISTS flea_market;]
+2019-05-30 05:14:11,003 INFO  - HHH000412: Hibernate Core {5.4.2.Final}
+2019-05-30 05:14:12,015 INFO  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-05-30 05:14:12,490 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-05-30 05:14:12,517 INFO  - HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:flea_market;INIT=CREATE SCHEMA IF NOT EXISTS flea_market;]
+2019-05-30 05:14:12,520 INFO  - HHH10001001: Connection properties: {user=sa, password=****}
+2019-05-30 05:14:12,520 INFO  - HHH10001003: Autocommit mode: false
+2019-05-30 05:14:12,527 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-05-30 05:14:12,935 INFO  - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-05-30 05:14:14,406 INFO  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@56ac5c80] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-05-30 05:14:14,417 INFO  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@680d4a6a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-05-30 05:14:14,507 INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-05-30 05:14:14,668 INFO  - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-05-30 05:14:14,669 INFO  - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3e48d38] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-05-30 05:14:14,692 INFO  - HHH10001008: Cleaning up connection pool [jdbc:h2:mem:flea_market;INIT=CREATE SCHEMA IF NOT EXISTS flea_market;]

@@ -1,6 +1,7 @@
 package com.itacademy.service.dto;
 
 import com.itacademy.database.entity.Identification;
+import com.itacademy.database.entity.PersonRole;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ViewPersonFullInfoDto {
+public class CreateNewPersonDto {
 
 //    private Long id;
     private String avatar;
@@ -19,5 +20,5 @@ public class ViewPersonFullInfoDto {
     private Integer age;
     private String mail;
     private String password;
-    private String personRole;
+    private PersonRole personRole;
 }

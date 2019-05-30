@@ -1,7 +1,8 @@
 package com.itacademy.web.servlet;
 
 import com.itacademy.database.entity.Identification;
-import com.itacademy.database.entity.Person;
+import com.itacademy.database.entity.PersonRole;
+import com.itacademy.service.dto.CreateNewPersonDto;
 import com.itacademy.service.service.PersonService;
 import com.itacademy.web.util.JspPath;
 
@@ -13,38 +14,38 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-@WebServlet(value = "/delete-person", name = "PersonDeleteServlet")
-public class PersonDeleteServlet extends HttpServlet {
+@WebServlet(value = "/person-save", name = "PersonSaveServlet")
+public class PersonSaveServlet extends HttpServlet {
 
     private PersonService personService = PersonService.getPersonService();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("loginList", personService.findAll());
-
         getServletContext()
-                .getRequestDispatcher(JspPath.get("delete-person"))
+                .getRequestDispatcher(JspPath.get("person-save"))  /*тупо перенаправление*/
                 .forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
         req.setCharacterEncoding(StandardCharsets.UTF_8.name());
-        Person person = Person.builder()
-                .id(Long.parseLong(req.getParameter("id")))/*нужно предавать целую сущность?*/
-                .avatar("sss")
-                .login("sasd")
-                .age(2)
+        CreateNewPersonDto createNewGenreDto = CreateNewPersonDto.builder()
+                .avatar(req.getParameter("avatar"))
+                .login(req.getParameter("login"))
                 .identification(Identification.builder()
-                        .firstName("sss")
-                        .lastName("sss")
+                        .firstName(req.getParameter("firstName"))
+                        .lastName(req.getParameter("lastName"))
                         .build())
-                .mail("sss")
-                .password("sdfd")
-//                .personRole()
+                .age(Integer.parseInt(req.getParameter(req.getParameter("age"))))
+                .mail(req.getParameter("mail"))
+                .password(req.getParameter("password"))
+                .personRole(PersonRole.builder()
+                        .id(2L)
+                        .nameOfRole("User")
+                        .build())
                 .build();
-        personService.delete(person);
+
+        personService.savePerson(createNewGenreDto);
         resp.sendRedirect("/person");
     }
 }

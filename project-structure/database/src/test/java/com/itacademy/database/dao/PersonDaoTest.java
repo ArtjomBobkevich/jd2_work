@@ -33,8 +33,13 @@ public class PersonDaoTest {
                 .age(2)
                 .mail("wqeq")
                 .password("222233")
-                .personRole(session.get(PersonRole.class,2L))
+                .personRole(getRole())
                 .build();
         personDao.save(person);
+    }
+
+    public PersonRole getRole () {
+        @Cleanup Session session = factory.openSession();
+        return session.get(PersonRole.class,2L);
     }
 }
