@@ -14,12 +14,12 @@
 </head>
 <body>
 <form action="${pageContext.request.contextPath}/filter" method="post">
-    <div>
-        <p>цена</p>
-        <label for="price">
-            <input id="price" type="text" name="price" value="${param.price}"/>
-        </label><br>
-    </div>
+    <%--<div>--%>
+        <%--<p>цена</p>--%>
+        <%--<label for="price">--%>
+            <%--<input id="price" type="text" name="price" value="${param.price}"/>--%>
+        <%--</label><br>--%>
+    <%--</div>--%>
     <div>
         <p>категория</p>
         <label for="category">

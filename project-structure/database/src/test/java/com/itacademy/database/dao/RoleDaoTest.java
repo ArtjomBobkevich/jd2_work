@@ -4,7 +4,6 @@ import com.itacademy.database.entity.PersonRole;
 import com.itacademy.database.util.SessionManager;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
 import org.junit.AfterClass;
 import org.junit.Test;
 
@@ -15,7 +14,6 @@ import static org.junit.Assert.assertNotNull;
 public class RoleDaoTest {
 
     private static SessionFactory factory = SessionManager.getFactory();
-    private static final SessionFactory FACTORY = new Configuration().configure().buildSessionFactory();
 
     private final RoleDao roleDao = RoleDao.getRoleDao();
 

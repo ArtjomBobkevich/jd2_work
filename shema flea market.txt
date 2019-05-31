@@ -1,0 +1,157 @@
+﻿SET SEARCH_PATH = flea_market;
+
+CREATE TABLE person_role (
+  id   SERIAL PRIMARY KEY,
+  role VARCHAR(124) UNIQUE NOT NULL
+);
+
+CREATE TABLE person (
+  id         SERIAL PRIMARY KEY,
+  avatar     VARCHAR(1024),
+  login      VARCHAR(124) UNIQUE,
+  first_name VARCHAR(124)        NOT NULL,
+  last_name  VARCHAR(124)        NOT NULL,
+  age        SMALLINT            NOT NULL,
+  mail       VARCHAR(124) UNIQUE NOT NULL,
+  password   VARCHAR(124)        NOT NULL,
+  role       INTEGER REFERENCES person_role (id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE category (
+  id            SERIAL PRIMARY KEY,
+  category_name VARCHAR(124) UNIQUE NOT NULL,
+  foto          VARCHAR(124)
+);
+
+CREATE TABLE heading (
+  id           SERIAL PRIMARY KEY,
+  heading_name VARCHAR(124) NOT NULL,
+  category_id  INTEGER REFERENCES category (id)ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE resource (
+  id            SERIAL PRIMARY KEY,
+  resource_name VARCHAR(124) NOT NULL,
+  foto          VARCHAR(1024),
+  heading_id    INTEGER REFERENCES heading (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  category_id   INTEGER REFERENCES category (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  author        VARCHAR(124) REFERENCES person (login) ON DELETE CASCADE ON UPDATE CASCADE,
+  price         INTEGER
+);
+
+CREATE TABLE resource_person (
+  resources_id INTEGER REFERENCES resource (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  person_id    INTEGER REFERENCES person (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  PRIMARY KEY (resources_id, person_id)
+);
+
+CREATE TABLE store_basket (
+  person_id    INTEGER REFERENCES person (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  resources_id INTEGER REFERENCES resource (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  PRIMARY KEY (person_id,resources_id)
+);
+
+CREATE TABLE comment (
+  id          SERIAL PRIMARY KEY,
+  resource_id INTEGER REFERENCES resource (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  text        VARCHAR(500)
+);
+
+INSERT INTO person_role (role)
+VALUES
+  ('Admin'),
+  ('User'),
+  ('Guest');
+
+INSERT INTO category (category_name,foto)
+VALUES
+  ('Телефоны. Смартфоны','image'),
+  ('Ноутбуки. Компьютеры.','image'),
+  ('Авто. Мото','image'),
+  ('Автозапчасти и Автоаксессуары','image'),
+  ('Дом','image'),
+  ('Строительство и ремонт','image'),
+  ('Женская одежда','image'),
+  ('Мужская одежда','image'),
+  ('Аксессуары','image'),
+  ('Фото. Аудио. Видео.','image'),
+  ('Прочее','image');
+
+INSERT INTO heading (heading_name, category_id)
+VALUES
+  ('Мобильные телефоны', 1),
+  ('Мобильные телефоны: аксессуары и запчасти', 1),
+  ('Мобильные телефоны: ремонт и другие услуги', 1),
+  ('Радиотелефоны, DECT и Проводные телефоны', 1),
+  ('Ноутбуки', 2),
+  ('Планшеты и электронные книги', 2),
+  ('Ноутбуки, планшеты, электронные книги: запчасти и аксессуары', 2),
+  ('Ноутбуки, планшеты, электронные книги: ремонт и другие услуги', 2),
+  ('Материнские платы. Процессоры. Оперативная память', 2),
+  ('Видеокарты', 2),
+  ('USB-флешки. HDD. SSD. Чистые CD/DVD/Blu-ray диски и приводы', 2),
+  ('Другие компьютерные комплектующие', 2),
+  ('Корпуса. Блоки питания. ИБП(UPS). Системы охлаждения. Моддинг', 2),
+  ('Мониторы. Проекторы', 2),
+  ('Акустика. Клавиатуры. Мыши. Аксессуары', 2),
+  ('Сетевое оборудование. Модемы. Wi-Fi', 2),
+  ('Принтеры. МФУ. Офисная техника', 2),
+  ('Заправка картриджей. Ремонт принтеров и другие услуги', 2),
+  ('Сборка. Услуги. Сервис. Готовые компьютеры и серверы', 2),
+  ('Радиотехника и электроника ', 2),
+  ('Легковые автомобили', 3),
+  ('Грузовые автомобили и прицепы', 3),
+  ('Мотоциклы', 3),
+  ('Расходники', 4),
+  ('Двигатели. Система пуска и зарядки. Система зажигания', 4),
+  ('Система охлаждения, отопления, вентиляции', 4),
+  ('Топливная система. Система выпуска', 4),
+  ('Сцепление. Коробка передач. Привод', 4),
+  ('Подвеска. Рулевое управление', 4),
+  ('Шины и диски', 4),
+  ('GPS навигаторы', 4),
+  ('Разборки', 4),
+  ('Шкафы. Комоды. Горки. Секции. Полки', 5),
+  ('Диваны. Кресла. Мягкая мебель', 5),
+  ('Столы. Стулья. Тумбы', 5),
+  ('Кровати. Матрасы. Мебель для спальни', 5),
+  ('Кухни и кухонная мебель', 5),
+  ('Мебель для детской комнаты', 5),
+  ('Строительные и отделочные материалы', 6),
+  ('Сантехника', 6),
+  ('Кондиционеры. Вентиляция', 6),
+  ('Натяжные потолки', 6),
+  ('Entertainment', 6),
+  ('Верхняя одежда', 7),
+  ('Кардиганы и Джемперы', 7),
+  ('Блейзеры. Жилеты. Пиджачки', 7),
+  ('Верхняя одежда', 8),
+  ('Спортивная одежда', 8),
+  ('Повседневная и деловая одежда', 8),
+  ('Белье. Пляжная одежда', 8),
+  ('Часы', 9),
+  ('Украшения и бижутерия', 9),
+  ('Очки', 9),
+  ('Фотоаппараты', 10),
+  ('Фотоаксессуары. Объективы', 10),
+  ('Видеокамеры. Аксессуары', 10),
+  ('MP3-плееры и Портативная аудио/видео-техника. Наушники', 10),
+  ('Спутниковое телевидение', 10),
+  ('DVD и другая бытовая видеотехника', 10),
+  ('Hi-Fi, High-End и др бытовая аудиотехника. Аудиокассеты', 10),
+  ('Телевизоры', 10),
+  ('Игровые приставки', 10),
+  ('Игры PlayStation/Xbox/Wii. Аксессуары', 10),
+  ('Entertainment', 10),
+  ('Электронные парогенераторы', 11),
+  ('Канцелярские товары. Школьные принадлежности. Сувениры', 11),
+  ('Отдам безвозмездно/Приму в дар ', 11),
+  ('Бюро находок', 11),
+  ('Все остальное, что не вошло в другие категории', 11);
+
+
+INSERT INTO person (login,avatar, first_name, last_name, age, mail, password, role)
+VALUES
+  ('user','image', 'Ivan', 'Ivanov', 18, 'www@gmail.com', 'user', 2),
+  ('admin','image', 'Max', 'Faster', 16, 'ww2@gmail.com', 'admin', 1),
+  ('beast','image', 'Sveta', 'Nezabudka', 30, 'w3@gmail.com', 'beast', 1);

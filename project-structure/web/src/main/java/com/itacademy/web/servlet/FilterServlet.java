@@ -28,12 +28,12 @@ public class FilterServlet extends HttpServlet {
 
         req.setCharacterEncoding(StandardCharsets.UTF_8.name());
         String categoryName = req.getParameter("category");
-        Integer price = Integer.parseInt(req.getParameter("price"));
+        String price = req.getParameter("price");
         String author = req.getParameter("name");
-        Integer offset = Integer.parseInt(req.getParameter("offset"));
-        Integer limit = Integer.parseInt(req.getParameter("limit"));
+        String offset = req.getParameter("offset");
+        String limit = req.getParameter("limit");
 
         resp.sendRedirect("/resources-by-criteria?name=" + author + "&offset=" +
-                offset + "&limit=" + limit + "&category=" + categoryName + "&price=" + price);
+                offset + "&limit=" + limit + "&category=" + categoryName /*+ "&price=" + price*/);
     }
 }

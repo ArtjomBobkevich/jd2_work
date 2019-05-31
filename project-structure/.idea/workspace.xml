@@ -80,89 +80,34 @@
         <item name="flea_market: database" type="6d9b600a:PostgresImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="flea_market: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="comment: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="flea_market: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="flea_market: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="person: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="flea_market: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="flea_market: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="resource: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+        <item name="sequences" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ResourcesByCriteriaServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/ResourcesByCriteriaServlet.java">
+      <file leaf-file-name="PersonService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/PersonService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+            <state relative-caret-position="373">
+              <caret line="34" column="126" selection-start-line="34" selection-start-column="126" selection-end-line="34" selection-end-column="134" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3657#3658#0" expanded="true" />
+                <element signature="e#3702#3703#0" expanded="true" />
+                <element signature="e#3756#3757#0" expanded="true" />
+                <element signature="e#3793#3794#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResourceDao.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/ResourceDao.java">
+      <file leaf-file-name="PersonDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/PersonDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="49" column="56" lean-forward="true" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resources-by-criteria.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/resources-by-criteria.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="person.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="FilterServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/FilterServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="filter.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/filter.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonDaoTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/PersonDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="69" column="27" lean-forward="true" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
+            <state relative-caret-position="203">
+              <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,20 +115,83 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResourceDaoTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/ResourceDaoTest.java">
+      <file leaf-file-name="FilterPersonServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/FilterPersonServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="391">
+              <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoleDaoTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/RoleDaoTest.java">
+      <file leaf-file-name="person" pinned="false" current-in-tab="false">
+        <entry file="das://cf4a4b4c-93ac-4613-a0a9-02d7b4faf953/database/flea_market/schema/flea_market/table/person">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="person_role" pinned="false" current-in-tab="false">
+        <entry file="das://cf4a4b4c-93ac-4613-a0a9-02d7b4faf953/database/flea_market/schema/flea_market/table/person_role">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cf4a4b4c-93ac-4613-a0a9-02d7b4faf953/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="177" column="56" lean-forward="true" selection-start-line="177" selection-start-column="56" selection-end-line="177" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filter-by-person.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/filter-by-person.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="622">
+              <caret line="51" column="10" lean-forward="true" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonByCriteriaServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonByCriteriaServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
-              <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="27" />
+              <caret line="29" column="5" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonByCriteria2Servlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonByCriteria2Servlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonByCriteria3Servlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonByCriteria3Servlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="66" lean-forward="true" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -197,9 +205,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit4 Test Class" />
+        <option value="jsf" />
         <option value="Jsp File" />
         <option value="Class" />
-        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -213,27 +222,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/PersonRole.java" />
-        <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/HibernateRunner.java" />
-        <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/BlockResource.java" />
-        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/CategoryTest.java" />
-        <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/dao/BaseDao.java" />
-        <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/entity/Resource.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/by/itacademy/service/dto/ViewPersonFullInfoDto.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/by/itacademy/web/servlet/PersonDeleteServlet.java" />
-        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/PersonRoleTest.java" />
-        <option value="$PROJECT_DIR$/database/src/main/java/by/itacademy/database/dao/PersonDao.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/by/itacademy/service/service/PersonService.java" />
-        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/HeadingTest.java" />
-        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/CommentTest.java" />
-        <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/BlockResourceTest.java" />
         <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/ResourceTest.java" />
         <option value="$PROJECT_DIR$/database/src/test/java/by/itacademy/database/entity/PersonTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/database/pom.xml" />
         <option value="$USER_HOME$/Downloads/hql-lesson-starter-criteria/hql-lesson-starter/src/main/java/com/itacademy/dao/EmployeeDao.java" />
         <option value="$PROJECT_DIR$/log4j.log" />
-        <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/HibernateRunner.java" />
         <option value="$PROJECT_DIR$/checkstyle.xml" />
         <option value="$USER_HOME$/Downloads/hql-lesson-starter-criteria/hql-lesson-starter/src/test/java/com/itacademy/dao/EmployeeDaoTest.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ResourceFullDto.java" />
@@ -248,22 +242,37 @@
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-save.jsp" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ViewPersonFullInfoDto.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CreateNewPersonDto.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/PersonService.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonSaveServlet.java" />
         <option value="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/CommentTest.java" />
         <option value="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/CategoryTest.java" />
         <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/BaseDaoImpl.java" />
         <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/BaseDao.java" />
-        <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/PersonDao.java" />
         <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/RoleDao.java" />
-        <option value="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/RoleDaoTest.java" />
         <option value="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/PersonDaoTest.java" />
-        <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/ResourceDao.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/ResourceService.java" />
+        <option value="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/RoleDaoTest.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/ResourcesByCriteriaServlet.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/filter.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/FilterServlet.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/ResourcesByCriteriaServlet.java" />
+        <option value="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/ResourceServiceTest.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/ResourceServiceTest.java" />
         <option value="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/ResourceDaoTest.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Resource.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/BlockResource.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/HibernateRunner.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-by-criteria.xhtml" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/ResourceDao.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-by-criteria.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonByCriteriaServlet.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-by-criteria2.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-by-criteria3.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonByCriteria2Servlet.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cf4a4b4c-93ac-4613-a0a9-02d7b4faf953/console.sql" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/PersonDao.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/PersonService.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/FilterPersonServlet.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonByCriteria3Servlet.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/filter-by-person.jsp" />
       </list>
     </option>
   </component>
@@ -335,10 +344,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-126" />
+    <option name="y" value="-12" />
     <option name="width" value="1936" />
-    <option name="height" value="1176" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -347,6 +356,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -600,9 +610,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -613,7 +622,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/hql-lesson-starter (2)" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/hql-lesson-starter-criteria" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -623,8 +632,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.itacademy.service.service" />
       <recent name="com.itacademy.database.dao" />
       <recent name="by.itacademy.database.entity" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\jd2_work\project-structure\database\src\main\java\by\itacademy\database" />
+      <recent name="D:\GitHub\project-structure\web\src\main" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="by.itacademy.web.servlet" />
@@ -636,13 +653,6 @@
       <recent name="D:\GitHub\jd2_work\project-structure\database\src\test" />
       <recent name="D:\GitHub\jd2_work\project-structure\web\src\main\webapp\WEB-INF\jsp" />
       <recent name="D:\GitHub\jd2_work\project-structure\database\src\main\resources" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\jd2_work\project-structure\database\src\main\java\by\itacademy\database" />
-      <recent name="D:\GitHub\project-structure\web\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -657,23 +667,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ResourceDaoTest.testAllFindByOrganizationName">
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
+    <configuration name="HibernateRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itacademy.database.HibernateRunner" />
+      <module name="database" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itacademy.database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="PersonDaoTest.checkDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HeadingTest.checkGetFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="database" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.itacademy.database.dao.*" />
+          <option name="PATTERN" value="com.itacademy.database.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.itacademy.database.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.itacademy.database.dao.PersonDaoTest" />
-      <option name="METHOD_NAME" value="checkDelete" />
+      <option name="PACKAGE_NAME" value="com.itacademy.database.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.itacademy.database.entity.HeadingTest" />
+      <option name="METHOD_NAME" value="checkGetFactory" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -684,7 +705,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="PersonDaoTest.checkGetAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonDaoTest.checkGetEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="database" />
       <extension name="coverage">
         <pattern>
@@ -696,7 +717,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.itacademy.database.dao" />
       <option name="MAIN_CLASS_NAME" value="com.itacademy.database.dao.PersonDaoTest" />
-      <option name="METHOD_NAME" value="checkGetAll" />
+      <option name="METHOD_NAME" value="checkGetEntity" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -720,29 +741,6 @@
       <option name="PACKAGE_NAME" value="com.itacademy.database.dao" />
       <option name="MAIN_CLASS_NAME" value="com.itacademy.database.dao.PersonDaoTest" />
       <option name="METHOD_NAME" value="checkSaveEntity" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="PersonDaoTest.checkUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="database" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itacademy.database.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.itacademy.database.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.itacademy.database.dao.PersonDaoTest" />
-      <option name="METHOD_NAME" value="checkUpdate" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -888,19 +886,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Unnamed" />
-      <item itemvalue="JUnit.PersonDaoTest.checkUpdate" />
-      <item itemvalue="JUnit.PersonDaoTest.checkDelete" />
-      <item itemvalue="JUnit.PersonDaoTest.checkSaveEntity" />
-      <item itemvalue="JUnit.PersonDaoTest.checkGetAll" />
+      <item itemvalue="JUnit.HeadingTest.checkGetFactory" />
       <item itemvalue="JUnit.ResourceDaoTest.testAllFindByOrganizationName" />
+      <item itemvalue="JUnit.PersonDaoTest.checkSaveEntity" />
+      <item itemvalue="JUnit.PersonDaoTest.checkGetEntity" />
+      <item itemvalue="Application.HibernateRunner" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ResourceDaoTest.testAllFindByOrganizationName" />
+        <item itemvalue="Application.HibernateRunner" />
+        <item itemvalue="JUnit.PersonDaoTest.checkGetEntity" />
         <item itemvalue="JUnit.PersonDaoTest.checkSaveEntity" />
-        <item itemvalue="JUnit.PersonDaoTest.checkGetAll" />
-        <item itemvalue="JUnit.PersonDaoTest.checkUpdate" />
-        <item itemvalue="JUnit.PersonDaoTest.checkDelete" />
+        <item itemvalue="JUnit.ResourceDaoTest.testAllFindByOrganizationName" />
+        <item itemvalue="JUnit.HeadingTest.checkGetFactory" />
       </list>
     </recent_temporary>
   </component>
@@ -952,47 +950,47 @@
       <workItem from="1559143448920" duration="3806000" />
       <workItem from="1559181619034" duration="4351000" />
       <workItem from="1559193556390" duration="20219000" />
+      <workItem from="1559279026669" duration="21252000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PersonDaoTest_checkUpdate - 2019.05.30 at 14h 16m 38s.xml">
-      <configuration name="PersonDaoTest.checkUpdate" configurationId="JUnit" />
+    <history-entry file="BlockResourceTest_checkGetFactory - 2019.05.31 at 10h 45m 41s.xml">
+      <configuration name="BlockResourceTest.checkGetFactory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PersonDaoTest_checkGetAll - 2019.05.30 at 14h 16m 46s.xml">
-      <configuration name="PersonDaoTest.checkGetAll" configurationId="JUnit" />
+    <history-entry file="CategoryTest_checkSaveFactory - 2019.05.31 at 10h 45m 50s.xml">
+      <configuration name="CategoryTest.checkSaveFactory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PersonDaoTest_checkSaveEntity - 2019.05.30 at 14h 16m 53s.xml">
+    <history-entry file="CategoryTest_checkGetFactory - 2019.05.31 at 10h 45m 56s.xml">
+      <configuration name="CategoryTest.checkGetFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommentTest_checkSaveFactory - 2019.05.31 at 10h 46m 05s.xml">
+      <configuration name="CommentTest.checkSaveFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CommentTest_checkGetFactory - 2019.05.31 at 10h 46m 10s.xml">
+      <configuration name="CommentTest.checkGetFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeadingTest_checkSaveFactory - 2019.05.31 at 10h 46m 18s.xml">
+      <configuration name="HeadingTest.checkSaveFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HeadingTest_checkGetFactory - 2019.05.31 at 10h 46m 24s.xml">
+      <configuration name="HeadingTest.checkGetFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ResourceDaoTest_testAllFindByOrganizationName - 2019.05.31 at 10h 46m 41s.xml">
+      <configuration name="ResourceDaoTest.testAllFindByOrganizationName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonDaoTest_checkSaveEntity - 2019.05.31 at 10h 46m 49s.xml">
       <configuration name="PersonDaoTest.checkSaveEntity" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResourceDaoTest_testAllFindByOrganizationName - 2019.05.30 at 14h 35m 13s.xml">
-      <configuration name="ResourceDaoTest.testAllFindByOrganizationName" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResourceDaoTest_testAllFindByOrganizationName - 2019.05.30 at 15h 59m 13s.xml">
-      <configuration name="ResourceDaoTest.testAllFindByOrganizationName" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResourceDaoTest_testAllFindByOrganizationName - 2019.05.30 at 16h 00m 24s.xml">
-      <configuration name="ResourceDaoTest.testAllFindByOrganizationName" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResourceDaoTest_testAllFindByOrganizationName - 2019.05.30 at 16h 04m 29s.xml">
-      <configuration name="ResourceDaoTest.testAllFindByOrganizationName" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResourceDaoTest_testAllFindByOrganizationName - 2019.05.30 at 16h 05m 50s.xml">
-      <configuration name="ResourceDaoTest.testAllFindByOrganizationName" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResourceDaoTest_testAllFindByOrganizationName - 2019.05.30 at 16h 06m 56s.xml">
-      <configuration name="ResourceDaoTest.testAllFindByOrganizationName" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResourceDaoTest_testAllFindByOrganizationName - 2019.05.30 at 16h 11m 01s.xml">
-      <configuration name="ResourceDaoTest.testAllFindByOrganizationName" configurationId="JUnit" />
+    <history-entry file="PersonDaoTest_checkGetEntity - 2019.05.31 at 10h 46m 55s.xml">
+      <configuration name="PersonDaoTest.checkGetEntity" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219019000" />
+    <option name="totallyTimeSpent" value="240271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5005208" side_tool="true" weight="0.32799247" />
@@ -1001,7 +999,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32987747" />
       <window_info id="Capture Tool" order="8" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.18333334" />
+      <window_info active="true" anchor="right" id="Database" order="5" visible="true" weight="0.18333334" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -1016,17 +1014,17 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.28369462" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32799247" />
       <window_info id="Persistence" order="6" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22447917" />
+      <window_info anchor="bottom" id="Database Console" order="14" sideWeight="0.49947917" weight="0.32516494" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22447917" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" order="14" sideWeight="0.49947917" weight="0.32539684" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1037,185 +1035,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/ResourceDaoTest.java</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="35" />
+      <option name="time" value="44" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.2.Final/hibernate-core-5.4.2.Final.jar!/org/hibernate/Session.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/hql-lesson-starter (2)/hql-lesson-starter/src/main/java/com/itacademy/EmployeeTestDataImporter.java" />
-    <entry file="das://375b74ac-d912-4a26-b1eb-6afb100b71fd/database/flea_market/schema/flea_market/table/person_role" />
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/PersonRole.java" />
-    <entry file="das://375b74ac-d912-4a26-b1eb-6afb100b71fd/database/flea_market/schema/flea_market/table/person" />
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-info.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonInfoServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://ab46f12c-8899-4b30-9103-27027d64f217/database/flea_market/schema/flea_market/table/person">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ViewPersonFullInfoDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/delete-person.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-save.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonDeleteServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CreateNewPersonDto.java" />
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonSaveServlet.java" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ab46f12c-8899-4b30-9103-27027d64f217/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://ab46f12c-8899-4b30-9103-27027d64f217/database/flea_market/schema/flea_market/table/person_role">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.2.Final/hibernate-core-5.4.2.Final.jar!/org/hibernate/internal/SessionFactoryImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="44" column="88" selection-start-line="44" selection-start-column="88" selection-end-line="44" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://dca0d5da-ebaf-482a-abd7-9e23ff0b1c14/database/flea_market/schema/flea_market/table/comment">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dca0d5da-ebaf-482a-abd7-9e23ff0b1c14/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/HeadingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/PersonRoleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/PersonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/ResourceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="36" column="47" lean-forward="true" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/BlockResourceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://dca0d5da-ebaf-482a-abd7-9e23ff0b1c14/database/flea_market/schema/flea_market/table/person_role">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/CategoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/CommentTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/BaseDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/RoleDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1239,38 +1062,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/resources/hibernate.cfg.xml">
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/BaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="70" lean-forward="true" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/PersonDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-104">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-          <folding>
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/PersonService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        <state relative-caret-position="272">
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/BaseDao.java">
+    <entry file="das://dca0d5da-ebaf-482a-abd7-9e23ff0b1c14/database/flea_market/schema/flea_market/table/category">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/RoleDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dca0d5da-ebaf-482a-abd7-9e23ff0b1c14/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ResourceFullDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/ResourceServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1284,30 +1123,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/FilterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/resources-by-criteria.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://dca0d5da-ebaf-482a-abd7-9e23ff0b1c14/database/flea_market/schema/flea_market/table/category">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://dca0d5da-ebaf-482a-abd7-9e23ff0b1c14/database/flea_market/schema/flea_market/table/resource">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1315,31 +1130,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/filter.jsp">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.2.Final/hibernate-core-5.4.2.Final.jar!/org/hibernate/SessionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/BlockResourceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/CategoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/CommentTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/ResourceService.java">
+    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/HeadingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
+        <state relative-caret-position="17">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/ResourceDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/RoleDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="27" />
+        <state relative-caret-position="595">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1348,32 +1177,266 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/PersonDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="69" column="27" lean-forward="true" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
+        <state relative-caret-position="933">
+          <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/ResourceDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/PersonRole.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="204">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/test/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="70" lean-forward="true" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://cf4a4b4c-93ac-4613-a0a9-02d7b4faf953/database/flea_market/schema/flea_market/table/resource">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/ResourceServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#431#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/HibernateRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="16" />
+          <folding>
+            <element signature="e#0#611#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/BlockResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/ResourceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/ResourcesByCriteriaServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        <state relative-caret-position="544">
+          <caret line="41" column="36" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="41" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-by-criteria.xhtml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CreateNewPersonDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ViewPersonFullInfoDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/filter.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="47" column="7" lean-forward="true" selection-start-line="15" selection-end-line="47" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Identification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Resource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="16" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="24" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/ResourceDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="49" column="56" lean-forward="true" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+        <state relative-caret-position="17">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/resources-by-criteria.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/FilterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="36" column="98" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="36" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-by-criteria.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-by-criteria2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-by-criteria3.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonByCriteriaServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cf4a4b4c-93ac-4613-a0a9-02d7b4faf953/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="177" column="56" lean-forward="true" selection-start-line="177" selection-start-column="56" selection-end-line="177" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/PersonDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonByCriteria2Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://cf4a4b4c-93ac-4613-a0a9-02d7b4faf953/database/flea_market/schema/flea_market/table/person">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://cf4a4b4c-93ac-4613-a0a9-02d7b4faf953/database/flea_market/schema/flea_market/table/person_role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/PersonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="34" column="126" selection-start-line="34" selection-start-column="126" selection-end-line="34" selection-end-column="134" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3657#3658#0" expanded="true" />
+            <element signature="e#3702#3703#0" expanded="true" />
+            <element signature="e#3756#3757#0" expanded="true" />
+            <element signature="e#3793#3794#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/FilterPersonServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonByCriteria3Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="66" lean-forward="true" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/filter-by-person.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="51" column="10" lean-forward="true" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
         </state>
       </provider>
     </entry>

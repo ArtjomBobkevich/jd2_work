@@ -22,7 +22,7 @@ public class ResourceDaoTest {
         session.beginTransaction();
         Person person = Person.builder()
                 .avatar("qwer")
-                .login("2")
+                .login("www")
                 .identification(Identification.builder()
                         .firstName("qqq")
                         .lastName("www")
@@ -45,7 +45,7 @@ public class ResourceDaoTest {
                 .build();
         session.getTransaction().commit();
             resourceDao.save(resource);
-        List<Resource> resourcesOrderByAuthor = resourceDao.findResourcesOrderByAuthor("2", 0, 2);
+        List<Resource> resourcesOrderByAuthor = resourceDao.findResourcesOrderByAuthor("www", 0, 2);
         resourcesOrderByAuthor.size();
         assertTrue(resourcesOrderByAuthor.size()>0);
         }

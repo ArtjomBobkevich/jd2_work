@@ -5,7 +5,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
@@ -14,10 +13,10 @@ import javax.persistence.Entity;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@DiscriminatorValue("BLOCKRESOURCE")
+@DiscriminatorValue("block")
 public class BlockResource extends Resource {
 
-    @Column(name = "block")
+//    @Column(name = "block",insertable = false, updatable = false)
     private String block;
 
     public BlockResource(String resourceName, String foto, Heading heading, Category category, Person person,

@@ -55,7 +55,7 @@
     </role>
     <schema id="11" parent="3" name="flea_market">
       <ObjectId>24577</ObjectId>
-      <IntrospectionTimestamp>2019-05-30.11:03:57.320</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2019-05-31.09:56:23.291</IntrospectionTimestamp>
       <IntrospectionStateNumber>1026</IntrospectionStateNumber>
       <Visible>1</Visible>
     </schema>

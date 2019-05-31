@@ -1,27 +1,16 @@
 //package com.itacademy.database;
 //
+//import com.itacademy.database.dao.ResourceDao;
 //import com.itacademy.database.entity.Person;
-//import com.itacademy.database.entity.Resource;
-//import lombok.Cleanup;
-//import lombok.extern.log4j.Log4j;
-//import org.hibernate.Session;
-//import org.hibernate.SessionFactory;
-//import org.hibernate.cfg.Configuration;
 //
-//@Log4j
+//import java.util.List;
+//
 //public class HibernateRunner {
 //
 //    public static void main(String[] args) {
-//        @Cleanup SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
-//        @Cleanup Session session = sessionFactory.openSession();
-//        session.beginTransaction();
-//        Person person1 = Person.builder().id(3L).build();
-//        Person person = session.get(Person.class, person1.getId());
-//        person.getResources().add(session.get(Resource.class, person.getId()));
-//        person.getResources().add(session.get(Resource.class, person.getId()));
-//
-//        session.save(person);
-//
-//        session.getTransaction().commit();
+//        List<Person> personOrderByAuthor = ResourceDao.getResourceDao().findPersonByLoginOrderByLogin("beast", 0, 2);
+////        List<Resource> resourcesOrderByAuthor = ResourceDao.getResourceDao().findResourcesOrderByAuthor(222,0,2);
+////        System.out.println(resourcesOrderByAuthor);
+//        System.out.println(personOrderByAuthor.size());
 //    }
 //}
