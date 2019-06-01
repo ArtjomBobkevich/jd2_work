@@ -17,35 +17,26 @@ public class ResourceDaoTest {
     private static SessionFactory factory = SessionManager.getFactory();
 
     @Test
-    public void testAllFindByOrganizationName() {
+    public void findResourceByCriteria() {
         @Cleanup Session session = factory.openSession();
         session.beginTransaction();
-        Person person = Person.builder()
-                .avatar("qwer")
-                .login("www")
-                .identification(Identification.builder()
-                        .firstName("qqq")
-                        .lastName("www")
-                        .build())
-                .age(2)
-                .mail("wqeq")
-                .password("222233")
-                .personRole(session.get(PersonRole.class,1L))
+        Category category = Category.builder()
+                .categoryName("www")
                 .build();
-        session.save(person);
+        session.save(category);
         session.flush();
         Resource resource = Resource.builder()
-                .resourceName("www")
+                .resourceName("test")
                 .foto("www")
                 .heading(session.get(Heading.class,1L))
-                .category(session.get(Category.class,1L))
-                .person(person)
-                .price(22)
+                .category(category)
+                .person(session.get(Person.class,2L))
+                .price(222)
                 .text("sss")
                 .build();
         session.getTransaction().commit();
             resourceDao.save(resource);
-        List<Resource> resourcesOrderByAuthor = resourceDao.findResourcesOrderByAuthor("www", 0, 2);
+        List<Resource> resourcesOrderByAuthor = resourceDao.findResourcesOrderByAuthor("test","www",222, 0, 2);
         resourcesOrderByAuthor.size();
         assertTrue(resourcesOrderByAuthor.size()>0);
         }

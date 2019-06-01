@@ -19,14 +19,13 @@ public class PersonByCriteria3Servlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setCharacterEncoding(StandardCharsets.UTF_8.name());
-        String login = req.getParameter("login");
         String mail = req.getParameter("mail");
         String role = req.getParameter("role");
         Integer offset = Integer.parseInt(req.getParameter("offset"));
         Integer limit = Integer.parseInt(req.getParameter("limit"));
         Integer size = Integer.parseInt(req.getParameter("size"));
 
-        req.setAttribute("person", personService.findPersonByCriteria(/*login,*/mail,role, offset,limit,size));
+        req.setAttribute("person", personService.findPersonByCriteria(mail,role, offset,limit,size));
         getServletContext()
                 .getRequestDispatcher(JspPath.get("person-by-criteria3"))
                 .forward(req, resp);

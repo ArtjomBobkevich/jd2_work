@@ -59,14 +59,3 @@ public interface BaseDao <T extends Serializable,E extends BaseEntity<T>> {
         return  (Class<E>) entityType;
     }
 }
-
-
-// T save(E entity);
-//
-//    Optional<E> get (T id);
-//
-//    void update (E entity);
-//
-//    void delete (E entity);
-//
-//    List<E> getAll();

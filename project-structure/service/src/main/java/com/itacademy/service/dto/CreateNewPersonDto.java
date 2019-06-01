@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 @Builder
 public class CreateNewPersonDto {
 
-//    private Long id;
     private String avatar;
     private String login;
     private Identification identification;

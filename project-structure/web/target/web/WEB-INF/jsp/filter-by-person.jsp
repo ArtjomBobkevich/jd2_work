@@ -56,6 +56,7 @@
             <input id="limit" type="text" name="limit" value="${param.limit}"/>
         </label><br>
     </div>
+        <div>
         <p>кол-во записей</p>
         <label for="size">
             <input id="size" type="text" name="size" value="${param.size}"/>
