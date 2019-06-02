@@ -1,10 +1,10 @@
-2019-05-31 11:15:18,494 INFO  - HHH000412: Hibernate Core {5.4.2.Final}
-2019-05-31 11:15:19,076 INFO  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-05-31 11:15:19,459 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2019-05-31 11:15:19,470 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/flea_market]
-2019-05-31 11:15:19,471 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
-2019-05-31 11:15:19,472 INFO  - HHH10001003: Autocommit mode: false
-2019-05-31 11:15:19,473 INFO  - HHH10001007: JDBC isolation level: REPEATABLE_READ
-2019-05-31 11:15:19,479 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
-2019-05-31 11:15:19,659 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2019-05-31 11:15:20,760 INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-06-01 18:03:37,847 INFO  - HHH000412: Hibernate Core {5.4.2.Final}
+2019-06-01 18:03:38,634 INFO  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-06-01 18:03:39,373 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-06-01 18:03:39,400 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/flea_market]
+2019-06-01 18:03:39,401 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2019-06-01 18:03:39,403 INFO  - HHH10001003: Autocommit mode: false
+2019-06-01 18:03:39,403 INFO  - HHH10001007: JDBC isolation level: REPEATABLE_READ
+2019-06-01 18:03:39,413 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-06-01 18:03:39,697 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2019-06-01 18:03:41,314 INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]

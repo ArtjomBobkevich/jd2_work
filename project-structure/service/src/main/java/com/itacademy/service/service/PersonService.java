@@ -32,7 +32,7 @@ public class PersonService {
                 .collect(Collectors.toList());
     }
 
-    public List<ViewPersonFullInfoDto> findPersonByCriteria(/*String login,*/ String mail, String role, int offset, int limit,int size) {
+    public List<ViewPersonFullInfoDto> findPersonByCriteria(String mail, String role, int offset, int limit,int size) {
 
         return PersonDao.getPersonDao().findPersonByLoginOrderByLogin(/*login,*/ mail, role, offset, limit,size).stream()
                 .map(it -> new ViewPersonFullInfoDto(it.getAvatar(), it.getLogin(), it.getIdentification(), it.getAge(),
@@ -55,7 +55,6 @@ public class PersonService {
 
     public ViewPersonFullInfoDto savePerson(CreateNewPersonDto viewPersonFullInfoDto) {
         Person person = Person.builder()
-//                .id(viewPersonFullInfoDto.getId())
                 .avatar(viewPersonFullInfoDto.getAvatar())
                 .login(viewPersonFullInfoDto.getLogin())
                 .identification(viewPersonFullInfoDto.getIdentification())

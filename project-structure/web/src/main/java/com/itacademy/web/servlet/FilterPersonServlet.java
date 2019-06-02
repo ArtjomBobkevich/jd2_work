@@ -38,7 +38,7 @@ public class FilterPersonServlet extends HttpServlet {
         } else if (!req.getParameter("login").equals("") && !req.getParameter("mail").equals("") && req.getParameter("role").equals("")) {
             resp.sendRedirect("/person-by-criteria2?login=" + login + "&mail=" + mail + "&offset=" +
                     offset + "&limit=" + limit);
-        } else if (req.getParameter("login").equals("") && !req.getParameter("mail").equals("") && !req.getParameter("role").equals("")){
+        } else if (req.getParameter("login").equals("") && !req.getParameter("mail").equals("") && !req.getParameter("role").equals("")) {
             resp.sendRedirect("/person-by-criteria3?mail=" + mail + "&role=" + role + "&offset=" +
                     offset + "&limit=" + limit + "&size=" + size);
         }

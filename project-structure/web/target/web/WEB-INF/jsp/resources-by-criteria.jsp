@@ -19,6 +19,34 @@
         <a >${resources.heading}</a><br>
         <a >${resources.person}</a><br>
     </c:forEach>
+    <a  href="${requestScope['javax.servlet.forward.request_uri']}
+?resourceName=
+<%= request.getParameter("resourceName") %>
+&category=
+<%= request.getParameter("category") %>
+&price=
+<%= request.getParameter("price") %>
+&offset=
+<%= Integer.parseInt(request.getParameter("offset"))-Integer.parseInt(request.getParameter("limitConst")) %>
+&limit=
+<%= Integer.parseInt(request.getParameter("limit"))-Integer.parseInt(request.getParameter("limitConst")) %>
+&limitConst=
+<%= request.getParameter("limitConst") %>
+">предыдущая</a>
+    <a  href="${requestScope['javax.servlet.forward.request_uri']}
+?resourceName=
+<%= request.getParameter("resourceName") %>
+&category=
+<%= request.getParameter("category") %>
+&price=
+<%= request.getParameter("price") %>
+&offset=
+<%= Integer.parseInt(request.getParameter("offset"))+Integer.parseInt(request.getParameter("limitConst")) %>
+&limit=
+<%= Integer.parseInt(request.getParameter("limit"))+Integer.parseInt(request.getParameter("limitConst")) %>
+&limitConst=
+<%= request.getParameter("limitConst") %>
+">следующая</a>
 </div>
 </body>
 </html>

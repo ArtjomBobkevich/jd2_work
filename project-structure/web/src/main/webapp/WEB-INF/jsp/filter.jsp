@@ -14,12 +14,12 @@
 </head>
 <body>
 <form action="${pageContext.request.contextPath}/filter" method="post">
-    <%--<div>--%>
-        <%--<p>цена</p>--%>
-        <%--<label for="price">--%>
-            <%--<input id="price" type="text" name="price" value="${param.price}"/>--%>
-        <%--</label><br>--%>
-    <%--</div>--%>
+    <div>
+        <p>название ресурса</p>
+        <label for="resourceName">
+            <input id="resourceName" type="text" name="resourceName" value="${param.resourceName}"/>
+        </label><br>
+    </div>
     <div>
         <p>категория</p>
         <label for="category">
@@ -27,12 +27,12 @@
         </label><br>
     </div>
     <div>
-        <p>автор</p>
-        <label for="name">
-            <input id="name" type="text" name="name" value="${param.name}"/>
-        </label><br>
-    </div>
-    <div>
+        <div>
+            <p>цена</p>
+            <label for="price">
+                <input id="price" type="text" name="price" value="${param.price}"/>
+            </label><br>
+        </div>
         <p>сколько пропустить</p>
         <label for="offset">
             <input id="offset" type="text" name="offset" value="${param.offset}"/>

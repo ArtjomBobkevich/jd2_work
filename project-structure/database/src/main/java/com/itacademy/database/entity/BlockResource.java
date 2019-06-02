@@ -16,7 +16,6 @@ import javax.persistence.Entity;
 @DiscriminatorValue("block")
 public class BlockResource extends Resource {
 
-//    @Column(name = "block",insertable = false, updatable = false)
     private String block;
 
     public BlockResource(String resourceName, String foto, Heading heading, Category category, Person person,

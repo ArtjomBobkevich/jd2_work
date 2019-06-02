@@ -22,7 +22,7 @@ public class PersonSaveServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         getServletContext()
-                .getRequestDispatcher(JspPath.get("person-save"))  /*тупо перенаправление*/
+                .getRequestDispatcher(JspPath.get("person-save"))
                 .forward(req, resp);
     }
 

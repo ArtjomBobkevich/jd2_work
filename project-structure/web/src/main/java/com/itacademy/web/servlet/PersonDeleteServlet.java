@@ -32,7 +32,7 @@ public class PersonDeleteServlet extends HttpServlet {
 
         req.setCharacterEncoding(StandardCharsets.UTF_8.name());
         Person person = Person.builder()
-                .id(Long.parseLong(req.getParameter("id")))/*нужно предавать целую сущность?*/
+                .id(Long.parseLong(req.getParameter("id")))
                 .avatar("sss")
                 .login("sasd")
                 .age(2)
@@ -42,7 +42,6 @@ public class PersonDeleteServlet extends HttpServlet {
                         .build())
                 .mail("sss")
                 .password("sdfd")
-//                .personRole()
                 .build();
         personService.delete(person);
         resp.sendRedirect("/person");

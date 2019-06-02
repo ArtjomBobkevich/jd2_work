@@ -19,22 +19,22 @@ public class ResourceService {
                 .collect(Collectors.toList());
     }
 
-    public List<ResourceFullDto> findResourceByCriteria(String author, Integer offset, Integer limit) {
-        return ResourceDao.getResourceDao().findResourcesOrderByAuthor(author,offset,limit).stream()
+    public List<ResourceFullDto> findResourceByCriteria(String resourceName, Integer offset, Integer limit) {
+        return ResourceDao.getResourceDao().findResourcesOrderByAuthor(resourceName,offset,limit).stream()
                 .map(it -> new ResourceFullDto(it.getId(), it.getResourceName(), it.getFoto(), it.getHeading(), it.getCategory(),
                         it.getPerson(), it.getPrice(), it.getText()))
                 .collect(Collectors.toList());
     }
 
-    public List<ResourceFullDto> findResourceByCriteria(String category,String author, Integer offset, Integer limit) {
-        return ResourceDao.getResourceDao().findResourcesOrderByAuthor(category,author,offset,limit).stream()
+    public List<ResourceFullDto> findResourceByCriteria(String resourceName,String category, Integer offset, Integer limit) {
+        return ResourceDao.getResourceDao().findResourcesOrderByAuthor(resourceName,category,offset,limit).stream()
                 .map(it -> new ResourceFullDto(it.getId(), it.getResourceName(), it.getFoto(), it.getHeading(), it.getCategory(),
                         it.getPerson(), it.getPrice(), it.getText()))
                 .collect(Collectors.toList());
     }
 
-    public List<ResourceFullDto> findResourceByCriteria(Integer price,String category,String author, Integer offset, Integer limit) {
-        return ResourceDao.getResourceDao().findResourcesOrderByAuthor(price,category,author,offset,limit).stream()
+    public List<ResourceFullDto> findResourceByCriteria(String resourceName,String category,Integer price, Integer offset, Integer limit) {
+        return ResourceDao.getResourceDao().findResourcesOrderByAuthor(resourceName,category,price,offset,limit).stream()
                 .map(it -> new ResourceFullDto(it.getId(), it.getResourceName(), it.getFoto(), it.getHeading(), it.getCategory(),
                         it.getPerson(), it.getPrice(), it.getText()))
                 .collect(Collectors.toList());
