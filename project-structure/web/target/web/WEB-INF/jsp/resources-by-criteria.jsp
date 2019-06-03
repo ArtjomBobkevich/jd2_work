@@ -15,11 +15,11 @@
 <body>
 <div>
     <c:forEach var="resources" items="${requestScope.resource}">
-        <a >${resources.resourceName}</a><br>
-        <a >${resources.heading}</a><br>
-        <a >${resources.person}</a><br>
+        <a>${resources.resourceName}</a><br>
+        <a>${resources.heading}</a><br>
+        <a>${resources.person}</a><br>
     </c:forEach>
-    <a  href="${requestScope['javax.servlet.forward.request_uri']}
+    <a href="${requestScope['javax.servlet.forward.request_uri']}
 ?resourceName=
 <%= request.getParameter("resourceName") %>
 &category=
@@ -33,7 +33,7 @@
 &limitConst=
 <%= request.getParameter("limitConst") %>
 ">предыдущая</a>
-    <a  href="${requestScope['javax.servlet.forward.request_uri']}
+    <a href="${requestScope['javax.servlet.forward.request_uri']}
 ?resourceName=
 <%= request.getParameter("resourceName") %>
 &category=

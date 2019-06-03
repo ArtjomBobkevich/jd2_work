@@ -53,8 +53,8 @@ public class PersonService {
                 .orElse(null);
     }
 
-    public ViewPersonFullInfoDto savePerson(CreateNewPersonDto viewPersonFullInfoDto) {
-        Person person = Person.builder()
+    public Long savePerson(CreateNewPersonDto viewPersonFullInfoDto) {
+        return getPersonDao().save(Person.builder()
                 .avatar(viewPersonFullInfoDto.getAvatar())
                 .login(viewPersonFullInfoDto.getLogin())
                 .identification(viewPersonFullInfoDto.getIdentification())
@@ -62,9 +62,7 @@ public class PersonService {
                 .mail(viewPersonFullInfoDto.getMail())
                 .password(viewPersonFullInfoDto.getMail())
                 .personRole(viewPersonFullInfoDto.getPersonRole())
-                .build();
-        return new ViewPersonFullInfoDto(person.getAvatar(), person.getLogin(), person.getIdentification(),
-                person.getAge(), person.getMail(), person.getPassword(), person.getPersonRole().getNameOfRole());
+                .build());
     }
 
     public void delete(Person person) {
