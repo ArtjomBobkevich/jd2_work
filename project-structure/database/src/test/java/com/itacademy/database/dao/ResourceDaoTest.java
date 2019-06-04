@@ -7,6 +7,8 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static junit.framework.TestCase.assertTrue;
@@ -36,7 +38,15 @@ public class ResourceDaoTest {
                 .build();
         session.getTransaction().commit();
             resourceDao.save(resource);
-        List<Resource> resourcesOrderByAuthor = resourceDao.findResourcesOrderByAuthor("test","www",222, 0, 2);
+            List<Object>parametrs = new ArrayList<>();
+            parametrs.add("test");
+        parametrs.add("www");
+        parametrs.add(222);
+        parametrs.add(0);
+        parametrs.add(2);
+        System.out.println(Arrays.toString(parametrs.toArray()));
+        String name = (String) parametrs.get(0);
+        List<Resource> resourcesOrderByAuthor = resourceDao.findResourcesOrderByAuthor(parametrs);
         resourcesOrderByAuthor.size();
         assertTrue(resourcesOrderByAuthor.size()>0);
         }

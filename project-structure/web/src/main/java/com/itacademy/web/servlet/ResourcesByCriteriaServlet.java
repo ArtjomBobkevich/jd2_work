@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
 
 @WebServlet("/resources-by-criteria")
 public class ResourcesByCriteriaServlet extends HttpServlet {
@@ -24,7 +26,14 @@ public class ResourcesByCriteriaServlet extends HttpServlet {
         Integer price = Integer.parseInt(req.getParameter("price"));
         Integer offset = Integer.parseInt(req.getParameter("offset"));
         Integer limit = Integer.parseInt(req.getParameter("limit"));
-            req.setAttribute("resource", resourceService.findResourceByCriteria(resourceName, category,price, offset, limit));
+        List<Object> parameters= new ArrayList<>();
+        parameters.add(resourceName);
+        parameters.add(category);
+        parameters.add(price);
+        parameters.add(offset);
+        parameters.add(limit);
+            req.setAttribute("resource", resourceService.findResourceByCriteria(parameters));
+            req.setAttribute("pages",resourceService.allPages());
         getServletContext()
                 .getRequestDispatcher(JspPath.get("resources-by-criteria"))
                 .forward(req, resp);

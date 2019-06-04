@@ -1,6 +1,9 @@
 package com.itacademy.database.dao;
 
-import com.itacademy.database.entity.*;
+import com.itacademy.database.entity.Category;
+import com.itacademy.database.entity.Category_;
+import com.itacademy.database.entity.Resource;
+import com.itacademy.database.entity.Resource_;
 import com.itacademy.database.util.SessionManager;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -16,61 +19,64 @@ public class ResourceDao implements BaseDao<Long, Resource> {
     private static final ResourceDao RESOURCE_DAO = new ResourceDao();
     private static SessionFactory factory = SessionManager.getFactory();
 
-    public List<Resource> findResourcesOrderByAuthor(String resourceName, int offset, int limit) {
+    public List<Resource> findResourcesOrderByAuthor(List<Object>parameters) {
         Session session = factory.openSession();
-        CriteriaBuilder cb = session.getCriteriaBuilder();
-        CriteriaQuery<Resource> criteria = cb.createQuery(Resource.class);
-        Root<Resource> root = criteria.from(Resource.class);
-        criteria.select(root).where(
-                cb.equal(root.get(Resource_.resourceName), resourceName)
-        )
-                .orderBy(
-                        cb.asc(root.get(Resource_.resourceName))
-                );
-        return session.createQuery(criteria)
-                .setFirstResult(offset)
-                .setMaxResults(limit)
-                .list();
-    }
-
-    public List<Resource> findResourcesOrderByAuthor(String resourceName, String category, int offset, int limit) {
-        Session session = factory.openSession();
-        CriteriaBuilder cb = session.getCriteriaBuilder();
-        CriteriaQuery<Resource> criteria = cb.createQuery(Resource.class);
-        Root<Resource> root = criteria.from(Resource.class);
-//        Join<Resource, Person> personJoin = root.join(Resource_.person);
-        Join<Resource, Category> categoryJoin = root.join(Resource_.category);
-        criteria.select(root).where(
-                cb.equal(root.get(Resource_.resourceName), resourceName),
-                cb.equal(categoryJoin.get(Category_.categoryName), category)
-        ).orderBy(
-                cb.asc(root.get(Resource_.resourceName))
-        );
-        return session.createQuery(criteria)
-                .setFirstResult(offset)
-                .setMaxResults(limit)
-                .list();
-    }
-
-    public List<Resource> findResourcesOrderByAuthor(String resourceName, String category,Integer price,  int offset, int limit) {
-        Session session = factory.openSession();
+        String resourceName = (String) parameters.get(0);
+        String category = (String) parameters.get(1);
+        Integer price = (Integer) parameters.get(2);
         CriteriaBuilder cb = session.getCriteriaBuilder();
         CriteriaQuery<Resource> criteria = cb.createQuery(Resource.class);
         Root<Resource> root = criteria.from(Resource.class);
         Join<Resource, Category> categoryJoin = root.join(Resource_.category);
         criteria.select(root).where(
-                cb.equal(root.get(Resource_.resourceName), resourceName),
+                cb.equal(root.get(Resource_.resourceName),resourceName),
                 cb.equal(categoryJoin.get(Category_.categoryName), category),
                 cb.equal(root.get(Resource_.price), price)
-        ).orderBy(
-                cb.asc(root.get(Resource_.resourceName))
+        );
+        criteria.select(root).where(
+                cb.equal(root.get(Resource_.resourceName),resourceName),
+                cb.equal(categoryJoin.get(Category_.categoryName), category),
+                cb.equal(root.get(Resource_.price), price)
+        );
+        criteria.select(root).where(
+                cb.equal(root.get(Resource_.resourceName),resourceName),
+                cb.equal(categoryJoin.get(Category_.categoryName), category),
+                cb.equal(root.get(Resource_.price), price)
+        );
+        criteria.select(root).where(
+                cb.equal(root.get(Resource_.resourceName),resourceName),
+                cb.equal(categoryJoin.get(Category_.categoryName), category),
+                cb.equal(root.get(Resource_.price), price)
+        );
+        criteria.select(root).where(
+                cb.equal(root.get(Resource_.resourceName),resourceName),
+                cb.equal(categoryJoin.get(Category_.categoryName), category),
+                cb.equal(root.get(Resource_.price), price)
+        );
+        criteria.select(root).where(
+                cb.equal(root.get(Resource_.resourceName),resourceName),
+                cb.equal(categoryJoin.get(Category_.categoryName), category),
+                cb.equal(root.get(Resource_.price), price)
         );
 
+        Integer offset = (Integer) parameters.get(3);
+        Integer limit = (Integer) parameters.get(4);
+
+        List<Resource> list = session.createQuery(criteria).list();
+
+
+
         return session.createQuery(criteria)
-                .setFirstResult(offset)
+                .setFirstResult( offset)
                 .setMaxResults(limit)
                 .list();
     }
+
+    public void pages () {
+    }
+
+
+
 
     public static ResourceDao getResourceDao() {
         return RESOURCE_DAO;

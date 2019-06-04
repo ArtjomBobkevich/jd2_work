@@ -34,7 +34,7 @@ public class PersonService {
 
     public List<ViewPersonFullInfoDto> findPersonByCriteria(String mail, String role, int offset, int limit,int size) {
 
-        return PersonDao.getPersonDao().findPersonByLoginOrderByLogin(/*login,*/ mail, role, offset, limit,size).stream()
+        return PersonDao.getPersonDao().findPersonByLoginOrderByLogin(mail, role, offset, limit,size).stream()
                 .map(it -> new ViewPersonFullInfoDto(it.getAvatar(), it.getLogin(), it.getIdentification(), it.getAge(),
                         it.getMail(), it.getPassword(), it.getPersonRole().getNameOfRole()))
                 .collect(Collectors.toList());

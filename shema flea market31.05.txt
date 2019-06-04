@@ -35,10 +35,11 @@ CREATE TABLE resource (
   foto          VARCHAR(1024),
   heading_id    INTEGER REFERENCES heading (id) ON DELETE CASCADE ON UPDATE CASCADE,
   category_id   INTEGER REFERENCES category (id) ON DELETE CASCADE ON UPDATE CASCADE,
-  author        VARCHAR(124) REFERENCES person (login) ON DELETE CASCADE ON UPDATE CASCADE,
+  author        INTEGER REFERENCES person (id) ON DELETE CASCADE ON UPDATE CASCADE,
   price         INTEGER,
   text 		VARCHAR(1024),
-  block		VARCHAR(1024)
+  block		VARCHAR(1024),
+  type  VARCHAR(1024)
 );
 
 CREATE TABLE resource_person (
@@ -161,8 +162,8 @@ VALUES
 
 INSERT INTO resource (resource_name, foto, heading_id, category_id, author, price, text, block)
 VALUES
-  ('test','foto',1,2,'user',222,'test','www');
+  ('test','foto',1,2,1,222,'test','www');
 
 INSERT INTO resource (resource_name, foto, heading_id, category_id, author, price, text)
 VALUES
-  ('test','foto',1,2,'user',222,'test');
+  ('test','foto',1,2,1,222,'test');
