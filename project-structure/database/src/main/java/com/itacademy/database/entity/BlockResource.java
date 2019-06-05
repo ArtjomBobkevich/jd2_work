@@ -16,11 +16,19 @@ import javax.persistence.Entity;
 @DiscriminatorValue("block")
 public class BlockResource extends Resource {
 
+    private Long id;
     private String block;
 
     public BlockResource(String resourceName, String foto, Heading heading, Category category, Person person,
                          Integer price, String text, String block) {
         super(resourceName, foto, heading, category, person, price, text);
+        this.block = block;
+    }
+
+    public BlockResource(String resourceName, String foto, Heading heading, Category category, Person person,
+                         Integer price, String text,Long id, String block) {
+        super( resourceName, foto, heading, category, person, price, text);
+        this.id = id;
         this.block = block;
     }
 }

@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-@WebServlet(value = "/delete-person", name = "PersonDeleteServlet")
+@WebServlet(value = "/person-delete", name = "PersonDeleteServlet")
 public class PersonDeleteServlet extends HttpServlet {
 
     private PersonService personService = PersonService.getPersonService();
@@ -23,7 +23,7 @@ public class PersonDeleteServlet extends HttpServlet {
         req.setAttribute("loginList", personService.findAll());
 
         getServletContext()
-                .getRequestDispatcher(JspPath.get("delete-person"))
+                .getRequestDispatcher(JspPath.get("person-delete"))
                 .forward(req, resp);
     }
 

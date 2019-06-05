@@ -1,6 +1,5 @@
 package com.itacademy.service.service;
 
-import com.itacademy.database.dao.PersonDao;
 import com.itacademy.database.entity.Person;
 import com.itacademy.service.dto.CreateNewPersonDto;
 import com.itacademy.service.dto.ViewPersonFullInfoDto;
@@ -16,33 +15,9 @@ import static com.itacademy.database.dao.PersonDao.getPersonDao;
 public class PersonService {
     private static final PersonService PERSON_SERVICE = new PersonService();
 
-    public List<ViewPersonFullInfoDto> findPersonByCriteria(String login, Integer offset, Integer limit) {
-        return PersonDao.getPersonDao().findPersonByLoginOrderByLogin(login, offset, limit).stream()
-                .map(it -> new ViewPersonFullInfoDto(it.getAvatar(), it.getLogin(), it.getIdentification(), it.getAge(),
-                        it.getMail(), it.getPassword(), it.getPersonRole().getNameOfRole()))
-                .collect(Collectors.toList());
-    }
-
-
-    public List<ViewPersonFullInfoDto> findPersonByCriteria(String login, String mail, int offset, int limit) {
-
-        return PersonDao.getPersonDao().findPersonByLoginOrderByLogin(login, mail, offset, limit).stream()
-                .map(it -> new ViewPersonFullInfoDto(it.getAvatar(), it.getLogin(), it.getIdentification(), it.getAge(),
-                        it.getMail(), it.getPassword(), it.getPersonRole().getNameOfRole()))
-                .collect(Collectors.toList());
-    }
-
-    public List<ViewPersonFullInfoDto> findPersonByCriteria(String mail, String role, int offset, int limit,int size) {
-
-        return PersonDao.getPersonDao().findPersonByLoginOrderByLogin(mail, role, offset, limit,size).stream()
-                .map(it -> new ViewPersonFullInfoDto(it.getAvatar(), it.getLogin(), it.getIdentification(), it.getAge(),
-                        it.getMail(), it.getPassword(), it.getPersonRole().getNameOfRole()))
-                .collect(Collectors.toList());
-    }
-
     public List<ViewPersonFullInfoDto> findAll() {
         return getPersonDao().getAll().stream()
-                .map(it -> new ViewPersonFullInfoDto(it.getAvatar(), it.getLogin(), it.getIdentification(), it.getAge(),
+                .map(it -> new ViewPersonFullInfoDto(it.getId(),it.getAvatar(), it.getLogin(), it.getIdentification(), it.getAge(),
                         it.getMail(), it.getPassword(), it.getPersonRole().getNameOfRole()))
                 .collect(Collectors.toList());
     }
@@ -67,6 +42,10 @@ public class PersonService {
 
     public void delete(Person person) {
         getPersonDao().delete(person);
+    }
+
+    public void update (Person person) {
+        getPersonDao().update(person);
     }
 
     public static PersonService getPersonService() {

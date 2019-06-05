@@ -33,7 +33,7 @@ public class ResourcesByCriteriaServlet extends HttpServlet {
         parameters.add(offset);
         parameters.add(limit);
             req.setAttribute("resource", resourceService.findResourceByCriteria(parameters));
-            req.setAttribute("pages",resourceService.allPages());
+//            req.setAttribute("pages",resourceService.allPages());
         getServletContext()
                 .getRequestDispatcher(JspPath.get("resources-by-criteria"))
                 .forward(req, resp);
