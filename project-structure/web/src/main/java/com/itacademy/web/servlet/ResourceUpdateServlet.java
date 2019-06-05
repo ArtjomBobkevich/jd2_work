@@ -1,9 +1,12 @@
 package com.itacademy.web.servlet;
 
+import com.itacademy.database.dao.CategoryDao;
+import com.itacademy.database.dao.HeadingDao;
+import com.itacademy.database.dao.PersonDao;
 import com.itacademy.database.entity.BlockResource;
-import com.itacademy.database.entity.Category;
-import com.itacademy.database.entity.Heading;
-import com.itacademy.database.entity.Person;
+import com.itacademy.service.service.CategoryService;
+import com.itacademy.service.service.HeadingService;
+import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.ResourceService;
 import com.itacademy.web.util.JspPath;
 
@@ -19,10 +22,17 @@ import java.nio.charset.StandardCharsets;
 public class ResourceUpdateServlet extends HttpServlet {
 
     private ResourceService resourceService =ResourceService.getResourceService();
+    private PersonService personService = PersonService.getPersonService();
+    private CategoryService categoryService = CategoryService.getCategoryService();
+    private HeadingService headingService = HeadingService.getHeadingService();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("resource", resourceService.findAll());
+        req.setAttribute("resources", resourceService.findAll());
+        req.setAttribute("heading", headingService.findAll());
+        req.setAttribute("category", categoryService.findAll());
+        req.setAttribute("person", personService.findAll());
+
 
         getServletContext()
                 .getRequestDispatcher(JspPath.get("resource-update"))
@@ -36,16 +46,10 @@ public class ResourceUpdateServlet extends HttpServlet {
         BlockResource blockResource = new BlockResource(
                 req.getParameter("resourceName"),
                 req.getParameter("foto"),
-                Heading.builder()
-                        .id(Long.parseLong(req.getParameter("headingId")))
-                        .build(),
-                Category.builder()
-                        .id(Long.parseLong(req.getParameter("categoryId")))
-                        .build(),
-                Person.builder()
-                        .id(Long.parseLong(req.getParameter("personId")))
-                        .build(),
-                Integer.parseInt(req.getParameter("headingId")),
+                HeadingDao.getHeadingDao().get(Long.parseLong(req.getParameter("headingId"))).orElse(null),
+                CategoryDao.getCategoryDao().get(Long.parseLong(req.getParameter("categoryId"))).orElse(null),
+                PersonDao.getPersonDao().get(Long.parseLong(req.getParameter("personId"))).orElse(null),
+                Integer.parseInt(req.getParameter("price")),
                 req.getParameter("text"),
                 "NO"
         );

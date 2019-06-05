@@ -2,7 +2,9 @@ package com.itacademy.web.servlet;
 
 import com.itacademy.service.service.ResourceService;
 import com.itacademy.web.util.JspPath;
+import lombok.Data;
 
+import javax.persistence.criteria.Predicate;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -37,5 +39,22 @@ public class ResourcesByCriteriaServlet extends HttpServlet {
         getServletContext()
                 .getRequestDispatcher(JspPath.get("resources-by-criteria"))
                 .forward(req, resp);
+    }
+
+    @Data
+    public static class ResourceFilter {
+        private String resource;
+        private String category;
+        private Integer price;
+
+        public List<Predicate> predicates = new ArrayList<>();
+
+//        public Predicate[] build(CriteriaBuilder cb) {
+//            if (resource != null) {
+////                predicates.add(cb.equal());
+//            }
+//
+////            return predicates.toArray()
+//        }
     }
 }

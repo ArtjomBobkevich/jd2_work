@@ -16,7 +16,7 @@ public class HeadingService {
 
     public List<HeadingFullDto> findAll() {
         return getHeadingDao().getAll().stream()
-                .map(it -> new HeadingFullDto(it.getHeadingName(),it.getCategory().getCategoryName()))
+                .map(it -> new HeadingFullDto(it.getId(),it.getHeadingName(),it.getCategory().getCategoryName()))
                 .collect(Collectors.toList());
     }
 

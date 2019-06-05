@@ -62,7 +62,6 @@ public class ResourceSaveServlet extends HttpServlet {
                 .build();
 
 
-
         Long aLong = resourceService.saveResource(createNewGenreDto);
         resp.sendRedirect("/resource-info?id=" + aLong);
     }

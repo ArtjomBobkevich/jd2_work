@@ -16,7 +16,7 @@ public class ResourceDao implements BaseDao<Long, BlockResource> {
     private static final ResourceDao RESOURCE_DAO = new ResourceDao();
     private static SessionFactory factory = SessionManager.getFactory();
 
-    public List<BlockResource> findResourcesOrderByAuthor(List<Object>parameters) {
+    public List<BlockResource> findResourcesOrderByAuthor(List<Object> parameters) {
         Session session = factory.openSession();
         String resourceName = (String) parameters.get(0);
         String category = (String) parameters.get(1);
@@ -25,33 +25,36 @@ public class ResourceDao implements BaseDao<Long, BlockResource> {
         CriteriaQuery<BlockResource> criteria = cb.createQuery(BlockResource.class);
         Root<BlockResource> root = criteria.from(BlockResource.class);
         Join<BlockResource, Category> categoryJoin = root.join(BlockResource_.category);
+
+
+//        criteria.select(root).where(filter.getPredicates());
         criteria.select(root).where(
-                cb.equal(root.get(BlockResource_.resourceName),resourceName),
+                cb.equal(root.get(BlockResource_.resourceName), resourceName),
                 cb.equal(categoryJoin.get(Category_.categoryName), category),
                 cb.equal(root.get(BlockResource_.price), price)
         );
         criteria.select(root).where(
-                cb.equal(root.get(BlockResource_.resourceName),resourceName),
+                cb.equal(root.get(BlockResource_.resourceName), resourceName),
                 cb.equal(categoryJoin.get(Category_.categoryName), category),
                 cb.equal(root.get(BlockResource_.price), price)
         );
         criteria.select(root).where(
-                cb.equal(root.get(BlockResource_.resourceName),resourceName),
+                cb.equal(root.get(BlockResource_.resourceName), resourceName),
                 cb.equal(categoryJoin.get(Category_.categoryName), category),
                 cb.equal(root.get(BlockResource_.price), price)
         );
         criteria.select(root).where(
-                cb.equal(root.get(BlockResource_.resourceName),resourceName),
+                cb.equal(root.get(BlockResource_.resourceName), resourceName),
                 cb.equal(categoryJoin.get(Category_.categoryName), category),
                 cb.equal(root.get(BlockResource_.price), price)
         );
         criteria.select(root).where(
-                cb.equal(root.get(BlockResource_.resourceName),resourceName),
+                cb.equal(root.get(BlockResource_.resourceName), resourceName),
                 cb.equal(categoryJoin.get(Category_.categoryName), category),
                 cb.equal(root.get(BlockResource_.price), price)
         );
         criteria.select(root).where(
-                cb.equal(root.get(BlockResource_.resourceName),resourceName),
+                cb.equal(root.get(BlockResource_.resourceName), resourceName),
                 cb.equal(categoryJoin.get(Category_.categoryName), category),
                 cb.equal(root.get(BlockResource_.price), price)
         );
@@ -61,19 +64,14 @@ public class ResourceDao implements BaseDao<Long, BlockResource> {
 
         List<BlockResource> list = session.createQuery(criteria).list();
 
-
-
         return session.createQuery(criteria)
-                .setFirstResult( offset)
+                .setFirstResult(offset)
                 .setMaxResults(limit)
                 .list();
     }
 
-    public void pages () {
+    public void pages() {
     }
-
-
-
 
     public static ResourceDao getResourceDao() {
         return RESOURCE_DAO;
