@@ -1,25 +1,28 @@
-//package com.itacademy.database;
-//
-//import com.itacademy.database.dao.ResourceDao;
-//import com.itacademy.database.entity.Resource;
-//
-//import java.util.ArrayList;
-//import java.util.List;
-//
-//public class HibernateRunner {
-//
-//    public static void main(String[] args) {
-//        List<Object> parametrs = new ArrayList<>();
-//        parametrs.add("test");
-//        parametrs.add("www");
-//        parametrs.add(222);
-//        parametrs.add(0);
-//        parametrs.add(2);
-//        List<Resource> list = ResourceDao.getResourceDao().findResourcesOrderByAuthor(parametrs);
-//        System.out.println(list.size());
-//        List<Resource> list2 = ResourceDao.getResourceDao().getAll();
-//        System.out.println(list2.size());
-//        Resource resource = ResourceDao.getResourceDao().get(1L).orElse(null);
-//        System.out.println(resource);
-//    }
-//}
+package com.itacademy.database;
+
+import com.itacademy.database.dao.ResourceDao;
+import com.itacademy.database.entity.ProxyPredicate;
+import com.itacademy.database.util.SessionManager;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.Predicate;
+import java.util.Arrays;
+
+public class HibernateRunner {
+
+    private static SessionFactory factory = SessionManager.getFactory();
+
+    public static void main(String[] args) {
+        Session session = factory.openSession();
+        CriteriaBuilder cb = session.getCriteriaBuilder();
+        ProxyPredicate proxyPredicate = new ProxyPredicate();
+        proxyPredicate.setResource("test");
+        proxyPredicate.setCategory("www");
+        proxyPredicate.setPrice(222);
+
+        Predicate [] predicates = ResourceDao.getResourceDao().build(cb, proxyPredicate);
+        System.out.println(Arrays.toString(predicates));
+    }
+}

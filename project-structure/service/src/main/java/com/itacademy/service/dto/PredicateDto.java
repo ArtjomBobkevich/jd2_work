@@ -14,4 +14,9 @@ public class PredicateDto {
     private String resource;
     private String category;
     private Integer price;
+
+    public PredicateDto(String resource, String category) {
+        this.resource = resource;
+        this.category = category;
+    }
 }

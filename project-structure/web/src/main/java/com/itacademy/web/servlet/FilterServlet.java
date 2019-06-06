@@ -1,7 +1,5 @@
 package com.itacademy.web.servlet;
 
-import com.itacademy.service.dto.PredicateDto;
-import com.itacademy.service.service.ResourceService;
 import com.itacademy.web.util.JspPath;
 
 import javax.servlet.ServletException;
@@ -14,7 +12,6 @@ import java.nio.charset.StandardCharsets;
 
 @WebServlet("/filter")
 public class FilterServlet extends HttpServlet {
-    private ResourceService resourceService = ResourceService.getResourceService();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -34,13 +31,14 @@ public class FilterServlet extends HttpServlet {
         Integer offset = Integer.parseInt(req.getParameter("offset"));
         Integer limit = Integer.parseInt(req.getParameter("limit"));
 
-        resp.sendRedirect("/filter");
+        resp.sendRedirect("/resources-by-criteria?resourceName=" + resourceName + "&category=" +
+                category + "&price=" + price + "&offset=" + offset + "&limit=" + limit);
 
-        PredicateDto predicateDto = PredicateDto.builder()
-                .resource(resourceName)
-                .category(category)
-                .price(price)
-                .build();
-        req.setAttribute("resource", resourceService.findResourceByCriteria(predicateDto, offset, limit));
+//        PredicateDto predicateDto = PredicateDto.builder()
+//                .resource(resourceName)
+//                .category(category)
+//                .price(price)
+//                .build();
+//        req.setAttribute("resource", resourceService.findResourceByCriteria(predicateDto, offset, limit));
     }
 }

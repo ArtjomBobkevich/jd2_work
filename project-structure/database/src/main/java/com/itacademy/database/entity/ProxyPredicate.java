@@ -14,4 +14,9 @@ public class ProxyPredicate {
     private String resource;
     private String category;
     private Integer price;
+
+    public ProxyPredicate(String resource, String category) {
+        this.resource = resource;
+        this.category = category;
+    }
 }

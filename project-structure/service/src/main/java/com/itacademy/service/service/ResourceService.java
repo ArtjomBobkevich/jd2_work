@@ -47,7 +47,12 @@ public class ResourceService {
     }
 
     public List<ResourceFullDto> findResourceByCriteria(PredicateDto predicateDto, Integer offset, Integer limit) {
-        ProxyPredicate proxyPredicate = new ProxyPredicate(predicateDto.getResource(), predicateDto.getCategory(), predicateDto.getPrice());
+        ProxyPredicate proxyPredicate;
+        if (predicateDto.getPrice()!=null){
+             proxyPredicate = new ProxyPredicate(predicateDto.getResource(), predicateDto.getCategory(), predicateDto.getPrice());
+        } else
+             proxyPredicate = new ProxyPredicate(predicateDto.getResource(), predicateDto.getCategory());
+
         return getResourceDao().findResourcesOrderByAuthor(proxyPredicate,offset,limit).stream()
                 .map(it -> new ResourceFullDto(it.getResourceName(), it.getFoto(), it.getHeading().getHeadingName(), it.getCategory().getCategoryName(),
                         it.getPerson().getLogin(), it.getPrice(), it.getText(), it.getBlock()))

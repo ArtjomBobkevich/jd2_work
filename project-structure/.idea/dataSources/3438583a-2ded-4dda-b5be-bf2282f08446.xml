@@ -64,7 +64,7 @@
     </role>
     <schema id="14" parent="4" name="flea_market">
       <ObjectId>17005</ObjectId>
-      <IntrospectionTimestamp>2019-06-05.18:01:37.203</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2019-06-06.20:27:38.006</IntrospectionTimestamp>
       <IntrospectionStateNumber>1220</IntrospectionStateNumber>
       <Visible>1</Visible>
     </schema>
@@ -88,7 +88,7 @@
     <schema id="20" parent="4" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
-      <IntrospectionTimestamp>2019-06-05.18:01:29.358</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2019-06-06.20:27:30.080</IntrospectionTimestamp>
       <Current>1</Current>
     </schema>
     <access-method id="21" parent="4" name="btree">

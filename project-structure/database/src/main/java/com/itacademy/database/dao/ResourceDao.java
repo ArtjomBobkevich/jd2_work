@@ -33,10 +33,26 @@ public class ResourceDao implements BaseDao<Long, BlockResource> {
         Root<BlockResource> root = criteria.from(BlockResource.class);
         Join<BlockResource, Category> categoryJoin = root.join(BlockResource_.category);
 //        criteria.select(root).where(build(cb, proxyPredicate));
-        criteria.select(root).where(
-                cb.equal(root.get(BlockResource_.resourceName), proxyPredicate.getResource()),
-                cb.equal(categoryJoin.get(Category_.categoryName), proxyPredicate.getCategory()),
-                cb.equal(root.get(BlockResource_.price), proxyPredicate.getPrice()));
+        if (!proxyPredicate.getResource().equals("") && !proxyPredicate.getCategory().equals("") && proxyPredicate.getPrice() != null){
+            criteria.select(root).where(
+                    cb.equal(root.get(BlockResource_.resourceName), proxyPredicate.getResource()),
+                    cb.equal(categoryJoin.get(Category_.categoryName), proxyPredicate.getCategory()),
+                    cb.equal(root.get(BlockResource_.price), proxyPredicate.getPrice()));
+        } else if (!proxyPredicate.getResource().equals("") && !proxyPredicate.getCategory().equals("")&& proxyPredicate.getPrice() == null) {
+            criteria.select(root).where(
+            cb.equal(root.get(BlockResource_.resourceName), proxyPredicate.getResource()),
+                    cb.equal(categoryJoin.get(Category_.categoryName), proxyPredicate.getCategory()));
+        } else if (!proxyPredicate.getResource().equals("")){
+            criteria.select(root).where(
+                    cb.equal(root.get(BlockResource_.resourceName), proxyPredicate.getResource()));
+        } else if (!proxyPredicate.getCategory().equals("")&& proxyPredicate.getPrice() == null) {
+            criteria.select(root).where(
+                    cb.equal(categoryJoin.get(Category_.categoryName), proxyPredicate.getCategory()));
+        } else if (proxyPredicate.getPrice() != null) {
+            criteria.select(root).where(
+                    cb.equal(root.get(BlockResource_.price), proxyPredicate.getPrice()));
+        }
+
         return session.createQuery(criteria)
                 .setFirstResult(offset)
                 .setMaxResults(limit)

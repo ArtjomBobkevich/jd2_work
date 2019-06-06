@@ -46,10 +46,5 @@
     </div>
     <input type="submit" value="выбрать">
 </form>
-<c:forEach var="resources" items="${requestScope.resource}">
-    <a>${resources.resourceName}</a><br>
-    <a>${resources.heading}</a><br>
-    <a>${resources.person}</a><br>
-</c:forEach>
 </body>
 </html>
