@@ -27,7 +27,6 @@
         heading
         <select name="headingId" id="headingId">
             <c:forEach var="list" items="${requestScope.heading}">
-                <%--<c:if test="${item.categoryId != currentCategoryId}"--%>
                 <option value="${list.id}">${list.headingName}</option>
             </c:forEach>
         </select>

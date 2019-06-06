@@ -21,18 +21,17 @@ import java.nio.charset.StandardCharsets;
 @WebServlet("/resource-update")
 public class ResourceUpdateServlet extends HttpServlet {
 
-    private ResourceService resourceService =ResourceService.getResourceService();
+    private ResourceService resourceService = ResourceService.getResourceService();
     private PersonService personService = PersonService.getPersonService();
     private CategoryService categoryService = CategoryService.getCategoryService();
     private HeadingService headingService = HeadingService.getHeadingService();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("resources", resourceService.findAll());
+        req.setAttribute("resource",resourceService.findAll());
         req.setAttribute("heading", headingService.findAll());
         req.setAttribute("category", categoryService.findAll());
         req.setAttribute("person", personService.findAll());
-
 
         getServletContext()
                 .getRequestDispatcher(JspPath.get("resource-update"))
@@ -51,6 +50,7 @@ public class ResourceUpdateServlet extends HttpServlet {
                 PersonDao.getPersonDao().get(Long.parseLong(req.getParameter("personId"))).orElse(null),
                 Integer.parseInt(req.getParameter("price")),
                 req.getParameter("text"),
+                Long.parseLong(req.getParameter("id")),
                 "NO"
         );
         resourceService.update(blockResource);

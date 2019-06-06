@@ -15,7 +15,7 @@
 <form action="${pageContext.request.contextPath}/resource-update" method="post">
     <div>
         <select name="id" id="id">
-            <c:forEach var="list" items="${requestScope.resources}">
+            <c:forEach var="list" items="${requestScope.resource}">
                 <option value="${list.id}">${list.resourceName}</option>
             </c:forEach>
         </select>

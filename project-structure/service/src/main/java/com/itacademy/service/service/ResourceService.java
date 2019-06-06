@@ -1,12 +1,15 @@
 package com.itacademy.service.service;
 
 import com.itacademy.database.entity.BlockResource;
+import com.itacademy.database.entity.ProxyPredicate;
 import com.itacademy.service.dto.CreateResourceDto;
+import com.itacademy.service.dto.PredicateDto;
 import com.itacademy.service.dto.ResourceFullDto;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 import static com.itacademy.database.dao.ResourceDao.getResourceDao;
@@ -43,11 +46,22 @@ public class ResourceService {
         getResourceDao().update(blockResource);
     }
 
-    public List<ResourceFullDto> findResourceByCriteria(List<Object> parametrs) {
-        return getResourceDao().findResourcesOrderByAuthor(parametrs).stream()
+    public List<ResourceFullDto> findResourceByCriteria(PredicateDto predicateDto, Integer offset, Integer limit) {
+        ProxyPredicate proxyPredicate = new ProxyPredicate(predicateDto.getResource(), predicateDto.getCategory(), predicateDto.getPrice());
+        return getResourceDao().findResourcesOrderByAuthor(proxyPredicate,offset,limit).stream()
                 .map(it -> new ResourceFullDto(it.getResourceName(), it.getFoto(), it.getHeading().getHeadingName(), it.getCategory().getCategoryName(),
                         it.getPerson().getLogin(), it.getPrice(), it.getText(), it.getBlock()))
                 .collect(Collectors.toList());
+    }
+
+    public Map<Integer,List<BlockResource>> allByPages (PredicateDto predicateDto, Integer limit){
+        ProxyPredicate proxyPredicate = new ProxyPredicate(predicateDto.getResource(), predicateDto.getCategory(), predicateDto.getPrice());
+        return getResourceDao().allPages(proxyPredicate,limit);
+    }
+
+    public List<Integer> countPages (PredicateDto predicateDto, Integer limit) {
+        ProxyPredicate proxyPredicate = new ProxyPredicate(predicateDto.getResource(), predicateDto.getCategory(), predicateDto.getPrice());
+        return getResourceDao().countPages(proxyPredicate,limit);
     }
 
 //    public List<ResourceFullDto> allResourceByCriteria(List<Resource>list,Integer offset, Integer limit) {

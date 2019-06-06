@@ -1,5 +1,6 @@
 package com.itacademy.web.servlet;
 
+import com.itacademy.service.dto.PredicateDto;
 import com.itacademy.service.service.ResourceService;
 import com.itacademy.web.util.JspPath;
 
@@ -29,12 +30,17 @@ public class FilterServlet extends HttpServlet {
         req.setCharacterEncoding(StandardCharsets.UTF_8.name());
         String resourceName = req.getParameter("resourceName");
         String category = req.getParameter("category");
-        String price = req.getParameter("price");
+        Integer price = Integer.parseInt(req.getParameter("price"));
         Integer offset = Integer.parseInt(req.getParameter("offset"));
         Integer limit = Integer.parseInt(req.getParameter("limit"));
-        Integer limitConst = Integer.parseInt(req.getParameter("limit"));
 
-        resp.sendRedirect("/resources-by-criteria?resourceName=" + resourceName + "&category=" +
-                category + "&price=" + price + "&offset=" + offset + "&limit=" + limit + "&limitConst=" + limitConst);
+        resp.sendRedirect("/filter");
+
+        PredicateDto predicateDto = PredicateDto.builder()
+                .resource(resourceName)
+                .category(category)
+                .price(price)
+                .build();
+        req.setAttribute("resource", resourceService.findResourceByCriteria(predicateDto, offset, limit));
     }
 }
