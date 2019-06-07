@@ -1,35 +1,39 @@
 package com.itacademy.service.service;
 
+import com.itacademy.database.dao.PersonDao;
 import com.itacademy.database.entity.Person;
 import com.itacademy.service.dto.CreateNewPersonDto;
 import com.itacademy.service.dto.ViewPersonFullInfoDto;
-import lombok.AccessLevel;
-import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.Collectors;
-
-import static com.itacademy.database.dao.PersonDao.getPersonDao;
-
-@NoArgsConstructor(access = AccessLevel.PRIVATE)
+@Service
+@RequiredArgsConstructor(onConstructor = @__(@Autowired))
+@Transactional(readOnly = true)
 public class PersonService {
-    private static final PersonService PERSON_SERVICE = new PersonService();
+
+    private final PersonDao personDao;
 
     public List<ViewPersonFullInfoDto> findAll() {
-        return getPersonDao().getAll().stream()
+        return personDao.getAll().stream()
                 .map(it -> new ViewPersonFullInfoDto(it.getId(),it.getAvatar(), it.getLogin(), it.getIdentification(), it.getAge(),
                         it.getMail(), it.getPassword(), it.getPersonRole().getNameOfRole()))
                 .collect(Collectors.toList());
     }
 
     public ViewPersonFullInfoDto findById(Long id) {
-        return getPersonDao().get(id).map(it -> new ViewPersonFullInfoDto(it.getAvatar(), it.getLogin(),
+        return personDao.get(id).map(it -> new ViewPersonFullInfoDto(it.getAvatar(), it.getLogin(),
                 it.getIdentification(), it.getAge(), it.getMail(), it.getPassword(), it.getPersonRole().getNameOfRole()))
                 .orElse(null);
     }
 
+    @Transactional
     public Long savePerson(CreateNewPersonDto viewPersonFullInfoDto) {
-        return getPersonDao().save(Person.builder()
+        return personDao.save(Person.builder()
                 .avatar(viewPersonFullInfoDto.getAvatar())
                 .login(viewPersonFullInfoDto.getLogin())
                 .identification(viewPersonFullInfoDto.getIdentification())
@@ -40,15 +44,17 @@ public class PersonService {
                 .build());
     }
 
+    @Transactional
     public void delete(Person person) {
-        getPersonDao().delete(person);
+        personDao.delete(person);
     }
 
+    @Transactional
     public void update (Person person) {
-        getPersonDao().update(person);
+        personDao.update(person);
     }
 
-    public static PersonService getPersonService() {
-        return PERSON_SERVICE;
-    }
+//    public static PersonService getPersonService() {
+//        return PERSON_SERVICE;
+//    }
 }

@@ -10,8 +10,9 @@ import javax.persistence.Embeddable;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
+@AllArgsConstructor/*(onConstructor = @__(@Autowired))*/
 @Builder
+//@Component
 @Embeddable
 public class Identification {
 

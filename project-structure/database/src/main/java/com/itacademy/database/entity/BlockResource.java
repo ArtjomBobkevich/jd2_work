@@ -11,9 +11,10 @@ import javax.persistence.Entity;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
-@AllArgsConstructor
+@AllArgsConstructor/*(onConstructor = @__(@Autowired))*/
 @Entity
 @DiscriminatorValue("block")
+//@Component
 public class BlockResource extends Resource {
 
     private Long id;

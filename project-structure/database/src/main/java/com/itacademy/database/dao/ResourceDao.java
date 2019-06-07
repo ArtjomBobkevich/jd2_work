@@ -5,9 +5,9 @@ import com.itacademy.database.entity.BlockResource_;
 import com.itacademy.database.entity.Category;
 import com.itacademy.database.entity.Category_;
 import com.itacademy.database.entity.ProxyPredicate;
-import com.itacademy.database.util.SessionManager;
+import lombok.Cleanup;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
+import org.springframework.stereotype.Repository;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -20,14 +20,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ResourceDao implements BaseDao<Long, BlockResource> {
+@Repository
+public class ResourceDao extends BaseDaoImpl<Long, BlockResource> {
 
-    private static final ResourceDao RESOURCE_DAO = new ResourceDao();
-    private static SessionFactory factory = SessionManager.getFactory();
+//    private static final ResourceDao RESOURCE_DAO = new ResourceDao();
+//    private static SessionFactory factory = SessionManager.getFactory();
 
     public List<BlockResource> findResourcesOrderByAuthor(ProxyPredicate proxyPredicate, Integer offset, Integer limit) {
 
-        Session session = factory.openSession();
+       @Cleanup Session session = getSessionFactory().openSession();
         CriteriaBuilder cb = session.getCriteriaBuilder();
         CriteriaQuery<BlockResource> criteria = cb.createQuery(BlockResource.class);
         Root<BlockResource> root = criteria.from(BlockResource.class);
@@ -84,7 +85,7 @@ public class ResourceDao implements BaseDao<Long, BlockResource> {
     }
 
     public Map<Integer, List<BlockResource>> allPages(ProxyPredicate proxyPredicate, Integer limit) {
-        Session session = factory.openSession();
+        Session session = getSessionFactory().openSession();
         CriteriaBuilder cb = session.getCriteriaBuilder();
         CriteriaQuery<BlockResource> criteria = cb.createQuery(BlockResource.class);
         Root<BlockResource> root = criteria.from(BlockResource.class);
@@ -112,7 +113,7 @@ public class ResourceDao implements BaseDao<Long, BlockResource> {
     }
 
     public List<Integer> countPages (ProxyPredicate proxyPredicate, Integer limit) {
-        Session session = factory.openSession();
+        @Cleanup Session session = getSessionFactory().openSession();
         CriteriaBuilder cb = session.getCriteriaBuilder();
         CriteriaQuery<BlockResource> criteria = cb.createQuery(BlockResource.class);
         Root<BlockResource> root = criteria.from(BlockResource.class);
@@ -131,9 +132,9 @@ public class ResourceDao implements BaseDao<Long, BlockResource> {
         return countPages;
     }
 
-    public static ResourceDao getResourceDao() {
-        return RESOURCE_DAO;
-    }
+//    public static ResourceDao getResourceDao() {
+//        return RESOURCE_DAO;
+//    }
 }
 
 //        public Map<Integer, List<BlockResource>> allPages(ProxyPredicate proxyPredicate, Integer limit) {

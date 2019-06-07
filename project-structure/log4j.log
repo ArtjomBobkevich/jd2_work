@@ -1,10 +1,44 @@
-2019-06-06 21:38:13,069 INFO  - HHH000412: Hibernate Core {5.4.2.Final}
-2019-06-06 21:38:13,842 INFO  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-06-06 21:38:14,474 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-2019-06-06 21:38:14,484 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/flea_market]
-2019-06-06 21:38:14,485 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
-2019-06-06 21:38:14,486 INFO  - HHH10001003: Autocommit mode: false
-2019-06-06 21:38:14,487 INFO  - HHH10001007: JDBC isolation level: REPEATABLE_READ
-2019-06-06 21:38:14,493 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
-2019-06-06 21:38:14,703 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
-2019-06-06 21:38:16,414 INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-06-07 14:35:22,771 INFO  - HHH000412: Hibernate Core {5.4.2.Final}
+2019-06-07 14:35:23,635 INFO  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-06-07 14:35:24,014 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-06-07 14:35:24,023 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/flea_market]
+2019-06-07 14:35:24,023 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2019-06-07 14:35:24,024 INFO  - HHH10001003: Autocommit mode: false
+2019-06-07 14:35:24,024 INFO  - HHH10001007: JDBC isolation level: REPEATABLE_READ
+2019-06-07 14:35:24,029 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-06-07 14:35:24,229 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2019-06-07 14:35:25,574 INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-06-07 14:35:26,536 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2019-06-07 14:35:26,926 WARN  - SQL Warning Code: 0, SQLState: 00000
+2019-06-07 14:35:26,926 WARN  - ограничение "fk285svcgstjk3k94kv412gce6x" в таблице "comment" не существует, пропускается
+2019-06-07 14:35:26,927 WARN  - SQL Warning Code: 0, SQLState: 00000
+2019-06-07 14:35:26,928 WARN  - ограничение "fkieppl7rjx9k0semdo8d3t1c5h" в таблице "comment" не существует, пропускается
+2019-06-07 14:35:26,929 WARN  - SQL Warning Code: 0, SQLState: 00000
+2019-06-07 14:35:26,929 WARN  - ограничение "fk39iqhos1d5frgs9by3292d3rh" в таблице "heading" не существует, пропускается
+2019-06-07 14:35:26,930 WARN  - SQL Warning Code: 0, SQLState: 00000
+2019-06-07 14:35:26,931 WARN  - ограничение "fktajt5xd9dew023xqn5yc6m0lm" в таблице "person" не существует, пропускается
+2019-06-07 14:35:26,932 WARN  - SQL Warning Code: 0, SQLState: 00000
+2019-06-07 14:35:26,932 WARN  - ограничение "fkqi8wwpr89wbb0pdwsma5dhysj" в таблице "resource" не существует, пропускается
+2019-06-07 14:35:26,933 WARN  - SQL Warning Code: 0, SQLState: 00000
+2019-06-07 14:35:26,933 WARN  - ограничение "fkdi2g63fdw00b8lhfsq5pchila" в таблице "resource" не существует, пропускается
+2019-06-07 14:35:26,934 WARN  - SQL Warning Code: 0, SQLState: 00000
+2019-06-07 14:35:26,934 WARN  - ограничение "fk2xgr9nhqx58aw5y4ufu8im9mu" в таблице "resource" не существует, пропускается
+2019-06-07 14:35:26,935 WARN  - SQL Warning Code: 0, SQLState: 00000
+2019-06-07 14:35:26,935 WARN  - ограничение "fk22cw1oru4w8qpdwbxs7baahrx" в таблице "resource_person" не существует, пропускается
+2019-06-07 14:35:26,936 WARN  - SQL Warning Code: 0, SQLState: 00000
+2019-06-07 14:35:26,936 WARN  - ограничение "fkakdjyqnj5ljhigmun0qy6cqf6" в таблице "resource_person" не существует, пропускается
+2019-06-07 14:35:26,937 WARN  - SQL Warning Code: 0, SQLState: 00000
+2019-06-07 14:35:26,937 WARN  - ограничение "fksxohpc59xe1wpgh7f3jc3aphp" в таблице "resource_person" не существует, пропускается
+2019-06-07 14:35:26,938 WARN  - SQL Warning Code: 0, SQLState: 00000
+2019-06-07 14:35:26,938 WARN  - ограничение "fktdgct38dspcnqt6h5gnsgd6v7" в таблице "store_basket" не существует, пропускается
+2019-06-07 14:35:26,939 WARN  - SQL Warning Code: 0, SQLState: 00000
+2019-06-07 14:35:26,939 WARN  - ограничение "fktfdv8g7y48bkh82mr2y4lxug7" в таблице "store_basket" не существует, пропускается
+2019-06-07 14:35:27,266 WARN  - SQL Warning Code: 0, SQLState: 00000
+2019-06-07 14:35:27,267 WARN  - удаление распространяется на ещё 2 объекта
+2019-06-07 14:35:27,424 WARN  - SQL Warning Code: 0, SQLState: 00000
+2019-06-07 14:35:27,424 WARN  - удаление распространяется на объект ограничение resource_heading_id_fkey в отношении таблица flea_market.resource
+2019-06-07 14:35:27,477 WARN  - SQL Warning Code: 0, SQLState: 00000
+2019-06-07 14:35:27,478 WARN  - удаление распространяется на ещё 3 объекта
+2019-06-07 14:35:27,565 WARN  - SQL Warning Code: 0, SQLState: 00000
+2019-06-07 14:35:27,565 WARN  - удаление распространяется на ещё 2 объекта
+2019-06-07 14:35:28,825 INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]

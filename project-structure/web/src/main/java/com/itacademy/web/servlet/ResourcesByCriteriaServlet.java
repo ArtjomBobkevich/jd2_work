@@ -43,7 +43,7 @@ public class ResourcesByCriteriaServlet extends HttpServlet {
         }
 
         req.setAttribute("resource", resourceService.findResourceByCriteria(predicateDto, offset, limit));
-        req.setAttribute("pages",resourceService.countPages(predicateDto, limit));
+//        req.setAttribute("pages",resourceService.countPages(predicateDto, limit));
 
         getServletContext()
                 .getRequestDispatcher(JspPath.get("resources-by-criteria"))

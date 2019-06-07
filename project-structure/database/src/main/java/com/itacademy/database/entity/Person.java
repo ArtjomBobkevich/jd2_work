@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -24,9 +26,10 @@ import java.util.List;
 @Data
 @EqualsAndHashCode(of = "id")
 @NoArgsConstructor
-@AllArgsConstructor
+@AllArgsConstructor/*(onConstructor = @__(@Autowired))*/
 @Builder
 @Entity
+//@Component
 @Table(name = "person", schema = "flea_market")
 public class Person implements BaseEntity<Long> {
 

@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -21,9 +23,10 @@ import java.util.List;
 @ToString(exclude = {"headings"})
 @EqualsAndHashCode(exclude = "id")
 @NoArgsConstructor
-@AllArgsConstructor
+@AllArgsConstructor/*(onConstructor = @__(@Autowired))*/
 @Builder
 @Entity
+//@Component
 @Table(name = "category", schema = "flea_market")
 public class Category implements BaseEntity<Long> {
 

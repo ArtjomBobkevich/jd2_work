@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -29,10 +31,11 @@ import java.util.List;
 @Data
 @ToString(exclude = {"comments", "personList", "storeBasketPerson"})
 @NoArgsConstructor
-@AllArgsConstructor
+@AllArgsConstructor/*(onConstructor = @__(@Autowired))*/
 @EqualsAndHashCode(exclude = "id")
 @Builder
 @Entity
+//@Component
 @Table(name = "resource", schema = "flea_market")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "type")

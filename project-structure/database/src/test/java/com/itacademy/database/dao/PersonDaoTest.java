@@ -3,32 +3,33 @@ package com.itacademy.database.dao;
 import com.itacademy.database.entity.Identification;
 import com.itacademy.database.entity.Person;
 import com.itacademy.database.entity.PersonRole;
-import com.itacademy.database.util.SessionManager;
 import lombok.Cleanup;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.transaction.annotation.Transactional;
 
-import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
+@RunWith(SpringRunner.class)
+@ContextConfiguration("classpath:application-context.xml")
+@Transactional
 public class PersonDaoTest {
 
-    private static SessionFactory factory = SessionManager.getFactory();
-    private final PersonDao personDao = PersonDao.getPersonDao();
-
-
-//    @AfterClass
-//    public static void clear() {
-//        factory.close();
-//    }
+    @Autowired
+    private PersonDao personDao;
+    private RoleDao roleDao;
 
     @Test
     public void checkSaveEntity() {
-      @Cleanup Session session = factory.openSession();
-        PersonRole role = session.get(PersonRole.class, 2L);
+        PersonRole role = roleDao.get( 2L).orElse(null);
         Person person = Person.builder()
-                .avatar("qwer")
+                .avatar("qwerqwe")
                 .login("1234")
                 .identification(Identification.builder()
                         .firstName("qqq")
@@ -41,12 +42,18 @@ public class PersonDaoTest {
                 .build();
 
         personDao.save(person);
+//        session.getTransaction().commit();
         assertTrue(personDao.get(person.getId()).isPresent());
     }
 
     @Test
+    public void getAll() {
+        assertNotNull(personDao.getAll());
+    }
+
+    @Test
     public void checkGetEntity () {
-        @Cleanup Session session = factory.openSession();
+        @Cleanup Session session = personDao.getSessionFactory().openSession();
         PersonRole role = session.get(PersonRole.class, 2L);
         Person person = Person.builder()
                 .avatar("qwer")
@@ -67,7 +74,7 @@ public class PersonDaoTest {
 
     @Test
     public void checkGetAll () {
-        @Cleanup Session session = factory.openSession();
+        @Cleanup Session session = personDao.getSessionFactory().openSession();
         PersonRole role = session.get(PersonRole.class, 2L);
         Person person = Person.builder()
                 .avatar("qwer")
@@ -88,7 +95,7 @@ public class PersonDaoTest {
 
     @Test
     public void checkUpdate () {
-        @Cleanup Session session = factory.openSession();
+        @Cleanup Session session = personDao.getSessionFactory().openSession();
         PersonRole role = session.get(PersonRole.class, 2L);
         Person person = Person.builder()
                 .avatar("qwer")
@@ -112,7 +119,7 @@ public class PersonDaoTest {
 
     @Test
     public void checkDelete () {
-        @Cleanup Session session = factory.openSession();
+        @Cleanup Session session = personDao.getSessionFactory().openSession();
         PersonRole role = session.get(PersonRole.class, 2L);
         Person person = Person.builder()
                 .avatar("qwer")

@@ -1,12 +1,14 @@
 package com.itacademy.database.dao;
 
 import com.itacademy.database.entity.Person;
+import org.springframework.stereotype.Repository;
 
-public class PersonDao implements BaseDao<Long, Person> {
+@Repository
+public class PersonDao extends BaseDaoImpl<Long, Person> {
 
-    private static final PersonDao PERSON_DAO = new PersonDao();
-
-    public static PersonDao getPersonDao() {
-        return PERSON_DAO;
-    }
+//    private static final PersonDao PERSON_DAO = new PersonDao();
+//
+//    public static PersonDao getPersonDao() {
+//        return PERSON_DAO;
+//    }
 }

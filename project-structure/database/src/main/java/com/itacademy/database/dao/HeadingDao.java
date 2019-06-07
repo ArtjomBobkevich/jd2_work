@@ -1,12 +1,14 @@
 package com.itacademy.database.dao;
 
 import com.itacademy.database.entity.Heading;
+import org.springframework.stereotype.Repository;
 
-public class HeadingDao implements BaseDao<Long,Heading>{
+@Repository
+public class HeadingDao extends BaseDaoImpl <Long,Heading>{
 
-    private static final HeadingDao HEADING_DAO = new HeadingDao();
-
-    public static HeadingDao getHeadingDao() {
-        return HEADING_DAO;
-    }
+//    private static final HeadingDao HEADING_DAO = new HeadingDao();
+//
+//    public static HeadingDao getHeadingDao() {
+//        return HEADING_DAO;
+//    }
 }
