@@ -26,7 +26,7 @@ public class Filter {
         request.setCharacterEncoding(StandardCharsets.UTF_8.name());
         response.setCharacterEncoding(StandardCharsets.UTF_8.name());
 
-
+        //метод под вопросом
     }
 
 }
