@@ -2,7 +2,7 @@ package com.itacademy.service.service;
 
 import com.itacademy.database.dao.ResourceDao;
 import com.itacademy.database.entity.BlockResource;
-import com.itacademy.database.entity.ProxyPredicate;
+import com.itacademy.database.entity.FilterDto;
 import com.itacademy.service.dto.CreateResourceDto;
 import com.itacademy.service.dto.PredicateDto;
 import com.itacademy.service.dto.ResourceFullDto;
@@ -54,20 +54,17 @@ public class ResourceService {
     }
 
     public List<ResourceFullDto> findResourceByCriteria(PredicateDto predicateDto, Integer offset, Integer limit) {
-        ProxyPredicate proxyPredicate;
-        if (predicateDto.getPrice() != null) {
-            proxyPredicate = new ProxyPredicate(predicateDto.getResource(), predicateDto.getCategory(), predicateDto.getPrice());
-        } else
-            proxyPredicate = new ProxyPredicate(predicateDto.getResource(), predicateDto.getCategory());
+        FilterDto filterDto;
+            filterDto = new FilterDto(predicateDto.getResource(), predicateDto.getCategory(), predicateDto.getPrice());
 
-        return resourceDao.findResourcesOrderByAuthor(proxyPredicate, offset, limit).stream()
+        return resourceDao.findResourcesOrderByAuthor(filterDto, offset, limit).stream()
                 .map(it -> new ResourceFullDto(it.getResourceName(), it.getFoto(), it.getHeading().getHeadingName(), it.getCategory().getCategoryName(),
                         it.getPerson().getLogin(), it.getPrice(), it.getText(), it.getBlock()))
                 .collect(Collectors.toList());
     }
 
     public Integer countPages(PredicateDto predicateDto, Integer limit) {
-        ProxyPredicate proxyPredicate = new ProxyPredicate(predicateDto.getResource(), predicateDto.getCategory(), predicateDto.getPrice());
-        return resourceDao.countPages(proxyPredicate, limit);
+        FilterDto filterDto = new FilterDto(predicateDto.getResource(), predicateDto.getCategory(), predicateDto.getPrice());
+        return resourceDao.countPages(filterDto, limit);
     }
 }

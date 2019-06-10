@@ -4,6 +4,7 @@ import com.itacademy.database.entity.Identification;
 import com.itacademy.service.dto.CreateNewPersonDto;
 import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.RoleService;
+import com.itacademy.web.util.Context;
 import com.itacademy.web.util.Filter;
 import com.itacademy.web.util.JspPath;
 import org.springframework.context.ApplicationContext;
@@ -18,9 +19,9 @@ import java.io.IOException;
 @WebServlet(value = "/person-save", name = "PersonSaveServlet")
 public class PersonSaveServlet extends HttpServlet {
 
-    private Filter filter = Filter.getFILTER();
+    private Filter filter = Filter.getFilter();
 
-    private ApplicationContext applicationContext = BaseServlet.getApplicationContext();
+    private ApplicationContext applicationContext = Context.getApplicationContext();
     private PersonService personService = applicationContext.getBean(PersonService.class);
     private RoleService roleService = applicationContext.getBean(RoleService.class);
 
@@ -33,7 +34,7 @@ public class PersonSaveServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        filter.addFilter(req);
+        filter.doFilter(req,resp);
         CreateNewPersonDto createNewGenreDto = CreateNewPersonDto.builder()
                 .avatar(req.getParameter("avatar"))
                 .login(req.getParameter("login"))

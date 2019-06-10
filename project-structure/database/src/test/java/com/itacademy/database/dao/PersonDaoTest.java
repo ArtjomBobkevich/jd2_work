@@ -29,7 +29,6 @@ public class PersonDaoTest {
     @Test
     public void checkSaveEntity() {
 
-
         PersonRole role = PersonRole.builder()
                 .nameOfRole("test")
                 .build();

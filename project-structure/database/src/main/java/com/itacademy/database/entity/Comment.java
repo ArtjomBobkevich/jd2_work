@@ -17,11 +17,10 @@ import javax.persistence.Table;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor/*(onConstructor = @__(@Autowired))*/
+@AllArgsConstructor
 @Builder
 @EqualsAndHashCode(exclude = "id")
 @Entity
-//@Component
 @Table(name = "comment", schema = "flea_market")
 public class Comment implements BaseEntity<Long> {
 

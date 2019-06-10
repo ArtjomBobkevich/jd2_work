@@ -1,6 +1,7 @@
 package com.itacademy.web.servlet;
 
 import com.itacademy.service.service.PersonService;
+import com.itacademy.web.util.Context;
 import com.itacademy.web.util.JspPath;
 import org.springframework.context.ApplicationContext;
 
@@ -14,7 +15,7 @@ import java.io.IOException;
 @WebServlet(value = "/person-info", name = "PersonInfoServlet")
 public class PersonInfoServlet extends HttpServlet {
 
-    private ApplicationContext applicationContext = BaseServlet.getApplicationContext();
+    private ApplicationContext applicationContext = Context.getApplicationContext();
 
     private PersonService personService = applicationContext.getBean(PersonService.class);
 

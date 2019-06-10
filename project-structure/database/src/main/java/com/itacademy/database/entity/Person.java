@@ -26,10 +26,9 @@ import java.util.List;
 @Data
 @EqualsAndHashCode(exclude = "id")
 @NoArgsConstructor
-@AllArgsConstructor/*(onConstructor = @__(@Autowired))*/
+@AllArgsConstructor
 @Builder
 @Entity
-//@Component
 @Table(name = "person", schema = "flea_market")
 public class Person implements BaseEntity<Long> {
 

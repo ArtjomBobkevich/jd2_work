@@ -1,11 +1,8 @@
-com\itacademy\database\util\SessionManager.class
 com\itacademy\database\entity\Resource_.class
 com\itacademy\database\entity\Identification_.class
 com\itacademy\database\entity\Resource.class
 com\itacademy\database\entity\Heading.class
 com\itacademy\database\dao\PersonDao.class
-com\itacademy\database\entity\ProxyPredicate.class
-com\itacademy\database\HibernateRunner.class
 com\itacademy\database\entity\Resource$ResourceBuilder.class
 com\itacademy\database\entity\Person_.class
 com\itacademy\database\dao\CategoryDao.class
@@ -23,7 +20,6 @@ com\itacademy\database\entity\BlockResource_.class
 com\itacademy\database\entity\BaseEntity.class
 com\itacademy\database\entity\Comment.class
 com\itacademy\database\dao\BaseDaoImpl.class
-com\itacademy\database\entity\ProxyPredicate$ProxyPredicateBuilder.class
 com\itacademy\database\entity\Count.class
 com\itacademy\database\dao\RoleDao.class
 com\itacademy\database\entity\Comment$CommentBuilder.class

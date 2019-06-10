@@ -2,6 +2,7 @@ package com.itacademy.web.servlet;
 
 import com.itacademy.service.dto.PredicateDto;
 import com.itacademy.service.service.ResourceService;
+import com.itacademy.web.util.Context;
 import com.itacademy.web.util.Filter;
 import com.itacademy.web.util.JspPath;
 import org.springframework.context.ApplicationContext;
@@ -16,9 +17,9 @@ import java.io.IOException;
 @WebServlet("/filter")
 public class FilterServlet extends HttpServlet {
 
-    private Filter filter = Filter.getFILTER();
+    private Filter filter = Filter.getFilter();
 
-    private ApplicationContext applicationContext = BaseServlet.getApplicationContext();
+    private ApplicationContext applicationContext = Context.getApplicationContext();
 
     private ResourceService resourceService = applicationContext.getBean(ResourceService.class);
 
@@ -33,7 +34,7 @@ public class FilterServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        filter.addFilter(req);
+        filter.doFilter(req,resp);
         String resourceName = req.getParameter("resourceName");
         String category = req.getParameter("category");
         Integer price = Integer.parseInt(req.getParameter("price"));

@@ -23,10 +23,9 @@ import java.util.List;
 @ToString(exclude = {"headings"})
 @EqualsAndHashCode(exclude = "id")
 @NoArgsConstructor
-@AllArgsConstructor/*(onConstructor = @__(@Autowired))*/
+@AllArgsConstructor
 @Builder
 @Entity
-//@Component
 @Table(name = "category", schema = "flea_market")
 public class Category implements BaseEntity<Long> {
 

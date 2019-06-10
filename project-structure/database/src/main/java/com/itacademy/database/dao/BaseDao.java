@@ -15,9 +15,7 @@ public interface BaseDao <T extends Serializable,E extends BaseEntity<T>> {
     SessionFactory getSessionFactory();
 
     default T save(E entity) {
-//        getSessionFactory().getCurrentSession().beginTransaction();
         getSessionFactory().getCurrentSession().save(entity);
-//        getSessionFactory().getCurrentSession().getTransaction().commit();
         return entity.getId();
     }
 
@@ -33,15 +31,6 @@ public interface BaseDao <T extends Serializable,E extends BaseEntity<T>> {
         getSessionFactory().getCurrentSession().delete(entity);
     }
 
-//     default List<E> getAll() {
-////        Class<E> clazz = getClazz();
-////        CriteriaBuilder cb = getSessionFactory().getCurrentSession().getCriteriaBuilder();
-////        CriteriaQuery<E> criteria = cb.createQuery(clazz);
-////        Root<E> root = criteria.from(clazz);
-////        criteria.select(root);
-////        return getSessionFactory().getCurrentSession().createQuery(criteria).list();
-////    }
-
     default List<E> getAll() {
         Class<E> clazz = getClazz();
         return getSessionFactory().getCurrentSession()
@@ -52,7 +41,5 @@ public interface BaseDao <T extends Serializable,E extends BaseEntity<T>> {
     @SuppressWarnings("unchecked")
     default Class<E> getClazz() {
         return (Class<E>) GenericTypeResolver.resolveTypeArguments(getClass(),BaseDao.class)[1];
-//        Type entityType = ((ParameterizedType) getClass().getGenericInterfaces()[0]).getActualTypeArguments()[1];
-//        return  (Class<E>) entityType;
     }
 }

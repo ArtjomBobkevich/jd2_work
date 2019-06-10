@@ -25,8 +25,8 @@ import java.util.Properties;
 public class DatabaseConfig {
 
     @Bean
-    public DataSource dataSource(@Value("${db.username}") String username,@Value("${db.url}") String url,
-                                 @Value("${db.password}") String password,@Value("${db.driverClassName}") String driverClassName) {
+    public DataSource dataSource(@Value("${db.username}") String username, @Value("${db.url}") String url,
+                                 @Value("${db.password}") String password, @Value("${db.driverClassName}") String driverClassName) {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setUsername(username);
         dataSource.setUrl(url);
@@ -47,7 +47,7 @@ public class DatabaseConfig {
     }
 
     @Bean
-    public Properties hibernateProperties (@Value("classpath:application.properties")Resource resource) throws IOException {
+    public Properties hibernateProperties(@Value("classpath:application.properties") Resource resource) throws IOException {
         @Cleanup InputStream inputStream = resource.getInputStream();
         Properties properties = new Properties();
         properties.load(inputStream);
@@ -56,7 +56,7 @@ public class DatabaseConfig {
     }
 
     @Bean
-    public HibernateTransactionManager transactionManager (SessionFactory sessionFactory) {
+    public HibernateTransactionManager transactionManager(SessionFactory sessionFactory) {
         return new HibernateTransactionManager(sessionFactory);
     }
 }

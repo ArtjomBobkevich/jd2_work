@@ -1,6 +1,7 @@
 package com.itacademy.web.servlet;
 
 import com.itacademy.service.service.HeadingService;
+import com.itacademy.web.util.Context;
 import com.itacademy.web.util.JspPath;
 import org.springframework.context.ApplicationContext;
 
@@ -14,7 +15,7 @@ import java.io.IOException;
 @WebServlet("/heading")
 public class HeadingServlet extends HttpServlet {
 
-    private ApplicationContext applicationContext = BaseServlet.getApplicationContext();
+    private ApplicationContext applicationContext = Context.getApplicationContext();
 
     private HeadingService headingService = applicationContext.getBean(HeadingService.class);
 

@@ -7,16 +7,20 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
-@AllArgsConstructor/*(onConstructor = @__(@Autowired))*/
+@AllArgsConstructor
 @Entity
 @DiscriminatorValue("block")
-//@Component
 public class BlockResource extends Resource {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String block;
 

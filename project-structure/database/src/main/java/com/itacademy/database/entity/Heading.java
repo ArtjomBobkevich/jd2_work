@@ -19,11 +19,10 @@ import javax.persistence.Table;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor/*(onConstructor = @__(@Autowired))*/
+@AllArgsConstructor
 @Builder
 @EqualsAndHashCode(exclude = "id")
 @Entity
-//@Component
 @Table(name = "heading", schema = "flea_market")
 public class Heading implements BaseEntity<Long> {
 

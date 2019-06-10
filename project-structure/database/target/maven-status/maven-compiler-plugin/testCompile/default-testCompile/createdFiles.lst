@@ -1,9 +1,2 @@
 com\itacademy\database\dao\PersonDaoTest.class
-com\itacademy\database\entity\CategoryTest.class
-com\itacademy\database\entity\PersonTest.class
-com\itacademy\database\entity\ResourceTest.class
 com\itacademy\database\dao\RoleDaoTest.class
-com\itacademy\database\entity\BlockResourceTest.class
-com\itacademy\database\entity\HeadingTest.class
-com\itacademy\database\entity\PersonRoleTest.class
-com\itacademy\database\entity\CommentTest.class

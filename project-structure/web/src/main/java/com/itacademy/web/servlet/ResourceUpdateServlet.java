@@ -5,6 +5,7 @@ import com.itacademy.service.service.CategoryService;
 import com.itacademy.service.service.HeadingService;
 import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.ResourceService;
+import com.itacademy.web.util.Context;
 import com.itacademy.web.util.Filter;
 import com.itacademy.web.util.JspPath;
 import org.springframework.context.ApplicationContext;
@@ -15,14 +16,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 
 @WebServlet("/resource-update")
 public class ResourceUpdateServlet extends HttpServlet {
 
-    private Filter filter = Filter.getFILTER();
+    private Filter filter = Filter.getFilter();
 
-    private ApplicationContext applicationContext = BaseServlet.getApplicationContext();
+    private ApplicationContext applicationContext = Context.getApplicationContext();
 
     private ResourceService resourceService = applicationContext.getBean(ResourceService.class);
     private PersonService personService = applicationContext.getBean(PersonService.class);
@@ -44,8 +44,7 @@ public class ResourceUpdateServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        filter.addFilter(req);
-        req.setCharacterEncoding(StandardCharsets.UTF_8.name());
+        filter.doFilter(req,resp);
         BlockResource blockResource = new BlockResource(
                 req.getParameter("resourceName"),
                 req.getParameter("foto"),

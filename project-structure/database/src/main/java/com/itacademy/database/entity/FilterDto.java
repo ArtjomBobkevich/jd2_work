@@ -9,13 +9,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ProxyPredicate {
+public class FilterDto {
 
     private String resource;
     private String category;
     private Integer price;
 
-    public ProxyPredicate(String resource, String category) {
+    public FilterDto(String resource, String category) {
         this.resource = resource;
         this.category = category;
     }

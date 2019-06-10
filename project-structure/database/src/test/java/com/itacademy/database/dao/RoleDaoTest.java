@@ -2,8 +2,6 @@ package com.itacademy.database.dao;
 
 import com.itacademy.database.config.DatabaseConfigTest;
 import com.itacademy.database.entity.PersonRole;
-import com.itacademy.database.util.SessionManager;
-import org.hibernate.SessionFactory;
 import org.junit.AfterClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,15 +15,15 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class RoleDaoTest {
 
-    private static SessionFactory factory = SessionManager.getFactory();
+//    private static SessionFactory factory = SessionManager.getFactory();
 
     @Autowired
     private RoleDao roleDao;
 
     @AfterClass
-    public static void clear() {
-        factory.close();
-    }
+//    public static void clear() {
+//        factory.close();
+//    }
 
     @Test
     public void checkSaveFactory() {

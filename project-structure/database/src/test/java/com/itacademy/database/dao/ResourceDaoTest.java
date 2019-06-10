@@ -7,7 +7,7 @@ import com.itacademy.database.entity.Heading;
 import com.itacademy.database.entity.Identification;
 import com.itacademy.database.entity.Person;
 import com.itacademy.database.entity.PersonRole;
-import com.itacademy.database.entity.ProxyPredicate;
+import com.itacademy.database.entity.FilterDto;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -70,14 +70,14 @@ public class ResourceDaoTest {
         personDao.save(person);
         BlockResource resource = new BlockResource("test","www",heading,category,person,222,"sss","sdg");
             resourceDao.save(resource);
-        ProxyPredicate proxyPredicate = ProxyPredicate.builder()
+        FilterDto filterDto = FilterDto.builder()
                 .resource("test")
                 .category("www")
                 .price(222)
                 .build();
         Integer offset = 0;
         Integer limit = 2;
-        List<BlockResource> resourcesOrderByAuthor = resourceDao.findResourcesOrderByAuthor(proxyPredicate,offset,limit);
+        List<BlockResource> resourcesOrderByAuthor = resourceDao.findResourcesOrderByAuthor(filterDto,offset,limit);
         resourcesOrderByAuthor.size();
         }
     }

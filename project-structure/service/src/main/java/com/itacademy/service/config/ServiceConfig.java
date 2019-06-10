@@ -8,5 +8,5 @@ import org.springframework.context.annotation.Import;
 @Configuration
 @ComponentScan("com.itacademy.service.service")
 @Import(DatabaseConfig.class)
-public class SeviceConfig {
+public class ServiceConfig {
 }
