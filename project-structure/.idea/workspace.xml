@@ -6,161 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14420e3e-9432-4664-ba21-80c76cbed398" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/config/DatabaseConfigTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/RoleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/BaseServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/util/Filter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3438583a-2ded-4dda-b5be-bf2282f08446.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aed7bba6-41f7-49b3-92e4-5be7ff752eca.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/database.iml" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/log4j.log" beforeDir="false" afterPath="$PROJECT_DIR$/database/log4j.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/HibernateRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/config/DatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/config/DatabaseConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/BaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/CategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/HeadingDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/HeadingDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/PersonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/PersonDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/ResourceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/ResourceDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/RoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/RoleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Heading.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Heading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/PersonRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/PersonRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/ProxyPredicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/ProxyPredicate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/resources/application-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/PersonDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/PersonDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/ResourceDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/ResourceDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/RoleDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/RoleDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/BlockResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/BlockResourceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/CommentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/CommentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/HeadingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/HeadingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/PersonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/ResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/entity/ResourceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/test/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/checkstyle-cachefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/checkstyle-checker.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/checkstyle-result.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/classes/application-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/HibernateRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/config/DatabaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/config/DatabaseConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/dao/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/dao/BaseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/dao/ResourceDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/dao/ResourceDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Comment$CommentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Comment$CommentBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Comment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Heading.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Heading.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/test-classes/com/itacademy/database/dao/PersonDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/test-classes/com/itacademy/database/dao/PersonDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/test-classes/com/itacademy/database/dao/RoleDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/test-classes/com/itacademy/database/dao/RoleDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/test-classes/com/itacademy/database/entity/PersonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/test-classes/com/itacademy/database/entity/PersonTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/test-classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log4j.log" beforeDir="false" afterPath="$PROJECT_DIR$/log4j.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/ResourceServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/config/SeviceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/config/SeviceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CategoryFullDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CategoryFullDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CountDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CountDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CreateNewPersonDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CreateNewPersonDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CreateResourceDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CreateResourceDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/HeadingFullDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/HeadingFullDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/PredicateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/PredicateDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ResourceCriteriaDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ResourceCriteriaDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ResourceFullDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ResourceFullDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ViewPersonFullInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ViewPersonFullInfoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/HeadingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/HeadingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/ResourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/ResourceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/checkstyle-cachefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/checkstyle-checker.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/checkstyle-result.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/ResourceServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/CategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/HeadingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/HeadingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/PersonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/ResourceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/ResourceService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/checkstyle-cachefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/checkstyle-checker.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/checkstyle-result.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/CategoryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/CategoryServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/FilterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/FilterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/HeadingServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/HeadingServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonDeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonDeleteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonInfoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonInfoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonSaveServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonSaveServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonUpdateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/PersonUpdateServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/ResourceDeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/ResourceDeleteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/ResourceInfoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/ResourceInfoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/ResourceSaveServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/ResourceSaveServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/ResourceServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/ResourceServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/ResourceUpdateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/ResourceUpdateServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/ResourcesByCriteriaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/ResourcesByCriteriaServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/util/JspPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/util/JspPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/filter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/filter.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-save.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-save.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person-update.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/person.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/resource-delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/resource-delete.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/resource-info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/resource-info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/resource-save.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/resource-save.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/resource-update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/resource-update.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/resource.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/resource.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/resources-by-criteria.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jsp/resources-by-criteria.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/checkstyle-cachefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/checkstyle-checker.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/checkstyle-result.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/CategoryServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/CategoryServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/FilterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/FilterServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/HeadingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/HeadingServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/PersonDeleteServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/PersonDeleteServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/PersonInfoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/PersonInfoServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/PersonSaveServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/PersonSaveServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/PersonServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/PersonServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/PersonUpdateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/PersonUpdateServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/ResourceDeleteServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/ResourceDeleteServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/ResourceInfoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/ResourceInfoServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/ResourceSaveServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/ResourceSaveServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/ResourceServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/ResourceServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/ResourceUpdateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/ResourceUpdateServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/ResourcesByCriteriaServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/servlet/ResourcesByCriteriaServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/CategoryServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/CategoryServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/FilterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/FilterServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/HeadingServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/HeadingServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/PersonDeleteServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/PersonDeleteServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/PersonInfoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/PersonInfoServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/PersonSaveServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/PersonSaveServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/PersonServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/PersonServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/PersonUpdateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/PersonUpdateServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/ResourceDeleteServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/ResourceDeleteServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/ResourceInfoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/ResourceInfoServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/ResourceSaveServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/ResourceSaveServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/ResourceServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/ResourceServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/ResourceUpdateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/ResourceUpdateServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/ResourcesByCriteriaServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/servlet/ResourcesByCriteriaServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/jsp/filter-by-person.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/jsp/filter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/jsp/filter.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/jsp/person-by-criteria.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/jsp/resources-by-criteria.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/jsp/resources-by-criteria.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/database-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/database-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shema flea market31.05.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../shema flea market31.05.txt" afterDir="false" />
-    </list>
+    <list default="true" id="14420e3e-9432-4664-ba21-80c76cbed398" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/web/target/" />
@@ -236,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/PersonDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="36" column="40" lean-forward="true" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+              <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -253,7 +99,7 @@
       <file leaf-file-name="ResourceDaoTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/ResourceDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="490">
               <caret line="80" column="38" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -433,7 +279,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -445,136 +291,6 @@
               <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-structure" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
@@ -718,25 +434,6 @@
               <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-structure" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -840,7 +537,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1226,6 +923,7 @@
       <workItem from="1559991685260" duration="3470000" />
       <workItem from="1560022489504" duration="7730000" />
       <workItem from="1560079035274" duration="11040000" />
+      <workItem from="1560145675304" duration="85000" />
     </task>
     <servers />
   </component>
@@ -1262,11 +960,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="398370000" />
+    <option name="totallyTimeSpent" value="398455000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5021962" side_tool="true" weight="0.2761905" />
@@ -1281,7 +978,6 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34920636" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.36190477" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
@@ -1291,7 +987,7 @@
       <window_info anchor="bottom" id="Spring" order="14" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32799247" />
       <window_info id="Persistence" order="6" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21888727" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21888727" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -1299,6 +995,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="14" sideWeight="0.49947917" weight="0.32222223" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.36190477" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32857144" />
@@ -1334,9 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1354,9 +1048,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="62" column="1" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1698,13 +1389,13 @@
     <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/PersonDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="36" column="40" lean-forward="true" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/ResourceDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
+        <state relative-caret-position="490">
           <caret line="80" column="38" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
