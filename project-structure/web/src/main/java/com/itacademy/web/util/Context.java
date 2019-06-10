@@ -1,11 +1,15 @@
 package com.itacademy.web.util;
 
-//public class Context {
+import com.itacademy.service.config.ServiceConfig;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-//    private static ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ServiceConfig.class);
+public class Context {
 
-//
-//    public static ApplicationContext getApplicationContext() {
-//        return applicationContext;
-//    }
-//}
+    private static ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ServiceConfig.class);
+
+
+    public static ApplicationContext getApplicationContext() {
+        return applicationContext;
+    }
+}

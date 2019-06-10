@@ -11,7 +11,7 @@ CREATE TABLE person (
   login      VARCHAR(124) UNIQUE,
   first_name VARCHAR(124)        NOT NULL,
   last_name  VARCHAR(124)        NOT NULL,
-  age        SMALLINT            NOT NULL,
+  age        INTEGER            NOT NULL,
   mail       VARCHAR(124) UNIQUE NOT NULL,
   password   VARCHAR(124)        NOT NULL,
   role       BIGSERIAL REFERENCES person_role (id) ON DELETE CASCADE ON UPDATE CASCADE
@@ -43,9 +43,9 @@ CREATE TABLE resource (
 );
 
 CREATE TABLE resource_person (
-  resources_id BIGSERIAL REFERENCES resource (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  resource_id BIGSERIAL REFERENCES resource (id) ON DELETE CASCADE ON UPDATE CASCADE,
   person_id    BIGSERIAL REFERENCES person (id) ON DELETE CASCADE ON UPDATE CASCADE,
-  PRIMARY KEY (resources_id, person_id)
+  PRIMARY KEY (resource_id, person_id)
 );
 
 CREATE TABLE store_basket (
@@ -57,7 +57,7 @@ CREATE TABLE store_basket (
 CREATE TABLE comment (
   id          BIGSERIAL PRIMARY KEY,
   person_id    	BIGSERIAL REFERENCES person (id) ON DELETE CASCADE ON UPDATE CASCADE,
-  resources_id BIGSERIAL REFERENCES resource (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  resource_id BIGSERIAL REFERENCES resource (id) ON DELETE CASCADE ON UPDATE CASCADE,
   text        VARCHAR(500)
 );
 
@@ -160,10 +160,12 @@ VALUES
   ('admin','image', 'Max', 'Faster', 16, 'ww2@gmail.com', 'admin', 1),
   ('beast','image', 'Sveta', 'Nezabudka', 30, 'w3@gmail.com', 'beast', 1);
 
-INSERT INTO resource (resource_name, foto, heading_id, category_id, author, price, text, block)
+INSERT INTO resource (resource_name, foto, heading_id, category_id, author, price, text, block,type)
 VALUES
-  ('test','foto',1,2,1,222,'test','www');
-
-INSERT INTO resource (resource_name, foto, heading_id, category_id, author, price, text)
-VALUES
-  ('test','foto',1,2,1,222,'test');
+  ('avatar','foto',1,2,1,123,'test','www','block'),
+  ('test','foto',1,2,1,332,'test','www','block'),
+  ('test2','foto',1,2,1,22,'test','www','block'),
+  ('tes3t','foto',1,2,1,22,'test','www','block'),
+  ('tes4t','foto',1,2,1,2252,'test','www','block'),
+  ('tes5t','foto',1,2,1,2252,'test','www','block'),
+  ('test6','foto',1,2,1,2522,'test','www','block');
