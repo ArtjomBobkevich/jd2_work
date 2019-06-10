@@ -6,8 +6,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -26,10 +24,12 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Data
-@ToString(exclude = {"comments", "personList", "storeBasketPerson"})
+@ToString(exclude = {"comments", "storeBasketPerson"})
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(exclude = "id")
@@ -52,10 +52,6 @@ public class Resource implements BaseEntity<Long> {
     private String foto;
 
     @OneToOne
-    @JoinColumn(name = "heading_id")
-    private Heading heading;
-
-    @OneToOne
     @JoinColumn(name = "category_id")
     private Category category;
 
@@ -70,9 +66,9 @@ public class Resource implements BaseEntity<Long> {
     private String text;
 
     @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "resource_person", schema = "flea_market", joinColumns = @JoinColumn(name = "person_id"),
+    @JoinTable(name = "resource_heading", schema = "flea_market", joinColumns = @JoinColumn(name = "heading_id"),
             inverseJoinColumns = @JoinColumn(name = "resource_id"))
-    private List<Person> personList = new ArrayList<>();
+    private Set<Heading> headings = new HashSet<>();
 
     @OneToMany(mappedBy = "resource")
     private List<Comment> comments = new ArrayList<>();
@@ -80,10 +76,9 @@ public class Resource implements BaseEntity<Long> {
     @ManyToMany(mappedBy = "storeBasketResources", cascade = CascadeType.ALL)
     private List<Person> storeBasketPerson = new ArrayList<>();
 
-    public Resource(String resourceName, String foto, Heading heading, Category category, Person person, Integer price, String text) {
+    public Resource(String resourceName, String foto, Category category, Person person, Integer price, String text) {
         this.resourceName = resourceName;
         this.foto = foto;
-        this.heading = heading;
         this.category = category;
         this.person = person;
         this.price = price;

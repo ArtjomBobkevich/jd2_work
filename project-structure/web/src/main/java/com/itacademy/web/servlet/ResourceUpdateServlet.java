@@ -2,7 +2,6 @@ package com.itacademy.web.servlet;
 
 import com.itacademy.database.entity.BlockResource;
 import com.itacademy.service.service.CategoryService;
-import com.itacademy.service.service.HeadingService;
 import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.ResourceService;
 import com.itacademy.web.util.Context;
@@ -27,12 +26,10 @@ public class ResourceUpdateServlet extends HttpServlet {
     private ResourceService resourceService = applicationContext.getBean(ResourceService.class);
     private PersonService personService = applicationContext.getBean(PersonService.class);
     private CategoryService categoryService = applicationContext.getBean(CategoryService.class);
-    private HeadingService headingService = applicationContext.getBean(HeadingService.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setAttribute("resource", resourceService.findAll());
-        req.setAttribute("heading", headingService.findAll());
         req.setAttribute("category", categoryService.findAll());
         req.setAttribute("person", personService.findAll());
 
@@ -48,7 +45,6 @@ public class ResourceUpdateServlet extends HttpServlet {
         BlockResource blockResource = new BlockResource(
                 req.getParameter("resourceName"),
                 req.getParameter("foto"),
-                headingService.findById(Long.parseLong(req.getParameter("headingId"))),
                 categoryService.findById(Long.parseLong(req.getParameter("categoryId"))),
                 personService.findByIdEntity(Long.parseLong(req.getParameter("personId"))),
                 Integer.parseInt(req.getParameter("price")),

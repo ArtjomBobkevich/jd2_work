@@ -58,10 +58,6 @@ public class Person implements BaseEntity<Long> {
     @JoinColumn(name = "role")
     private PersonRole personRole;
 
-    @ManyToMany(cascade = CascadeType.PERSIST)
-    @JoinTable(name = "resource_person", schema = "flea_market", joinColumns = @JoinColumn(name = "resource_id"),
-            inverseJoinColumns = @JoinColumn(name = "person_id"))
-    private List<Resource> resources = new ArrayList<>();
 
     @ManyToMany(cascade = CascadeType.PERSIST)
     @JoinTable(name = "store_basket", schema = "flea_market", joinColumns = @JoinColumn(name = "resources_id"),

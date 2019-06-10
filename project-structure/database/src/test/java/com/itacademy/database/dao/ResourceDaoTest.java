@@ -3,11 +3,10 @@ package com.itacademy.database.dao;
 import com.itacademy.database.config.DatabaseConfigTest;
 import com.itacademy.database.entity.BlockResource;
 import com.itacademy.database.entity.Category;
-import com.itacademy.database.entity.Heading;
+import com.itacademy.database.entity.FilterDto;
 import com.itacademy.database.entity.Identification;
 import com.itacademy.database.entity.Person;
 import com.itacademy.database.entity.PersonRole;
-import com.itacademy.database.entity.FilterDto;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,11 +44,6 @@ public class ResourceDaoTest {
                 .build();
         categoryDao.save(category);
 
-        Heading heading = Heading.builder()
-                .headingName("sadf")
-                .category(category)
-                .build();
-        headingDao.save(heading);
         PersonRole role = PersonRole.builder()
                 .nameOfRole("test")
                 .build();
@@ -68,7 +62,7 @@ public class ResourceDaoTest {
                 .build();
 
         personDao.save(person);
-        BlockResource resource = new BlockResource("test","www",heading,category,person,222,"sss","sdg");
+        BlockResource resource = new BlockResource("test","www",category,person,222,"sss","sdg");
             resourceDao.save(resource);
         FilterDto filterDto = FilterDto.builder()
                 .resource("test")

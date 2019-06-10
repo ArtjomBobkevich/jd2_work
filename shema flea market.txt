@@ -33,7 +33,6 @@ CREATE TABLE resource (
   id            BIGSERIAL PRIMARY KEY,
   resource_name VARCHAR(124) NOT NULL,
   foto          VARCHAR(1024),
-  heading_id    BIGSERIAL REFERENCES heading (id) ON DELETE CASCADE ON UPDATE CASCADE,
   category_id   BIGSERIAL REFERENCES category (id) ON DELETE CASCADE ON UPDATE CASCADE,
   author        BIGSERIAL REFERENCES person (id) ON DELETE CASCADE ON UPDATE CASCADE,
   price         INTEGER,
@@ -42,10 +41,10 @@ CREATE TABLE resource (
   type  VARCHAR(1024)
 );
 
-CREATE TABLE resource_person (
-  resource_id BIGSERIAL REFERENCES resource (id) ON DELETE CASCADE ON UPDATE CASCADE,
-  person_id    BIGSERIAL REFERENCES person (id) ON DELETE CASCADE ON UPDATE CASCADE,
-  PRIMARY KEY (resource_id, person_id)
+CREATE TABLE resource_heading (
+  heading_id    BIGSERIAL REFERENCES heading (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  resource_id    BIGSERIAL REFERENCES resource (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  PRIMARY KEY (heading_id, resource_id)
 );
 
 CREATE TABLE store_basket (
@@ -160,12 +159,12 @@ VALUES
   ('admin','image', 'Max', 'Faster', 16, 'ww2@gmail.com', 'admin', 1),
   ('beast','image', 'Sveta', 'Nezabudka', 30, 'w3@gmail.com', 'beast', 1);
 
-INSERT INTO resource (resource_name, foto, heading_id, category_id, author, price, text, block,type)
+INSERT INTO resource (resource_name, foto, category_id, author, price, text, block,type)
 VALUES
-  ('avatar','foto',1,2,1,123,'test','www','block'),
-  ('test','foto',1,2,1,332,'test','www','block'),
-  ('test2','foto',1,2,1,22,'test','www','block'),
-  ('tes3t','foto',1,2,1,22,'test','www','block'),
-  ('tes4t','foto',1,2,1,2252,'test','www','block'),
-  ('tes5t','foto',1,2,1,2252,'test','www','block'),
-  ('test6','foto',1,2,1,2522,'test','www','block');
+  ('avatar','foto',2,1,123,'test','www','block'),
+  ('test','foto',2,1,332,'test','www','block'),
+  ('test2','foto',2,1,22,'test','www','block'),
+  ('tes3t','foto',2,1,22,'test','www','block'),
+  ('tes4t','foto',2,1,2252,'test','www','block'),
+  ('tes5t','foto',2,1,2252,'test','www','block'),
+  ('test6','foto',2,1,2522,'test','www','block');

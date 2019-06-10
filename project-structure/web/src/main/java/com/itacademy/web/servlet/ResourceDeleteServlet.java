@@ -2,7 +2,6 @@ package com.itacademy.web.servlet;
 
 import com.itacademy.database.entity.BlockResource;
 import com.itacademy.service.service.CategoryService;
-import com.itacademy.service.service.HeadingService;
 import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.ResourceService;
 import com.itacademy.web.util.Context;
@@ -27,7 +26,6 @@ public class ResourceDeleteServlet extends HttpServlet {
     private ResourceService resourceService = applicationContext.getBean(ResourceService.class);
     private PersonService personService = applicationContext.getBean(PersonService.class);
     private CategoryService categoryService = applicationContext.getBean(CategoryService.class);
-    private HeadingService headingService = applicationContext.getBean(HeadingService.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -44,12 +42,10 @@ public class ResourceDeleteServlet extends HttpServlet {
         BlockResource blockResource = new BlockResource(
                 "resourceName",
                 "foto",
-                headingService.findById(2L),
                 categoryService.findById(2L),
                 personService.findByIdEntity(2L),
                 222,
                 "text",
-                Long.parseLong(req.getParameter("id")),
                 "NO"
         );
         resourceService.delete(blockResource);

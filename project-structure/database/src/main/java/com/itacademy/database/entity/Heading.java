@@ -5,19 +5,25 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import lombok.ToString;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 @Data
+@ToString(exclude = "resources")
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -36,4 +42,9 @@ public class Heading implements BaseEntity<Long> {
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
+
+    @ManyToMany(cascade = CascadeType.PERSIST)
+    @JoinTable(name = "resource_heading", schema = "flea_market", joinColumns = @JoinColumn(name = "resource_id"),
+            inverseJoinColumns = @JoinColumn(name = "heading_id"))
+    private Set<Resource> resources = new HashSet<>();
 }

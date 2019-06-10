@@ -24,13 +24,13 @@ public class ResourceService {
 
     public List<ResourceFullDto> findAll() {
         return resourceDao.getAll().stream()
-                .map(it -> new ResourceFullDto(it.getId(), it.getResourceName(), it.getFoto(), it.getHeading().getHeadingName(), it.getCategory().getCategoryName(),
+                .map(it -> new ResourceFullDto(it.getId(), it.getResourceName(), it.getFoto(), it.getCategory().getCategoryName(),
                         it.getPerson().getLogin(), it.getPrice(), it.getText(), it.getBlock()))
                 .collect(Collectors.toList());
     }
 
     public ResourceFullDto findById(Long id) {
-        return resourceDao.get(id).map(it -> new ResourceFullDto(it.getResourceName(), it.getFoto(), it.getHeading().getHeadingName(),
+        return resourceDao.get(id).map(it -> new ResourceFullDto(it.getResourceName(), it.getFoto(),
                 it.getCategory().getCategoryName(), it.getPerson().getLogin(), it.getPrice(), it.getText(), it.getBlock()))
                 .orElse(null);
     }
@@ -38,7 +38,7 @@ public class ResourceService {
     @Transactional
     public Long saveResource(CreateResourceDto createResource) {
 
-        return resourceDao.save(new BlockResource(createResource.getResourceName(), createResource.getFoto(), createResource.getHeading(),
+        return resourceDao.save(new BlockResource(createResource.getResourceName(), createResource.getFoto(),
                 createResource.getCategory(), createResource.getPerson(), createResource.getPrice(), createResource.getText(),
                 createResource.getBlock()));
     }
@@ -58,7 +58,7 @@ public class ResourceService {
             filterDto = new FilterDto(predicateDto.getResource(), predicateDto.getCategory(), predicateDto.getPrice());
 
         return resourceDao.findResourcesOrderByAuthor(filterDto, offset, limit).stream()
-                .map(it -> new ResourceFullDto(it.getResourceName(), it.getFoto(), it.getHeading().getHeadingName(), it.getCategory().getCategoryName(),
+                .map(it -> new ResourceFullDto(it.getResourceName(), it.getFoto(), it.getCategory().getCategoryName(),
                         it.getPerson().getLogin(), it.getPrice(), it.getText(), it.getBlock()))
                 .collect(Collectors.toList());
     }
@@ -67,4 +67,11 @@ public class ResourceService {
         FilterDto filterDto = new FilterDto(predicateDto.getResource(), predicateDto.getCategory(), predicateDto.getPrice());
         return resourceDao.countPages(filterDto, limit);
     }
+
+   /* public boolean addHeading (CreateHeadingDto createHeadingDto, CreateResourceDto createResourceDto) {
+
+        BlockResource blockResource
+
+        return resource.getHeadings().add(heading);
+    }*/
 }

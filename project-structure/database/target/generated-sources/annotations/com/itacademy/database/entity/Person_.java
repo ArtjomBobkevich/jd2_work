@@ -13,7 +13,6 @@ public abstract class Person_ {
 	public static volatile SingularAttribute<Person, Identification> identification;
 	public static volatile SingularAttribute<Person, String> mail;
 	public static volatile SingularAttribute<Person, PersonRole> personRole;
-	public static volatile ListAttribute<Person, Resource> resources;
 	public static volatile SingularAttribute<Person, Long> id;
 	public static volatile SingularAttribute<Person, String> avatar;
 	public static volatile SingularAttribute<Person, String> login;
@@ -24,7 +23,6 @@ public abstract class Person_ {
 	public static final String IDENTIFICATION = "identification";
 	public static final String MAIL = "mail";
 	public static final String PERSON_ROLE = "personRole";
-	public static final String RESOURCES = "resources";
 	public static final String ID = "id";
 	public static final String AVATAR = "avatar";
 	public static final String LOGIN = "login";

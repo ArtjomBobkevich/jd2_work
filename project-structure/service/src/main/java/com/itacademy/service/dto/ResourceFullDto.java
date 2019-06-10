@@ -14,17 +14,15 @@ public class ResourceFullDto {
     private Long id;
     private String resourceName;
     private String foto;
-    private String heading;
     private String category;
     private String person;
     private Integer price;
     private String text;
     private String block;
 
-    public ResourceFullDto(String resourceName, String foto, String heading, String category, String person, Integer price, String text, String block) {
+    public ResourceFullDto(String resourceName, String foto, String category, String person, Integer price, String text, String block) {
         this.resourceName = resourceName;
         this.foto = foto;
-        this.heading = heading;
         this.category = category;
         this.person = person;
         this.price = price;

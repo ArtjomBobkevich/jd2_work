@@ -34,7 +34,6 @@ public class ResourceDao extends BaseDaoImpl<Long, BlockResource> {
                 .list();
     }
 
-
     public Predicate[] build(CriteriaBuilder cb, Root<BlockResource> root, FilterDto filterDto) {
         List<Predicate> predicates = new ArrayList<>();
         Join<BlockResource, Category> categoryJoin = root.join(BlockResource_.category);
@@ -56,7 +55,7 @@ public class ResourceDao extends BaseDaoImpl<Long, BlockResource> {
     }
 
     public Integer countPages(FilterDto filterDto, Integer limit) {
-        @Cleanup Session session = getSessionFactory().openSession();
+        @Cleanup Session session = getSessionFactory().getCurrentSession();
         CriteriaBuilder cb = session.getCriteriaBuilder();
         CriteriaQuery<BlockResource> criteria = cb.createQuery(BlockResource.class);
         Root<BlockResource> root = criteria.from(BlockResource.class);
@@ -65,4 +64,10 @@ public class ResourceDao extends BaseDaoImpl<Long, BlockResource> {
 
         return allByCriteria.size() / limit;
     }
+
+//    public boolean addHeading (Heading heading, Resource resource) {
+//        getSessionFactory().getCurrentSession();
+//
+//        return resource.getHeadings().add(heading);
+//    }
 }
