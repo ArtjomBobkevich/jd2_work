@@ -1,11 +1,13 @@
 package com.itacademy.web.servlet;
 
-import com.itacademy.database.dao.CategoryDao;
-import com.itacademy.database.dao.HeadingDao;
-import com.itacademy.database.dao.PersonDao;
 import com.itacademy.database.entity.BlockResource;
+import com.itacademy.service.service.CategoryService;
+import com.itacademy.service.service.HeadingService;
+import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.ResourceService;
+import com.itacademy.web.util.Filter;
 import com.itacademy.web.util.JspPath;
+import org.springframework.context.ApplicationContext;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,12 +15,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 
 @WebServlet("/resource-delete")
 public class ResourceDeleteServlet extends HttpServlet {
 
-    private ResourceService resourceService = ResourceService.getResourceService();
+    private Filter filter = Filter.getFILTER();
+
+    private ApplicationContext applicationContext = BaseServlet.getApplicationContext();
+
+    private ResourceService resourceService = applicationContext.getBean(ResourceService.class);
+    private PersonService personService = applicationContext.getBean(PersonService.class);
+    private CategoryService categoryService = applicationContext.getBean(CategoryService.class);
+    private HeadingService headingService = applicationContext.getBean(HeadingService.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -31,19 +39,18 @@ public class ResourceDeleteServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        req.setCharacterEncoding(StandardCharsets.UTF_8.name());
+        filter.addFilter(req);
         BlockResource blockResource = new BlockResource(
                 "resourceName",
                 "foto",
-                HeadingDao.getHeadingDao().get(2L).orElse(null),
-                CategoryDao.getCategoryDao().get(1L).orElse(null),
-                PersonDao.getPersonDao().get(2L).orElse(null),
+                headingService.findById(2L),
+                categoryService.findById(2L),
+                personService.findByIdEntity(2L),
                 222,
                 "text",
                 Long.parseLong(req.getParameter("id")),
                 "NO"
-                );
+        );
         resourceService.delete(blockResource);
         resp.sendRedirect("/resource");
     }

@@ -1,6 +1,7 @@
 package com.itacademy.service.service;
 
 import com.itacademy.database.dao.CategoryDao;
+import com.itacademy.database.entity.Category;
 import com.itacademy.service.dto.CategoryFullDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,16 +21,11 @@ public class CategoryService {
 
     public List<CategoryFullDto> findAll() {
         return categoryDao.getAll().stream()
-                .map(it -> new CategoryFullDto(it.getId(),it.getCategoryName()))
+                .map(it -> new CategoryFullDto(it.getId(), it.getCategoryName()))
                 .collect(Collectors.toList());
     }
 
-//    @Transactional   эта анотация над save update delete обязательна
-//    public Long save (CategoryFullDto categoryFullDto) {
-//        return null;
-//    }
-
-//    public static CategoryService getCategoryService() {
-//        return CATEGORY_SERVICE;
-//    }
+    public Category findById(Long id) {
+        return categoryDao.get(id).orElse(null);
+    }
 }

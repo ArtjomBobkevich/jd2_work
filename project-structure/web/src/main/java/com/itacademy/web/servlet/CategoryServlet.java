@@ -2,6 +2,7 @@ package com.itacademy.web.servlet;
 
 import com.itacademy.service.service.CategoryService;
 import com.itacademy.web.util.JspPath;
+import org.springframework.context.ApplicationContext;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,11 +14,13 @@ import java.io.IOException;
 @WebServlet("/category")
 public class CategoryServlet extends HttpServlet {
 
-    private CategoryService categoryService = CategoryService.getCategoryService();
+    private ApplicationContext applicationContext = BaseServlet.getApplicationContext();
+
+    private CategoryService categoryService = applicationContext.getBean(CategoryService.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("categories",categoryService.findAll());
+        req.setAttribute("categories", categoryService.findAll());
 
         getServletContext()
                 .getRequestDispatcher(JspPath.get("category"))

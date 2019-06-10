@@ -1,53 +1,83 @@
-//package com.itacademy.database.dao;
-//
-//import com.itacademy.database.entity.*;
-//import com.itacademy.database.util.SessionManager;
-//import lombok.Cleanup;
-//import org.hibernate.Session;
-//import org.hibernate.SessionFactory;
-//import org.junit.Test;
-//
-//import java.util.ArrayList;
-//import java.util.Arrays;
-//import java.util.List;
-//
-//import static junit.framework.TestCase.assertTrue;
-//
-//public class ResourceDaoTest {
-//
-//    private final ResourceDao resourceDao = ResourceDao.getResourceDao();
-//    private static SessionFactory factory = SessionManager.getFactory();
-//
-//    @Test
-//    public void findResourceByCriteria() {
-//        @Cleanup Session session = factory.openSession();
-//        session.beginTransaction();
-//        Category category = Category.builder()
-//                .categoryName("www")
-//                .build();
-//        session.save(category);
-//        session.flush();
-//        Resource resource = Resource.builder()
-//                .resourceName("test")
-//                .foto("www")
-//                .heading(session.get(Heading.class,1L))
-//                .category(category)
-//                .person(session.get(Person.class,2L))
-//                .price(222)
-//                .text("sss")
-//                .build();
-//        session.getTransaction().commit();
-//            resourceDao.save(resource);
-//            List<Object>parametrs = new ArrayList<>();
-//            parametrs.add("test");
-//        parametrs.add("www");
-//        parametrs.add(222);
-//        parametrs.add(0);
-//        parametrs.add(2);
-//        System.out.println(Arrays.toString(parametrs.toArray()));
-//        String name = (String) parametrs.get(0);
-//        List<Resource> resourcesOrderByAuthor = resourceDao.findResourcesOrderByAuthor(parametrs);
-//        resourcesOrderByAuthor.size();
-//        assertTrue(resourcesOrderByAuthor.size()>0);
-//        }
-//    }
+package com.itacademy.database.dao;
+
+import com.itacademy.database.config.DatabaseConfigTest;
+import com.itacademy.database.entity.BlockResource;
+import com.itacademy.database.entity.Category;
+import com.itacademy.database.entity.Heading;
+import com.itacademy.database.entity.Identification;
+import com.itacademy.database.entity.Person;
+import com.itacademy.database.entity.PersonRole;
+import com.itacademy.database.entity.ProxyPredicate;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+@RunWith(SpringRunner.class)
+@ContextConfiguration(classes = DatabaseConfigTest.class)
+@Transactional
+public class ResourceDaoTest {
+
+    @Autowired
+    private PersonDao personDao;
+
+    @Autowired
+    private CategoryDao categoryDao;
+
+    @Autowired
+    private HeadingDao headingDao;
+
+    @Autowired
+    private ResourceDao resourceDao;
+
+    @Autowired
+    private RoleDao roleDao;
+
+    @Test
+    public void findResourceByCriteria() {
+
+        Category category = Category.builder()
+                .categoryName("www")
+                .build();
+        categoryDao.save(category);
+
+        Heading heading = Heading.builder()
+                .headingName("sadf")
+                .category(category)
+                .build();
+        headingDao.save(heading);
+        PersonRole role = PersonRole.builder()
+                .nameOfRole("test")
+                .build();
+        roleDao.save(role);
+        Person person = Person.builder()
+                .avatar("qwerqwe")
+                .login("1234")
+                .identification(Identification.builder()
+                        .firstName("qqq")
+                        .lastName("www")
+                        .build())
+                .age(2)
+                .mail("wqeq")
+                .password("222233")
+                .personRole(roleDao.get(1L).orElse(null))
+                .build();
+
+        personDao.save(person);
+        BlockResource resource = new BlockResource("test","www",heading,category,person,222,"sss","sdg");
+            resourceDao.save(resource);
+        ProxyPredicate proxyPredicate = ProxyPredicate.builder()
+                .resource("test")
+                .category("www")
+                .price(222)
+                .build();
+        Integer offset = 0;
+        Integer limit = 2;
+        List<BlockResource> resourcesOrderByAuthor = resourceDao.findResourcesOrderByAuthor(proxyPredicate,offset,limit);
+        resourcesOrderByAuthor.size();
+        }
+    }

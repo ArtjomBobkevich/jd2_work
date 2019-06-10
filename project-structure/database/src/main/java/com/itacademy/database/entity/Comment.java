@@ -5,8 +5,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -21,7 +19,7 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @AllArgsConstructor/*(onConstructor = @__(@Autowired))*/
 @Builder
-@EqualsAndHashCode(of = "id")
+@EqualsAndHashCode(exclude = "id")
 @Entity
 //@Component
 @Table(name = "comment", schema = "flea_market")

@@ -2,6 +2,7 @@ package com.itacademy.web.servlet;
 
 import com.itacademy.service.service.PersonService;
 import com.itacademy.web.util.JspPath;
+import org.springframework.context.ApplicationContext;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,7 +14,9 @@ import java.io.IOException;
 @WebServlet(value = "/person-info", name = "PersonInfoServlet")
 public class PersonInfoServlet extends HttpServlet {
 
-    private PersonService personService = PersonService.getPersonService();
+    private ApplicationContext applicationContext = BaseServlet.getApplicationContext();
+
+    private PersonService personService = applicationContext.getBean(PersonService.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

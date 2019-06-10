@@ -1,2 +1,15 @@
-D:\GitHub\jd2_work\project-structure\service\src\main\java\com\itacademy\service\service\PersonService.java
-D:\GitHub\jd2_work\project-structure\service\src\main\java\com\itacademy\service\dto\ViewPersonFullInfoDto.java
+D:\jd2_work\project-structure\service\src\main\java\com\itacademy\service\service\CategoryService.java
+D:\jd2_work\project-structure\service\src\main\java\com\itacademy\service\dto\ResourceCriteriaDto.java
+D:\jd2_work\project-structure\service\src\main\java\com\itacademy\service\ResourceServiceTest.java
+D:\jd2_work\project-structure\service\src\main\java\com\itacademy\service\dto\CountDto.java
+D:\jd2_work\project-structure\service\src\main\java\com\itacademy\service\service\HeadingService.java
+D:\jd2_work\project-structure\service\src\main\java\com\itacademy\service\service\PersonService.java
+D:\jd2_work\project-structure\service\src\main\java\com\itacademy\service\service\ResourceService.java
+D:\jd2_work\project-structure\service\src\main\java\com\itacademy\service\dto\PredicateDto.java
+D:\jd2_work\project-structure\service\src\main\java\com\itacademy\service\dto\CategoryFullDto.java
+D:\jd2_work\project-structure\service\src\main\java\com\itacademy\service\dto\ViewPersonFullInfoDto.java
+D:\jd2_work\project-structure\service\src\main\java\com\itacademy\service\dto\HeadingFullDto.java
+D:\jd2_work\project-structure\service\src\main\java\com\itacademy\service\dto\CreateResourceDto.java
+D:\jd2_work\project-structure\service\src\main\java\com\itacademy\service\config\SeviceConfig.java
+D:\jd2_work\project-structure\service\src\main\java\com\itacademy\service\dto\ResourceFullDto.java
+D:\jd2_work\project-structure\service\src\main\java\com\itacademy\service\dto\CreateNewPersonDto.java

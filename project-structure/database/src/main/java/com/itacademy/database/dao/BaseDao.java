@@ -5,9 +5,6 @@ import org.hibernate.SessionFactory;
 import org.springframework.core.GenericTypeResolver;
 import org.springframework.stereotype.Repository;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Optional;
@@ -36,13 +33,20 @@ public interface BaseDao <T extends Serializable,E extends BaseEntity<T>> {
         getSessionFactory().getCurrentSession().delete(entity);
     }
 
-     default List<E> getAll() {
+//     default List<E> getAll() {
+////        Class<E> clazz = getClazz();
+////        CriteriaBuilder cb = getSessionFactory().getCurrentSession().getCriteriaBuilder();
+////        CriteriaQuery<E> criteria = cb.createQuery(clazz);
+////        Root<E> root = criteria.from(clazz);
+////        criteria.select(root);
+////        return getSessionFactory().getCurrentSession().createQuery(criteria).list();
+////    }
+
+    default List<E> getAll() {
         Class<E> clazz = getClazz();
-        CriteriaBuilder cb = getSessionFactory().getCurrentSession().getCriteriaBuilder();
-        CriteriaQuery<E> criteria = cb.createQuery(clazz);
-        Root<E> root = criteria.from(clazz);
-        criteria.select(root);
-        return getSessionFactory().getCurrentSession().createQuery(criteria).list();
+        return getSessionFactory().getCurrentSession()
+                .createQuery(String.format("select e from %s e", clazz.getSimpleName()), clazz)
+                .list();
     }
 
     @SuppressWarnings("unchecked")

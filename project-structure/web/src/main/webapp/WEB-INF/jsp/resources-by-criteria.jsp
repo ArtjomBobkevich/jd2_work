@@ -13,70 +13,22 @@
     <title>Title</title>
 </head>
 <body>
-
-    <form action="${pageContext.request.contextPath}/resources-by-criteria" method="post">
-        <div>
-            <p>название ресурса</p>
-            <label for="resourceName">
-                <input id="resourceName" type="text" name="resourceName" value="${param.resourceName}"/>
-            </label><br>
-        </div>
-        <div>
-            <p>категория</p>
-            <label for="category">
-                <input id="category" type="text" name="category" value="${param.category}"/>
-            </label><br>
-        </div>
-        <div>
-            <div>
-                <p>цена</p>
-                <label for="price">
-                    <input id="price" type="text" name="price" value="${param.price}"/>
-                </label><br>
-            </div>
-            <p>сколько пропустить</p>
-            <label for="offset">
-                <input id="offset" type="text" name="offset" value="${param.offset}"/>
-            </label><br>
-        </div>
-        <div>
-            <p>сколько показать</p>
-            <label for="limit">
-                <input id="limit" type="text" name="limit" value="${param.limit}"/>
-            </label><br>
-        </div>
-        <input type="submit" value="далее">
-    </form>
-    <div>
-        <c:forEach var="resources" items="${requestScope.resource}">
-            <a>${resources.resourceName}</a><br>
-            <a>${resources.heading}</a><br>
-            <a>${resources.person}</a><br>
-        </c:forEach>
-    </div>
-        <%--<a href="${requestScope['javax.servlet.forward.request_uri']}--%>
-        <%--?resourceName=--%>
-        <%--<%= request.getParameter("resourceName") %>--%>
-        <%--&category=--%>
-        <%--<%= request.getParameter("category") %>--%>
-        <%--&price=--%>
-        <%--<%= request.getParameter("price") %>--%>
-        <%--&offset=--%>
-        <%--<%= Integer.parseInt(request.getParameter("offset"))-Integer.parseInt(request.getParameter("limit")) %>--%>
-        <%--&limit=--%>
-        <%--<%= Integer.parseInt(request.getParameter("limit"))-Integer.parseInt(request.getParameter("limit")) %>--%>
-        <%--">предыдущая</a>--%>
-        <%--<a href="${requestScope['javax.servlet.forward.request_uri']}--%>
-        <%--?resourceName=--%>
-        <%--<%= request.getParameter("resourceName") %>--%>
-        <%--&category=--%>
-        <%--<%= request.getParameter("category") %>--%>
-        <%--&price=--%>
-        <%--<%= request.getParameter("price") %>--%>
-        <%--&offset=--%>
-        <%--<%= Integer.parseInt(request.getParameter("offset"))+Integer.parseInt(request.getParameter("limit")) %>--%>
-        <%--&limit=--%>
-        <%--<%= Integer.parseInt(request.getParameter("limit"))+Integer.parseInt(request.getParameter("limit")) %>--%>
-        <%--">следующая</a>--%>
+<div>
+    <c:forEach var="resources" items="${requestScope.resource}">
+        <a>${resources.resourceName}</a><br>
+        <a>${resources.heading}</a><br>
+        <a>${resources.person}</a><br>
+    </c:forEach>
+</div>
+<form action="${pageContext.request.contextPath}/resources-by-criteria" method="post">
+    <input type="hidden" name="resourceName" value="${param.resourceName}"/>
+    <input type="hidden" name="category" value="${param.category}"/>
+    <input type="hidden" name="price" value="${param.price}"/>
+    <input type="hidden" name="offset" value="${param.offset}"/>
+    <input type="hidden" name="limit" value="${param.limit}"/>
+    <input type="hidden" name="l" value="${param.l}"/>
+    <input type="submit" name="page" value="back">
+    <input type="submit" name="page" value="next">
+</form>
 </body>
 </html>

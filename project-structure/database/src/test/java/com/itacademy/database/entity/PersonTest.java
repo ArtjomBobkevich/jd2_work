@@ -51,10 +51,10 @@ public class PersonTest {
         }
     }
 
-    private static Person createPerson () {
+    private static Person createPerson() {
         @Cleanup Session session = FACTORY.openSession();
         return Person.builder()
-                .id(1L)
+//                .id(1L)
                 .avatar("url")
                 .login("login")
                 .identification(Identification.builder()
@@ -64,7 +64,7 @@ public class PersonTest {
                 .age(16)
                 .mail("mail")
                 .password("password")
-                .personRole(session.get(PersonRole.class,2L))
+                .personRole(session.get(PersonRole.class, 2L))
                 .build();
     }
 }

@@ -25,7 +25,7 @@ public class HeadingTest {
             session.getTransaction().begin();
             Heading heading = Heading.builder()
                     .headingName("test")
-                    .category(session.get(Category.class,1L))
+                    .category(session.get(Category.class, 1L))
                     .build();
             Serializable id = session.save(heading);
 
@@ -40,7 +40,7 @@ public class HeadingTest {
             session.getTransaction().begin();
             Heading heading = Heading.builder()
                     .headingName("test")
-                    .category(session.get(Category.class,1L))
+                    .category(session.get(Category.class, 1L))
                     .build();
             Serializable id = session.save(heading);
             session.getTransaction().commit();

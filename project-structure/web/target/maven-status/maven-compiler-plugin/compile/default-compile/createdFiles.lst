@@ -1,4 +1,3 @@
-com\itacademy\web\servlet\PersonInfoServlet.class
+com\itacademy\web\servlet\FilterServlet.class
+com\itacademy\web\config\WebConfig.class
 com\itacademy\web\util\JspPath.class
-com\itacademy\web\servlet\PersonServlet.class
-com\itacademy\web\servlet\PersonDeleteServlet.class

@@ -30,7 +30,7 @@
         <div>
             <p>цена</p>
             <label for="price">
-                <input id="price" type="text" name="price" value="${param.price}"/>
+                <input id="price" type="number" name="price" value="${param.price}"/>
             </label><br>
         </div>
         <p>сколько пропустить</p>

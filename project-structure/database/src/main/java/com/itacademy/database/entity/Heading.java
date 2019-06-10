@@ -37,9 +37,4 @@ public class Heading implements BaseEntity<Long> {
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
-
-    public Heading(String headingName, Category category) {
-        this.headingName = headingName;
-        this.category = category;
-    }
 }

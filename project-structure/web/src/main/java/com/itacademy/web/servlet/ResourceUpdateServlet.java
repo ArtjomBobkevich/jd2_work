@@ -1,14 +1,13 @@
 package com.itacademy.web.servlet;
 
-import com.itacademy.database.dao.CategoryDao;
-import com.itacademy.database.dao.HeadingDao;
-import com.itacademy.database.dao.PersonDao;
 import com.itacademy.database.entity.BlockResource;
 import com.itacademy.service.service.CategoryService;
 import com.itacademy.service.service.HeadingService;
 import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.ResourceService;
+import com.itacademy.web.util.Filter;
 import com.itacademy.web.util.JspPath;
+import org.springframework.context.ApplicationContext;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -21,14 +20,18 @@ import java.nio.charset.StandardCharsets;
 @WebServlet("/resource-update")
 public class ResourceUpdateServlet extends HttpServlet {
 
-    private ResourceService resourceService = ResourceService.getResourceService();
-    private PersonService personService = PersonService.getPersonService();
-    private CategoryService categoryService = CategoryService.getCategoryService();
-    private HeadingService headingService = HeadingService.getHeadingService();
+    private Filter filter = Filter.getFILTER();
+
+    private ApplicationContext applicationContext = BaseServlet.getApplicationContext();
+
+    private ResourceService resourceService = applicationContext.getBean(ResourceService.class);
+    private PersonService personService = applicationContext.getBean(PersonService.class);
+    private CategoryService categoryService = applicationContext.getBean(CategoryService.class);
+    private HeadingService headingService = applicationContext.getBean(HeadingService.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("resource",resourceService.findAll());
+        req.setAttribute("resource", resourceService.findAll());
         req.setAttribute("heading", headingService.findAll());
         req.setAttribute("category", categoryService.findAll());
         req.setAttribute("person", personService.findAll());
@@ -41,13 +44,14 @@ public class ResourceUpdateServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        filter.addFilter(req);
         req.setCharacterEncoding(StandardCharsets.UTF_8.name());
         BlockResource blockResource = new BlockResource(
                 req.getParameter("resourceName"),
                 req.getParameter("foto"),
-                HeadingDao.getHeadingDao().get(Long.parseLong(req.getParameter("headingId"))).orElse(null),
-                CategoryDao.getCategoryDao().get(Long.parseLong(req.getParameter("categoryId"))).orElse(null),
-                PersonDao.getPersonDao().get(Long.parseLong(req.getParameter("personId"))).orElse(null),
+                headingService.findById(Long.parseLong(req.getParameter("headingId"))),
+                categoryService.findById(Long.parseLong(req.getParameter("categoryId"))),
+                personService.findByIdEntity(Long.parseLong(req.getParameter("personId"))),
                 Integer.parseInt(req.getParameter("price")),
                 req.getParameter("text"),
                 Long.parseLong(req.getParameter("id")),

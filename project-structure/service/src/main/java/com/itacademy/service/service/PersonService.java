@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.Collectors;
+
 @Service
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 @Transactional(readOnly = true)
@@ -20,7 +21,7 @@ public class PersonService {
 
     public List<ViewPersonFullInfoDto> findAll() {
         return personDao.getAll().stream()
-                .map(it -> new ViewPersonFullInfoDto(it.getId(),it.getAvatar(), it.getLogin(), it.getIdentification(), it.getAge(),
+                .map(it -> new ViewPersonFullInfoDto(it.getId(), it.getAvatar(), it.getLogin(), it.getIdentification(), it.getAge(),
                         it.getMail(), it.getPassword(), it.getPersonRole().getNameOfRole()))
                 .collect(Collectors.toList());
     }
@@ -29,6 +30,10 @@ public class PersonService {
         return personDao.get(id).map(it -> new ViewPersonFullInfoDto(it.getAvatar(), it.getLogin(),
                 it.getIdentification(), it.getAge(), it.getMail(), it.getPassword(), it.getPersonRole().getNameOfRole()))
                 .orElse(null);
+    }
+
+    public Person findByIdEntity(Long id) {
+        return personDao.get(id).orElse(null);
     }
 
     @Transactional
@@ -50,11 +55,7 @@ public class PersonService {
     }
 
     @Transactional
-    public void update (Person person) {
+    public void update(Person person) {
         personDao.update(person);
     }
-
-//    public static PersonService getPersonService() {
-//        return PERSON_SERVICE;
-//    }
 }

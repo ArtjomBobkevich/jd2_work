@@ -3,7 +3,9 @@ package com.itacademy.web.servlet;
 import com.itacademy.database.entity.Identification;
 import com.itacademy.database.entity.Person;
 import com.itacademy.service.service.PersonService;
+import com.itacademy.web.util.Filter;
 import com.itacademy.web.util.JspPath;
+import org.springframework.context.ApplicationContext;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,12 +13,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 
 @WebServlet(value = "/person-delete", name = "PersonDeleteServlet")
 public class PersonDeleteServlet extends HttpServlet {
 
-    private PersonService personService = PersonService.getPersonService();
+    private Filter filter = Filter.getFILTER();
+
+    private ApplicationContext applicationContext = BaseServlet.getApplicationContext();
+
+    private PersonService personService = applicationContext.getBean(PersonService.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -29,8 +34,7 @@ public class PersonDeleteServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        req.setCharacterEncoding(StandardCharsets.UTF_8.name());
+        filter.addFilter(req);
         Person person = Person.builder()
                 .id(Long.parseLong(req.getParameter("id")))
                 .avatar("sss")

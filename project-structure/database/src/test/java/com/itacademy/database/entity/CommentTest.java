@@ -50,11 +50,11 @@ public class CommentTest {
         }
     }
 
-    private static Comment createComment () {
+    private static Comment createComment() {
         @Cleanup Session session = FACTORY.openSession();
         return Comment.builder()
-                .person(session.get(Person.class,2L))
-                .resource(session.get(Resource.class,2L))
+                .person(session.get(Person.class, 2L))
+                .resource(session.get(Resource.class, 2L))
                 .build();
     }
 }

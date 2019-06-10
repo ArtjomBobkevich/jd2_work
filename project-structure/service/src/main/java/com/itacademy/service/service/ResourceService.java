@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 
@@ -56,39 +55,19 @@ public class ResourceService {
 
     public List<ResourceFullDto> findResourceByCriteria(PredicateDto predicateDto, Integer offset, Integer limit) {
         ProxyPredicate proxyPredicate;
-        if (predicateDto.getPrice()!=null){
-             proxyPredicate = new ProxyPredicate(predicateDto.getResource(), predicateDto.getCategory(), predicateDto.getPrice());
+        if (predicateDto.getPrice() != null) {
+            proxyPredicate = new ProxyPredicate(predicateDto.getResource(), predicateDto.getCategory(), predicateDto.getPrice());
         } else
-             proxyPredicate = new ProxyPredicate(predicateDto.getResource(), predicateDto.getCategory());
+            proxyPredicate = new ProxyPredicate(predicateDto.getResource(), predicateDto.getCategory());
 
-        return resourceDao.findResourcesOrderByAuthor(proxyPredicate,offset,limit).stream()
+        return resourceDao.findResourcesOrderByAuthor(proxyPredicate, offset, limit).stream()
                 .map(it -> new ResourceFullDto(it.getResourceName(), it.getFoto(), it.getHeading().getHeadingName(), it.getCategory().getCategoryName(),
                         it.getPerson().getLogin(), it.getPrice(), it.getText(), it.getBlock()))
                 .collect(Collectors.toList());
     }
 
-    public Map<Integer,List<BlockResource>> allByPages (PredicateDto predicateDto, Integer limit){
+    public Integer countPages(PredicateDto predicateDto, Integer limit) {
         ProxyPredicate proxyPredicate = new ProxyPredicate(predicateDto.getResource(), predicateDto.getCategory(), predicateDto.getPrice());
-        return resourceDao.allPages(proxyPredicate,limit);
+        return resourceDao.countPages(proxyPredicate, limit);
     }
-
-    public List<Integer> countPages (PredicateDto predicateDto, Integer limit) {
-        ProxyPredicate proxyPredicate = new ProxyPredicate(predicateDto.getResource(), predicateDto.getCategory(), predicateDto.getPrice());
-        return resourceDao.countPages(proxyPredicate,limit);
-    }
-
-//    public List<ResourceFullDto> allResourceByCriteria(List<Resource>list,Integer offset, Integer limit) {
-//        return ResourceDao.getResourceDao().allResourceByCriteria(list,offset,limit).stream()
-//                .map(it -> new ResourceFullDto(it.getId(), it.getResourceName(), it.getFoto(), it.getHeading(), it.getCategory(),
-//                        it.getPerson(), it.getPrice(), it.getText()))
-//                .collect(Collectors.toList());
-//    }
-
-//    public void allPages () {
-//        ResourceDao.getResourceDao().allPages()
-//    }
-
-//    public static ResourceService getResourceService() {
-//        return RESOURCE_SERVICE;
-//    }
 }

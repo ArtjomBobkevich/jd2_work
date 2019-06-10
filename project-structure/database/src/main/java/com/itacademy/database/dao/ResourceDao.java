@@ -16,43 +16,18 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Repository
 public class ResourceDao extends BaseDaoImpl<Long, BlockResource> {
 
-//    private static final ResourceDao RESOURCE_DAO = new ResourceDao();
-//    private static SessionFactory factory = SessionManager.getFactory();
-
     public List<BlockResource> findResourcesOrderByAuthor(ProxyPredicate proxyPredicate, Integer offset, Integer limit) {
 
-       @Cleanup Session session = getSessionFactory().openSession();
+        @Cleanup Session session = getSessionFactory().openSession();
         CriteriaBuilder cb = session.getCriteriaBuilder();
         CriteriaQuery<BlockResource> criteria = cb.createQuery(BlockResource.class);
         Root<BlockResource> root = criteria.from(BlockResource.class);
-        Join<BlockResource, Category> categoryJoin = root.join(BlockResource_.category);
-//        criteria.select(root).where(build(cb, proxyPredicate));
-        if (!proxyPredicate.getResource().equals("") && !proxyPredicate.getCategory().equals("") && proxyPredicate.getPrice() != null){
-            criteria.select(root).where(
-                    cb.equal(root.get(BlockResource_.resourceName), proxyPredicate.getResource()),
-                    cb.equal(categoryJoin.get(Category_.categoryName), proxyPredicate.getCategory()),
-                    cb.equal(root.get(BlockResource_.price), proxyPredicate.getPrice()));
-        } else if (!proxyPredicate.getResource().equals("") && !proxyPredicate.getCategory().equals("")&& proxyPredicate.getPrice() == null) {
-            criteria.select(root).where(
-            cb.equal(root.get(BlockResource_.resourceName), proxyPredicate.getResource()),
-                    cb.equal(categoryJoin.get(Category_.categoryName), proxyPredicate.getCategory()));
-        } else if (!proxyPredicate.getResource().equals("")){
-            criteria.select(root).where(
-                    cb.equal(root.get(BlockResource_.resourceName), proxyPredicate.getResource()));
-        } else if (!proxyPredicate.getCategory().equals("")&& proxyPredicate.getPrice() == null) {
-            criteria.select(root).where(
-                    cb.equal(categoryJoin.get(Category_.categoryName), proxyPredicate.getCategory()));
-        } else if (proxyPredicate.getPrice() != null) {
-            criteria.select(root).where(
-                    cb.equal(root.get(BlockResource_.price), proxyPredicate.getPrice()));
-        }
+        criteria.select(root).where(build(cb, root, proxyPredicate));
 
         return session.createQuery(criteria)
                 .setFirstResult(offset)
@@ -61,10 +36,8 @@ public class ResourceDao extends BaseDaoImpl<Long, BlockResource> {
     }
 
 
-    public Predicate[] build(CriteriaBuilder cb, ProxyPredicate proxyPredicate) {
+    public Predicate[] build(CriteriaBuilder cb, Root<BlockResource> root, ProxyPredicate proxyPredicate) {
         List<Predicate> predicates = new ArrayList<>();
-        CriteriaQuery<BlockResource> criteria = cb.createQuery(BlockResource.class);
-        Root<BlockResource> root = criteria.from(BlockResource.class);
         Join<BlockResource, Category> categoryJoin = root.join(BlockResource_.category);
         if (!proxyPredicate.getResource().equals("") && !proxyPredicate.getCategory().equals("") && proxyPredicate.getPrice() != null) {
             predicates.add(cb.equal(root.get(BlockResource_.resourceName), proxyPredicate.getResource()));
@@ -81,81 +54,17 @@ public class ResourceDao extends BaseDaoImpl<Long, BlockResource> {
             predicates.add(cb.equal(root.get(BlockResource_.price), proxyPredicate.getPrice()));
         }
         System.out.println(Arrays.toString(predicates.toArray()));
-        return predicates.toArray(new Predicate[]{});
+        return predicates.toArray(new Predicate[0]);
     }
 
-    public Map<Integer, List<BlockResource>> allPages(ProxyPredicate proxyPredicate, Integer limit) {
-        Session session = getSessionFactory().openSession();
-        CriteriaBuilder cb = session.getCriteriaBuilder();
-        CriteriaQuery<BlockResource> criteria = cb.createQuery(BlockResource.class);
-        Root<BlockResource> root = criteria.from(BlockResource.class);
-//        Join<BlockResource, Category> categoryJoin = root.join(BlockResource_.category);
-        criteria.select(root).where(build(cb, proxyPredicate));
-//        criteria.select(root).where(
-//                cb.equal(root.get(BlockResource_.resourceName), proxyPredicate.getResource()),
-//                cb.equal(categoryJoin.get(Category_.categoryName), proxyPredicate.getCategory()),
-//                cb.equal(root.get(BlockResource_.price), proxyPredicate.getPrice()));
-        List<BlockResource> allByCriteria = session.createQuery(criteria).list();
-        Integer pages = allByCriteria.size() / limit;
-        Map<Integer, List<BlockResource>> informationOnPages = new HashMap<>();
-        Integer offset = 0;
-        Integer limitOnPage = limit;
-        for (int count = 0; count < pages; count++) {
-            List<BlockResource> listOnThisPage = new ArrayList<>();
-            for (int count2 = offset; count2 < count2 + limit; count2++) {
-                listOnThisPage.add(allByCriteria.get(count2));
-            }
-                offset = offset + limitOnPage;
-            limitOnPage = limit + limit;
-            informationOnPages.put(count, listOnThisPage);
-        }
-        return informationOnPages;
-    }
-
-    public List<Integer> countPages (ProxyPredicate proxyPredicate, Integer limit) {
+    public Integer countPages(ProxyPredicate proxyPredicate, Integer limit) {
         @Cleanup Session session = getSessionFactory().openSession();
         CriteriaBuilder cb = session.getCriteriaBuilder();
         CriteriaQuery<BlockResource> criteria = cb.createQuery(BlockResource.class);
         Root<BlockResource> root = criteria.from(BlockResource.class);
-        Join<BlockResource, Category> categoryJoin = root.join(BlockResource_.category);
-//        criteria.select(root).where(build(cb, proxyPredicate));
-        criteria.select(root).where(
-                cb.equal(root.get(BlockResource_.resourceName), proxyPredicate.getResource()),
-                cb.equal(categoryJoin.get(Category_.categoryName), proxyPredicate.getCategory()),
-                cb.equal(root.get(BlockResource_.price), proxyPredicate.getPrice()));
+        criteria.select(root).where(build(cb, root, proxyPredicate));
         List<BlockResource> allByCriteria = session.createQuery(criteria).list();
-        Integer pages = allByCriteria.size() / limit;
-        List<Integer> countPages = new ArrayList<>();
-        for (int count = 0;count<pages;count++){
-            countPages.add(count);
-        }
-        return countPages;
+
+        return allByCriteria.size() / limit;
     }
-
-//    public static ResourceDao getResourceDao() {
-//        return RESOURCE_DAO;
-//    }
 }
-
-//        public Map<Integer, List<BlockResource>> allPages(ProxyPredicate proxyPredicate, Integer limit) {
-//        Session session = factory.openSession();
-//        CriteriaBuilder cb = session.getCriteriaBuilder();
-//        CriteriaQuery<BlockResource> criteria = cb.createQuery(BlockResource.class);
-//        Root<BlockResource> root = criteria.from(BlockResource.class);
-//        criteria.select(root).where(build(cb, proxyPredicate));
-//        List<BlockResource> allByCriteria = session.createQuery(criteria).list();
-//        Integer pages = allByCriteria.size() / limit;
-//        Map<Integer, List<BlockResource>> informationOnPages = new HashMap<>();
-//        Integer offset = 0;
-//        Integer limitOnPage = limit;
-//        for (int count = 0; count < pages; count++) {
-//            List<BlockResource> listOnThisPage = new ArrayList<>();
-//            for (int count2 = offset; count2 < count2 + limit; count2++) {
-//                listOnThisPage.add(allByCriteria.get(count2));
-//            }
-//                offset = offset + limitOnPage;
-//            limitOnPage = limit + limit;
-//            informationOnPages.put(count, listOnThisPage);
-//        }
-//        return informationOnPages;
-//    }

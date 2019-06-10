@@ -1,6 +1,7 @@
 package com.itacademy.service.service;
 
 import com.itacademy.database.dao.HeadingDao;
+import com.itacademy.database.entity.Heading;
 import com.itacademy.service.dto.HeadingFullDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,11 +21,11 @@ public class HeadingService {
 
     public List<HeadingFullDto> findAll() {
         return headingDao.getAll().stream()
-                .map(it -> new HeadingFullDto(it.getId(),it.getHeadingName(),it.getCategory().getCategoryName()))
+                .map(it -> new HeadingFullDto(it.getId(), it.getHeadingName(), it.getCategory().getCategoryName()))
                 .collect(Collectors.toList());
     }
 
-//    public static HeadingService getHeadingService() {
-//        return HEADING_SERVICE;
-//    }
+    public Heading findById(Long id) {
+        return headingDao.get(id).orElse(null);
+    }
 }

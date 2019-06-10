@@ -17,7 +17,6 @@
         <a>${list.avatar}</a><br>
         <a>${list.login}</a><br>
         <a>${list.identification}</a><br>
-        <%--<a>${list.lastName}</a><br>--%>
         <a>${list.age}</a><br>
         <a>${list.mail}</a><br>
         <a>${list.personRole}</a><br>

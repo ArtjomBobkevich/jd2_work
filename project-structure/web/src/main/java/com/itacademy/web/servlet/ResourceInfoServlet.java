@@ -2,6 +2,7 @@ package com.itacademy.web.servlet;
 
 import com.itacademy.service.service.ResourceService;
 import com.itacademy.web.util.JspPath;
+import org.springframework.context.ApplicationContext;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,7 +14,9 @@ import java.io.IOException;
 @WebServlet("/resource-info")
 public class ResourceInfoServlet extends HttpServlet {
 
-    private ResourceService resourceService = ResourceService.getResourceService();
+    private ApplicationContext applicationContext = BaseServlet.getApplicationContext();
+
+    private ResourceService resourceService = applicationContext.getBean(ResourceService.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -24,4 +27,4 @@ public class ResourceInfoServlet extends HttpServlet {
                 .getRequestDispatcher(JspPath.get("resource-info"))
                 .forward(req, resp);
     }
-    }
+}

@@ -50,14 +50,14 @@ public class ResourceTest {
         }
     }
 
-    private static Resource createResource () {
+    private static Resource createResource() {
         @Cleanup Session session = FACTORY.openSession();
         Resource resource = Resource.builder()
                 .resourceName("test")
                 .foto("url")
-                .heading(session.get(Heading.class,1L))
-                .category(session.get(Category.class,1L))
-                .person(session.get(Person.class,2L))
+                .heading(session.get(Heading.class, 1L))
+                .category(session.get(Category.class, 1L))
+                .person(session.get(Person.class, 2L))
                 .price(300)
                 .build();
         return resource;

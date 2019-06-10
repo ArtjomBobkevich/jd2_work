@@ -1,12 +1,12 @@
 ﻿SET SEARCH_PATH = flea_market;
 
 CREATE TABLE person_role (
-  id   SERIAL PRIMARY KEY,
+  id   BIGSERIAL PRIMARY KEY,
   role VARCHAR(124) UNIQUE NOT NULL
 );
 
 CREATE TABLE person (
-  id         SERIAL PRIMARY KEY,
+  id         BIGSERIAL PRIMARY KEY,
   avatar     VARCHAR(1024),
   login      VARCHAR(124) UNIQUE,
   first_name VARCHAR(124)        NOT NULL,
@@ -14,28 +14,28 @@ CREATE TABLE person (
   age        SMALLINT            NOT NULL,
   mail       VARCHAR(124) UNIQUE NOT NULL,
   password   VARCHAR(124)        NOT NULL,
-  role       INTEGER REFERENCES person_role (id) ON DELETE CASCADE ON UPDATE CASCADE
+  role       BIGSERIAL REFERENCES person_role (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE category (
-  id            SERIAL PRIMARY KEY,
+  id            BIGSERIAL PRIMARY KEY,
   category_name VARCHAR(124) UNIQUE NOT NULL,
   foto          VARCHAR(124)
 );
 
 CREATE TABLE heading (
-  id           SERIAL PRIMARY KEY,
+  id           BIGSERIAL PRIMARY KEY,
   heading_name VARCHAR(124) NOT NULL,
-  category_id  INTEGER REFERENCES category (id)ON DELETE CASCADE ON UPDATE CASCADE
+  category_id  BIGSERIAL REFERENCES category (id)ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE resource (
-  id            SERIAL PRIMARY KEY,
+  id            BIGSERIAL PRIMARY KEY,
   resource_name VARCHAR(124) NOT NULL,
   foto          VARCHAR(1024),
-  heading_id    INTEGER REFERENCES heading (id) ON DELETE CASCADE ON UPDATE CASCADE,
-  category_id   INTEGER REFERENCES category (id) ON DELETE CASCADE ON UPDATE CASCADE,
-  author        INTEGER REFERENCES person (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  heading_id    BIGSERIAL REFERENCES heading (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  category_id   BIGSERIAL REFERENCES category (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  author        BIGSERIAL REFERENCES person (id) ON DELETE CASCADE ON UPDATE CASCADE,
   price         INTEGER,
   text 		VARCHAR(1024),
   block		VARCHAR(1024),
@@ -43,21 +43,21 @@ CREATE TABLE resource (
 );
 
 CREATE TABLE resource_person (
-  resources_id INTEGER REFERENCES resource (id) ON DELETE CASCADE ON UPDATE CASCADE,
-  person_id    INTEGER REFERENCES person (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  resources_id BIGSERIAL REFERENCES resource (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  person_id    BIGSERIAL REFERENCES person (id) ON DELETE CASCADE ON UPDATE CASCADE,
   PRIMARY KEY (resources_id, person_id)
 );
 
 CREATE TABLE store_basket (
-  person_id    INTEGER REFERENCES person (id) ON DELETE CASCADE ON UPDATE CASCADE,
-  resources_id INTEGER REFERENCES resource (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  person_id    BIGSERIAL REFERENCES person (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  resources_id BIGSERIAL REFERENCES resource (id) ON DELETE CASCADE ON UPDATE CASCADE,
   PRIMARY KEY (person_id,resources_id)
 );
 
 CREATE TABLE comment (
-  id          SERIAL PRIMARY KEY,
-  person_id    	INTEGER REFERENCES person (id) ON DELETE CASCADE ON UPDATE CASCADE,
-  resources_id INTEGER REFERENCES resource (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  id          BIGSERIAL PRIMARY KEY,
+  person_id    	BIGSERIAL REFERENCES person (id) ON DELETE CASCADE ON UPDATE CASCADE,
+  resources_id BIGSERIAL REFERENCES resource (id) ON DELETE CASCADE ON UPDATE CASCADE,
   text        VARCHAR(500)
 );
 

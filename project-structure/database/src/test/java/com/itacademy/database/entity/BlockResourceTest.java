@@ -23,8 +23,8 @@ public class BlockResourceTest {
     public void checkSaveFactory() {
         try (Session session = FACTORY.openSession()) {
             session.beginTransaction();
-            Serializable id = session.save(new BlockResource("222", "asfdsdf", (session.get(Heading.class,1L)),
-                    (session.get(Category.class,1L)), (session.get(Person.class,2L)), 3, "sdfs", "qwe"));
+            Serializable id = session.save(new BlockResource("222", "asfdsdf", (session.get(Heading.class, 1L)),
+                    (session.get(Category.class, 1L)), (session.get(Person.class, 2L)), 3, "sdfs", "qwe"));
             session.getTransaction().commit();
             assertNotNull(id);
         }
@@ -34,8 +34,8 @@ public class BlockResourceTest {
     public void checkGetFactory() {
         try (Session session = FACTORY.openSession()) {
             session.beginTransaction();
-            Serializable id = session.save(new BlockResource("222", "asfdsdf", (session.get(Heading.class,1L)),
-                    (session.get(Category.class,1L)), (session.get(Person.class,2L)), 3, "sdfs", "qwe"));
+            Serializable id = session.save(new BlockResource("222", "asfdsdf", (session.get(Heading.class, 1L)),
+                    (session.get(Category.class, 1L)), (session.get(Person.class, 2L)), 3, "sdfs", "qwe"));
             session.getTransaction().commit();
             BlockResource blockResource = session.load(BlockResource.class, id);
             assertNotNull(blockResource);

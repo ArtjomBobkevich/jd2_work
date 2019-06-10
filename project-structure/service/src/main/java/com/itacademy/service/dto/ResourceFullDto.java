@@ -21,7 +21,6 @@ public class ResourceFullDto {
     private String text;
     private String block;
 
-
     public ResourceFullDto(String resourceName, String foto, String heading, String category, String person, Integer price, String text, String block) {
         this.resourceName = resourceName;
         this.foto = foto;
