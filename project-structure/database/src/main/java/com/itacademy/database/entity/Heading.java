@@ -47,4 +47,15 @@ public class Heading implements BaseEntity<Long> {
     @JoinTable(name = "resource_heading", schema = "flea_market", joinColumns = @JoinColumn(name = "resource_id"),
             inverseJoinColumns = @JoinColumn(name = "heading_id"))
     private Set<Resource> resources = new HashSet<>();
+
+    public Heading(Long id,String headingName, Category category) {
+        this.id = id;
+        this.headingName = headingName;
+        this.category = category;
+    }
+
+    public Heading(String headingName, Category category) {
+        this.headingName = headingName;
+        this.category = category;
+    }
 }

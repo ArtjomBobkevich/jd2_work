@@ -5,6 +5,8 @@ import com.itacademy.database.entity.BlockResource_;
 import com.itacademy.database.entity.Category;
 import com.itacademy.database.entity.Category_;
 import com.itacademy.database.entity.FilterDto;
+import com.itacademy.database.entity.Heading;
+import com.itacademy.database.entity.Resource;
 import lombok.Cleanup;
 import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
@@ -65,9 +67,8 @@ public class ResourceDao extends BaseDaoImpl<Long, BlockResource> {
         return allByCriteria.size() / limit;
     }
 
-//    public boolean addHeading (Heading heading, Resource resource) {
-//        getSessionFactory().getCurrentSession();
-//
-//        return resource.getHeadings().add(heading);
-//    }
+    public boolean addHeading (Heading heading, Resource resource) {
+        getSessionFactory().getCurrentSession();
+        return resource.getHeadings().add(heading);
+    }
 }

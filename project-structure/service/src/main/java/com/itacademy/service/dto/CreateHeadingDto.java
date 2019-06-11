@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class CreateHeadingDto {
 
+    private Long id;
     private String headingName;
     private Category category;
 }

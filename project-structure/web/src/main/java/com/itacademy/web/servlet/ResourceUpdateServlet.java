@@ -43,13 +43,13 @@ public class ResourceUpdateServlet extends HttpServlet {
 
         filter.doFilter(req,resp);
         BlockResource blockResource = new BlockResource(
+                Long.parseLong(req.getParameter("id")),
                 req.getParameter("resourceName"),
                 req.getParameter("foto"),
                 categoryService.findById(Long.parseLong(req.getParameter("categoryId"))),
                 personService.findByIdEntity(Long.parseLong(req.getParameter("personId"))),
                 Integer.parseInt(req.getParameter("price")),
                 req.getParameter("text"),
-                Long.parseLong(req.getParameter("id")),
                 "NO"
         );
         resourceService.update(blockResource);

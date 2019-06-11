@@ -14,7 +14,6 @@
 <body>
 <c:forEach var="list" items="${requestScope.resources}">
     <a>${list.resourceName}</a><br>
-    <a>${list.heading}</a><br>
     <a>${list.category}</a><br>
     <a>${list.person}</a><br>
     <a>${list.price}</a><br>

@@ -3,6 +3,9 @@ package com.itacademy.service.service;
 import com.itacademy.database.dao.ResourceDao;
 import com.itacademy.database.entity.BlockResource;
 import com.itacademy.database.entity.FilterDto;
+import com.itacademy.database.entity.Heading;
+import com.itacademy.database.entity.Resource;
+import com.itacademy.service.dto.CreateHeadingDto;
 import com.itacademy.service.dto.CreateResourceDto;
 import com.itacademy.service.dto.PredicateDto;
 import com.itacademy.service.dto.ResourceFullDto;
@@ -68,10 +71,20 @@ public class ResourceService {
         return resourceDao.countPages(filterDto, limit);
     }
 
-   /* public boolean addHeading (CreateHeadingDto createHeadingDto, CreateResourceDto createResourceDto) {
+    @Transactional
+    public void addHeading (CreateHeadingDto createHeadingDto, CreateResourceDto createResourceDto) {
+        Resource resource = Resource.builder()
+                .id(createResourceDto.getId())
+                .resourceName(createResourceDto.getResourceName())
+                .foto(createResourceDto.getFoto())
+                .category(createResourceDto.getCategory())
+                .person(createResourceDto.getPerson())
+                .price(createResourceDto.getPrice())
+                .text(createResourceDto.getText())
+                .build();
 
-        BlockResource blockResource
+        Heading heading = new Heading(createHeadingDto.getId(),createHeadingDto.getHeadingName(),createHeadingDto.getCategory());
 
-        return resource.getHeadings().add(heading);
-    }*/
+        resourceDao.addHeading(heading, resource);
+    }
 }

@@ -33,13 +33,14 @@ public class ResourceDeleteServlet extends HttpServlet {
 
         getServletContext()
                 .getRequestDispatcher(JspPath.get("resource-delete"))
-                .forward(req, resp);
-    }
+            .forward(req, resp);
+}
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         filter.doFilter(req,resp);
         BlockResource blockResource = new BlockResource(
+                Long.parseLong(req.getParameter("id")),
                 "resourceName",
                 "foto",
                 categoryService.findById(2L),
