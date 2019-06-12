@@ -25,7 +25,7 @@
     </div>
     <div>
         category
-        <select name="categoryId" id="categoryId">
+        <select name="id" >
             <c:forEach var="list" items="${requestScope.category}">
                 <option value="${list.id}">${list.categoryName}</option>
             </c:forEach>
@@ -33,7 +33,7 @@
     </div>
     <div>
         author
-        <select name="personId" id="personId">
+        <select name="id" id="id">
             <c:forEach var="list" items="${requestScope.person}">
                 <option value="${list.id}">${list.login}</option>
             </c:forEach>
@@ -41,7 +41,7 @@
     </div>
     <div>
         <label for="price">price
-            <input id="price" type="text" name="price" required placeholder="price"/>
+            <input id="price" type="number" name="price" required placeholder="price"/>
         </label><br>
     </div>
     <div>

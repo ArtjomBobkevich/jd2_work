@@ -16,8 +16,8 @@
 <form action="${pageContext.request.contextPath}/filter" method="post">
     <div>
         <p>название ресурса</p>
-        <label for="resourceName">
-            <input id="resourceName" type="text" name="resourceName" value="${param.resourceName}"/>
+        <label for="resource">
+            <input id="resource" type="text" name="resource" value="${param.resourceName}"/>
         </label><br>
     </div>
     <div>
@@ -32,12 +32,6 @@
             <label for="price">
                 <input id="price" type="number" name="price" value="${param.price}"/>
             </label><br>
-        </div>
-        <p>сколько пропустить</p>
-        <label for="offset">
-            <input id="offset" type="text" name="offset" value="${param.offset}"/>
-        </label><br>
-    </div>
     <div>
         <p>сколько показать</p>
         <label for="limit">

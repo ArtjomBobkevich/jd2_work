@@ -12,7 +12,6 @@
 </head>
 <body>
 <span>${requestScope.resource.resourceName}</span><br>
-<span>${requestScope.resource.heading}</span><br>
 <span>${requestScope.resource.category}</span><br>
 <span>${requestScope.resource.person}</span><br>
 <span>${requestScope.resource.price}</span><br>

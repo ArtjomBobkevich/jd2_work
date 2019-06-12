@@ -16,12 +16,12 @@
 <div>
     <c:forEach var="resources" items="${requestScope.resource}">
         <a>${resources.resourceName}</a><br>
-        <a>${resources.heading}</a><br>
+        <%--<a>${resources.heading}</a><br>--%>
         <a>${resources.person}</a><br>
     </c:forEach>
 </div>
 <form action="${pageContext.request.contextPath}/resources-by-criteria" method="post">
-    <input type="hidden" name="resourceName" value="${param.resourceName}"/>
+    <input type="hidden" name="resource" value="${param.resourceName}"/>
     <input type="hidden" name="category" value="${param.category}"/>
     <input type="hidden" name="price" value="${param.price}"/>
     <input type="hidden" name="offset" value="${param.offset}"/>

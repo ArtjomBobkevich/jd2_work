@@ -48,6 +48,11 @@
         </label><br>
     </div>
     <div>
+        <label for="nameOfRole">
+            <input id="nameOfRole" type="hidden" name="nameOfRole" value="${personRole}"/>
+        </label><br>
+    </div>
+    <div>
         <input type="submit" value="save">
     </div>
 </form>

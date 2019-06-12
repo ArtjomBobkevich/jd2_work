@@ -14,7 +14,7 @@
 <body>
 <form action="${pageContext.request.contextPath}/person-update" method="post">
     <div>
-        <select name="id" id="id">
+        <select name="id" >
             <c:forEach var="list" items="${requestScope.loginList}">
                 <option value="${list.id}">${list.login}</option>
             </c:forEach>
@@ -54,6 +54,11 @@
         <label for="password">password
             <input id="password" type="password" name="password" required placeholder="password"/>
         </label><br>
+    </div>
+    <div>
+    <label for="nameOfRole">
+        <input id="nameOfRole" type="hidden" name="${personRole.id}" value="${personRole.nameOfRole}"/>
+    </label><br>
     </div>
     <div>
         <input type="submit" value="save">
