@@ -1,8 +1,8 @@
 package com.itacademy.web.controller;
 
 import com.itacademy.database.entity.Identification;
-import com.itacademy.database.entity.Person;
 import com.itacademy.database.entity.PersonRole;
+import com.itacademy.service.dto.CreateNewPersonDto;
 import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.RoleService;
 import com.itacademy.service.util.UrlPath;
@@ -25,7 +25,7 @@ public class PersonUpdateController {
     private PersonService personService;
 
     @ModelAttribute()
-    public void setPersonRole (Model model) {
+    public void setPersonRole(Model model) {
         model.addAttribute("personRole", roleService.findById(2L));
     }
 
@@ -36,18 +36,15 @@ public class PersonUpdateController {
     }
 
     @PostMapping
-    public String savePerson (Person person, Identification identification, PersonRole personRole) {
+    public String updatePerson(CreateNewPersonDto person, Identification identification) {
 
+        PersonRole personRole = roleService.findById(2L);
+        System.out.println(personRole);
 
-        System.out.println(personRole.getId());
-
-        person.setPersonRole(personRole);
         person.setIdentification(identification);
+        person.setPersonRole(personRole);
 
         personService.update(person);
         return "redirect:/person";
     }
 }
-
-
-/*не работает!! если форич выдаёт значение по ид, то этот же ид попадает в роле так как там есть поле ид*/

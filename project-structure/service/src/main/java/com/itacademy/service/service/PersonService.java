@@ -19,6 +19,7 @@ public class PersonService {
 
     private final PersonDao personDao;
 
+
     public List<ViewPersonFullInfoDto> findAll() {
         return personDao.getAll().stream()
                 .map(it -> new ViewPersonFullInfoDto(it.getId(), it.getAvatar(), it.getLogin(), it.getIdentification(), it.getAge(),
@@ -55,7 +56,16 @@ public class PersonService {
     }
 
     @Transactional
-    public void update(Person person) {
-        personDao.update(person);
+    public void update(CreateNewPersonDto viewPersonFullInfoDto) {
+        personDao.update(Person.builder()
+                .id(viewPersonFullInfoDto.getId())
+                .avatar(viewPersonFullInfoDto.getAvatar())
+                .login(viewPersonFullInfoDto.getLogin())
+                .identification(viewPersonFullInfoDto.getIdentification())
+                .age(viewPersonFullInfoDto.getAge())
+                .mail(viewPersonFullInfoDto.getMail())
+                .password(viewPersonFullInfoDto.getMail())
+                .personRole(viewPersonFullInfoDto.getPersonRole())
+                .build());
     }
 }

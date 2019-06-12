@@ -36,7 +36,7 @@ public class AddHeadingByResourceServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setAttribute("resources", resourceService.findAll());
-        req.setAttribute("headingList",headingService.findAll());
+        req.setAttribute("headingList", headingService.findAll());
 
         getServletContext()
                 .getRequestDispatcher(JspPath.get("add-heading-by-resource"))
@@ -47,7 +47,6 @@ public class AddHeadingByResourceServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         req.setCharacterEncoding(StandardCharsets.UTF_8.name());
-
 
 
         CreateResourceDto resource = CreateResourceDto.builder()
@@ -65,16 +64,15 @@ public class AddHeadingByResourceServlet extends HttpServlet {
                 .block("NO")
                 .build();
 
-
         CreateHeadingDto heading = CreateHeadingDto.builder()
                 .id(Long.parseLong(req.getParameter("heading_id")))
                 .headingName("sdf")
                 .category(Category.builder().build())
                 .build();
 
-/*метод не проходит nullPointerException, хотя ид-ки вплоть до дао слоя идут*/
+        /*метод не проходит nullPointerException, хотя ид-ки вплоть до дао слоя идут*/
 
-        resourceService.addHeading(heading,resource);
+        resourceService.addHeading(heading, resource);
 
         resp.sendRedirect("/resource");
     }

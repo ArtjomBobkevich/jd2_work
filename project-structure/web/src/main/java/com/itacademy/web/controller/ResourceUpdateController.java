@@ -1,8 +1,6 @@
 package com.itacademy.web.controller;
 
-import com.itacademy.database.entity.Category;
-import com.itacademy.database.entity.Person;
-import com.itacademy.service.dto.CreateResourceDto;
+import com.itacademy.database.entity.BlockResource;
 import com.itacademy.service.service.CategoryService;
 import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.ResourceService;
@@ -15,8 +13,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping(UrlPath.RESOURCE_SAVE)
-public class ResourceSaveController {
+@RequestMapping(UrlPath.RESOURCE_UPDATE)
+public class ResourceUpdateController {
 
     @Autowired
     private ResourceService resourceService;
@@ -29,17 +27,16 @@ public class ResourceSaveController {
     public String getPage(Model model) {
         model.addAttribute("category", categoryService.findAll());
         model.addAttribute("person", personService.findAll());
+        model.addAttribute("resource", resourceService.findAll());
 
-        return "resource-save";
+        return "resource-update";
     }
 
     @PostMapping
-    public String saveResource(CreateResourceDto createResourceDto, Category category, Person person) {
+    public String updateResource(BlockResource blockResource) {
 
-        createResourceDto.setCategory(category);
-        createResourceDto.setPerson(person);
 
-        Long aLong = resourceService.saveResource(createResourceDto);
-        return "redirect:/resource-info?id=" + aLong;
+        resourceService.update(blockResource);
+        return "redirect:/resource";
     }
 }

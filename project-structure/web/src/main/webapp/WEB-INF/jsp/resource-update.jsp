@@ -31,14 +31,6 @@
         </label><br>
     </div>
     <div>
-        heading
-        <select name="headingId" id="headingId">
-            <c:forEach var="list" items="${requestScope.heading}">
-                <option value="${list.id}">${list.headingName}</option>
-            </c:forEach>
-        </select>
-    </div>
-    <div>
         category
         <select name="categoryId" id="categoryId">
             <c:forEach var="list" items="${requestScope.category}">
@@ -56,7 +48,7 @@
     </div>
     <div>
         <label for="price">price
-            <input id="price" type="text" name="price" required placeholder="price"/>
+            <input id="price" type="number" name="price" required placeholder="price"/>
         </label><br>
     </div>
     <div>

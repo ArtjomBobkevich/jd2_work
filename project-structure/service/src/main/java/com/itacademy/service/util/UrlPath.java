@@ -19,4 +19,5 @@ public class UrlPath {
     public static final String RESOURCE_DELETE = "/resource-delete";
     public static final String FILTER = "/filter";
     public static final String RESOURCE_BY_CRITERIA = "/resources-by-criteria";
+    public static final String RESOURCE_UPDATE = "/resource-update";
 }

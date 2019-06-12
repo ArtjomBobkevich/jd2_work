@@ -56,8 +56,8 @@
         </label><br>
     </div>
     <div>
-    <label for="nameOfRole">
-        <input id="nameOfRole" type="hidden" name="${personRole.id}" value="${personRole.nameOfRole}"/>
+    <label for="personRole">
+        <input id="personRole" type="hidden" name="personRole" <%--value="${personRole.nameOfRole}"--%>/>
     </label><br>
     </div>
     <div>
