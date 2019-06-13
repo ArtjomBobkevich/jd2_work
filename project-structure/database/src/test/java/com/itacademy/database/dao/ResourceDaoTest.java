@@ -8,6 +8,7 @@ import com.itacademy.database.entity.Heading;
 import com.itacademy.database.entity.Identification;
 import com.itacademy.database.entity.Person;
 import com.itacademy.database.entity.PersonRole;
+import com.itacademy.database.entity.Resource;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -152,11 +153,12 @@ public class ResourceDaoTest {
 
             personDao.save(person);
 
-            BlockResource blockResource = new BlockResource("sdfsfd","dsfsf",categoryDao.get(1L).orElse(null),personDao.get(1L).orElse(null),
-                    222,"sdfsd","dfg");
+            Resource blockResource = new Resource("dsfsf","sfsf",categoryDao.get(1L).orElse(null),
+                    personDao.get(1L).orElse(null),222,"dfg");
 
             resourceDao.addHeading(heading,blockResource);
 
+            System.out.println(blockResource.getHeadings().size());
             assertTrue(blockResource.getHeadings().size()>0);
         }
     }

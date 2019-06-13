@@ -20,4 +20,5 @@ public class UrlPath {
     public static final String FILTER = "/filter";
     public static final String RESOURCE_BY_CRITERIA = "/resources-by-criteria";
     public static final String RESOURCE_UPDATE = "/resource-update";
+    public static final String ADD_HEADING_BY_RESOURCE = "/add-heading-by-resource";
 }

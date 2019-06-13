@@ -7,7 +7,7 @@ import com.itacademy.database.entity.Heading;
 import com.itacademy.database.entity.Resource;
 import com.itacademy.service.dto.CreateHeadingDto;
 import com.itacademy.service.dto.CreateResourceDto;
-import com.itacademy.service.dto.PredicateDto;
+import com.itacademy.service.dto.FilterPredicateParametersDto;
 import com.itacademy.service.dto.ResourceFullDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,18 +56,18 @@ public class ResourceService {
         resourceDao.update(blockResource);
     }
 
-    public List<ResourceFullDto> findResourceByCriteria(PredicateDto predicateDto, Integer offset, Integer limit) {
+    public List<ResourceFullDto> findResourceByCriteria(FilterPredicateParametersDto filterParametersDto) {
         FilterDto filterDto;
-            filterDto = new FilterDto(predicateDto.getResource(), predicateDto.getCategory(), predicateDto.getPrice());
+            filterDto = new FilterDto(filterParametersDto.getResource(), filterParametersDto.getCategory(), filterParametersDto.getPrice());
 
-        return resourceDao.findResourcesOrderByAuthor(filterDto, offset, limit).stream()
+        return resourceDao.findResourcesOrderByAuthor(filterDto, filterParametersDto.getOffset(), filterParametersDto.getLimit()).stream()
                 .map(it -> new ResourceFullDto(it.getResourceName(), it.getFoto(), it.getCategory().getCategoryName(),
                         it.getPerson().getLogin(), it.getPrice(), it.getText(), it.getBlock()))
                 .collect(Collectors.toList());
     }
 
-    public Integer countPages(PredicateDto predicateDto, Integer limit) {
-        FilterDto filterDto = new FilterDto(predicateDto.getResource(), predicateDto.getCategory(), predicateDto.getPrice());
+    public Integer countPages(FilterPredicateParametersDto filterPredicateParametersDto, Integer limit) {
+        FilterDto filterDto = new FilterDto(filterPredicateParametersDto.getResource(), filterPredicateParametersDto.getCategory(), filterPredicateParametersDto.getPrice());
         return resourceDao.countPages(filterDto, limit);
     }
 

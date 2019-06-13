@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:each="resource: ${resources}">
+    <span th:text="${resource.resourceName}">Type</span><br>
+    <span th:text="${resource.category}">Type</span><br>
+    <span th:text="${resource.person}">Type</span><br>
+    <span th:text="${resource.price}">Type</span><br>
+    <span th:text="${resource.text}">Type</span><br>
+</div>
+<div class="container">
+    <form th:action="@{/resources-by-criteria}" th:method="post">
+        <div>
+            <input type="hidden" name="resource" th:value="${filter.resource}"/>
+        </div>
+        <div>
+            <input type="hidden" name="category" th:value="${filter.category}"/>
+        </div>
+        <div>
+            <input type="hidden" name="price" th:value="${filter.price}"/>
+        </div>
+        <div>
+            <input type="hidden" name="offset" th:value="${filter.offset}"/>
+        </div>
+        <div>
+            <input type="hidden" name="limit" th:value="${filter.limit}"/>
+        </div>
+        <div>
+            <input type="hidden" name="limitConst" th:value="${filter.limitConst}"/>
+        </div>
+        <div>
+            <input type="submit" name="page" value="back">
+            <input type="submit" name="page" value="next">
+        </div>
+    </form>
+</div>
+</body>
+</html>

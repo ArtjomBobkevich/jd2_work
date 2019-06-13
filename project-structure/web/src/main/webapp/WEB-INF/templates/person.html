@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div th:each="person: ${persons}">
+        <span th:text="${person.avatar}">Type</span><br>
+        <span th:text="${person.login}">Type</span><br>
+        <span th:text="${person.identification}">Type</span><br>
+        <span th:text="${person.age}">Type</span><br>
+        <span th:text="${person.mail}">Type</span><br>
+        <span th:text="${person.personRole}">Type</span><br>
+        <a>-------------------------</a>
+    </div>
+</div>
+</body>
+</html>

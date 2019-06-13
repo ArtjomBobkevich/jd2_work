@@ -7,7 +7,6 @@ import com.itacademy.database.entity.Category_;
 import com.itacademy.database.entity.FilterDto;
 import com.itacademy.database.entity.Heading;
 import com.itacademy.database.entity.Resource;
-import lombok.Cleanup;
 import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 
@@ -24,7 +23,7 @@ public class ResourceDao extends BaseDaoImpl<Long, BlockResource> {
 
     public List<BlockResource> findResourcesOrderByAuthor(FilterDto filterDto, Integer offset, Integer limit) {
 
-        @Cleanup Session session = getSessionFactory().getCurrentSession();
+        Session session = getSessionFactory().getCurrentSession();
         CriteriaBuilder cb = session.getCriteriaBuilder();
         CriteriaQuery<BlockResource> criteria = cb.createQuery(BlockResource.class);
         Root<BlockResource> root = criteria.from(BlockResource.class);
@@ -57,7 +56,7 @@ public class ResourceDao extends BaseDaoImpl<Long, BlockResource> {
     }
 
     public Integer countPages(FilterDto filterDto, Integer limit) {
-        @Cleanup Session session = getSessionFactory().getCurrentSession();
+        Session session = getSessionFactory().getCurrentSession();
         CriteriaBuilder cb = session.getCriteriaBuilder();
         CriteriaQuery<BlockResource> criteria = cb.createQuery(BlockResource.class);
         Root<BlockResource> root = criteria.from(BlockResource.class);
@@ -67,8 +66,8 @@ public class ResourceDao extends BaseDaoImpl<Long, BlockResource> {
         return allByCriteria.size() / limit;
     }
 
-    public boolean addHeading (Heading heading, Resource resource) {
+    public void addHeading (Heading heading, Resource resource) {
         getSessionFactory().getCurrentSession();
-        return resource.getHeadings().add(heading);
+        resource.getHeadings().add(heading);
     }
 }

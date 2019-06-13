@@ -1,6 +1,10 @@
 package com.itacademy.web.controller;
 
 import com.itacademy.database.entity.BlockResource;
+import com.itacademy.database.entity.Category;
+import com.itacademy.database.entity.Person;
+import com.itacademy.service.dto.CategoryDtoByUpdate;
+import com.itacademy.service.dto.PersonDtoByUpdate;
 import com.itacademy.service.service.CategoryService;
 import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.ResourceService;
@@ -33,7 +37,16 @@ public class ResourceUpdateController {
     }
 
     @PostMapping
-    public String updateResource(BlockResource blockResource) {
+    public String updateResource(BlockResource blockResource, CategoryDtoByUpdate categoryDtoByUpdate, PersonDtoByUpdate personDtoByUpdate) {
+
+        blockResource.setPerson(Person.builder()
+                .id(personDtoByUpdate.getPersonId())
+                .build()
+        );
+
+        blockResource.setCategory(Category.builder()
+                .id(categoryDtoByUpdate.getCategoryId())
+                .build());
 
 
         resourceService.update(blockResource);

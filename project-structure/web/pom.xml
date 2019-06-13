@@ -12,6 +12,10 @@
     <artifactId>web</artifactId>
     <packaging>war</packaging>
 
+    <properties>
+        <spring.version>5.1.7.RELEASE</spring.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>by-itacademy-jd2</groupId>
@@ -31,7 +35,13 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf-spring5</artifactId>
+        </dependency>
     </dependencies>
+
+
 
     <build>
         <finalName>web</finalName>
