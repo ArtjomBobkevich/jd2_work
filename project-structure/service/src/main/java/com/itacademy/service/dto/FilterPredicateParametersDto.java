@@ -16,7 +16,7 @@ public class FilterPredicateParametersDto {
     private Integer price;
     private Integer offset;
     private Integer limit;
-    private Integer limitConst;
+    private Integer constLimit;
 
     public FilterPredicateParametersDto(String resource, String category) {
         this.resource = resource;

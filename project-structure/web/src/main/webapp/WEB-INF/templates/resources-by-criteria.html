@@ -11,32 +11,23 @@
     <span th:text="${resource.person}">Type</span><br>
     <span th:text="${resource.price}">Type</span><br>
     <span th:text="${resource.text}">Type</span><br>
+    <a>------------------------------------------</a>
 </div>
-<div class="container">
-    <form th:action="@{/resources-by-criteria}" th:method="post">
-        <div>
-            <input type="hidden" name="resource" th:value="${filter.resource}"/>
-        </div>
-        <div>
-            <input type="hidden" name="category" th:value="${filter.category}"/>
-        </div>
-        <div>
-            <input type="hidden" name="price" th:value="${filter.price}"/>
-        </div>
-        <div>
-            <input type="hidden" name="offset" th:value="${filter.offset}"/>
-        </div>
-        <div>
-            <input type="hidden" name="limit" th:value="${filter.limit}"/>
-        </div>
-        <div>
-            <input type="hidden" name="limitConst" th:value="${filter.limitConst}"/>
-        </div>
-        <div>
-            <input type="submit" name="page" value="back">
-            <input type="submit" name="page" value="next">
-        </div>
-    </form>
+<div th:each="CountDto: ${countPages}">
+    <!--<a th:href="@{'/resources-by-criteria' + '?resourceName='+ ${filter.resource} + '&category=' + ${filter.category}-->
+    <!--+'&price=' + ${filter.price} + '&offset=' + ${((filter.constLimit*CountDto.page)-((filter.constLimit*CountDto.page)/((filter.constLimit*CountDto.page)/2)))}-->
+    <!--+ '&limit=' + ${filter.constLimit*CountDto.page} + '&constLimit=' + ${filter.constLimit}-->
+    <!--+ '&page=' + ${CountDto.page}}">-->
+        <!--<span th:name="count" th:text="${CountDto.page}">Type</span>-->
+    <!--</a>-->
+    <a th:href="@{'/resources-by-criteria' + '?resourceName='+ ${filter.resource} + '&category=' + ${filter.category}
+    +'&price=' + ${filter.price} + '&offset=' + ${(filter.offset)}
+    + '&limit=' + ${filter.limit} + '&constLimit=' + ${filter.constLimit}
+    + '&page=' + ${CountDto.page}}">
+        <span th:name="count" th:text="${CountDto.page}">Type</span>
+    </a>
+</div>
+</form>
 </div>
 </body>
 </html>

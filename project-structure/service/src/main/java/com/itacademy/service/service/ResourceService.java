@@ -5,6 +5,7 @@ import com.itacademy.database.entity.BlockResource;
 import com.itacademy.database.entity.FilterDto;
 import com.itacademy.database.entity.Heading;
 import com.itacademy.database.entity.Resource;
+import com.itacademy.service.dto.CountDto;
 import com.itacademy.service.dto.CreateHeadingDto;
 import com.itacademy.service.dto.CreateResourceDto;
 import com.itacademy.service.dto.FilterPredicateParametersDto;
@@ -58,7 +59,7 @@ public class ResourceService {
 
     public List<ResourceFullDto> findResourceByCriteria(FilterPredicateParametersDto filterParametersDto) {
         FilterDto filterDto;
-            filterDto = new FilterDto(filterParametersDto.getResource(), filterParametersDto.getCategory(), filterParametersDto.getPrice());
+        filterDto = new FilterDto(filterParametersDto.getResource(), filterParametersDto.getCategory(), filterParametersDto.getPrice());
 
         return resourceDao.findResourcesOrderByAuthor(filterDto, filterParametersDto.getOffset(), filterParametersDto.getLimit()).stream()
                 .map(it -> new ResourceFullDto(it.getResourceName(), it.getFoto(), it.getCategory().getCategoryName(),
@@ -66,13 +67,13 @@ public class ResourceService {
                 .collect(Collectors.toList());
     }
 
-    public Integer countPages(FilterPredicateParametersDto filterPredicateParametersDto, Integer limit) {
+    public List<CountDto> countPages(FilterPredicateParametersDto filterPredicateParametersDto, int limit) {
         FilterDto filterDto = new FilterDto(filterPredicateParametersDto.getResource(), filterPredicateParametersDto.getCategory(), filterPredicateParametersDto.getPrice());
-        return resourceDao.countPages(filterDto, limit);
+        return resourceDao.countPages(filterDto, limit).stream().map(it -> new CountDto(it.getCount())).collect(Collectors.toList());
     }
 
     @Transactional
-    public void addHeading (CreateHeadingDto createHeadingDto, CreateResourceDto createResourceDto) {
+    public void addHeading(CreateHeadingDto createHeadingDto, CreateResourceDto createResourceDto) {
         Resource resource = Resource.builder()
                 .id(createResourceDto.getId())
                 .resourceName(createResourceDto.getResourceName())
@@ -83,7 +84,7 @@ public class ResourceService {
                 .text(createResourceDto.getText())
                 .build();
 
-        Heading heading = new Heading(createHeadingDto.getId(),createHeadingDto.getHeadingName(),createHeadingDto.getCategory());
+        Heading heading = new Heading(createHeadingDto.getId(), createHeadingDto.getHeadingName(), createHeadingDto.getCategory());
 
         resourceDao.addHeading(heading, resource);
     }

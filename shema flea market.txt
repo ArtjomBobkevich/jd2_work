@@ -167,4 +167,12 @@ VALUES
   ('tes3t','foto',2,1,22,'test','www','block'),
   ('tes4t','foto',2,1,2252,'test','www','block'),
   ('tes5t','foto',2,1,2252,'test','www','block'),
-  ('test6','foto',2,1,2522,'test','www','block');
+  ('test6','foto',2,1,222,'test','www','block'),
+  ('test6','foto',2,1,222,'test','www','block'),
+  ('test6','foto',2,1,222,'test','www','block'),
+  ('test6','foto',2,1,222,'test','www','block'),
+  ('test6','foto',2,1,222,'test','www','block'),
+  ('test6','foto',2,1,222,'test','www','block'),
+  ('test6','foto',2,1,222,'test','www','block');
+
+	

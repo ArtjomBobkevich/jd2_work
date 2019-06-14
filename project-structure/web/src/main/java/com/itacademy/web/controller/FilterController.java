@@ -36,10 +36,12 @@ public class FilterController {
     @PostMapping
     public String filterResource (FilterPredicateParametersDto filter) {
 
-        filter.setLimitConst(filter.getLimit());
+        filter.setOffset(0);
+        int constLimit = filter.getLimit();
+        filter.setConstLimit(constLimit);
 
         return "redirect:/resources-by-criteria?resource=" + filter.getResource() + "&category=" +
         filter.getCategory() + "&price=" + filter.getPrice() + "&offset=" + filter.getOffset() +
-                "&limit=" + filter.getLimit() + "&l=" + filter.getLimitConst();
+                "&limit=" + filter.getLimit() + "&constLimit=" + filter.getConstLimit() + "&page=" + 1;
     }
 }
