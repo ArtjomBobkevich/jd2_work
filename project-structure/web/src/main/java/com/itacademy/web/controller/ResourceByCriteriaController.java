@@ -26,7 +26,7 @@ public class ResourceByCriteriaController {
             model.addAttribute("filter", filterDto);
             countDto.setPrevPage(countDto.getPage());
         } else if (countDto.getPrevPage()>countDto.getPage()){
-            filterDto.setOffset(/*тут просто отнять*/);
+//            filterDto.setOffset(/*тут просто отнять*/);
             model.addAttribute("countPages", resourceService.countPages(filterDto, filterDto.getConstLimit()));
             model.addAttribute("resources", resourceService.findResourceByCriteria(filterDto));
             model.addAttribute("filter", filterDto);

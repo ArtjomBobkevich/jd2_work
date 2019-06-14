@@ -65,6 +65,7 @@ public class Resource implements BaseEntity<Long> {
     @Column(name = "text")
     private String text;
 
+    @Builder.Default
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "resource_heading", schema = "flea_market", joinColumns = @JoinColumn(name = "heading_id"),
             inverseJoinColumns = @JoinColumn(name = "resource_id"))

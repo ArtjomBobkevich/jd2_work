@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="flea_market@localhost" uuid="63591e02-dd1c-441e-8e47-64575d03008c">
+    <data-source name="flea_market@localhost" uuid="d08fb72d-0f93-4e8f-8fe2-e2a483420ac1">
       <database-info product="PostgreSQL" version="10.5" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
