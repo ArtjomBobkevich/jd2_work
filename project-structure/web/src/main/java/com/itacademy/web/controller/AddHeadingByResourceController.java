@@ -30,7 +30,7 @@ public class AddHeadingByResourceController {
     private HeadingService headingService;
 
     @ModelAttribute()
-    public void setHeadingByResource (Model model) {
+    public void setHeadingByResource(Model model) {
         model.addAttribute("resources", resourceService.findAll());
         model.addAttribute("headingList", headingService.findAll());
     }
@@ -41,7 +41,7 @@ public class AddHeadingByResourceController {
     }
 
     @PostMapping
-    public String saveHeadingByResource (HeadingAddDto headingAddDto, ResourceAddDto resourceAddDto) {
+    public String saveHeadingByResource(HeadingAddDto headingAddDto, ResourceAddDto resourceAddDto) {
 
         CreateResourceDto createResourceDto = CreateResourceDto.builder()
                 .id(resourceAddDto.getResourceId())
@@ -82,7 +82,7 @@ public class AddHeadingByResourceController {
                         .build())
                 .build();
 
-        resourceService.addHeading(createHeadingDto,createResourceDto);
+        resourceService.addHeading(createHeadingDto, createResourceDto);
         return "redirect:/resource";
     }
 

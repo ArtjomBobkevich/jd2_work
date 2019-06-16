@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface BaseDao <T extends Serializable,E extends BaseEntity<T>> {
+public interface BaseDao<T extends Serializable, E extends BaseEntity<T>> {
 
     SessionFactory getSessionFactory();
 
@@ -40,6 +40,6 @@ public interface BaseDao <T extends Serializable,E extends BaseEntity<T>> {
 
     @SuppressWarnings("unchecked")
     default Class<E> getClazz() {
-        return (Class<E>) GenericTypeResolver.resolveTypeArguments(getClass(),BaseDao.class)[1];
+        return (Class<E>) GenericTypeResolver.resolveTypeArguments(getClass(), BaseDao.class)[1];
     }
 }

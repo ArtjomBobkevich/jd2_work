@@ -23,25 +23,25 @@ public class FilterController {
     private CategoryService categoryService;
 
     @ModelAttribute()
-    public void setPersonRole (Model model) {
+    public void setPersonRole(Model model) {
         model.addAttribute("categories", categoryService.findAll());
         model.addAttribute("resources", resourceService.findAll());
     }
 
     @GetMapping
-    public String getPage () {
+    public String getPage() {
         return "filter";
     }
 
     @PostMapping
-    public String filterResource (FilterPredicateParametersDto filter) {
+    public String filterResource(FilterPredicateParametersDto filter) {
 
         filter.setOffset(0);
         int constLimit = filter.getLimit();
         filter.setConstLimit(constLimit);
 
         return "redirect:/resources-by-criteria?resource=" + filter.getResource() + "&category=" +
-        filter.getCategory() + "&price=" + filter.getPrice() + "&offset=" + filter.getOffset() +
+                filter.getCategory() + "&price=" + filter.getPrice() + "&offset=" + filter.getOffset() +
                 "&limit=" + filter.getLimit() + "&constLimit=" + filter.getConstLimit() + "&page=" + 1;
     }
 }

@@ -16,7 +16,7 @@ public class ResourcesController {
     private ResourceService resourceService;
 
     @GetMapping
-    public String getPage (Model model) {
+    public String getPage(Model model) {
         model.addAttribute("resources", resourceService.findAll());
         return "resource";
     }

@@ -20,13 +20,13 @@ public class PersonDeleteController {
     private PersonService personService;
 
     @GetMapping
-    public String getPage (Model model) {
+    public String getPage(Model model) {
         model.addAttribute("persons", personService.findAll());
         return "person-delete";
     }
 
     @PostMapping
-    public String deletePerson (Person person) {
+    public String deletePerson(Person person) {
 
         person.setLogin("bung");
         person.setAge(222);

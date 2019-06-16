@@ -25,6 +25,6 @@ public class HeadingService {
     }
 
     public HeadingFullDto findById(Long id) {
-        return headingDao.get(id).map(it-> new HeadingFullDto(it.getId(),it.getHeadingName(),it.getCategory().getCategoryName())).orElse(null);
+        return headingDao.get(id).map(it -> new HeadingFullDto(it.getId(), it.getHeadingName(), it.getCategory().getCategoryName())).orElse(null);
     }
 }

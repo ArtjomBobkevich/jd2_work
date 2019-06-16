@@ -14,12 +14,6 @@
     <a>------------------------------------------</a>
 </div>
 <div th:each="CountDto: ${countPages}">
-    <!--<a th:href="@{'/resources-by-criteria' + '?resourceName='+ ${filter.resource} + '&category=' + ${filter.category}-->
-    <!--+'&price=' + ${filter.price} + '&offset=' + ${((filter.constLimit*CountDto.page)-((filter.constLimit*CountDto.page)/((filter.constLimit*CountDto.page)/2)))}-->
-    <!--+ '&limit=' + ${filter.constLimit*CountDto.page} + '&constLimit=' + ${filter.constLimit}-->
-    <!--+ '&page=' + ${CountDto.page}}">-->
-        <!--<span th:name="count" th:text="${CountDto.page}">Type</span>-->
-    <!--</a>-->
     <a th:href="@{'/resources-by-criteria' + '?resourceName='+ ${filter.resource} + '&category=' + ${filter.category}
     +'&price=' + ${filter.price} + '&offset=' + ${(filter.offset)}
     + '&limit=' + ${filter.limit} + '&constLimit=' + ${filter.constLimit}

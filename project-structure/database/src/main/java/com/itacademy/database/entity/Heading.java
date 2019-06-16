@@ -48,7 +48,7 @@ public class Heading implements BaseEntity<Long> {
             inverseJoinColumns = @JoinColumn(name = "heading_id"))
     private Set<Resource> resources = new HashSet<>();
 
-    public Heading(Long id,String headingName, Category category) {
+    public Heading(Long id, String headingName, Category category) {
         this.id = id;
         this.headingName = headingName;
         this.category = category;

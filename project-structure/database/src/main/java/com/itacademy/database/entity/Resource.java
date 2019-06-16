@@ -77,8 +77,8 @@ public class Resource implements BaseEntity<Long> {
     @ManyToMany(mappedBy = "storeBasketResources", cascade = CascadeType.ALL)
     private List<Person> storeBasketPerson = new ArrayList<>();
 
-    public Resource(Long id,String resourceName, String foto, Category category, Person person, Integer price, String text) {
-        this.id =id;
+    public Resource(Long id, String resourceName, String foto, Category category, Person person, Integer price, String text) {
+        this.id = id;
         this.resourceName = resourceName;
         this.foto = foto;
         this.category = category;

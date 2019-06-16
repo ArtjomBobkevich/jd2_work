@@ -20,15 +20,14 @@ public class BlockResource extends Resource {
     private String block;
 
 
-
-    public BlockResource(Long id ,String resourceName, String foto, Category category, Person person,
+    public BlockResource(Long id, String resourceName, String foto, Category category, Person person,
                          Integer price, String text, String block) {
         super(id, resourceName, foto, category, person, price, text);
         this.block = block;
     }
 
-    public BlockResource( Set<Heading> headings) {
-        super( headings);
+    public BlockResource(Set<Heading> headings) {
+        super(headings);
 
     }
 

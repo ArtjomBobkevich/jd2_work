@@ -1,5 +1,5 @@
-2019-06-13 08:51:04,822 INFO  - HHH000412: Hibernate Core {5.4.2.Final}
-2019-06-13 08:51:05,082 INFO  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-06-13 08:51:05,586 INFO  - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-06-13 08:51:06,629 INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-06-13 08:51:06,854 INFO  - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-06-16 07:52:59,175 INFO  - HHH000412: Hibernate Core {5.4.2.Final}
+2019-06-16 07:52:59,636 INFO  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-06-16 07:53:00,504 INFO  - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-16 07:53:02,826 INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-06-16 07:53:03,997 INFO  - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'

@@ -16,7 +16,7 @@ public class HeadingController {
     private HeadingService headingService;
 
     @GetMapping
-    public String getPage (Model model) {
+    public String getPage(Model model) {
         model.addAttribute("headingList", headingService.findAll());
         return "heading";
     }

@@ -44,16 +44,16 @@ public class ResourceDao extends BaseDaoImpl<Long, BlockResource> {
     public Predicate[] build(CriteriaBuilder cb, Root<BlockResource> root, FilterDto filterDto) {
         List<Predicate> predicates = new ArrayList<>();
         Join<BlockResource, Category> categoryJoin = root.join(BlockResource_.category);
-        if (null!=(filterDto.getResource()) && null!=(filterDto.getCategory()) && null != filterDto.getPrice()) {
+        if (null != (filterDto.getResource()) && null != (filterDto.getCategory()) && null != filterDto.getPrice()) {
             predicates.add(cb.equal(root.get(BlockResource_.resourceName), filterDto.getResource()));
             predicates.add(cb.equal(categoryJoin.get(Category_.categoryName), filterDto.getCategory()));
             predicates.add(cb.equal(root.get(BlockResource_.price), filterDto.getPrice()));
-        } else if (null!=(filterDto.getResource()) && null!=(filterDto.getCategory())) {
+        } else if (null != (filterDto.getResource()) && null != (filterDto.getCategory())) {
             predicates.add(cb.equal(root.get(BlockResource_.resourceName), filterDto.getResource()));
             predicates.add(cb.equal(categoryJoin.get(Category_.categoryName), filterDto.getCategory()));
-        } else if (null!=(filterDto.getResource())) {
+        } else if (null != (filterDto.getResource())) {
             predicates.add(cb.equal(root.get(BlockResource_.resourceName), filterDto.getResource()));
-        } else if (null!=(filterDto.getCategory())) {
+        } else if (null != (filterDto.getCategory())) {
             predicates.add(cb.equal(categoryJoin.get(Category_.categoryName), filterDto.getCategory()));
         } else if (null != filterDto.getPrice()) {
             predicates.add(cb.equal(root.get(BlockResource_.price), filterDto.getPrice()));
@@ -75,8 +75,7 @@ public class ResourceDao extends BaseDaoImpl<Long, BlockResource> {
             countPage = (allByCriteria.size() / limit) + 1;
         } else if (allByCriteria.size() != 0 && allByCriteria.size() / limit < 1) {
             countPage = 1;
-        }
-        else {
+        } else {
             countPage = 1;
         }
         List<Count> allCount = new ArrayList<>();

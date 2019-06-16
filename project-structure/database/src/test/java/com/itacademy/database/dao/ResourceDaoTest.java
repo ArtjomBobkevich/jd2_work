@@ -41,7 +41,7 @@ public class ResourceDaoTest {
     private RoleDao roleDao;
 
     @Test
-    public void findAll () {
+    public void findAll() {
 
         Category category = Category.builder()
                 .categoryName("www")
@@ -65,13 +65,13 @@ public class ResourceDaoTest {
                 .personRole(roleDao.get(1L).orElse(null))
                 .build();
         personDao.save(person);
-        BlockResource resource = new BlockResource("test","www",
+        BlockResource resource = new BlockResource("test", "www",
                 categoryDao.get(1L).orElse(null),
                 personDao.get(1L).orElse(null),
-                222,"sss","sdg");
+                222, "sss", "sdg");
         resourceDao.save(resource);
 
-        assertTrue(resourceDao.getAll().size()>0);
+        assertTrue(resourceDao.getAll().size() > 0);
 
     }
 
@@ -101,11 +101,11 @@ public class ResourceDaoTest {
                 .build();
 
         personDao.save(person);
-        BlockResource resource = new BlockResource("test","www",
+        BlockResource resource = new BlockResource("test", "www",
                 categoryDao.get(1L).orElse(null),
                 personDao.get(1L).orElse(null),
-                222,"sss","sdg");
-            resourceDao.save(resource);
+                222, "sss", "sdg");
+        resourceDao.save(resource);
         FilterDto filterDto = FilterDto.builder()
                 .resource("test")
                 .category("www")
@@ -113,52 +113,52 @@ public class ResourceDaoTest {
                 .build();
         Integer offset = 0;
         Integer limit = 2;
-        List<BlockResource> resourcesOrderByAuthor = resourceDao.findResourcesOrderByAuthor(filterDto,offset,limit);
+        List<BlockResource> resourcesOrderByAuthor = resourceDao.findResourcesOrderByAuthor(filterDto, offset, limit);
         resourcesOrderByAuthor.size();
-        assertTrue(resourcesOrderByAuthor.size()>0);
-        }
-
-        @Test
-        public void checkManyToMany () {
-
-            Category category = Category.builder()
-                    .categoryName("assf")
-                    .build();
-
-            categoryDao.save(category);
-
-            Heading heading = Heading.builder()
-                    .headingName("sfsf")
-                    .category(category)
-                    .build();
-
-            headingDao.save(heading);
-
-            PersonRole role = PersonRole.builder()
-                    .nameOfRole("test")
-                    .build();
-            roleDao.save(role);
-            Person person = Person.builder()
-                    .avatar("qwerqwe")
-                    .login("1234")
-                    .identification(Identification.builder()
-                            .firstName("qqq")
-                            .lastName("www")
-                            .build())
-                    .age(2)
-                    .mail("wqeq")
-                    .password("222233")
-                    .personRole(roleDao.get(1L).orElse(null))
-                    .build();
-
-            personDao.save(person);
-
-            Resource blockResource = new Resource("dsfsf","sfsf",categoryDao.get(1L).orElse(null),
-                    personDao.get(1L).orElse(null),222,"dfg");
-
-            resourceDao.addHeading(heading,blockResource);
-
-            System.out.println(blockResource.getHeadings().size());
-            assertTrue(blockResource.getHeadings().size()>0);
-        }
+        assertTrue(resourcesOrderByAuthor.size() > 0);
     }
+
+    @Test
+    public void checkManyToMany() {
+
+        Category category = Category.builder()
+                .categoryName("assf")
+                .build();
+
+        categoryDao.save(category);
+
+        Heading heading = Heading.builder()
+                .headingName("sfsf")
+                .category(category)
+                .build();
+
+        headingDao.save(heading);
+
+        PersonRole role = PersonRole.builder()
+                .nameOfRole("test")
+                .build();
+        roleDao.save(role);
+        Person person = Person.builder()
+                .avatar("qwerqwe")
+                .login("1234")
+                .identification(Identification.builder()
+                        .firstName("qqq")
+                        .lastName("www")
+                        .build())
+                .age(2)
+                .mail("wqeq")
+                .password("222233")
+                .personRole(roleDao.get(1L).orElse(null))
+                .build();
+
+        personDao.save(person);
+
+        Resource blockResource = new Resource("dsfsf", "sfsf", categoryDao.get(1L).orElse(null),
+                personDao.get(1L).orElse(null), 222, "dfg");
+
+        resourceDao.addHeading(heading, blockResource);
+
+        System.out.println(blockResource.getHeadings().size());
+        assertTrue(blockResource.getHeadings().size() > 0);
+    }
+}

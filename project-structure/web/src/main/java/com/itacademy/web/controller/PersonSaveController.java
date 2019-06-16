@@ -26,7 +26,7 @@ public class PersonSaveController {
     private PersonService personService;
 
     @ModelAttribute()
-    public void setPersonRole (Model model) {
+    public void setPersonRole(Model model) {
         model.addAttribute("personRole", roleService.findById(2L));
     }
 
@@ -36,7 +36,7 @@ public class PersonSaveController {
     }
 
     @PostMapping
-    public String savePerson (CreateNewPersonDto createNewGenreDto, Identification identification, PersonRole personRole) {
+    public String savePerson(CreateNewPersonDto createNewGenreDto, Identification identification, PersonRole personRole) {
 
 
         createNewGenreDto.setPersonRole(personRole);

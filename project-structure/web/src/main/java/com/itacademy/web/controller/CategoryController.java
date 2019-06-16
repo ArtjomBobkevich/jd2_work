@@ -16,7 +16,7 @@ public class CategoryController {
     private CategoryService categoryService;
 
     @GetMapping
-    public String getPage (Model model) {
+    public String getPage(Model model) {
         model.addAttribute("categories", categoryService.findAll());
         return "category";
     }

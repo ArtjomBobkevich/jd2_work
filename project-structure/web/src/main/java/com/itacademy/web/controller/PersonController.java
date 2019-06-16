@@ -16,7 +16,7 @@ public class PersonController {
     private PersonService personService;
 
     @GetMapping
-    public String getPage (Model model) {
+    public String getPage(Model model) {
         model.addAttribute("persons", personService.findAll());
         return "person";
     }

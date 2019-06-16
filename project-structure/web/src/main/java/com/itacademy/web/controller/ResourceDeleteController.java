@@ -21,13 +21,13 @@ public class ResourceDeleteController {
     private ResourceService resourceService;
 
     @GetMapping
-    public String getPage (Model model) {
+    public String getPage(Model model) {
         model.addAttribute("resources", resourceService.findAll());
         return "resource-delete";
     }
 
     @PostMapping
-    public String deletePerson (Resource resource, Person person, Category category) {
+    public String deletePerson(Resource resource, Person person, Category category) {
 
         BlockResource blockResource = new BlockResource();
         blockResource.setId(resource.getId());
