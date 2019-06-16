@@ -45,7 +45,7 @@ public class PersonService {
                 .identification(viewPersonFullInfoDto.getIdentification())
                 .age(viewPersonFullInfoDto.getAge())
                 .mail(viewPersonFullInfoDto.getMail())
-                .password(viewPersonFullInfoDto.getMail())
+                .password(viewPersonFullInfoDto.getPassword())
                 .personRole(viewPersonFullInfoDto.getPersonRole())
                 .build());
     }

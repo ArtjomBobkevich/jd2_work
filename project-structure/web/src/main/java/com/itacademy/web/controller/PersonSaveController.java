@@ -7,6 +7,7 @@ import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.RoleService;
 import com.itacademy.service.util.UrlPath;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -40,7 +41,9 @@ public class PersonSaveController {
 
         createNewGenreDto.setPersonRole(personRole);
         createNewGenreDto.setIdentification(identification);
+        createNewGenreDto.setPassword(new BCryptPasswordEncoder().encode(createNewGenreDto.getPassword()));
 
+        System.out.println(createNewGenreDto.getPassword());
         Long aLong = personService.savePerson(createNewGenreDto);
         return "redirect:/person-info?id=" + aLong;
     }
