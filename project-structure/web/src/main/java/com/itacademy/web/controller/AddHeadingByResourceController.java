@@ -82,7 +82,6 @@ public class AddHeadingByResourceController {
                         .build())
                 .build();
 
-
         resourceService.addHeading(createHeadingDto, createResourceDto);
         return "redirect:/resource";
     }
