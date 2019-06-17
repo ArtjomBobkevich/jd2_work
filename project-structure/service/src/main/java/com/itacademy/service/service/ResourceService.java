@@ -1,10 +1,9 @@
 package com.itacademy.service.service;
 
+import com.itacademy.database.dao.HeadingDao;
 import com.itacademy.database.dao.ResourceDao;
 import com.itacademy.database.entity.BlockResource;
 import com.itacademy.database.entity.FilterDto;
-import com.itacademy.database.entity.Heading;
-import com.itacademy.database.entity.Resource;
 import com.itacademy.service.dto.CountDto;
 import com.itacademy.service.dto.CreateHeadingDto;
 import com.itacademy.service.dto.CreateResourceDto;
@@ -25,6 +24,7 @@ import java.util.stream.Collectors;
 public class ResourceService {
 
     private final ResourceDao resourceDao;
+    private final HeadingDao headingDao;
 
     public List<ResourceFullDto> findAll() {
         return resourceDao.getAll().stream()
@@ -74,18 +74,10 @@ public class ResourceService {
 
     @Transactional
     public void addHeading(CreateHeadingDto createHeadingDto, CreateResourceDto createResourceDto) {
-        Resource resource = Resource.builder()
-                .id(createResourceDto.getId())
-                .resourceName(createResourceDto.getResourceName())
-                .foto(createResourceDto.getFoto())
-                .category(createResourceDto.getCategory())
-                .person(createResourceDto.getPerson())
-                .price(createResourceDto.getPrice())
-                .text(createResourceDto.getText())
-                .build();
 
-        Heading heading = new Heading(createHeadingDto.getId(), createHeadingDto.getHeadingName(), createHeadingDto.getCategory());
+        resourceDao.get(createResourceDto.getId());
+        headingDao.get(createHeadingDto.getId());
 
-        resourceDao.addHeading(heading, resource);
+        resourceDao.addHeading(headingDao.get(createHeadingDto.getId()).orElse(null), resourceDao.get(createResourceDto.getId()).orElse(null));
     }
 }

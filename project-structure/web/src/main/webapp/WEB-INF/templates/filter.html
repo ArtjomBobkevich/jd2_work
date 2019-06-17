@@ -8,19 +8,12 @@
 <div class="container">
     <form th:action="@{/filter.html}" th:method="post">
         <div>
-            <span th:text="Ресурсы  ">Ресурсы</span>
+            <span th:text="Resource ">Resource: </span>
+            <input type="text" name="resource">
         </div>
-        <div th:each="resource: ${resources}">
-            <span th:text="${#strings.capitalize(#strings.toLowerCase(resource.resourceName))}"></span>
-            <input type="checkbox" name="resource" th:value="${resource.resourceName}">
-        </div>
-        <br>
         <div>
-            <span th:text="Категории ">Категории</span>
-        </div>
-        <div th:each="category: ${categories}">
-            <span th:text="${#strings.capitalize(#strings.toLowerCase(category.categoryName))}"></span>
-            <input type="checkbox" name="category" th:value="${category.categoryName}">
+            <span th:text="Category ">Category: </span>
+            <input type="text" name="category">
         </div>
         <br>
         <div>
@@ -28,7 +21,7 @@
             <input type="number" name="price">
         </div>
         <div>
-            <span th:text="Limit ">Price: </span>
+            <span th:text="Limit ">Limit: </span>
             <input type="number" name="limit" required placeholder="Limit">
         </div>
         <div>

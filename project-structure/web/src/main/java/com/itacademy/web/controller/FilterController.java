@@ -42,6 +42,6 @@ public class FilterController {
 
         return "redirect:/resources-by-criteria?resource=" + filter.getResource() + "&category=" +
                 filter.getCategory() + "&price=" + filter.getPrice() + "&offset=" + filter.getOffset() +
-                "&limit=" + filter.getLimit() + "&constLimit=" + filter.getConstLimit() + "&page=" + 1;
+                "&limit=" + filter.getLimit() + "&constLimit=" + filter.getConstLimit() + "&page=" + 1 + "&prevPage=" + 1;
     }
 }

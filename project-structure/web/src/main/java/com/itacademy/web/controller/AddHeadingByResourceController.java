@@ -82,9 +82,8 @@ public class AddHeadingByResourceController {
                         .build())
                 .build();
 
+
         resourceService.addHeading(createHeadingDto, createResourceDto);
         return "redirect:/resource";
     }
-
-    /*всё равно не проходит, nullPointerException*/
 }

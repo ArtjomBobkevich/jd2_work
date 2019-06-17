@@ -44,18 +44,18 @@ public class ResourceDao extends BaseDaoImpl<Long, BlockResource> {
     public Predicate[] build(CriteriaBuilder cb, Root<BlockResource> root, FilterDto filterDto) {
         List<Predicate> predicates = new ArrayList<>();
         Join<BlockResource, Category> categoryJoin = root.join(BlockResource_.category);
-        if (null != (filterDto.getResource()) && null != (filterDto.getCategory()) && null != filterDto.getPrice()) {
+        if (!("").equals(filterDto.getResource()) && !("").equals(filterDto.getCategory()) && !("").equals(filterDto.getPrice())) {
             predicates.add(cb.equal(root.get(BlockResource_.resourceName), filterDto.getResource()));
             predicates.add(cb.equal(categoryJoin.get(Category_.categoryName), filterDto.getCategory()));
             predicates.add(cb.equal(root.get(BlockResource_.price), filterDto.getPrice()));
-        } else if (null != (filterDto.getResource()) && null != (filterDto.getCategory())) {
+        } else if (!("").equals(filterDto.getResource()) && !("").equals(filterDto.getCategory())) {
             predicates.add(cb.equal(root.get(BlockResource_.resourceName), filterDto.getResource()));
             predicates.add(cb.equal(categoryJoin.get(Category_.categoryName), filterDto.getCategory()));
-        } else if (null != (filterDto.getResource())) {
+        } else if (!("").equals(filterDto.getResource())) {
             predicates.add(cb.equal(root.get(BlockResource_.resourceName), filterDto.getResource()));
-        } else if (null != (filterDto.getCategory())) {
+        } else if (!("").equals(filterDto.getCategory())) {
             predicates.add(cb.equal(categoryJoin.get(Category_.categoryName), filterDto.getCategory()));
-        } else if (null != filterDto.getPrice()) {
+        } else if (!("").equals(filterDto.getPrice())) {
             predicates.add(cb.equal(root.get(BlockResource_.price), filterDto.getPrice()));
         }
         return predicates.toArray(new Predicate[0]);

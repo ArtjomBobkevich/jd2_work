@@ -13,7 +13,7 @@ public class FilterDto {
 
     private String resource;
     private String category;
-    private Integer price;
+    private String price;
 
     public FilterDto(String resource, String category) {
         this.resource = resource;

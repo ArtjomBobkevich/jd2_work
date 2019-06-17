@@ -13,7 +13,7 @@ public class FilterPredicateParametersDto {
 
     private String resource;
     private String category;
-    private Integer price;
+    private String price;
     private Integer offset;
     private Integer limit;
     private Integer constLimit;

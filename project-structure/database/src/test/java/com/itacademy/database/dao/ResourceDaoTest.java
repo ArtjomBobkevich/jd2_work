@@ -109,7 +109,7 @@ public class ResourceDaoTest {
         FilterDto filterDto = FilterDto.builder()
                 .resource("test")
                 .category("www")
-                .price(222)
+                .price("222")
                 .build();
         Integer offset = 0;
         Integer limit = 2;

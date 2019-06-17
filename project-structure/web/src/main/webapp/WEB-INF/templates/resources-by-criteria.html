@@ -13,14 +13,14 @@
     <span th:text="${resource.text}">Type</span><br>
     <a>------------------------------------------</a>
 </div>
-<div th:each="CountDto: ${countPages}">
-    <a th:href="@{'/resources-by-criteria' + '?resourceName='+ ${filter.resource} + '&category=' + ${filter.category}
+<a th:each="CountDto: ${countPages}">
+    <a th:href="@{'/resources-by-criteria' + '?resource='+ ${filter.resource} + '&category=' + ${filter.category}
     +'&price=' + ${filter.price} + '&offset=' + ${(filter.offset)}
     + '&limit=' + ${filter.limit} + '&constLimit=' + ${filter.constLimit}
     + '&page=' + ${CountDto.page}}">
         <span th:name="count" th:text="${CountDto.page}">Type</span>
     </a>
-</div>
+</a>
 </form>
 </div>
 </body>

@@ -24,7 +24,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .authorizeRequests()
                 .antMatchers("/person-delete").hasAuthority("Admin")
-                .antMatchers("/add-heading-by-resource", "/person-update", "/resource-delete",
+                .antMatchers(/*"/add-heading-by-resource",*/ "/person-update", "/resource-delete",
                         "/resource-update", "/resource-save", "/resource-info").hasAnyAuthority("User")
                 .anyRequest().permitAll()
                 .and()
