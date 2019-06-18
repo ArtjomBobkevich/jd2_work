@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <form th:action="@{/heading-update}" th:method="post">
+        <div>
+            <select name="id">
+                <option th:each="heading: ${headings}"
+                        th:text="${heading.headingName}"
+                        th:value="${heading.id}">Heading
+                </option>
+            </select>
+        </div>
+        <div>
+            <span th:text="HeadingName ">HeadingName: </span>
+            <input type="text" name="headingName" required placeholder="headingName">
+        </div>
+        <div>
+            <select name="categoryId">
+                <option th:each="category: ${categories}"
+                        th:text="${category.categoryName}"
+                        th:value="${category.id}">Category
+                </option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="update">
+        </div>
+    </form>
+</div>
+</body>
+</html>

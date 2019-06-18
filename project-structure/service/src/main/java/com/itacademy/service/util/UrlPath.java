@@ -21,4 +21,17 @@ public class UrlPath {
     public static final String RESOURCE_BY_CRITERIA = "/resources-by-criteria";
     public static final String RESOURCE_UPDATE = "/resource-update";
     public static final String ADD_HEADING_BY_RESOURCE = "/add-heading-by-resource";
+    public static final String HEADING_UPDATE = "/heading-update";
+    public static final String HEADING_SAVE = "/heading-save";
+    public static final String HEADING_DELETE = "/heading-delete";
+    public static final String CATEGORY_DELETE = "/category-delete";
+    public static final String CATEGORY_UPDATE = "/category-update";
+    public static final String CATEGORY_SAVE = "/category-save";
+    public static final String CATEGORY_INFO = "/category-info";
+    public static final String COMMENTARIES = "/commentaries";
+    public static final String COMMENT_INFO = "/comment-info";
+    public static final String COMMENT_SAVE = "/comment-save";
+    public static final String COMMENT_DELETE = "/comment-delete";
+    public static final String COMMENT_UPDATE = "/comment-update";
+    public static final String CHANGE_ROLE = "/change-person-role";
 }

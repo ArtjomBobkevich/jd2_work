@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <form th:action="@{/comment-save}" th:method="post">
+        <div>
+            <select name="personId">
+                <option th:each="person: ${personList}"
+                        th:text="${person.login}"
+                        th:value="${person.id}">Person
+                </option>
+            </select>
+        </div>
+        <div>
+            <select name="resourceId">
+                <option th:each="resource: ${resources}"
+                        th:text="${resource.resourceName}"
+                        th:value="${resource.id}">Resource
+                </option>
+            </select>
+        </div>
+        <div>
+            <span th:text="comment ">Comment: </span>
+            <input type="text" name="comment" required placeholder="Text">
+        </div>
+        <div>
+            <input type="submit" value="save">
+        </div>
+    </form>
+</div>
+</body>
+</html>

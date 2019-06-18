@@ -4,6 +4,7 @@ import com.itacademy.database.dao.HeadingDao;
 import com.itacademy.database.dao.ResourceDao;
 import com.itacademy.database.entity.BlockResource;
 import com.itacademy.database.entity.FilterDto;
+import com.itacademy.database.entity.Resource;
 import com.itacademy.service.dto.CountDto;
 import com.itacademy.service.dto.CreateHeadingDto;
 import com.itacademy.service.dto.CreateResourceDto;
@@ -37,6 +38,11 @@ public class ResourceService {
         return resourceDao.get(id).map(it -> new ResourceFullDto(it.getResourceName(), it.getFoto(),
                 it.getCategory().getCategoryName(), it.getPerson().getLogin(), it.getPrice(), it.getText(), it.getBlock()))
                 .orElse(null);
+    }
+
+    @Transactional
+    public Resource findByIdEntity(Long id) {
+        return resourceDao.get(id).orElse(null);
     }
 
     @Transactional

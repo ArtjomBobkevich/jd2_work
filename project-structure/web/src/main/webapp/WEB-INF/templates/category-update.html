@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <form th:action="@{/category-update}" th:method="post">
+        <div>
+            <select name="id">
+                <option th:each="category: ${categories}"
+                        th:text="${category.categoryName}"
+                        th:value="${category.id}">Category
+                </option>
+            </select>
+        </div>
+        <div>
+            <span th:text="categoryName ">categoryName: </span>
+            <input type="text" name="categoryName" required placeholder="categoryName">
+        </div>
+        <div>
+            <input type="submit" value="update">
+        </div>
+    </form>
+</div>
+</body>
+</html>

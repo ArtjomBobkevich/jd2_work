@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div th:each="comment: ${commentaries}">
+        <span th:text="${comment.resource}">Type</span><br>
+        <span th:text="${comment.person}">Type</span><br>
+        <span th:text="${comment.comment}">Type</span><br>
+        <a>-------------------------</a>
+    </div>
+</div>
+</body>
+</html>
