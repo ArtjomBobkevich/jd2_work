@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <form th:action="@{/resource-update}" th:method="post">
+        <div>
+            <select name="id">
+                <option th:each="resource: ${resource}"
+                        th:text="${resource.resourceName}"
+                        th:value="${resource.id}">Resource
+                </option>
+            </select>
+        </div>
+        <div>
+            <span th:text="ResourceName ">ResourceName: </span>
+            <input type="text" name="resourceName" required placeholder="ResourceName">
+        </div>
+        <div>
+            <span th:text="Foto ">Foto: </span>
+            <input type="text" name="foto" required placeholder="Foto">
+        </div>
+        <div>
+            <select name="categoryId">
+                <option th:each="category: ${category}"
+                        th:text="${category.categoryName}"
+                        th:value="${category.id}">Category
+                </option>
+            </select>
+        </div>
+        <div>
+            <select name="personId">
+                <option th:each="person: ${person}"
+                        th:text="${person.login}"
+                        th:value="${person.id}">Person
+                </option>
+            </select>
+        </div>
+        <span th:text="Price ">Price: </span>
+        <input type="number" name="price" required placeholder="Price">
+        <div>
+            <span th:text="Text ">Text: </span>
+            <input type="text" name="text" required placeholder="Text">
+        </div>
+        <div>
+            <input type="submit" value="update">
+        </div>
+    </form>
+</div>
+</body>
+</html>

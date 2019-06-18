@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <form th:action="@{/add-heading-by-resource.html}" th:method="post">
+        <div>
+            <select name="resourceId">
+                <option th:each="resource: ${resources}"
+                        th:text="${resource.resourceName}"
+                        th:value="${resource.id}">Resource
+                </option>
+            </select>
+        </div>
+        <div>
+            <select name="headingId">
+                <option th:each="heading: ${headingList}"
+                        th:text="${heading.headingName}"
+                        th:value="${heading.id}">Heading
+                </option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="add">
+        </div>
+    </form>
+</div>
+</body>
+</html>

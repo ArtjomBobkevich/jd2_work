@@ -7,22 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14420e3e-9432-4664-ba21-80c76cbed398" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/dao/ResourceDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/dao/ResourceDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Category$CategoryBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Category$CategoryBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/FilterDto$FilterDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/FilterDto$FilterDtoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/FilterDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/FilterDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Heading$HeadingBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Heading$HeadingBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Heading.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Heading.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/test-classes/com/itacademy/database/dao/ResourceDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/test-classes/com/itacademy/database/dao/ResourceDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/target/test-classes/com/itacademy/database/dao/RoleDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/test-classes/com/itacademy/database/dao/RoleDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/ResourceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/ResourceService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/AddHeadingByResourceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/AddHeadingByResourceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/database-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/database-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,96 +37,48 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AddHeadingByResourceController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/AddHeadingByResourceController.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="61" column="37" lean-forward="true" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+            <state relative-caret-position="984">
+              <caret line="170" column="20" lean-forward="true" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResourceDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/ResourceDao.java">
+      <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Category.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="92" selection-start-line="92" selection-end-line="92" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResourceService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/ResourceService.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="78" column="49" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
+            <state relative-caret-position="79">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersonDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/PersonDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="HeadingDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/HeadingDao.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategoryDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/CategoryDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/BaseDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/BaseDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoleDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/RoleDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="80">
+              <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -362,96 +301,6 @@
             <path>
               <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -585,16 +434,6 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="initializer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -632,7 +471,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../jd2-checkpoint/project-structure" />
+    <property name="last_opened_file_path" value="D:/jd2-checkpoint/project-structure" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -670,6 +509,149 @@
       <recent name="D:\GitHub\jd2_work\project-structure\web\src\main\webapp\WEB-INF\jsp" />
       <recent name="D:\GitHub\jd2_work\project-structure\database\src\main\resources" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources.local.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/ResourceDao.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Category.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Comment.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/FilterDto.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Heading.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Identification.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Resource.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/ResourceDaoTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/target/classes/com/itacademy/database/dao/ResourceDao.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Category$CategoryBuilder.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Category.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/FilterDto$FilterDtoBuilder.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/FilterDto.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Heading$HeadingBuilder.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Heading.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/target/test-classes/com/itacademy/database/dao/ResourceDaoTest.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/target/test-classes/com/itacademy/database/dao/RoleDaoTest.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/FilterPredicateParametersDto.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/ResourceService.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/ResourceService.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/src/main/java/com/itacademy/web/config/SecurityConfig.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/src/main/java/com/itacademy/web/config/ThymeleafConfig.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/AddHeadingByResourceController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/FilterController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceByCriteriaController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/filter.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resources-by-criteria.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/target/web/META-INF/MANIFEST.MF</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/target/web/WEB-INF/lib/database-1.0.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0.jar</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/database/database.iml</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1103,10 +1085,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="542473000" />
+    <option name="totallyTimeSpent" value="542613000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1116,33 +1098,60 @@
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32987747" />
       <window_info id="Capture Tool" order="8" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" anchor="right" id="Database" order="5" visible="true" weight="0.16145833" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.16178624" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32987747" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33015874" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.35873017" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978038" weight="0.26295948" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978038" weight="0.26349208" />
       <window_info anchor="bottom" id="Spring" order="14" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32799247" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2390625" />
+      <window_info id="Persistence" order="6" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23938507" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978038" weight="0.26295948" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5021962" side_tool="true" weight="0.2761905" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2390625" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3581527" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.1625" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32987747" />
+      <window_info anchor="bottom" id="Spring" order="14" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Persistence" order="6" side_tool="true" />
+      <window_info active="true" anchor="right" id="Database" order="5" visible="true" weight="0.16145833" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32987747" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="14" sideWeight="0.49947917" weight="0.3204524" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32799247" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32987747" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32799247" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Designer" order="2" />
     </layout>
     <layout-to-restore>
       <window_info id="Persistence" order="6" side_tool="true" />
@@ -1284,20 +1293,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="46" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Count.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1395,9 +1390,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d4d8bddf-4299-46c7-9ead-d0f58169d98c/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d4d8bddf-4299-46c7-9ead-d0f58169d98c/console.sql" />
     <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CountDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1642,6 +1635,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
           <caret line="61" column="37" lean-forward="true" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="170" column="20" lean-forward="true" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="20" />
         </state>
       </provider>
     </entry>

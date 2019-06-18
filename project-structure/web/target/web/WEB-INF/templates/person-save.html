@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <form th:action="@{/person-save}" th:method="post">
+        <div>
+            <span th:text="Avatar ">Avatar: </span>
+            <input type="text" name="avatar" required placeholder="Avatar">
+        </div>
+        <div>
+            <span th:text="Login ">Login: </span>
+            <input type="text" name="login" required placeholder="login">
+        </div>
+        <div>
+            <span th:text="FirstName ">First Name: </span>
+            <input type="text" name="firstName" required placeholder="First Name">
+        </div>
+        <div>
+            <span th:text="LastName ">Last Name: </span>
+            <input type="text" name="lastName" required placeholder="Last Name">
+        </div>
+        <div>
+            <span th:text="Age ">Age: </span>
+            <input type="number" name="age" required placeholder="Age">
+        </div>
+        <div>
+            <span th:text="Mail ">Mail: </span>
+            <input type="text" name="mail" required placeholder="Mail">
+        </div>
+        <div>
+            <span th:text="Password ">Password: </span>
+            <input type="password" name="password" required placeholder="Password">
+        </div>
+        <div>
+            <input type="hidden" name="nameOfRole" value="${personRole.nameOfRole}">
+        </div>
+        <div>
+            <input type="submit" value="Create">
+        </div>
+    </form>
+</div>
+</body>
+</html>
