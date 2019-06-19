@@ -1,7 +1,11 @@
 package com.itacademy.database.dao;
 
 import com.itacademy.database.entity.Person;
+import com.itacademy.database.entity.Resource;
 import org.springframework.stereotype.Repository;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Repository
 public class PersonDao extends BaseDaoImpl<Long, Person> {
@@ -14,5 +18,19 @@ public class PersonDao extends BaseDaoImpl<Long, Person> {
                 .stream()
                 .findFirst()
                 .orElse(null);
+    }
+
+    public void addResource(Person person, Resource resource) {
+        getSessionFactory().getCurrentSession();
+        person.getStoreBasketResources().add(resource);
+    }
+
+    public List<Resource> allResourcesAtBasket (Person person) {
+        List<Resource> allResources = new ArrayList<>();
+        int sizeBasket = person.getStoreBasketResources().size();
+        for (int count=0; count<=sizeBasket;count++) {
+            allResources.add(person.getStoreBasketResources().get(count));
+        }
+        return allResources;
     }
 }

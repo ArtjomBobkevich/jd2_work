@@ -1,8 +1,11 @@
 package com.itacademy.service.service;
 
 import com.itacademy.database.dao.PersonDao;
+import com.itacademy.database.dao.ResourceDao;
 import com.itacademy.database.entity.Person;
 import com.itacademy.service.dto.CreateNewPersonDto;
+import com.itacademy.service.dto.CreateResourceDto;
+import com.itacademy.service.dto.ResourceFullDto;
 import com.itacademy.service.dto.ViewPersonFullInfoDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +21,7 @@ import java.util.stream.Collectors;
 public class PersonService {
 
     private final PersonDao personDao;
+    private final ResourceDao resourceDao;
 
 
     public List<ViewPersonFullInfoDto> findAll() {
@@ -35,6 +39,10 @@ public class PersonService {
 
     public Person findByIdEntity(Long id) {
         return personDao.get(id).orElse(null);
+    }
+
+    public Person findByLogin(String login) {
+        return personDao.findByName(login);
     }
 
     @Transactional
@@ -67,5 +75,19 @@ public class PersonService {
                 .password(viewPersonFullInfoDto.getMail())
                 .personRole(viewPersonFullInfoDto.getPersonRole())
                 .build());
+    }
+
+    @Transactional
+    public void addResourceAtBasket(CreateNewPersonDto personDto, CreateResourceDto createResourceDto) {
+
+        personDao.addResource(personDao.get(personDto.getId()).orElse(null),
+                resourceDao.get(createResourceDto.getId()).orElse(null));
+    }
+
+    public List<ResourceFullDto> allResourcesAtBasket (String login) {
+
+        return personDao.allResourcesAtBasket(personDao.findByName(login)).stream()
+                .map(it->new ResourceFullDto(it.getId(), it.getResourceName(), it.getFoto(), it.getCategory().getCategoryName(),
+                        it.getPerson().getLogin(), it.getPrice(), it.getText())).collect(Collectors.toList());
     }
 }

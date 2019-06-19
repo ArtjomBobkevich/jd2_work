@@ -35,4 +35,7 @@ public class UrlPath {
     public static final String COMMENT_UPDATE = "/comment-update";
     public static final String CHANGE_ROLE = "/change-person-role";
     public static final String ROLES = "/roles";
+    public static final String FIND_BY_HEADING_RESOURCE = "/find-by-heading-resource";
+    public static final String SEARCH_BY_HEADING = "/search-by-heading";
+    public static final String VIEW_STORE_BASKET = "/view-store-basket";
 }

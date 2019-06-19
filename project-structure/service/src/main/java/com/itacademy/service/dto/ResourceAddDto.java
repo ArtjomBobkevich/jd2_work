@@ -12,4 +12,9 @@ import lombok.NoArgsConstructor;
 public class ResourceAddDto {
 
     private Long resourceId;
+    private String login;
+
+    public ResourceAddDto(Long resourceId) {
+        this.resourceId = resourceId;
+    }
 }

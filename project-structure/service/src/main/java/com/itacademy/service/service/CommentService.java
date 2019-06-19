@@ -19,6 +19,12 @@ public class CommentService  {
 
     private final CommentDao commentDao;
 
+    public List<CommentFullDto> findByResourceId (Long resourceId) {
+        return commentDao.findByResourceId(resourceId).stream()
+                .map(it -> new CommentFullDto(it.getId(),it.getPerson().getLogin(), it.getResource().getResourceName(),it.getComment()))
+                .collect(Collectors.toList());
+    }
+
     public List<CommentFullDto> findAll() {
         return commentDao.getAll().stream()
                 .map(it -> new CommentFullDto(it.getId(),it.getPerson().getLogin(), it.getResource().getResourceName(),it.getComment()))

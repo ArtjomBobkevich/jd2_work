@@ -27,6 +27,12 @@ public class ResourceService {
     private final ResourceDao resourceDao;
     private final HeadingDao headingDao;
 
+    public List<ResourceFullDto> findByHeading(String nameOfHeading) {
+        return resourceDao.findByHeading(nameOfHeading).stream()
+                .map(it -> new ResourceFullDto(it.getId(), it.getResourceName(), it.getFoto(), it.getCategory().getCategoryName(),
+                        it.getPerson().getLogin(), it.getPrice(), it.getText())).collect(Collectors.toList());
+    }
+
     public List<ResourceFullDto> findAll() {
         return resourceDao.getAll().stream()
                 .map(it -> new ResourceFullDto(it.getId(), it.getResourceName(), it.getFoto(), it.getCategory().getCategoryName(),
@@ -40,7 +46,6 @@ public class ResourceService {
                 .orElse(null);
     }
 
-    @Transactional
     public Resource findByIdEntity(Long id) {
         return resourceDao.get(id).orElse(null);
     }
@@ -81,9 +86,7 @@ public class ResourceService {
     @Transactional
     public void addHeading(CreateHeadingDto createHeadingDto, CreateResourceDto createResourceDto) {
 
-        resourceDao.get(createResourceDto.getId());
-        headingDao.get(createHeadingDto.getId());
-
-        resourceDao.addHeading(headingDao.get(createHeadingDto.getId()).orElse(null), resourceDao.get(createResourceDto.getId()).orElse(null));
+        resourceDao.addHeading(headingDao.get(createHeadingDto.getId()).orElse(null),
+                resourceDao.get(createResourceDto.getId()).orElse(null));
     }
 }

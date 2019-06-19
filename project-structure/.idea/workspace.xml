@@ -7,17 +7,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14420e3e-9432-4664-ba21-80c76cbed398" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/RolesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/roles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/config/CachingConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/main/resources/ehcache-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/CategoryDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/src/test/resources/ehcache-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/FindByHeadingResourceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/SearchResourceByHeadingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ViewStoreBasketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/find-by-heading-resource.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/search-by-heading.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/view-store-basket.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/RoleFullDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/RoleFullDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/log4j.log" beforeDir="false" afterPath="$PROJECT_DIR$/database/log4j.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/config/DatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/config/DatabaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/CategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/CommentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/CommentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/PersonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/PersonDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/ResourceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/ResourceDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/config/DatabaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/config/DatabaseConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/dao/PersonDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/dao/PersonDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/dao/ResourceDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/dao/ResourceDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/target/test-classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/test-classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/byte-buddy-1.9.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/classmate-1.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/dom4j-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hibernate-core-5.4.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jandex-2.0.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/stax-ex-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/txw2-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ResourceAddDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ResourceAddDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ResourceFullDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ResourceFullDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/ResourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/ResourceService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/util/UrlPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/util/UrlPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/dto/ResourceAddDto$ResourceAddDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/dto/ResourceAddDto$ResourceAddDtoBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/dto/ResourceAddDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/dto/ResourceAddDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/dto/ResourceFullDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/dto/ResourceFullDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/PersonService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/ResourceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/ResourceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/RoleService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/util/UrlPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/util/UrlPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/RoleChangeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/RoleChangeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/change-person-role.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/change-person-role.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/controller/ResourceInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/controller/ResourceInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/controller/ResourceInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/controller/ResourceInfoController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/database-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/database-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/templates/resource-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/templates/resource-info.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,27 +100,174 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="flea_market: database" type="6d9b600a:PostgresImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="flea_market: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="flea_market: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="flea_market: schema" type="a16502c0:PostgresImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="flea_market: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="flea_market: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="flea_market: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="flea_market: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="category: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="flea_market: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="flea_market: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="person: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="flea_market: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="flea_market: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="resource: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="flea_market: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="flea_market: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="resource_heading: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="change-person-role.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/change-person-role.html">
+      <file leaf-file-name="CachingConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/config/CachingConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state>
+              <caret selection-start-column="2" selection-end-line="31" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#1123#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoleChangeController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/RoleChangeController.java">
+      <file leaf-file-name="CategoryRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/repository/CategoryRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+            <state>
+              <caret selection-start-column="2" selection-end-line="19" selection-end-column="3" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#0#666#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonDaoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/PersonDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="18" selection-start-line="18" selection-end-line="19" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryDaoTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/CategoryDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-start-column="2" selection-end-line="29" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#1050#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/CategoryDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="13" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/CommentDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/PersonDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResourceDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/ResourceDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="445">
+              <caret line="91" column="16" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/config/DatabaseConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+              <folding>
+                <element signature="e#1587#1610#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,11 +280,11 @@
       <list>
         <option value="jsf" />
         <option value="spring-beans.schema" />
-        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Jsp File" />
         <option value="Class" />
         <option value="HTML File" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -105,32 +302,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resources-by-criteria.html" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/config/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/AddHeadingByResourceController.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/HeadingUpdateDto.java" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/heading-delete.html" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/heading-update.html" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CreateCategoryDto.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CategoryInfoController.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CategoryUpdateController.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CategorySaveController.java" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category-info.html" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category-delete.html" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category-update.html" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category-save.html" />
-        <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/CommentDao.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CreateCommentDto.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CommentFullDto.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/HeadingService.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/CategoryService.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CommentariesComtroller.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CommentariesController.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CommentInfoController.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/ResourceService.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CommentDeleteController.java" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/commentaries.html" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/comment-info.html" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/comment-delete.html" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ChangeRoleDto.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ByCommentDeleteDto.java" />
@@ -147,15 +318,41 @@
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/comment-save.html" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/comment-update.html" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ByCommentSaveDto.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/CommentService.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CommentUpdateController.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/util/UrlPath.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/roles.html" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/RolesController.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/change-person-role.html" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/RoleService.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/RoleFullDto.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/RoleChangeController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/FindByHeadingResourceController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/SearchResourceByHeadingController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/search-by-heading.html" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/find-by-heading-resource.html" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/ResourceDao.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ResourceFullDto.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/CommentDao.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/CommentService.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/ResourceService.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/PersonDao.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/util/UrlPath.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/PersonService.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ViewStoreBasketController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/view-store-basket.html" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ResourceAddDto.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-info.html" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceInfoController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/config/CachingConfig.java" />
+        <option value="$PROJECT_DIR$/database/src/main/resources/ehcache-config.xml" />
+        <option value="$PROJECT_DIR$/database/src/test/resources/ehcache-config.xml" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/repository/HeroRepository.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/CategoryDao.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/database/src/test/resources/application.properties" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/config/DatabaseConfig.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/config/CachingConfig.java" />
+        <option value="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/repository/CategoryRepository.java" />
+        <option value="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/CategoryDaoTest.java" />
       </list>
     </option>
   </component>
@@ -256,6 +453,268 @@
               <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-structure" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -272,7 +731,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../MyWork/ServletDemo" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/caching-lesson-starter-spring/caching-lesson-starter/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -282,33 +741,36 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.itacademy.database.dao" />
       <recent name="com.itacademy.database.config" />
       <recent name="com.itacademy.service.service" />
-      <recent name="com.itacademy.database.dao" />
       <recent name="by.itacademy.database.entity" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.itacademy.database.config" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.itacademy.database.repository" />
+      <recent name="com.itacademy.web.config" />
+      <recent name="com.itacademy.service.service" />
+      <recent name="com.itacademy.web.initializer" />
+      <recent name="by.itacademy.web.servlet" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\jd2_work\project-structure\database\src\test\resources" />
+      <recent name="D:\GitHub\jd2_work\project-structure\database\src\main\resources" />
+      <recent name="D:\jd2_work\project-structure\database\src\main\resources" />
+      <recent name="D:\GitHub\jd2_work\project-structure\database\src\test" />
+      <recent name="D:\GitHub\jd2_work\project-structure\web\src\main\webapp\WEB-INF\jsp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GitHub\jd2_work\project-structure\database\src\main\resources" />
       <recent name="D:\GitHub\jd2_work\project-structure" />
       <recent name="D:\jd2_work\project-structure\database\src\main\java\by\itacademy\database" />
       <recent name="D:\GitHub\project-structure\web\src\main" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.itacademy.service.service" />
-      <recent name="com.itacademy.web.initializer" />
-      <recent name="com.itacademy.web.config" />
-      <recent name="by.itacademy.web.servlet" />
-      <recent name="by.itacademy.service.dto" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\jd2_work\project-structure\database\src\main\resources" />
-      <recent name="D:\GitHub\jd2_work\project-structure\database\src\test\resources" />
-      <recent name="D:\GitHub\jd2_work\project-structure\database\src\test" />
-      <recent name="D:\GitHub\jd2_work\project-structure\web\src\main\webapp\WEB-INF\jsp" />
-      <recent name="D:\GitHub\jd2_work\project-structure\database\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -337,6 +799,29 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="CategoryDaoTest.testGetAllCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="database" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itacademy.database.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.itacademy.database.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.itacademy.database.dao.CategoryDaoTest" />
+      <option name="METHOD_NAME" value="testGetAllCache" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="PersonDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="database" />
@@ -397,29 +882,6 @@
       <option name="PACKAGE_NAME" value="com.itacademy.database.dao" />
       <option name="MAIN_CLASS_NAME" value="com.itacademy.database.dao.ResourceDaoTest" />
       <option name="METHOD_NAME" value="findResourceByCriteria" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ResourceTest.checkSaveFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="database" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itacademy.database.entity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.itacademy.database.entity" />
-      <option name="MAIN_CLASS_NAME" value="com.itacademy.database.entity.ResourceTest" />
-      <option name="METHOD_NAME" value="checkSaveFactory" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -543,18 +1005,18 @@
     <list>
       <item itemvalue="Tomcat Server.Unnamed" />
       <item itemvalue="JUnit.ResourceDaoTest.findResourceByCriteria" />
-      <item itemvalue="JUnit.ResourceTest.checkSaveFactory" />
       <item itemvalue="JUnit.ResourceDaoTest.checkManyToMany" />
       <item itemvalue="Application.Run" />
       <item itemvalue="JUnit.PersonDaoTest" />
+      <item itemvalue="JUnit.CategoryDaoTest.testGetAllCache" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CategoryDaoTest.testGetAllCache" />
         <item itemvalue="JUnit.PersonDaoTest" />
         <item itemvalue="Application.Run" />
         <item itemvalue="JUnit.ResourceDaoTest.checkManyToMany" />
         <item itemvalue="JUnit.ResourceDaoTest.findResourceByCriteria" />
-        <item itemvalue="JUnit.ResourceTest.checkSaveFactory" />
       </list>
     </recent_temporary>
   </component>
@@ -658,7 +1120,7 @@
       <workItem from="1560753055206" duration="11893000" />
       <workItem from="1560778389687" duration="330000" />
       <workItem from="1560834374329" duration="20929000" />
-      <workItem from="1560920484906" duration="2276000" />
+      <workItem from="1560920484906" duration="24132000" />
     </task>
     <task id="LOCAL-00001" summary="test github by idea">
       <created>1560170806703</created>
@@ -716,43 +1178,50 @@
       <option name="project" value="LOCAL" />
       <updated>1560862640775</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="comment all + category + heading&#10;changePersonRole work">
+      <created>1560923843167</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1560923843167</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ResourceDaoTest_findResourceByCriteria - 2019.06.11 at 11h 27m 48s.xml">
-      <configuration name="ResourceDaoTest.findResourceByCriteria" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_testGetAllCache - 2019.06.19 at 15h 57m 04s.xml">
+      <configuration name="CategoryDaoTest.testGetAllCache" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResourceDaoTest_checkManyToMany - 2019.06.11 at 12h 04m 14s.xml">
-      <configuration name="ResourceDaoTest.checkManyToMany" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_testGetAllCache - 2019.06.19 at 16h 12m 52s.xml">
+      <configuration name="CategoryDaoTest.testGetAllCache" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResourceDaoTest_checkManyToMany - 2019.06.11 at 12h 16m 45s.xml">
-      <configuration name="ResourceDaoTest.checkManyToMany" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_testGetAllCache - 2019.06.19 at 16h 13m 01s.xml">
+      <configuration name="CategoryDaoTest.testGetAllCache" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResourceDaoTest_checkManyToMany - 2019.06.13 at 08h 46m 09s.xml">
-      <configuration name="ResourceDaoTest.checkManyToMany" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_testGetAllCache - 2019.06.19 at 16h 13m 41s.xml">
+      <configuration name="CategoryDaoTest.testGetAllCache" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResourceDaoTest_checkManyToMany - 2019.06.13 at 08h 47m 13s.xml">
-      <configuration name="ResourceDaoTest.checkManyToMany" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_testGetAllCache - 2019.06.19 at 16h 14m 37s.xml">
+      <configuration name="CategoryDaoTest.testGetAllCache" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResourceDaoTest_checkManyToMany - 2019.06.13 at 08h 50m 30s.xml">
-      <configuration name="ResourceDaoTest.checkManyToMany" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_testGetAllCache - 2019.06.19 at 16h 25m 54s.xml">
+      <configuration name="CategoryDaoTest.testGetAllCache" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResourceDaoTest_checkManyToMany - 2019.06.13 at 08h 50m 39s.xml">
-      <configuration name="ResourceDaoTest.checkManyToMany" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_testGetAllCache - 2019.06.19 at 16h 27m 26s.xml">
+      <configuration name="CategoryDaoTest.testGetAllCache" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResourceDaoTest_findResourceByCriteria - 2019.06.13 at 08h 50m 53s.xml">
-      <configuration name="ResourceDaoTest.findResourceByCriteria" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_testGetAllCache - 2019.06.19 at 16h 28m 56s.xml">
+      <configuration name="CategoryDaoTest.testGetAllCache" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResourceDaoTest_checkManyToMany - 2019.06.13 at 08h 51m 07s.xml">
-      <configuration name="ResourceDaoTest.checkManyToMany" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_testGetAllCache - 2019.06.19 at 16h 32m 55s.xml">
+      <configuration name="CategoryDaoTest.testGetAllCache" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PersonDaoTest - 2019.06.16 at 07h 53m 04s.xml">
-      <configuration name="PersonDaoTest" configurationId="JUnit" />
+    <history-entry file="CategoryDaoTest_testGetAllCache - 2019.06.19 at 16h 33m 48s.xml">
+      <configuration name="CategoryDaoTest.testGetAllCache" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="565818000" />
+    <option name="totallyTimeSpent" value="587674000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -776,10 +1245,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978038" visible="true" weight="0.26295948" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4978038" visible="true" weight="0.26295948" />
       <window_info anchor="bottom" id="Spring" order="14" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32799247" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2390625" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2390625" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -843,7 +1312,8 @@
     <MESSAGE value="add no all by..." />
     <MESSAGE value="dynamic filter complete + add headings complete" />
     <MESSAGE value="comment all + category + heading&#10;changePersonRole don`t work" />
-    <option name="LAST_COMMIT_MESSAGE" value="comment all + category + heading&#10;changePersonRole don`t work" />
+    <MESSAGE value="comment all + category + heading&#10;changePersonRole work" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment all + category + heading&#10;changePersonRole work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -856,6 +1326,14 @@
           </properties>
           <option name="timeStamp" value="261" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceInfoController.java</url>
+          <line>40</line>
+          <properties class="com.itacademy.web.controller.ResourceInfoController" method="addResourceAtBasket">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="379" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/servlet/AddHeadingByResourceServlet.java</url>
           <line>74</line>
@@ -863,7 +1341,7 @@
           <option name="timeStamp" value="260" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="378" />
+      <option name="time" value="380" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -933,134 +1411,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CategorySaveController.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/commentaries.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/HeadingFullDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CreateResourceDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceSaveController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/HeadingBySaveDto.java" />
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CreateCategoryDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/HeadingBySaveCategoryDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/heading-save.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/HeadingSaveController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="63" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-save.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CreateHeadingDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/HeadingUpdateDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/heading-update.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/HeadingUpdateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="33" column="70" selection-start-line="33" selection-start-column="70" selection-end-line="33" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d4d8bddf-4299-46c7-9ead-d0f58169d98c/database/flea_market/schema/flea_market/table/heading">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/heading-delete.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/HeadingDeleteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CategoryDeleteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/comment-save.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="14" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1071,208 +1425,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://d4d8bddf-4299-46c7-9ead-d0f58169d98c/database/flea_market/schema/flea_market/table/person">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CreateCommentDto.java">
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Resource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CommentSaveController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d4d8bddf-4299-46c7-9ead-d0f58169d98c/database/flea_market/schema/flea_market/table/comment">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CommentUpdateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/CommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1420#1421#0" expanded="true" />
-            <element signature="e#1462#1463#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CommentFullDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ByCommentSaveDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/comment-update.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d4d8bddf-4299-46c7-9ead-d0f58169d98c/database/flea_market/schema/flea_market/table/person_role">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/PersonDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/RoleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/PersonService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding>
-            <element signature="e#1413#1414#0" expanded="true" />
-            <element signature="e#1466#1467#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ViewPersonFullInfoDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category-update.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/util/UrlPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourcesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/filter.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/commentaries.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/RolesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="218">
+          <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="71">
           <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/PersonRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/roles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/change-person-role.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1283,30 +1446,338 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/RoleFullDto.java">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CreateHeadingDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ChangeRoleDto.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-save.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/person-save.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="44" column="6" lean-forward="true" selection-start-line="7" selection-end-line="44" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ResourceCriteriaDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/RoleChangeController.java">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        <state relative-caret-position="272">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CreateResourceDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/BlockResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ResourceFullDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/ResourceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="32" column="109" selection-start-line="31" selection-start-column="27" selection-end-line="32" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/SearchResourceByHeadingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="13" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category-info.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/PersonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="88" column="59" lean-forward="true" selection-start-line="88" selection-start-column="59" selection-end-line="88" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/search-by-heading.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="7" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/view-store-basket.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/util/UrlPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ViewStoreBasketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.5.RELEASE/spring-security-core-5.1.5.RELEASE.jar!/org/springframework/security/core/Authentication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/AddHeadingByResourceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="43" column="69" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/config/ThymeleafConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/initializer/WebInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/test/resources/ehcache-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="40" column="70" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ResourceAddDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="137" column="21" selection-start-line="137" selection-start-column="21" selection-end-line="137" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/config/DatabaseConfigTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.7.RELEASE/spring-data-commons-2.1.7.RELEASE.jar!/org/springframework/data/repository/Repository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/BaseDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/resources/ehcache-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/test/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/config/DatabaseConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+          <folding>
+            <element signature="e#1587#1610#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/config/CachingConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-start-column="2" selection-end-line="31" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#1123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/CategoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/CommentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/PersonDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/ResourceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="91" column="16" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/repository/CategoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-start-column="2" selection-end-line="19" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#666#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/PersonDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="18" selection-start-line="18" selection-end-line="19" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/CategoryDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-start-column="2" selection-end-line="29" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#1050#0" expanded="true" />
           </folding>
         </state>
       </provider>

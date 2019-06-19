@@ -29,4 +29,14 @@ public class ResourceFullDto {
         this.text = text;
         this.block = block;
     }
+
+    public ResourceFullDto(Long id, String resourceName, String foto, String category, String person, Integer price, String text) {
+        this.id = id;
+        this.resourceName = resourceName;
+        this.foto = foto;
+        this.category = category;
+        this.person = person;
+        this.price = price;
+        this.text = text;
+    }
 }

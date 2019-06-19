@@ -11,6 +11,27 @@
     <span th:text="${resource.person}">heading</span><br>
     <span th:text="${resource.price}">heading</span><br>
     <span th:text="${resource.text}">heading</span><br>
+    <a>-------------------------</a>
 </div>
+<div class="container">
+    <div th:each="comment: ${commentaries}">
+        <span th:text="${comment.comment}">Type</span><br>
+        <a>-------------------------</a>
+    </div>
+</div>
+<div class="container">
+    <form th:action="@{/resource-info}" th:method="post">
+        <!--<div>-->
+        <!--<input type="hidden" name="login" th:value="${#authentication.name}">-->
+        <!--</div>-->
+        <div>
+            <input type="hidden" name="resourceId" th:value="${resource.id}">
+        </div>
+        <div>
+            <input type="submit" value="add">
+        </div>
+    </form>
+</div>
+
 </body>
 </html>
