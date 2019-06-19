@@ -27,7 +27,7 @@ public class RoleChangeController {
     @GetMapping
     public String getPage(Model model) {
         model.addAttribute("personList", personService.findAll());
-        model.addAttribute("roleList", roleService.getAll());
+        model.addAttribute("roles", roleService.getAll());
 
         return "change-person-role";
     }

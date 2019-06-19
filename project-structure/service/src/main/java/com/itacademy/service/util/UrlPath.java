@@ -34,4 +34,5 @@ public class UrlPath {
     public static final String COMMENT_DELETE = "/comment-delete";
     public static final String COMMENT_UPDATE = "/comment-update";
     public static final String CHANGE_ROLE = "/change-person-role";
+    public static final String ROLES = "/roles";
 }

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div th:each="personRole: ${roles}">
+        <span th:text="${personRole.nameOfRole}">Type</span><br>
+        <a>-------------------------</a>
+    </div>
+</div>
+</body>
+</html>

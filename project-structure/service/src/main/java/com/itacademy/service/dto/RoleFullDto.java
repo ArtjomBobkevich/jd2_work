@@ -11,5 +11,10 @@ import lombok.NoArgsConstructor;
 @Builder
 public class RoleFullDto {
 
+    private Long id;
     private String nameOfRole;
+
+    public RoleFullDto(String nameOfRole) {
+        this.nameOfRole = nameOfRole;
+    }
 }

@@ -17,9 +17,9 @@
         </div>
         <div>
             <select name="roleId">
-                <option th:each="PersonRole: ${roleList}"
-                        th:text="${PersonRole.nameOfRole}"
-                        th:value="${PersonRole.id}">Role
+                <option th:each="personRole: ${roles}"
+                        th:text="${personRole.nameOfRole}"
+                        th:value="${personRole.id}">Role
                 </option>
             </select>
         </div>
