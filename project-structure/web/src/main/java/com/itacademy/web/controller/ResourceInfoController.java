@@ -10,6 +10,8 @@ import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.ResourceService;
 import com.itacademy.service.util.UrlPath;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -40,10 +42,12 @@ public class ResourceInfoController {
     @PostMapping
     public String addResourceAtBasket(ResourceAddDto resourceAddDto) {
 
-        String personName = "/*тут как то из сессии взять имя пользователя*/";
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
+        String login = authentication.getName();
 
         Resource resource = resourceService.findByIdEntity(resourceAddDto.getResourceId());
-        Person person = personService.findByLogin(personName);
+        Person person = personService.findByLogin(login);
 
         CreateResourceDto resourceDto = CreateResourceDto.builder()
                 .id(resource.getId())
@@ -56,6 +60,7 @@ public class ResourceInfoController {
                 .block("block")
                 .build();
         CreateNewPersonDto personDto = CreateNewPersonDto.builder()
+                .id(person.getId())
                 .avatar(person.getAvatar())
                 .login(person.getLogin())
                 .identification(person.getIdentification())
