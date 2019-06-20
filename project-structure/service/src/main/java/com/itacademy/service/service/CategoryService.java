@@ -22,7 +22,7 @@ public class CategoryService {
 
     public List<CategoryFullDto> findAll() {
         return categoryDao.getAll().stream()
-                .map(it -> new CategoryFullDto(it.getId(), it.getCategoryName()))
+                .map(it -> new CategoryFullDto(it.getId(), it.getCategoryName(),it.getVersion()))
                 .collect(Collectors.toList());
     }
 
@@ -49,6 +49,7 @@ public class CategoryService {
                 .id(categoryDto.getId())
                 .categoryName(categoryDto.getCategoryName())
                 .fotoUrl(categoryDto.getFoto())
+                .version(categoryDto.getVersion())
                 .build());
     }
 }

@@ -14,6 +14,7 @@ public class CreateCategoryDto {
     private Long id;
     private String categoryName;
     private String foto;
+    private Long version;
 
     public CreateCategoryDto(String categoryName, String foto) {
         this.categoryName = categoryName;

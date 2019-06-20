@@ -100,4 +100,14 @@ public class ResourceDao extends BaseDaoImpl<Long, BlockResource> {
                 .setParameter("nameOfHeading", nameOfHeading)
                 .list());
     }
+
+    public Resource findByResourceName(String resourceName) {
+        return getSessionFactory().getCurrentSession()
+                .createQuery("select r from Resource r where r.resourceName = :resourceName", Resource.class)
+                .setParameter("resourceName", resourceName)
+                .getResultList()
+                .stream()
+                .findFirst()
+                .orElse(null);
+    }
 }

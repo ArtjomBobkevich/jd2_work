@@ -38,4 +38,5 @@ public class UrlPath {
     public static final String FIND_BY_HEADING_RESOURCE = "/find-by-heading-resource";
     public static final String SEARCH_BY_HEADING = "/search-by-heading";
     public static final String VIEW_STORE_BASKET = "/view-store-basket";
+    public static final String SORRY = "/sorry";
 }

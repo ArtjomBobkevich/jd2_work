@@ -13,11 +13,13 @@ public abstract class Category_ {
 	public static volatile ListAttribute<Category, Heading> headings;
 	public static volatile SingularAttribute<Category, Long> id;
 	public static volatile SingularAttribute<Category, String> categoryName;
+	public static volatile SingularAttribute<Category, Long> version;
 
 	public static final String FOTO_URL = "fotoUrl";
 	public static final String HEADINGS = "headings";
 	public static final String ID = "id";
 	public static final String CATEGORY_NAME = "categoryName";
+	public static final String VERSION = "version";
 
 }
 

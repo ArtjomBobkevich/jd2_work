@@ -41,7 +41,7 @@ public class ResourceService {
     }
 
     public ResourceFullDto findById(Long id) {
-        return resourceDao.get(id).map(it -> new ResourceFullDto(it.getResourceName(), it.getFoto(),
+        return resourceDao.get(id).map(it -> new ResourceFullDto(it.getId(),it.getResourceName(), it.getFoto(),
                 it.getCategory().getCategoryName(), it.getPerson().getLogin(), it.getPrice(), it.getText(), it.getBlock()))
                 .orElse(null);
     }
@@ -88,5 +88,9 @@ public class ResourceService {
 
         resourceDao.addHeading(headingDao.get(createHeadingDto.getId()).orElse(null),
                 resourceDao.get(createResourceDto.getId()).orElse(null));
+    }
+
+    public Resource findByResourceName(String resourceName) {
+        return resourceDao.findByResourceName(resourceName);
     }
 }

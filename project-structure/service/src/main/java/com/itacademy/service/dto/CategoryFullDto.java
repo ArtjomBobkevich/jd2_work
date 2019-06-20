@@ -13,6 +13,7 @@ public class CategoryFullDto {
 
     private Long id;
     private String categoryName;
+    private Long version;
 
     public CategoryFullDto(String categoryName) {
         this.categoryName = categoryName;

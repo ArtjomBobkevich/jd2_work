@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.driver_class">org.h2.Driver</property>
+    <property name="dialect">org.hibernate.dialect.H2Dialect</property>
+    <property name="connection.url">jdbc:h2:mem:flea_market;INIT=CREATE SCHEMA IF NOT EXISTS flea_market;DB_CLOSE_DELAY=-1;</property>
+    <property name="connection.username">sa</property>
+    <property name="connection.password"></property>
+    <property name="show_sql">true</property>
+    <property name="format_sql">true</property>
+    <property name="hbm2ddl.auto">validate</property>
+
+    <property name="cache.use_second_level_cache">true</property>
+    <!--<property name="cache.use_query_cache">true</property>-->
+    <property name="cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+    <property name="net.sf.ehcache.configurationResourceName">/ehcache-config.xml</property>
+
+    <mapping class="com.itacademy.database.entity.Category"/>
+    <!--<mapping class="by.itacademy.entity.Quest"/>-->
+  </session-factory>
+</hibernate-configuration>

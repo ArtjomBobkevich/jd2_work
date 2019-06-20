@@ -6,6 +6,10 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.hibernate.annotations.OptimisticLockType;
+import org.hibernate.annotations.OptimisticLocking;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,6 +18,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Version;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +30,8 @@ import java.util.List;
 @Builder
 @Entity
 @Table(name = "category", schema = "flea_market")
+@OptimisticLocking(type = OptimisticLockType.VERSION)
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = "categories")
 public class Category implements BaseEntity<Long> {
 
     @Id
@@ -38,7 +45,11 @@ public class Category implements BaseEntity<Long> {
     private String fotoUrl;
 
     @OneToMany(mappedBy = "category")
+    @Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = "headings")
     private List<Heading> headings = new ArrayList<>();
+
+    @Version
+    private Long version;
 
     public Category(String categoryName, String fotoUrl) {
         this.categoryName = categoryName;

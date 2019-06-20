@@ -14,4 +14,10 @@
            eternal="false"
            timeToLiveSeconds="60"
            timeToIdleSeconds="60"/>
+
+    <cache name="headings"
+           maxElementsInMemory="500"
+           eternal="false"
+           timeToLiveSeconds="60"
+           timeToIdleSeconds="60"/>
 </ehcache>

@@ -22,8 +22,6 @@ import java.util.Properties;
 @ComponentScan("com.itacademy.database")
 @PropertySource("classpath:application.properties")
 @EnableTransactionManagement
-//@EnableJpaRepositories(basePackages = "com.itacademy.database.repository")
-//@Import(CachingConfig.class)
 public class DatabaseConfig {
 
     @Bean
@@ -61,25 +59,4 @@ public class DatabaseConfig {
     public HibernateTransactionManager transactionManager(SessionFactory sessionFactory) {
         return new HibernateTransactionManager(sessionFactory);
     }
-
-//    @Bean
-//    public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource,Properties jpaProperties) {
-//        HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
-//        vendorAdapter.setGenerateDdl(true);
-//
-//        LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
-//        factory.setJpaVendorAdapter(vendorAdapter);
-//        factory.setPackagesToScan("by.itacademy.entity");
-//        factory.setDataSource(dataSource);
-//        factory.setJpaProperties(jpaProperties);
-//
-//        return factory;
-//    }
-//
-//    @Bean
-//    public Properties jpaProperties(@Value("classpath:application.properties") Resource hibernateProperties) throws IOException {
-//        Properties properties = new Properties();
-//        properties.load(hibernateProperties.getInputStream());
-//        return properties;
-//    }
 }

@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -29,6 +31,7 @@ import java.util.Set;
 @EqualsAndHashCode(exclude = "id")
 @Entity
 @Table(name = "heading", schema = "flea_market")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = "headings")
 public class Heading implements BaseEntity<Long> {
 
     @Id

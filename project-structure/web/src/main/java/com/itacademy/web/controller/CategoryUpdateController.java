@@ -1,5 +1,6 @@
 package com.itacademy.web.controller;
 
+import com.itacademy.database.entity.Category;
 import com.itacademy.service.dto.CreateCategoryDto;
 import com.itacademy.service.service.CategoryService;
 import com.itacademy.service.util.UrlPath;
@@ -26,7 +27,12 @@ public class CategoryUpdateController {
     @PostMapping
     public String updateCategory (CreateCategoryDto category) {
 
-        categoryService.updateCategory(category);
-        return "redirect:/category";
+        Category checkCategoryVersion = categoryService.findById(category.getId());
+
+        if (checkCategoryVersion.getVersion().equals(category.getVersion())) {
+            categoryService.updateCategory(category);
+            return "redirect:/category";
+        }
+        return "redirect:/sorry";
     }
 }

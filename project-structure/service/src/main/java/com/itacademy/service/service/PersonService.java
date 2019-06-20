@@ -84,6 +84,13 @@ public class PersonService {
                 resourceDao.get(createResourceDto.getId()).orElse(null));
     }
 
+    @Transactional
+    public void deleteResourceAtBasket(CreateNewPersonDto personDto, CreateResourceDto createResourceDto) {
+
+        personDao.deleteResourceAtBasket(personDao.get(personDto.getId()).orElse(null),
+                resourceDao.get(createResourceDto.getId()).orElse(null));
+    }
+
     public List<ResourceFullDto> allResourcesAtBasket (String login) {
 
         return personDao.allResourcesAtBasket(personDao.findByName(login)).stream()
