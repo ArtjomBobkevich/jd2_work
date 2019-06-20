@@ -20,7 +20,8 @@ CREATE TABLE person (
 CREATE TABLE category (
   id            BIGSERIAL PRIMARY KEY,
   category_name VARCHAR(124) UNIQUE NOT NULL,
-  foto          VARCHAR(124)
+  foto          VARCHAR(124),
+  version BIGSERIAL
 );
 
 CREATE TABLE heading (
@@ -174,5 +175,3 @@ VALUES
   ('test6','foto',2,1,222,'test','www','block'),
   ('test6','foto',2,1,222,'test','www','block'),
   ('test6','foto',2,1,222,'test','www','block');
-
-	

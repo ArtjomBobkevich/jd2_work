@@ -6,24 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14420e3e-9432-4664-ba21-80c76cbed398" name="Default" comment="comment all + category + heading&#10;changePersonRole work">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/src/test/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/SorryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/sorry.html" afterDir="false" />
+    <list default="true" id="14420e3e-9432-4664-ba21-80c76cbed398" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/log4j.log" beforeDir="false" afterPath="$PROJECT_DIR$/database/log4j.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/config/CachingConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/config/DatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/config/DatabaseConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/CategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/PersonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/PersonDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/ResourceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/dao/ResourceDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Heading.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Heading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/java/com/itacademy/database/repository/CategoryRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/main/resources/ehcache-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/resources/ehcache-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/CategoryDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/CategoryDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/config/DatabaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/config/DatabaseConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/dao/PersonDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/dao/PersonDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/dao/ResourceDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/dao/ResourceDao.class" afterDir="false" />
@@ -34,13 +18,6 @@
       <change beforePath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Heading.class" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/com/itacademy/database/entity/Heading.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/target/generated-sources/annotations/com/itacademy/database/entity/Category_.java" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/generated-sources/annotations/com/itacademy/database/entity/Category_.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CategoryFullDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CategoryFullDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CreateCategoryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/CreateCategoryDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/ResourceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/service/ResourceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/util/UrlPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/util/UrlPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/dto/CategoryFullDto$CategoryFullDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/dto/CategoryFullDto$CategoryFullDtoBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/dto/CategoryFullDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/dto/CategoryFullDto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/service/CategoryService.class" afterDir="false" />
@@ -49,12 +26,6 @@
       <change beforePath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/util/UrlPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/itacademy/service/util/UrlPath.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CategoryUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CategoryUpdateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ViewStoreBasketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ViewStoreBasketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category-save.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category-save.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category-update.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category-update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/view-store-basket.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/view-store-basket.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/web/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/database-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/database-1.0.jar" afterDir="false" />
@@ -1217,7 +1188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560923843167</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="optimistic don`t work + cache don`t work">
+      <created>1561036902245</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1561036902245</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1253,10 +1231,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="617684000" />
+    <option name="totallyTimeSpent" value="617929000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1371,7 +1349,8 @@
     <MESSAGE value="dynamic filter complete + add headings complete" />
     <MESSAGE value="comment all + category + heading&#10;changePersonRole don`t work" />
     <MESSAGE value="comment all + category + heading&#10;changePersonRole work" />
-    <option name="LAST_COMMIT_MESSAGE" value="comment all + category + heading&#10;changePersonRole work" />
+    <MESSAGE value="optimistic don`t work + cache don`t work" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimistic don`t work + cache don`t work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
