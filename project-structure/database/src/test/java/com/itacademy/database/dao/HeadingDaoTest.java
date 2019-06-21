@@ -2,6 +2,7 @@ package com.itacademy.database.dao;
 
 import com.itacademy.database.config.DatabaseConfigTest;
 import com.itacademy.database.entity.Category;
+import com.itacademy.database.entity.Heading;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,10 @@ import static org.junit.Assert.assertEquals;
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = DatabaseConfigTest.class)
 @Transactional
-public class CategoryDaoTest {
+public class HeadingDaoTest {
+
+    @Autowired
+    private HeadingDao headingDao;
 
     @Autowired
     private CategoryDao categoryDao;
@@ -23,38 +27,56 @@ public class CategoryDaoTest {
     @Test
     public void checkSaveEntity() {
 
-
         Category category = Category.builder()
                 .categoryName("test")
                 .fotoUrl("test")
                 .build();
 
         categoryDao.save(category);
-        assertTrue(categoryDao.get(category.getId()).isPresent());
+
+        Heading heading = Heading.builder()
+                .headingName("test")
+                .category(category)
+                .build();
+
+        headingDao.save(heading);
+        assertTrue(headingDao.get(heading.getId()).isPresent());
     }
 
     @Test
     public void checkGetEntity() {
-
         Category category = Category.builder()
                 .categoryName("test")
                 .fotoUrl("test")
                 .build();
 
         categoryDao.save(category);
-        assertTrue(categoryDao.get(1L).isPresent());
+
+        Heading heading = Heading.builder()
+                .headingName("test")
+                .category(category)
+                .build();
+
+        headingDao.save(heading);
+        assertTrue(headingDao.get(1L).isPresent());
     }
 
     @Test
     public void checkGetAll() {
-
         Category category = Category.builder()
                 .categoryName("test")
                 .fotoUrl("test")
                 .build();
 
         categoryDao.save(category);
-        assertTrue(categoryDao.getAll().size() > 0);
+
+        Heading heading = Heading.builder()
+                .headingName("test")
+                .category(category)
+                .build();
+
+        headingDao.save(heading);
+        assertTrue(headingDao.getAll().size() > 0);
     }
 
     @Test
@@ -65,22 +87,35 @@ public class CategoryDaoTest {
                 .build();
 
         categoryDao.save(category);
-        categoryDao.get(category.getId());
-        category.setCategoryName("test2");
-        categoryDao.update(category);
-        assertTrue(!category.getCategoryName().equals("test"));
+
+        Heading heading = Heading.builder()
+                .headingName("test")
+                .category(category)
+                .build();
+
+        headingDao.save(heading);
+        headingDao.get(heading.getId());
+        heading.setHeadingName("test5");
+        headingDao.update(heading);
+        assertTrue(!heading.getHeadingName().equals("test"));
     }
 
     @Test
     public void checkDelete() {
-
         Category category = Category.builder()
                 .categoryName("test")
                 .fotoUrl("test")
                 .build();
 
         categoryDao.save(category);
-        categoryDao.delete(category);
-        assertEquals(0, categoryDao.getAll().size());
+
+        Heading heading = Heading.builder()
+                .headingName("test")
+                .category(category)
+                .build();
+
+        headingDao.save(heading);
+        headingDao.delete(heading);
+        assertEquals(0, headingDao.getAll().size());
     }
 }

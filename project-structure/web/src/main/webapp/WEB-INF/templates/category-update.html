@@ -7,18 +7,14 @@
 <body>
 <div class="container">
     <form th:action="@{/category-update}" th:method="post">
-        <!--<div >-->
-            <!--<select name="id">-->
-                <!--<option th:each="category: ${categories}"-->
-                        <!--th:text="${category.categoryName}"-->
-                        <!--th:value="${category.id}">-->
-                     <!--Category-->
-                <!--</option>-->
-            <!--</select>-->
-        <!--</div>-->
-        <div th:each="category: ${categories}">
-            <input type="checkbox" name="id" th:text="${category.categoryName}" th:value="${category.id}" id="myCheck"  onclick="myFunction()">
-            <input type="hidden" name="version" th:value="${category.version}" id="text" style="display:none"> <!--как то выдавать именно нужную версионность-->
+        <div>
+            <select name="id">
+                <option th:each="category: ${categories}"
+                        th:text="${category.categoryName}"
+                        th:value="${category.id}">
+                     Category
+                </option>
+            </select>
         </div>
         <div>
             <span th:text="categoryName ">categoryName: </span>
@@ -31,17 +27,6 @@
         <div>
             <input type="submit" value="update">
         </div>
-<script>
-    function myFunction() {
-        var checkBox = document.getElementById("myCheck");
-        var text = document.getElementById("text");
-        if (checkBox.checked == true){
-            text.style.display = "block";
-        } else {
-            text.style.display = "none";
-        }
-    }
-</script>
     </form>
 </div>
 </body>

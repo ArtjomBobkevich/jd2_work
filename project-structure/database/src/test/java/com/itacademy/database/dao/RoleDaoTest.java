@@ -9,6 +9,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+import static junit.framework.TestCase.assertTrue;
+import static org.junit.Assert.assertEquals;
+
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = DatabaseConfigTest.class)
 @Transactional
@@ -23,5 +26,48 @@ public class RoleDaoTest {
                 .nameOfRole("test")
                 .build();
         roleDao.save(role);
+    }
+
+    @Test
+    public void checkGetEntity() {
+
+        PersonRole role = PersonRole.builder()
+                .nameOfRole("test")
+                .build();
+        roleDao.save(role);
+        assertTrue(roleDao.get(1L).isPresent());
+    }
+
+    @Test
+    public void checkGetAll() {
+
+        PersonRole role = PersonRole.builder()
+                .nameOfRole("test")
+                .build();
+        roleDao.save(role);
+        assertTrue(roleDao.getAll().size() > 0);
+    }
+
+    @Test
+    public void checkUpdate() {
+        PersonRole role = PersonRole.builder()
+                .nameOfRole("test")
+                .build();
+        roleDao.save(role);
+        roleDao.get(role.getId());
+        role.setNameOfRole("test2");
+        roleDao.update(role);
+        assertTrue(!role.getNameOfRole().equals("test"));
+    }
+
+    @Test
+    public void checkDelete() {
+
+        PersonRole role = PersonRole.builder()
+                .nameOfRole("test")
+                .build();
+        roleDao.save(role);
+        roleDao.delete(role);
+        assertEquals(0, roleDao.getAll().size());
     }
 }
