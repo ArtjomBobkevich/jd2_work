@@ -243,7 +243,7 @@ public class ResourceDaoTest {
 
         personDao.save(person);
         BlockResource resource = new BlockResource("test", "www",
-                categoryDao.get(1L).orElse(null),
+                categoryDao.get(6L).orElse(null),
                 personDao.get(1L).orElse(null),
                 222, "sss", "sdg");
         resourceDao.save(resource);

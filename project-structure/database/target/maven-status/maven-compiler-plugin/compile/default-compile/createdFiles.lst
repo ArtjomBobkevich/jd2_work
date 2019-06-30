@@ -1,10 +1,13 @@
+com\itacademy\database\dao\CommentDao.class
 com\itacademy\database\entity\Resource_.class
+com\itacademy\database\entity\Count$CountBuilder.class
 com\itacademy\database\entity\Identification_.class
 com\itacademy\database\entity\Resource.class
 com\itacademy\database\entity\Heading.class
 com\itacademy\database\dao\PersonDao.class
 com\itacademy\database\entity\Resource$ResourceBuilder.class
 com\itacademy\database\entity\Person_.class
+com\itacademy\database\entity\FilterDto$FilterDtoBuilder.class
 com\itacademy\database\dao\CategoryDao.class
 com\itacademy\database\entity\Category.class
 com\itacademy\database\entity\PersonRole_.class
@@ -21,6 +24,7 @@ com\itacademy\database\entity\BaseEntity.class
 com\itacademy\database\entity\Comment.class
 com\itacademy\database\dao\BaseDaoImpl.class
 com\itacademy\database\entity\Count.class
+com\itacademy\database\entity\FilterDto.class
 com\itacademy\database\dao\RoleDao.class
 com\itacademy\database\entity\Comment$CommentBuilder.class
 com\itacademy\database\entity\Person$PersonBuilder.class

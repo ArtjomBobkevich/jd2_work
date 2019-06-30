@@ -62,4 +62,10 @@ public class CategoryServiceTest {
         categoryService.deleteCategory(category);
         assertNull(categoryService.findById(25L));
     }
+
+    @Test
+    public void getByIdCache () {
+        categoryService.findById(2L);
+        categoryService.findById(2L);
+    }
 }

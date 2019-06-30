@@ -37,8 +37,7 @@ public class FirstAspect {
     }
 
     @Around("execution(public * com.itacademy.service.service.*Service.*(..))")
-    public Object logMethod(final ProceedingJoinPoint joinPoint)
-            throws Throwable {
+    public Object logMethod(final ProceedingJoinPoint joinPoint) throws Throwable {
         final Class<?> targetClass = joinPoint.getTarget().getClass();
         final Logger logger = getLogger(targetClass);
         try {

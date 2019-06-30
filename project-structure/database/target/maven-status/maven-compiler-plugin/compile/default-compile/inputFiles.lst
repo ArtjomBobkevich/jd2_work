@@ -3,7 +3,8 @@ D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\enti
 D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\Resource.java
 D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\dao\BaseDaoImpl.java
 D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\dao\ResourceDao.java
-D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\ProxyPredicate.java
+D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\dao\CommentDao.java
+D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\FilterDto.java
 D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\config\DatabaseConfig.java
 D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\Count.java
 D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\Comment.java
@@ -13,9 +14,7 @@ D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\enti
 D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\dao\CategoryDao.java
 D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\Heading.java
 D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\dao\RoleDao.java
-D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\util\SessionManager.java
 D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\PersonRole.java
-D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\HibernateRunner.java
 D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\dao\PersonDao.java
 D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\Person.java
 D:\jd2_work\project-structure\database\src\main\java\com\itacademy\database\entity\BlockResource.java

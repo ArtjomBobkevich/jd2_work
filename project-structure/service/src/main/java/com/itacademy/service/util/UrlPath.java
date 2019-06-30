@@ -39,4 +39,5 @@ public class UrlPath {
     public static final String SEARCH_BY_HEADING = "/search-by-heading";
     public static final String VIEW_STORE_BASKET = "/view-store-basket";
     public static final String SORRY = "/sorry";
+    public static final String LOGIN = "/login";
 }

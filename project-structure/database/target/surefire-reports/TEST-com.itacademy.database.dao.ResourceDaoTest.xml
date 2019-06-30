@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.itacademy.database.dao.ResourceDaoTest" time="0.087" errors="1" skipped="0">
+<testsuite tests="7" failures="2" name="com.itacademy.database.dao.ResourceDaoTest" time="0.181" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2018.1.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
     <property name="java.vm.version" value="25.202-b08"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\GitHub\jd2_work\project-structure"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\jd2_work\project-structure"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,32 +15,32 @@
     <property name="user.script" value=""/>
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value=""/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\GitHub\jd2_work\project-structure"/>
+    <property name="user.dir" value="D:\jd2_work\project-structure"/>
     <property name="java.runtime.version" value="1.8.0_202-b08"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 10"/>
+    <property name="os.name" value="Windows 7"/>
     <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2018.1.4\plugins\maven\lib\maven3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files\Git\cmd;D:\GitHub\apache-maven-3.6.0\bin;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;D:\GitHub\apache-maven-3.6.0\\bin;C:\Program Files\Java\jdk1.8.0_202\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter\Driver;;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;D:\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Program Files\Java\jdk-12.0.1\bin;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\Admin"/>
-    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Boss"/>
+    <property name="user.timezone" value="Europe/Kaliningrad"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="Admin"/>
+    <property name="user.name" value="Boss"/>
     <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2018.1.4\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2018.1.4\lib\idea_rt.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
@@ -62,21 +62,25 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="findResourceByCriteria" time="0.087">
-    <error message="org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl@5f14761c is closed" type="java.lang.IllegalStateException">java.lang.IllegalStateException: org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl@5f14761c is closed
-	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.errorIfClosed(AbstractLogicalConnectionImplementor.java:37)
-	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:135)
-	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getConnectionForTransactionManagement(LogicalConnectionManagedImpl.java:254)
-	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:116)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.rollback(JdbcResourceLocalTransactionCoordinatorImpl.java:294)
-	at org.hibernate.engine.transaction.internal.TransactionImpl.rollback(TransactionImpl.java:145)
-	at org.springframework.orm.hibernate5.HibernateTransactionManager.doRollback(HibernateTransactionManager.java:654)
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processRollback(AbstractPlatformTransactionManager.java:838)
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.rollback(AbstractPlatformTransactionManager.java:812)
-	at org.springframework.test.context.transaction.TransactionContext.endTransaction(TransactionContext.java:128)
-	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.afterTestMethod(TransactionalTestExecutionListener.java:216)
-	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:443)
-	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:94)
+  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkGetEntity" time="0">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at junit.framework.TestCase.assertTrue(TestCase.java:201)
+	at com.itacademy.database.dao.ResourceDaoTest.checkGetEntity(ResourceDaoTest.java:144)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
 	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
 	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
@@ -102,21 +106,14 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
+</failure>
     <system-out>Hibernate: 
     insert 
     into
         flea_market.category
-        (id, category_name, foto) 
+        (id, category_name, foto, version) 
     values
-        (null, ?, ?)
-Hibernate: 
-    insert 
-    into
-        flea_market.heading
-        (id, category_id, heading_name) 
-    values
-        (null, ?, ?)
+        (null, ?, ?, ?)
 Hibernate: 
     insert 
     into
@@ -140,56 +137,106 @@ Hibernate:
     values
         (null, ?, ?, ?, ?, ?, ?, ?, ?)
 Hibernate: 
+    select
+        category0_.id as id1_0_0_,
+        category0_.category_name as category2_0_0_,
+        category0_.foto as foto3_0_0_,
+        category0_.version as version4_0_0_ 
+    from
+        flea_market.category category0_ 
+    where
+        category0_.id=?
+Hibernate: 
+    select
+        person0_.id as id1_3_0_,
+        person0_.age as age2_3_0_,
+        person0_.avatar as avatar3_3_0_,
+        person0_.first_name as first_na4_3_0_,
+        person0_.last_name as last_nam5_3_0_,
+        person0_.login as login6_3_0_,
+        person0_.mail as mail7_3_0_,
+        person0_.password as password8_3_0_,
+        person0_.role as role9_3_0_,
+        personrole1_.id as id1_4_1_,
+        personrole1_.role as role2_4_1_ 
+    from
+        flea_market.person person0_ 
+    left outer join
+        flea_market.person_role personrole1_ 
+            on person0_.role=personrole1_.id 
+    where
+        person0_.id=?
+Hibernate: 
     insert 
     into
         flea_market.resource
-        (id, category_id, foto, heading_id, author, price, resource_name, text, block, type) 
+        (id, category_id, foto, author, price, resource_name, text, block, type) 
     values
-        (null, ?, ?, ?, ?, ?, ?, ?, ?, &apos;block&apos;)
+        (null, ?, ?, ?, ?, ?, ?, ?, &apos;block&apos;)
 Hibernate: 
     select
-        blockresou0_.id as id2_5_,
-        blockresou0_.category_id as category8_5_,
-        blockresou0_.foto as foto3_5_,
-        blockresou0_.heading_id as heading_9_5_,
-        blockresou0_.author as author10_5_,
-        blockresou0_.price as price4_5_,
-        blockresou0_.resource_name as resource5_5_,
-        blockresou0_.text as text6_5_,
-        blockresou0_.block as block7_5_ 
+        blockresou0_.id as id2_5_0_,
+        blockresou0_.category_id as category8_5_0_,
+        blockresou0_.foto as foto3_5_0_,
+        blockresou0_.author as author9_5_0_,
+        blockresou0_.price as price4_5_0_,
+        blockresou0_.resource_name as resource5_5_0_,
+        blockresou0_.text as text6_5_0_,
+        blockresou0_.block as block7_5_0_,
+        category1_.id as id1_0_1_,
+        category1_.category_name as category2_0_1_,
+        category1_.foto as foto3_0_1_,
+        category1_.version as version4_0_1_,
+        person2_.id as id1_3_2_,
+        person2_.age as age2_3_2_,
+        person2_.avatar as avatar3_3_2_,
+        person2_.first_name as first_na4_3_2_,
+        person2_.last_name as last_nam5_3_2_,
+        person2_.login as login6_3_2_,
+        person2_.mail as mail7_3_2_,
+        person2_.password as password8_3_2_,
+        person2_.role as role9_3_2_,
+        personrole3_.id as id1_4_3_,
+        personrole3_.role as role2_4_3_ 
     from
         flea_market.resource blockresou0_ 
-    inner join
+    left outer join
         flea_market.category category1_ 
             on blockresou0_.category_id=category1_.id 
+    left outer join
+        flea_market.person person2_ 
+            on blockresou0_.author=person2_.id 
+    left outer join
+        flea_market.person_role personrole3_ 
+            on person2_.role=personrole3_.id 
     where
-        blockresou0_.type=&apos;block&apos; 
-        and blockresou0_.resource_name=? 
-        and category1_.category_name=? 
-        and blockresou0_.price=222 limit ?
+        blockresou0_.id=? 
+        and blockresou0_.type=&apos;block&apos;
 </system-out>
-    <system-err>��� 10, 2019 10:38:34 AM org.springframework.test.context.support.AbstractTestContextBootstrapper getDefaultTestExecutionListenerClassNames
-INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-��� 10, 2019 10:38:34 AM org.springframework.test.context.support.AbstractTestContextBootstrapper getTestExecutionListeners
-INFO: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7c112f5f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5961e92d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4fd05028, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a2d3909, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4fb392c4]
-��� 10, 2019 10:38:34 AM org.springframework.test.context.transaction.TransactionContext startTransaction
-INFO: Began transaction (1) for test context [DefaultTestContext@439e3cb4 testClass = ResourceDaoTest, testInstance = com.itacademy.database.dao.ResourceDaoTest@1c9fbb61, testMethod = findResourceByCriteria@ResourceDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@7b81616b testClass = ResourceDaoTest, locations = &apos;{}&apos;, classes = &apos;{class com.itacademy.database.config.DatabaseConfigTest}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, propertySourceLocations = &apos;{}&apos;, propertySourceProperties = &apos;{}&apos;, contextCustomizers = set[[empty]], contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.hibernate5.HibernateTransactionManager@7e74a380]; rollback [true]
-��� 10, 2019 10:38:34 AM org.springframework.test.context.TestContextManager logException
-WARNING: Caught exception while invoking &apos;afterTestMethod&apos; callback on TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a2d3909] for test method [public void com.itacademy.database.dao.ResourceDaoTest.findResourceByCriteria()] and test instance [com.itacademy.database.dao.ResourceDaoTest@1c9fbb61]
-java.lang.IllegalStateException: org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl@5f14761c is closed
-	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.errorIfClosed(AbstractLogicalConnectionImplementor.java:37)
-	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:135)
-	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getConnectionForTransactionManagement(LogicalConnectionManagedImpl.java:254)
-	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:116)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.rollback(JdbcResourceLocalTransactionCoordinatorImpl.java:294)
-	at org.hibernate.engine.transaction.internal.TransactionImpl.rollback(TransactionImpl.java:145)
-	at org.springframework.orm.hibernate5.HibernateTransactionManager.doRollback(HibernateTransactionManager.java:654)
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processRollback(AbstractPlatformTransactionManager.java:838)
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.rollback(AbstractPlatformTransactionManager.java:812)
-	at org.springframework.test.context.transaction.TransactionContext.endTransaction(TransactionContext.java:128)
-	at org.springframework.test.context.transaction.TransactionalTestExecutionListener.afterTestMethod(TransactionalTestExecutionListener.java:216)
-	at org.springframework.test.context.TestContextManager.afterTestMethod(TestContextManager.java:443)
-	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:94)
+  </testcase>
+  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkManyToMany" time="0.001"/>
+  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="findAll" time="0"/>
+  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkDelete" time="0.028"/>
+  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkUpdate" time="0.001"/>
+  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="findResourceByCriteria" time="0.139">
+    <failure message="expected:&lt;1&gt; but was:&lt;0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;1&gt; but was:&lt;0&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at com.itacademy.database.dao.ResourceDaoTest.findResourceByCriteria(ResourceDaoTest.java:259)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
 	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
 	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
@@ -215,7 +262,114 @@ java.lang.IllegalStateException: org.hibernate.resource.jdbc.internal.LogicalCon
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-
-</system-err>
+</failure>
+    <system-out>Hibernate: 
+    insert 
+    into
+        flea_market.category
+        (id, category_name, foto, version) 
+    values
+        (null, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        flea_market.person_role
+        (id, role) 
+    values
+        (null, ?)
+Hibernate: 
+    select
+        personrole0_.id as id1_4_0_,
+        personrole0_.role as role2_4_0_ 
+    from
+        flea_market.person_role personrole0_ 
+    where
+        personrole0_.id=?
+Hibernate: 
+    insert 
+    into
+        flea_market.person
+        (id, age, avatar, first_name, last_name, login, mail, password, role) 
+    values
+        (null, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        category0_.id as id1_0_0_,
+        category0_.category_name as category2_0_0_,
+        category0_.foto as foto3_0_0_,
+        category0_.version as version4_0_0_ 
+    from
+        flea_market.category category0_ 
+    where
+        category0_.id=?
+Hibernate: 
+    select
+        person0_.id as id1_3_0_,
+        person0_.age as age2_3_0_,
+        person0_.avatar as avatar3_3_0_,
+        person0_.first_name as first_na4_3_0_,
+        person0_.last_name as last_nam5_3_0_,
+        person0_.login as login6_3_0_,
+        person0_.mail as mail7_3_0_,
+        person0_.password as password8_3_0_,
+        person0_.role as role9_3_0_,
+        personrole1_.id as id1_4_1_,
+        personrole1_.role as role2_4_1_ 
+    from
+        flea_market.person person0_ 
+    left outer join
+        flea_market.person_role personrole1_ 
+            on person0_.role=personrole1_.id 
+    where
+        person0_.id=?
+Hibernate: 
+    insert 
+    into
+        flea_market.resource
+        (id, category_id, foto, author, price, resource_name, text, block, type) 
+    values
+        (null, ?, ?, ?, ?, ?, ?, ?, &apos;block&apos;)
+Hibernate: 
+    select
+        blockresou0_.id as id2_5_,
+        blockresou0_.category_id as category8_5_,
+        blockresou0_.foto as foto3_5_,
+        blockresou0_.author as author9_5_,
+        blockresou0_.price as price4_5_,
+        blockresou0_.resource_name as resource5_5_,
+        blockresou0_.text as text6_5_,
+        blockresou0_.block as block7_5_ 
+    from
+        flea_market.resource blockresou0_ 
+    inner join
+        flea_market.category category1_ 
+            on blockresou0_.category_id=category1_.id 
+    where
+        blockresou0_.type=&apos;block&apos; 
+        and blockresou0_.resource_name=? 
+        and category1_.category_name=? 
+        and blockresou0_.price=222 limit ?
+Hibernate: 
+    select
+        blockresou0_.id as id2_5_,
+        blockresou0_.category_id as category8_5_,
+        blockresou0_.foto as foto3_5_,
+        blockresou0_.author as author9_5_,
+        blockresou0_.price as price4_5_,
+        blockresou0_.resource_name as resource5_5_,
+        blockresou0_.text as text6_5_,
+        blockresou0_.block as block7_5_ 
+    from
+        flea_market.resource blockresou0_ 
+    inner join
+        flea_market.category category1_ 
+            on blockresou0_.category_id=category1_.id 
+    where
+        blockresou0_.type=&apos;block&apos; 
+        and blockresou0_.resource_name=? 
+        and category1_.category_name=? 
+        and blockresou0_.price=222 limit ?
+</system-out>
   </testcase>
+  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkSaveEntity" time="0.012"/>
 </testsuite>

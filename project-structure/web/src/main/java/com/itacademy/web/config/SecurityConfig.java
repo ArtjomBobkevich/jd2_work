@@ -22,6 +22,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
+                .csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/person-delete").hasAuthority("Admin")
                 .antMatchers(/*"/add-heading-by-resource",*/ "/person-update", "/resource-delete",
@@ -29,6 +30,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().permitAll()
                 .and()
                 .formLogin()
+                .loginPage("/login")
+                .usernameParameter("login")
+                .passwordParameter("password")
+                .loginProcessingUrl("/login")
                 .defaultSuccessUrl("/resource")
                 .and()
                 .httpBasic()

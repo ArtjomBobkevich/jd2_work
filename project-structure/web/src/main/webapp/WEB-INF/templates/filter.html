@@ -5,29 +5,32 @@
     <title>Title</title>
 </head>
 <body>
+<div th:insert="~{fragments::language}">
+</div>
 <div class="container">
     <form th:action="@{/filter.html}" th:method="post">
         <div>
-            <span th:text="Resource ">Resource: </span>
+            <span th:text="#{filter.resource}">Resource: </span>
             <input type="text" name="resource">
         </div>
         <div>
-            <span th:text="Category ">Category: </span>
+            <span th:text="#{filter.category}">Category: </span>
             <input type="text" name="category">
         </div>
         <br>
         <div>
-            <span th:text="Price ">Price: </span>
+            <span th:text="#{filter.price}">Price: </span>
             <input type="number" name="price">
         </div>
         <div>
-            <span th:text="Limit ">Limit: </span>
+            <span th:text="#{filter.limit}">Limit: </span>
             <input type="number" name="limit" required placeholder="Limit">
         </div>
         <div>
-            <input type="submit" value="Validation">
+            <input type="submit" value="Filtering" >
         </div>
     </form>
 </div>
+<a href="/logout">выход</a>
 </body>
 </html>

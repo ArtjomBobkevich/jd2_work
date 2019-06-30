@@ -83,4 +83,5 @@ public class CategoryDaoTest {
         categoryDao.delete(category);
         assertEquals(0, categoryDao.getAll().size());
     }
+
 }

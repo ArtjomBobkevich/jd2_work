@@ -1,2 +1,7 @@
 com\itacademy\database\dao\PersonDaoTest.class
+com\itacademy\database\dao\CategoryDaoTest.class
+com\itacademy\database\dao\CommentDaoTest.class
+com\itacademy\database\dao\ResourceDaoTest.class
+com\itacademy\database\config\DatabaseConfigTest.class
+com\itacademy\database\dao\HeadingDaoTest.class
 com\itacademy\database\dao\RoleDaoTest.class

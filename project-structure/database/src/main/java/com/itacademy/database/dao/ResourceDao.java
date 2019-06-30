@@ -7,7 +7,6 @@ import com.itacademy.database.entity.Category_;
 import com.itacademy.database.entity.Count;
 import com.itacademy.database.entity.FilterDto;
 import com.itacademy.database.entity.Heading;
-import com.itacademy.database.entity.Person;
 import com.itacademy.database.entity.Resource;
 import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
@@ -19,7 +18,6 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Repository
 public class ResourceDao extends BaseDaoImpl<Long, BlockResource> {

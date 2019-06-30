@@ -1,4 +1,8 @@
-﻿SET SEARCH_PATH = flea_market;
+﻿CREATE DATABASE flea_market encoding='UTF8';
+
+\c flea_market;
+
+CREATE SCHEMA flea_market;
 
 CREATE TABLE person_role (
   id   BIGSERIAL PRIMARY KEY,

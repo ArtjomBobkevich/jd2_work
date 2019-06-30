@@ -25,10 +25,10 @@ public class PersonDao extends BaseDaoImpl<Long, Person> {
         person.getStoreBasketResources().add(resource);
     }
 
-    public List<Resource> allResourcesAtBasket (Person person) {
+    public List<Resource> allResourcesAtBasket(Person person) {
         List<Resource> allResources = new ArrayList<>();
         int sizeBasket = person.getStoreBasketResources().size();
-        for (int count=0; count<sizeBasket;count++) {
+        for (int count = 0; count < sizeBasket; count++) {
             allResources.add(person.getStoreBasketResources().get(count));
         }
         return allResources;
