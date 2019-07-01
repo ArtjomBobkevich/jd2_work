@@ -22,6 +22,7 @@ public class CreateNewPersonDto {
     private String password;
     private PersonRole personRole;
 
+
     public CreateNewPersonDto(String avatar, String login, Identification identification, Integer age, String mail, String password, PersonRole personRole) {
         this.avatar = avatar;
         this.login = login;

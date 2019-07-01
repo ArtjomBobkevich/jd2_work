@@ -24,7 +24,7 @@ public class CategoryServiceTest {
     public void save () {
         CreateCategoryDto createCategoryDto = CreateCategoryDto.builder()
                 .categoryName("test22")
-                .foto("test")
+                .foto("bung")
                 .build();
 
         categoryService.saveCategory(createCategoryDto);

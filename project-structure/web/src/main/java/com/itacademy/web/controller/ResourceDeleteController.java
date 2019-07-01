@@ -32,7 +32,7 @@ public class ResourceDeleteController {
         BlockResource blockResource = new BlockResource();
         blockResource.setId(resource.getId());
         blockResource.setResourceName("dsfsd");
-        blockResource.setFoto("sfs");
+        blockResource.setFoto("bung");
         blockResource.setCategory(category);
         blockResource.setPerson(person);
         blockResource.setPrice(222);

@@ -3,6 +3,7 @@ package com.itacademy.web.controller;
 import com.itacademy.database.entity.Identification;
 import com.itacademy.database.entity.PersonRole;
 import com.itacademy.service.dto.CreateNewPersonDto;
+import com.itacademy.service.dto.FileDto;
 import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.RoleService;
 import com.itacademy.service.util.UrlPath;
@@ -14,6 +15,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.io.IOException;
 
 @Controller
 @RequestMapping(UrlPath.PERSON_SAVE)
@@ -36,14 +39,16 @@ public class PersonSaveController {
     }
 
     @PostMapping
-    public String savePerson(CreateNewPersonDto createNewGenreDto, Identification identification, PersonRole personRole) {
+    public String savePerson(FileDto file, CreateNewPersonDto createNewGenreDto, Identification identification, PersonRole personRole) throws IOException {
 
+        System.out.println(file.getFile().getName());
+
+//        Resource
 
         createNewGenreDto.setPersonRole(personRole);
         createNewGenreDto.setIdentification(identification);
         createNewGenreDto.setPassword(new BCryptPasswordEncoder().encode(createNewGenreDto.getPassword()));
 
-        System.out.println(createNewGenreDto.getPassword());
         Long aLong = personService.savePerson(createNewGenreDto);
         return "redirect:/person-info?id=" + aLong;
     }

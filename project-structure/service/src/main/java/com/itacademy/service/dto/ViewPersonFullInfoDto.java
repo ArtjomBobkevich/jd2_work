@@ -21,6 +21,7 @@ public class ViewPersonFullInfoDto {
     private String password;
     private String personRole;
 
+
     public ViewPersonFullInfoDto(String avatar, String login, Identification identification, Integer age, String mail, String password, String personRole) {
         this.avatar = avatar;
         this.login = login;

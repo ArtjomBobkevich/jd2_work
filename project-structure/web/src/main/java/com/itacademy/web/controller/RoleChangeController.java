@@ -43,7 +43,7 @@ public class RoleChangeController {
         CreateNewPersonDto updatePerson = CreateNewPersonDto.builder()
                 .id(person.getId())
                 .avatar(person.getAvatar())
-                .login(person.getAvatar())
+                .login(person.getLogin())
                 .identification(person.getIdentification())
                 .age(person.getAge())
                 .mail(person.getMail())
