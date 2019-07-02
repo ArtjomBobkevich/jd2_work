@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = DatabaseConfigTest.class)
@@ -117,5 +118,23 @@ public class HeadingDaoTest {
         headingDao.save(heading);
         headingDao.delete(heading);
         assertEquals(0, headingDao.getAll().size());
+    }
+
+    @Test
+    public void checkFindByCategoryId() {
+        Category category = Category.builder()
+                .categoryName("test")
+                .fotoUrl("test")
+                .build();
+
+        categoryDao.save(category);
+
+        Heading heading = Heading.builder()
+                .headingName("test")
+                .category(category)
+                .build();
+
+        headingDao.save(heading);
+        assertNotNull(headingDao.findByCategoryId(category.getId()));
     }
 }

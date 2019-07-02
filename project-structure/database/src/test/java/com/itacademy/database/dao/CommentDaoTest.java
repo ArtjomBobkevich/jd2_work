@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = DatabaseConfigTest.class)
@@ -241,5 +242,85 @@ public class CommentDaoTest {
         commentDao.save(comment);
         commentDao.delete(comment);
         assertEquals(0, commentDao.getAll().size());
+    }
+
+    @Test
+    public void checkFindByResourceIdAndPersonId() {
+        Category category = Category.builder()
+                .categoryName("www")
+                .build();
+        categoryDao.save(category);
+
+        PersonRole role = PersonRole.builder()
+                .nameOfRole("test")
+                .build();
+        roleDao.save(role);
+        Person person = Person.builder()
+                .avatar("qwerqwe")
+                .login("1234")
+                .identification(Identification.builder()
+                        .firstName("qqq")
+                        .lastName("www")
+                        .build())
+                .age(2)
+                .mail("wqeq")
+                .password("222233")
+                .personRole(roleDao.get(1L).orElse(null))
+                .build();
+        personDao.save(person);
+        BlockResource resource = new BlockResource("test", "www",
+                categoryDao.get(1L).orElse(null),
+                personDao.get(1L).orElse(null),
+                222, "sss", "sdg");
+        resourceDao.save(resource);
+
+        Comment comment = Comment.builder()
+                .person(person)
+                .resource(resource)
+                .comment("test")
+                .build();
+        commentDao.save(comment);
+
+        assertNotNull( commentDao.findByResourceIdAndPersonId(1L, 1L));
+    }
+
+    @Test
+    public void checkFindByResourceId() {
+        Category category = Category.builder()
+                .categoryName("www")
+                .build();
+        categoryDao.save(category);
+
+        PersonRole role = PersonRole.builder()
+                .nameOfRole("test")
+                .build();
+        roleDao.save(role);
+        Person person = Person.builder()
+                .avatar("qwerqwe")
+                .login("1234")
+                .identification(Identification.builder()
+                        .firstName("qqq")
+                        .lastName("www")
+                        .build())
+                .age(2)
+                .mail("wqeq")
+                .password("222233")
+                .personRole(roleDao.get(1L).orElse(null))
+                .build();
+        personDao.save(person);
+        BlockResource resource = new BlockResource("test", "www",
+                categoryDao.get(1L).orElse(null),
+                personDao.get(1L).orElse(null),
+                222, "sss", "sdg");
+        resourceDao.save(resource);
+
+        Comment comment = Comment.builder()
+                .person(person)
+                .resource(resource)
+                .comment("test")
+                .build();
+        commentDao.save(comment);
+
+        assertNotNull( commentDao.findByResourceId(1L));
     }
 }

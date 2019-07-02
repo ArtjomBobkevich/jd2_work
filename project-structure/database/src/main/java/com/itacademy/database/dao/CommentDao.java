@@ -20,7 +20,7 @@ public class CommentDao extends BaseDaoImpl<Long, Comment> {
     public Comment findByResourceIdAndPersonId(Long resourceId, Long personId) {
 
         return getSessionFactory().getCurrentSession()
-                .createQuery("select c from Comment c join c.resource r on r.id = c.resource_id join c.person p on p.id = c.person_id where r.id= :resourceId and p.id= :personId", Comment.class)
+                .createQuery("select c from Comment c join c.resource r on r.id = c.id join c.person p on p.id = c.id where r.id= :resourceId and p.id= :personId", Comment.class)
                 .setParameter("resourceId", resourceId)
                 .setParameter("personId", personId)
                 .getResultList()

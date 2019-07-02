@@ -21,6 +21,8 @@ import java.util.List;
 
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = DatabaseConfigTest.class)
@@ -145,7 +147,6 @@ public class ResourceDaoTest {
     }
 
 
-
     @Test
     public void checkUpdate() {
         Category category = Category.builder()
@@ -243,7 +244,7 @@ public class ResourceDaoTest {
 
         personDao.save(person);
         BlockResource resource = new BlockResource("test", "www",
-                categoryDao.get(6L).orElse(null),
+                categoryDao.get(9L).orElse(null),
                 personDao.get(1L).orElse(null),
                 222, "sss", "sdg");
         resourceDao.save(resource);
@@ -303,5 +304,135 @@ public class ResourceDaoTest {
 
         System.out.println(blockResource.getHeadings().size());
         assertTrue(blockResource.getHeadings().size() > 0);
+    }
+
+    @Test
+    public void checkFindByHeading() {
+
+        Category category = Category.builder()
+                .categoryName("assf")
+                .build();
+
+        categoryDao.save(category);
+
+        Heading heading = Heading.builder()
+                .headingName("sfsf")
+                .category(category)
+                .build();
+
+        headingDao.save(heading);
+
+        PersonRole role = PersonRole.builder()
+                .nameOfRole("test")
+                .build();
+        roleDao.save(role);
+        Person person = Person.builder()
+                .avatar("qwerqwe")
+                .login("1234")
+                .identification(Identification.builder()
+                        .firstName("qqq")
+                        .lastName("www")
+                        .build())
+                .age(2)
+                .mail("wqeq")
+                .password("222233")
+                .personRole(roleDao.get(1L).orElse(null))
+                .build();
+
+        personDao.save(person);
+
+        Resource blockResource = new Resource("dsfsf", "sfsf", categoryDao.get(1L).orElse(null),
+                personDao.get(1L).orElse(null), 222, "dfg");
+
+        blockResource.setHeadings(new HashSet<>());
+
+        resourceDao.addHeading(heading, blockResource);
+
+
+        assertEquals(0, resourceDao.findByHeading(heading.getHeadingName()).size());
+    }
+
+    @Test
+    public void checkFindByResourceName() {
+
+        Category category = Category.builder()
+                .categoryName("assf")
+                .build();
+
+        categoryDao.save(category);
+
+        Heading heading = Heading.builder()
+                .headingName("sfsf")
+                .category(category)
+                .build();
+
+        headingDao.save(heading);
+
+        PersonRole role = PersonRole.builder()
+                .nameOfRole("test")
+                .build();
+        roleDao.save(role);
+        Person person = Person.builder()
+                .avatar("qwerqwe")
+                .login("1234")
+                .identification(Identification.builder()
+                        .firstName("qqq")
+                        .lastName("www")
+                        .build())
+                .age(2)
+                .mail("wqeq")
+                .password("222233")
+                .personRole(roleDao.get(1L).orElse(null))
+                .build();
+
+        personDao.save(person);
+
+        Resource blockResource = new Resource("dsfsf", "sfsf", categoryDao.get(1L).orElse(null),
+                personDao.get(1L).orElse(null), 222, "dfg");
+
+        assertNull(resourceDao.findByResourceName(blockResource.getResourceName()));
+    }
+
+    @Test
+    public void checkFindResourceByLogin() {
+
+        Category category = Category.builder()
+                .categoryName("assf")
+                .build();
+
+        categoryDao.save(category);
+
+        Heading heading = Heading.builder()
+                .headingName("sfsf")
+                .category(category)
+                .build();
+
+        headingDao.save(heading);
+
+        PersonRole role = PersonRole.builder()
+                .nameOfRole("test")
+                .build();
+        roleDao.save(role);
+        Person person = Person.builder()
+                .avatar("qwerqwe")
+                .login("1234")
+                .identification(Identification.builder()
+                        .firstName("qqq")
+                        .lastName("www")
+                        .build())
+                .age(2)
+                .mail("wqeq")
+                .password("222233")
+                .personRole(roleDao.get(1L).orElse(null))
+                .build();
+
+        personDao.save(person);
+
+        BlockResource blockResource = new BlockResource("dsfsf", "sfsf", categoryDao.get(1L).orElse(null),
+                personDao.get(1L).orElse(null), 222, "dfg","b");
+
+        resourceDao.save(blockResource);
+
+        assertNotNull(resourceDao.findResourceByLogin(person.getLogin()));
     }
 }
