@@ -8,6 +8,8 @@ import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.ResourceService;
 import com.itacademy.service.util.UrlPath;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -34,9 +36,13 @@ public class ResourceSaveController {
     }
 
     @PostMapping
-    public String saveResource(CreateResourceDto createResourceDto, Category category, Person person) {
+    public String saveResource(CreateResourceDto createResourceDto) {
 
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String login = authentication.getName();
+        Category category = categoryService.findById(createResourceDto.getId());
         createResourceDto.setCategory(category);
+        Person person = personService.findByLogin(login);
         createResourceDto.setPerson(person);
 
         Long aLong = resourceService.saveResource(createResourceDto);

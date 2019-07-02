@@ -15,21 +15,25 @@
 </div>
 <div class="container">
     <div th:each="comment: ${commentaries}">
+        <a>Комментарий: </a>
         <span th:text="${comment.comment}">Type</span><br>
+        <a>Автор: </a>
         <span th:text="${comment.person}">Type</span><br>
+        <div class="container">
+            <form th:action="@{/comment-delete}" th:method="post">
+                <div>
+                    <input type="hidden" name="commentId" th:value="${comment.id}">
+                </div>
+                <div>
+                    <input type="hidden" name="resourceId" th:value="${resource.id}">
+                </div>
+                <div>
+                    <input type="submit" value="DeleteComment">
+                </div>
+            </form>
+        </div>
         <a>-------------------------</a>
     </div>
-</div>
-</div>
-<div class="container">
-    <form th:action="@{/resource-info}" th:method="post">
-        <div>
-            <input type="hidden" name="resourceId" th:value="${resource.id}">
-        </div>
-        <div>
-            <input type="submit" value="add">
-        </div>
-    </form>
 </div>
 <div class="container">
     <form th:action="@{/comment-save}" th:method="post">
@@ -44,5 +48,18 @@
         </div>
     </form>
 </div>
+</div>
+<div class="container">
+    <form th:action="@{/resource-info}" th:method="post">
+        <div>
+            <input type="hidden" name="resourceId" th:value="${resource.id}">
+        </div>
+        <div>
+            <input type="submit" value="addToBasket">
+        </div>
+    </form>
+</div>
+<a href="view-store-basket">MyBasket</a><br>
+<a href="resource">Return to MainPage</a><br>
 </body>
 </html>

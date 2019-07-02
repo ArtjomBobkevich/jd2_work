@@ -7,6 +7,7 @@
 <body>
 <div th:each="resource: ${resources}">
     <span th:text="${resource.resourceName}">Type</span><br>
+    <a th:href="'resource-info?id='+${resource.id}">Подробности</a><br>
     <a>-------------------------</a>
 </div>
 </body>

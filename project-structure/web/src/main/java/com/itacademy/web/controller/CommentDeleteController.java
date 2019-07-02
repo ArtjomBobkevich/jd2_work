@@ -1,6 +1,7 @@
 package com.itacademy.web.controller;
 
 import com.itacademy.database.entity.Comment;
+import com.itacademy.service.dto.ByCommentSaveDto;
 import com.itacademy.service.service.CommentService;
 import com.itacademy.service.util.UrlPath;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,9 +25,10 @@ public class CommentDeleteController {
     }
 
     @PostMapping
-    public String deletePerson(Comment comment) {
+    public String deletePerson(ByCommentSaveDto commentSaveDto) {
 
+        Comment comment = commentService.findById(commentSaveDto.getCommentId());
         commentService.deleteComment(comment);
-        return "redirect:/commentaries";
+        return "redirect:/resource-info?id=" + commentSaveDto.getResourceId();
     }
 }

@@ -73,7 +73,7 @@ public class ResourceService {
         filterDto = new FilterDto(filterParametersDto.getResource(), filterParametersDto.getCategory(), filterParametersDto.getPrice());
 
         return resourceDao.findResourcesOrderByAuthor(filterDto, filterParametersDto.getOffset(), filterParametersDto.getLimit()).stream()
-                .map(it -> new ResourceFullDto(it.getResourceName(), it.getFoto(), it.getCategory().getCategoryName(),
+                .map(it -> new ResourceFullDto(it.getId(),it.getResourceName(), it.getFoto(), it.getCategory().getCategoryName(),
                         it.getPerson().getLogin(), it.getPrice(), it.getText(), it.getBlock()))
                 .collect(Collectors.toList());
     }
@@ -92,5 +92,12 @@ public class ResourceService {
 
     public Resource findByResourceName(String resourceName) {
         return resourceDao.findByResourceName(resourceName);
+    }
+
+    public List<ResourceFullDto> findResourceByLogin(String login) {
+        return resourceDao.findResourceByLogin(login).stream()
+                .map(it -> new ResourceFullDto(it.getId(),it.getResourceName(), it.getFoto(), it.getCategory().getCategoryName(),
+                        it.getPerson().getLogin(), it.getPrice(), it.getText()))
+                .collect(Collectors.toList());
     }
 }

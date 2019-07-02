@@ -23,14 +23,14 @@
                 </option>
             </select>
         </div>
-        <div>
-            <select name="id">
-                <option th:each="person: ${person}"
-                        th:text="${person.login}"
-                        th:value="${person.id}">Category
-                </option>
-            </select>
-        </div>
+        <!--<div>-->
+            <!--<select name="id">-->
+                <!--<option th:each="person: ${person}"-->
+                        <!--th:text="${person.login}"-->
+                        <!--th:value="${person.id}">Category-->
+                <!--</option>-->
+            <!--</select>-->
+        <!--</div>-->
         <div>
             <span th:text="Price ">Price: </span>
             <input type="number" name="price" required placeholder="Price">

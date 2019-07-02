@@ -32,7 +32,8 @@ import java.util.Set;
 @ToString(exclude = {"comments", "storeBasketPerson"})
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode(exclude = "id")
+//@EqualsAndHashCode(exclude = "id")
+@EqualsAndHashCode(of = "id")
 @Builder
 @Entity
 @Table(name = "resource", schema = "flea_market")
@@ -66,9 +67,9 @@ public class Resource implements BaseEntity<Long> {
     private String text;
 
     @Builder.Default
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "resource_heading", schema = "flea_market", joinColumns = @JoinColumn(name = "heading_id"),
-            inverseJoinColumns = @JoinColumn(name = "resource_id"))
+    @ManyToMany(cascade = CascadeType.PERSIST)
+    @JoinTable(name = "resource_heading", schema = "flea_market", joinColumns = @JoinColumn(name = "resource_id"),
+            inverseJoinColumns = @JoinColumn(name = "heading_id"))
     private Set<Heading> headings = new HashSet<>();
 
     @OneToMany(mappedBy = "resource")
@@ -87,9 +88,9 @@ public class Resource implements BaseEntity<Long> {
         this.text = text;
     }
 
-    public Resource(Set<Heading> headings) {
-        this.headings = headings;
-    }
+//    public Resource(Set<Heading> headings) {
+//        this.headings = headings;
+//    }
 
     public Resource(String resourceName, String foto, Category category, Person person, Integer price, String text) {
         this.resourceName = resourceName;

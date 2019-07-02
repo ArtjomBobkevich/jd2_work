@@ -6,7 +6,14 @@
 </head>
 <body>
 <div class="container">
+    <a>Category: </a>
     <span th:text="${category.categoryName}">category</span><br>
+    <div th:each="heading: ${headings}">
+        <a>Heading: </a>
+        <span th:text="${heading.headingName}">Type</span><br>
+        <a th:href="'find-by-heading-resource?heading='+${heading.headingName}">Search by heading </a><br>
+        <a>-------------------------</a>
+    </div>
 </div>
 </body>
 </html>

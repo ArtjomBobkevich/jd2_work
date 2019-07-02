@@ -26,6 +26,13 @@ public class HeadingService {
                 .collect(Collectors.toList());
     }
 
+    public List<HeadingFullDto> findByCategoryId(Long categoryId) {
+        return headingDao.findByCategoryId(categoryId).stream()
+                .map(it -> new HeadingFullDto(it.getId(), it.getHeadingName(), it.getCategory().getCategoryName()))
+                .collect(Collectors.toList());
+    }
+
+
     public HeadingFullDto findById(Long id) {
         return headingDao.get(id).map(it -> new HeadingFullDto(it.getId(), it.getHeadingName(), it.getCategory().getCategoryName())).orElse(null);
     }

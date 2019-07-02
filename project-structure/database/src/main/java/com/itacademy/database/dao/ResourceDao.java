@@ -108,4 +108,11 @@ public class ResourceDao extends BaseDaoImpl<Long, BlockResource> {
                 .findFirst()
                 .orElse(null);
     }
+
+    public  List<Resource> findResourceByLogin(String login) {
+        return getSessionFactory().getCurrentSession()
+                .createQuery("select r from Resource r join r.person p where p.login= :login", Resource.class)
+                .setParameter("login", login)
+                .list();
+    }
 }

@@ -1,9 +1,9 @@
 package com.itacademy.web.controller;
 
 import com.itacademy.database.entity.BlockResource;
-import com.itacademy.database.entity.Category;
-import com.itacademy.database.entity.Person;
 import com.itacademy.database.entity.Resource;
+import com.itacademy.service.service.CategoryService;
+import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.ResourceService;
 import com.itacademy.service.util.UrlPath;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +20,12 @@ public class ResourceDeleteController {
     @Autowired
     private ResourceService resourceService;
 
+    @Autowired
+    private CategoryService categoryService;
+
+    @Autowired
+    private PersonService personService;
+
     @GetMapping
     public String getPage(Model model) {
         model.addAttribute("resources", resourceService.findAll());
@@ -27,14 +33,14 @@ public class ResourceDeleteController {
     }
 
     @PostMapping
-    public String deletePerson(Resource resource, Person person, Category category) {
+    public String deletePerson(Resource resource) {
 
         BlockResource blockResource = new BlockResource();
         blockResource.setId(resource.getId());
         blockResource.setResourceName("dsfsd");
         blockResource.setFoto("bung");
-        blockResource.setCategory(category);
-        blockResource.setPerson(person);
+        blockResource.setCategory(categoryService.findById(1L));
+        blockResource.setPerson(personService.findByIdEntity(1L));
         blockResource.setPrice(222);
         blockResource.setText("sdf");
         blockResource.setBlock("dsgf");

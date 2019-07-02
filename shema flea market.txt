@@ -71,19 +71,19 @@ VALUES
   ('User'),
   ('Guest');
 
-INSERT INTO category (category_name,foto)
+INSERT INTO category (category_name,foto,version)
 VALUES
-  ('Телефоны. Смартфоны','image'),
-  ('Ноутбуки. Компьютеры.','image'),
-  ('Авто. Мото','image'),
-  ('Автозапчасти и Автоаксессуары','image'),
-  ('Дом','image'),
-  ('Строительство и ремонт','image'),
-  ('Женская одежда','image'),
-  ('Мужская одежда','image'),
-  ('Аксессуары','image'),
-  ('Фото. Аудио. Видео.','image'),
-  ('Прочее','image');
+  ('Телефоны. Смартфоны','image',0),
+  ('Ноутбуки. Компьютеры.','image',0),
+  ('Авто. Мото','image',0),
+  ('Автозапчасти и Автоаксессуары','image',0),
+  ('Дом','image',0),
+  ('Строительство и ремонт','image',0),
+  ('Женская одежда','image',0),
+  ('Мужская одежда','image',0),
+  ('Аксессуары','image',0),
+  ('Фото. Аудио. Видео.','image',0),
+  ('Прочее','image',0);
 
 INSERT INTO heading (heading_name, category_id)
 VALUES
@@ -158,10 +158,11 @@ VALUES
   ('Все остальное, что не вошло в другие категории', 11);
 
 
+
 INSERT INTO person (login,avatar, first_name, last_name, age, mail, password, role)
 VALUES
-  ('user','image', 'Ivan', 'Ivanov', 18, 'www@gmail.com', 'user', 2),
-  ('admin','image', 'Max', 'Faster', 16, 'ww2@gmail.com', 'admin', 1),
+  ('user','image', 'Ivan', 'Ivanov', 18, 'www@gmail.com', '$2a$10$hIQVyBU92i3uo4FCTPrPfuM5OP.DEusn13E9EOGVF6VCbh/ZdtKwq', 2),
+  ('admin','image', 'Max', 'Faster', 16, 'ww2@gmail.com', '$2a$10$uHOWtAxoeDoPtMtgmAgvAuegb4u1CMIOgjFg4Kv/.7uOr42N9hklO', 1),
   ('beast','image', 'Sveta', 'Nezabudka', 30, 'w3@gmail.com', 'beast', 1);
 
 INSERT INTO resource (resource_name, foto, category_id, author, price, text, block,type)

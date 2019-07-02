@@ -2,6 +2,7 @@ package com.itacademy.service.service;
 
 import com.itacademy.database.dao.CommentDao;
 import com.itacademy.database.entity.Comment;
+import com.itacademy.service.dto.ByCommentSaveDto;
 import com.itacademy.service.dto.CommentFullDto;
 import com.itacademy.service.dto.CreateCommentDto;
 import lombok.RequiredArgsConstructor;
@@ -33,6 +34,10 @@ public class CommentService  {
 
     public Comment findById(Long id) {
         return commentDao.get(id).orElse(null);
+    }
+
+    public Comment findByResourceIdAndPersonId(ByCommentSaveDto commentSaveDto) {
+        return commentDao.findByResourceIdAndPersonId(commentSaveDto.getResourceId(),commentSaveDto.getPersonId());
     }
 
     @Transactional

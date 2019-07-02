@@ -8,6 +8,7 @@
 <div class="container">
     <div th:each="category: ${categories}">
         <span th:text="${category.categoryName}">Type</span><br>
+        <a th:href="'category-info?id='+${category.id}">Подробнее</a><br>
         <a>-------------------------</a>
     </div>
 </div>

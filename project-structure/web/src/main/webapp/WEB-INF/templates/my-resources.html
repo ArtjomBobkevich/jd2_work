@@ -11,11 +11,19 @@
     <span th:text="${resource.person}">Type</span><br>
     <span th:text="${resource.price}">Type</span><br>
     <span th:text="${resource.text}">Type</span><br>
+
     <a th:href="'resource-info?id='+${resource.id}">Подробности</a><br>
+    <div class="container">
+        <form th:action="@{/resource-delete}" th:method="post">
+            <div>
+                <input type="hidden" name="id" th:value="${resource.id}">
+            </div>
+            <div>
+                <input type="submit" value="DeleteResource">
+            </div>
+        </form>
+    </div>
     <a>-------------------------</a>
 </div>
-<a href="my-home-page">HomePage</a><br>
-<a href="category">Category</a><br>
-<a href="filter">Filter</a><br>
 </body>
 </html>

@@ -1,6 +1,7 @@
 package com.itacademy.web.controller;
 
 import com.itacademy.service.service.CategoryService;
+import com.itacademy.service.service.HeadingService;
 import com.itacademy.service.util.UrlPath;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,9 +17,13 @@ public class CategoryInfoController {
     @Autowired
     private CategoryService categoryService;
 
+    @Autowired
+    private HeadingService headingService;
+
     @GetMapping
     public String getPage(Model model, @RequestParam("id") Long id) {
         model.addAttribute("category", categoryService.findById(id));
+        model.addAttribute("headings", headingService.findByCategoryId(id));
         return "category-info";
     }
 }

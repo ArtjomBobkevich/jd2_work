@@ -16,7 +16,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
@@ -28,7 +27,8 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@EqualsAndHashCode(exclude = "id")
+//@EqualsAndHashCode(exclude = "id")
+@EqualsAndHashCode(of = "id")
 @Entity
 @Table(name = "heading", schema = "flea_market")
 @Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = "headings")
@@ -45,9 +45,9 @@ public class Heading implements BaseEntity<Long> {
     @JoinColumn(name = "category_id")
     private Category category;
 
-    @ManyToMany(cascade = CascadeType.PERSIST)
-    @JoinTable(name = "resource_heading", schema = "flea_market", joinColumns = @JoinColumn(name = "resource_id"),
-            inverseJoinColumns = @JoinColumn(name = "heading_id"))
+    @ManyToMany(mappedBy = "headings",cascade = CascadeType.PERSIST)
+//    @JoinTable(name = "resource_heading", schema = "flea_market", joinColumns = @JoinColumn(name = "heading_id"),
+//            inverseJoinColumns = @JoinColumn(name = "resource_id"))
     private Set<Resource> resources = new HashSet<>();
 
     public Heading(Long id, String headingName, Category category) {

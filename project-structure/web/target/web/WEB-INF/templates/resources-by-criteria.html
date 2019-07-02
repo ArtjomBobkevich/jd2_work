@@ -11,6 +11,7 @@
     <span th:text="${resource.person}">Type</span><br>
     <span th:text="${resource.price}">Type</span><br>
     <span th:text="${resource.text}">Type</span><br>
+    <a th:href="'resource-info?id='+${resource.id}">Подробности</a><br>
     <a>------------------------------------------</a>
 </div>
 <a th:each="CountDto: ${countPages}">
