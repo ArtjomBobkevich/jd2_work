@@ -16,8 +16,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.io.IOException;
-
 @Controller
 @RequestMapping(UrlPath.PERSON_SAVE)
 public class PersonSaveController {
@@ -39,11 +37,11 @@ public class PersonSaveController {
     }
 
     @PostMapping
-    public String savePerson(FileDto file, CreateNewPersonDto createNewGenreDto, Identification identification, PersonRole personRole) throws IOException {
+    public String savePerson(FileDto file, CreateNewPersonDto createNewGenreDto, Identification identification, PersonRole personRole) {
 
         System.out.println(file.getFile().getName());
 
-//        Resource
+        /*посмотреть реализации записи директорию */
 
         createNewGenreDto.setPersonRole(personRole);
         createNewGenreDto.setIdentification(identification);

@@ -8,6 +8,8 @@ import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.ResourceService;
 import com.itacademy.service.util.UrlPath;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,17 +32,19 @@ public class CommentSaveController {
     @GetMapping
     public String getPage(Model model) {
 
-        model.addAttribute("personList", personService.findAll());
+        /*model.addAttribute("personList", personService.findAll());*/
         model.addAttribute("resources", resourceService.findAll());
         return "comment-save";
     }
 
     @PostMapping
     public String saveComment(ByCommentSaveDto saveDto, Comment comment) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
+        String login = authentication.getName();
         resourceService.findById(saveDto.getResourceId());
 
-        comment.setPerson(personService.findByIdEntity(saveDto.getPersonId()));
+        comment.setPerson(personService.findByLogin(login));
         comment.setResource(resourceService.findByIdEntity(saveDto.getResourceId()));
 
         CreateCommentDto newComment = CreateCommentDto.builder()
@@ -50,6 +54,6 @@ public class CommentSaveController {
                 .build();
 
         commentService.saveComment(newComment);
-        return "redirect:/commentaries";
+        return "redirect:/resource-info?id="+saveDto.getResourceId();
     }
 }

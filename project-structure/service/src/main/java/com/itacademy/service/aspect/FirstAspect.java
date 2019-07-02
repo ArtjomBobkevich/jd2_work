@@ -26,6 +26,10 @@ public class FirstAspect {
         //Выключение логирования параметров
         descLogger = Logger.getLogger("org.hibernate.type.descriptor.sql.BasicBinder");
         descLogger.setLevel(Level.INFO);
+
         return res;
+
+        /*возможно сделать метод void там повырывать что то из метода и самому в какой то файл сливать*/
     }
+
 }

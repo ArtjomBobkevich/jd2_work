@@ -16,8 +16,10 @@
 <div class="container">
     <div th:each="comment: ${commentaries}">
         <span th:text="${comment.comment}">Type</span><br>
+        <span th:text="${comment.person}">Type</span><br>
         <a>-------------------------</a>
     </div>
+</div>
 </div>
 <div class="container">
     <form th:action="@{/resource-info}" th:method="post">
@@ -26,6 +28,19 @@
         </div>
         <div>
             <input type="submit" value="add">
+        </div>
+    </form>
+</div>
+<div class="container">
+    <form th:action="@{/comment-save}" th:method="post">
+        <div>
+            <input type="hidden" name="resourceId" th:value="${resource.id}">
+        </div>
+        <div>
+            <input type="text" name="comment">
+        </div>
+        <div>
+            <input type="submit" value="addComment">
         </div>
     </form>
 </div>

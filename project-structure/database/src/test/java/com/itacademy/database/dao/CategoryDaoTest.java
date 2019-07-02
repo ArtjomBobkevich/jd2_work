@@ -23,7 +23,6 @@ public class CategoryDaoTest {
     @Test
     public void checkSaveEntity() {
 
-
         Category category = Category.builder()
                 .categoryName("test")
                 .fotoUrl("test")
