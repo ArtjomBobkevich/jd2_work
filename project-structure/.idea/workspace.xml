@@ -7,18 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14420e3e-9432-4664-ba21-80c76cbed398" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/database/src/test/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/CategoryServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/CategoryServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/CommentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/CommentServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/HeadingServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/HeadingServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/PersonServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/PersonServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/ResourceServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/ResourceServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/RoleServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/RoleServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/PersonSaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/PersonSaveController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/target/test-classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/database/target/test-classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/aspect/FirstAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/aspect/FirstAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/database-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/database-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,46 +57,33 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="flea_market: database" type="6d9b600a:PostgresImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="flea_market: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="flea_market: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="flea_market: schema" type="a16502c0:PostgresImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="flea_market@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="flea_market: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="flea_market: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FirstAspect.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/aspect/FirstAspect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -133,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/person-save.html" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/PersonSaveController.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/BCryptMain.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/config/SecurityConfig.java" />
@@ -176,7 +159,6 @@
         <option value="$PROJECT_DIR$/database/src/test/java/com/itacademy/database/dao/ResourceDaoTest.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5d4e0163-b01d-499c-8033-916efeda6f36/console.sql" />
         <option value="$PROJECT_DIR$/database/src/test/resources/application.properties" />
-        <option value="$PROJECT_DIR$/database/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/CategoryServiceTest.java" />
         <option value="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/UserServiceTest.java" />
         <option value="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/PersonServiceTest.java" />
@@ -184,6 +166,8 @@
         <option value="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/ResourceServiceTest.java" />
         <option value="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/CommentServiceTest.java" />
         <option value="$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/HeadingServiceTest.java" />
+        <option value="$PROJECT_DIR$/database/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/aspect/FirstAspect.java" />
       </list>
     </option>
   </component>
@@ -276,8 +260,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -323,66 +307,6 @@
             <path>
               <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -414,6 +338,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-structure" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="aspect" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -430,7 +364,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/hibernate-intro (4)/hibernate-intro" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/aop-lesson-starter/aop-lesson-starter/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -484,7 +418,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HeadingServiceTest.getById">
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -849,7 +783,8 @@
       <workItem from="1561990298900" duration="25000" />
       <workItem from="1561992022864" duration="10356000" />
       <workItem from="1562055648640" duration="21237000" />
-      <workItem from="1562095175274" duration="4777000" />
+      <workItem from="1562095175274" duration="5020000" />
+      <workItem from="1562160660573" duration="2510000" />
     </task>
     <task id="LOCAL-00001" summary="test github by idea">
       <created>1560170806703</created>
@@ -942,7 +877,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562073371225</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="service test 30%">
+      <created>1562100078394</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1562100078395</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -978,10 +920,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="724410000" />
+    <option name="totallyTimeSpent" value="727163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5021962" side_tool="true" weight="0.2761905" />
@@ -990,7 +933,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32987747" />
       <window_info id="Capture Tool" order="8" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="5" sideWeight="0.4987245" visible="true" weight="0.25768667" />
+      <window_info anchor="right" id="Database" order="5" sideWeight="0.4987245" visible="true" weight="0.21303074" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -1001,23 +944,23 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978038" visible="true" weight="0.20793651" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32987747" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4978038" visible="true" weight="0.33492064" />
       <window_info anchor="bottom" id="Spring" order="14" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32799247" />
-      <window_info anchor="bottom" id="Database Console" order="14" sideWeight="0.49947917" weight="0.23174603" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24816984" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24816984" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Persistence" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32799247" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Persistence" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="14" sideWeight="0.49947917" weight="0.23174603" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.50127554" side_tool="true" weight="0.1609375" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32799247" />
+      <window_info anchor="right" id="Coverage" order="9" sideWeight="0.50127554" side_tool="true" weight="0.1609375" />
     </layout>
     <layout-to-restore>
       <window_info id="Persistence" order="6" side_tool="true" />
@@ -1111,7 +1054,8 @@
     <MESSAGE value="optimistic don`t work + cache don`t work+" />
     <MESSAGE value="optimistic work! logging not all + cache don`t work all testDao + 1 testService" />
     <MESSAGE value="web - 50%" />
-    <option name="LAST_COMMIT_MESSAGE" value="web - 50%" />
+    <MESSAGE value="service test 30%" />
+    <option name="LAST_COMMIT_MESSAGE" value="service test 30%" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1229,23 +1173,6 @@ System.out.println(resource.getId());</expression-string>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/src/main/java/com/itacademy/database/entity/Heading.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/MyResourcesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category-info.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1423,13 +1350,6 @@ System.out.println(resource.getId());</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/src/test/java/com/itacademy/service/service/UserServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1517,12 +1437,6 @@ System.out.println(resource.getId());</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="65" selection-end-column="5" />
-          <folding>
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1532#1533#0" expanded="true" />
-            <element signature="e#1594#1595#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1530,12 +1444,6 @@ System.out.println(resource.getId());</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-          <folding>
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#870#871#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1550,10 +1458,6 @@ System.out.println(resource.getId());</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="62" column="5" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="62" selection-end-column="5" />
-          <folding>
-            <element signature="e#1538#1539#0" expanded="true" />
-            <element signature="e#1600#1601#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1575,10 +1479,6 @@ System.out.println(resource.getId());</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
-          <folding>
-            <element signature="e#1693#1694#0" expanded="true" />
-            <element signature="e#1757#1758#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1586,11 +1486,29 @@ System.out.println(resource.getId());</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/net/SocksSocketImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="391" selection-start-line="391" selection-end-line="391" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/aspect/FirstAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
           <folding>
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#1694#1695#0" expanded="true" />
-            <element signature="e#1590#1591#0" expanded="true" />
-            <element signature="e#1653#1654#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
