@@ -31,7 +31,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/add-heading-by-resource","/category","/category-info",
                         "/comment-delete","/comment-info","/comment-save",
                         "/comment-update","/filter","/find-by-heading-resource","/heading",
-                        "/heading-info","/person-save",
+                        "/heading-info",
                         "/person-update","/resource","/resource-delete","/resource-info","/resource-save","/resource-update",
                         "/resources-by-criteria","/search-by-heading","/view-store-basket").hasAnyAuthority("User","Admin")
                 .anyRequest().permitAll()
