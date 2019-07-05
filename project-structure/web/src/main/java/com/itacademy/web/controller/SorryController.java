@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class SorryController {
 
     @GetMapping
-    public String getPage () {
+    public String getPage() {
         return "sorry";
     }
 }

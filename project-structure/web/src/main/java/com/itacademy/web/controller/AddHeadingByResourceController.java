@@ -43,6 +43,7 @@ public class AddHeadingByResourceController {
     @PostMapping
     public String saveHeadingByResource(HeadingAddDto headingAddDto, ResourceAddDto resourceAddDto) {
 
+        double magicNumber = Math.random();
         CreateResourceDto createResourceDto = CreateResourceDto.builder()
                 .id(resourceAddDto.getResourceId())
                 .resourceName("bung")
@@ -60,14 +61,14 @@ public class AddHeadingByResourceController {
                                 .build())
                         .avatar("bung")
                         .mail("bung")
-                        .age(222)
+                        .age((int) magicNumber)
                         .password("bung")
                         .personRole(PersonRole.builder()
                                 .id(1L)
                                 .nameOfRole("bung")
                                 .build())
                         .build())
-                .price(222)
+                .price((int) magicNumber)
                 .text("bung")
                 .block("bung")
                 .build();

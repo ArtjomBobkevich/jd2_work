@@ -77,7 +77,7 @@ public class PersonDaoTest {
                 .build();
 
         personDao.save(person);
-        assertTrue(personDao.get(1L).isPresent());
+        assertNotNull(personDao.get(1L));
     }
 
     @Test

@@ -28,7 +28,7 @@ public class ViewStoreBasketController {
     private ResourceService resourceService;
 
     @GetMapping
-    public String getPage (Model model) {
+    public String getPage(Model model) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
         String login = authentication.getName();
@@ -37,7 +37,7 @@ public class ViewStoreBasketController {
     }
 
     @PostMapping
-    public String deleteLot (ResourceAddDto resourceAddDto) {
+    public String deleteLot(ResourceAddDto resourceAddDto) {
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String login = authentication.getName();

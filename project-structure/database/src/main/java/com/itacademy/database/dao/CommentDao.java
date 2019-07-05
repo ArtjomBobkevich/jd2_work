@@ -1,7 +1,6 @@
 package com.itacademy.database.dao;
 
 import com.itacademy.database.entity.Comment;
-import com.itacademy.database.entity.Person;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

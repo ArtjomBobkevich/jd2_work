@@ -18,8 +18,8 @@ public class RoleService {
 
     private final RoleDao roleDao;
 
-    public List<RoleFullDto> getAll () {
-        return roleDao.getAll().stream().map(it->new RoleFullDto(it.getId(),it.getNameOfRole())).collect(Collectors.toList());
+    public List<RoleFullDto> getAll() {
+        return roleDao.getAll().stream().map(it -> new RoleFullDto(it.getId(), it.getNameOfRole())).collect(Collectors.toList());
     }
 
     public PersonRole findById(Long id) {

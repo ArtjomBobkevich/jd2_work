@@ -18,14 +18,14 @@ public class SearchResourceByHeadingController {
     private HeadingService headingService;
 
     @GetMapping
-    public String getPage (Model model) {
-        model.addAttribute("headings",headingService.findAll());
+    public String getPage(Model model) {
+        model.addAttribute("headings", headingService.findAll());
         return "search-by-heading";
     }
 
     @PostMapping
-    public String search (Heading heading) {
+    public String search(Heading heading) {
 
-        return "redirect:/find-by-heading-resource?heading="+heading.getHeadingName();
+        return "redirect:/find-by-heading-resource?heading=" + heading.getHeadingName();
     }
 }

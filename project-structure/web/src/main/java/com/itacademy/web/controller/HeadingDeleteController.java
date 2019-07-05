@@ -18,13 +18,13 @@ public class HeadingDeleteController {
     private HeadingService headingService;
 
     @GetMapping
-    public String getPage (Model model) {
+    public String getPage(Model model) {
         model.addAttribute("headings", headingService.findAll());
         return "heading-delete";
     }
 
     @PostMapping
-    public String deleteHeading (Heading heading) {
+    public String deleteHeading(Heading heading) {
         heading.setHeadingName("bung");
         headingService.deleteHeading(heading);
         return "redirect:/heading";

@@ -28,8 +28,10 @@ public class PersonDeleteController {
     @PostMapping
     public String deletePerson(Person person) {
 
+        double magicNumber = Math.random();
+
         person.setLogin("bung");
-        person.setAge(222);
+        person.setAge((int) magicNumber);
         person.setIdentification(Identification.builder()
                 .lastName("bung")
                 .firstName("bung")

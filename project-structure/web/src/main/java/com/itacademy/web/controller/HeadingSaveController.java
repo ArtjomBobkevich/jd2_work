@@ -23,14 +23,14 @@ public class HeadingSaveController {
     private CategoryService categoryService;
 
     @GetMapping
-    public String getPage (Model model) {
+    public String getPage(Model model) {
         model.addAttribute("headings", headingService.findAll());
         model.addAttribute("categories", categoryService.findAll());
         return "heading-save";
     }
 
     @PostMapping
-    public String saveHeading (HeadingBySaveCategoryDto heading) {
+    public String saveHeading(HeadingBySaveCategoryDto heading) {
 
         CreateHeadingDto createHeadingDto = CreateHeadingDto.builder()
                 .headingName(heading.getHeadingName())

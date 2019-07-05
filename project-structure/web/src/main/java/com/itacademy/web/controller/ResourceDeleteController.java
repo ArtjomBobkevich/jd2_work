@@ -35,13 +35,15 @@ public class ResourceDeleteController {
     @PostMapping
     public String deletePerson(Resource resource) {
 
+        double magicNumber = Math.random();
+
         BlockResource blockResource = new BlockResource();
         blockResource.setId(resource.getId());
         blockResource.setResourceName("dsfsd");
         blockResource.setFoto("bung");
         blockResource.setCategory(categoryService.findById(1L));
         blockResource.setPerson(personService.findByIdEntity(1L));
-        blockResource.setPrice(222);
+        blockResource.setPrice((int) magicNumber);
         blockResource.setText("sdf");
         blockResource.setBlock("dsgf");
 

@@ -54,6 +54,6 @@ public class CommentSaveController {
                 .build();
 
         commentService.saveComment(newComment);
-        return "redirect:/resource-info?id="+saveDto.getResourceId();
+        return "redirect:/resource-info?id=" + saveDto.getResourceId();
     }
 }

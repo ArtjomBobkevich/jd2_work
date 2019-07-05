@@ -59,4 +59,5 @@ public class DatabaseConfig {
     public HibernateTransactionManager transactionManager(SessionFactory sessionFactory) {
         return new HibernateTransactionManager(sessionFactory);
     }
+
 }

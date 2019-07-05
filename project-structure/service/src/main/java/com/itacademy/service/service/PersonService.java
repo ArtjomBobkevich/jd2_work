@@ -91,10 +91,10 @@ public class PersonService {
                 resourceDao.get(createResourceDto.getId()).orElse(null));
     }
 
-    public List<ResourceFullDto> allResourcesAtBasket (String login) {
+    public List<ResourceFullDto> allResourcesAtBasket(String login) {
 
         return personDao.allResourcesAtBasket(personDao.findByName(login)).stream()
-                .map(it->new ResourceFullDto(it.getId(), it.getResourceName(), it.getFoto(), it.getCategory().getCategoryName(),
+                .map(it -> new ResourceFullDto(it.getId(), it.getResourceName(), it.getFoto(), it.getCategory().getCategoryName(),
                         it.getPerson().getLogin(), it.getPrice(), it.getText())).collect(Collectors.toList());
     }
 }

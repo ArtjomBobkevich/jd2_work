@@ -16,7 +16,7 @@ public class CommentariesController {
     private CommentService commentService;
 
     @GetMapping
-    public String getPage (Model model) {
+    public String getPage(Model model) {
         model.addAttribute("commentaries", commentService.findAll());
         return "commentaries";
     }

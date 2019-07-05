@@ -29,7 +29,7 @@ public class PersonSaveController {
     @Autowired
     private PersonService personService;
 
-    private  String fileName ;
+    private String fileName;
 
     @ModelAttribute()
     public void setPersonRole(Model model) {
@@ -37,7 +37,7 @@ public class PersonSaveController {
     }
 
 
-    public void uploadFile( File file) {
+    public void uploadFile(File file) {
 
 //        String name = null;
 //
@@ -85,7 +85,7 @@ public class PersonSaveController {
         file = (MultipartFile) file2.getFile();
 
 //        uploadFile(file);
-        createNewGenreDto.setAvatar("d:/1/"+file2.getFile().getName());
+        createNewGenreDto.setAvatar("d:/1/" + file2.getFile().getName());
         createNewGenreDto.setPersonRole(personRole);
         createNewGenreDto.setIdentification(identification);
         createNewGenreDto.setPassword(new BCryptPasswordEncoder().encode(createNewGenreDto.getPassword()));

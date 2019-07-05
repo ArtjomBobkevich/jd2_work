@@ -5,13 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-<!--<img alt="Image" th:src="${person.avatar}" width="250" height="250"/> <br>-->
-<img  th:src="${file.file}" width="250" height="250"/> <br>
-<img src="/../../../../../1/2.jpg">Type<br>
+<img alt="Image" th:src="${person.avatar}" width="250" height="250"/> <br>
+<!--<img  th:src="${file.file}" width="250" height="250"/> <br>-->
+<!--<img th:file="${file}" >Type<br>-->
+<!--<img src="file:///D:/GitHub/apache-tomcat-9.0.17/webapps/manager/3.jpg">Type<br>-->
 <span th:text="${person.login}">Type</span><br>
 <span th:text="${person.identification}">Type</span><br>
 <span th:text="${person.age}">Type</span><br>
 <span th:text="${person.mail}">Type</span><br>
 <span th:text="${person.personRole}">Type</span><br>
+<a href="/login">Регистрация</a><br>
 </body>
 </html>

@@ -24,14 +24,14 @@ public class HeadingUpdateController {
     private CategoryService categoryService;
 
     @GetMapping
-    public String getPage (Model model) {
+    public String getPage(Model model) {
         model.addAttribute("headings", headingService.findAll());
-        model.addAttribute("categories",categoryService.findAll());
+        model.addAttribute("categories", categoryService.findAll());
         return "heading-update";
     }
 
     @PostMapping
-    public String updateHeading (CreateHeadingDto heading, HeadingUpdateDto categoryId) {
+    public String updateHeading(CreateHeadingDto heading, HeadingUpdateDto categoryId) {
 
         Category category = categoryService.findById(categoryId.getCategoryId());
 

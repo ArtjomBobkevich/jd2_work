@@ -11,6 +11,7 @@ public class HomePageController {
 
     @GetMapping
     public String getPage() {
+
         return "my-home-page";
     }
 }

@@ -40,8 +40,25 @@ public class FilterController {
         int constLimit = filter.getLimit();
         filter.setConstLimit(constLimit);
 
-        return "redirect:/resources-by-criteria?resource=" + filter.getResource() + "&category=" +
-                filter.getCategory() + "&price=" + filter.getPrice() + "&offset=" + filter.getOffset() +
-                "&limit=" + filter.getLimit() + "&constLimit=" + filter.getConstLimit() + "&page=" + 1 + "&prevPage=" + 1;
+//        byte[] ptext = filter.getCategory().getBytes();
+//        String value = new String(ptext, UTF_8);
+
+
+        return "redirect:/resources-by-criteria?resource="
+                + filter.getResource()
+                + "&category="
+                + filter.getCategory()
+                + "&price="
+                + filter.getPrice()
+                + "&offset="
+                + filter.getOffset()
+                + "&limit="
+                + filter.getLimit()
+                + "&constLimit="
+                + filter.getConstLimit()
+                + "&page="
+                + 1
+                + "&prevPage="
+                + 1;
     }
 }

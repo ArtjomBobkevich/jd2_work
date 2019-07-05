@@ -18,7 +18,7 @@ import java.util.List;
 @RequestMapping(UrlPath.CATEGORY_DELETE)
 public class CategoryDeleteController {
 
-    private static List <CategoryFullDto> allCategory = new ArrayList<>();
+    private static List<CategoryFullDto> allCategory = new ArrayList<>();
 
     @Autowired
     private CategoryService categoryService;
@@ -31,7 +31,7 @@ public class CategoryDeleteController {
     }
 
     @PostMapping
-    public String deleteHeading (Category category) {
+    public String deleteHeading(Category category) {
         allCategory.size();
 
         for (CategoryFullDto checkDto : allCategory) {

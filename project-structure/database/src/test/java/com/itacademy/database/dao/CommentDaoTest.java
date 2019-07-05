@@ -281,7 +281,7 @@ public class CommentDaoTest {
                 .build();
         commentDao.save(comment);
 
-        assertNotNull( commentDao.findByResourceIdAndPersonId(1L, 1L));
+        assertNotNull( commentDao.findByResourceIdAndPersonId(7L, 7L));
     }
 
     @Test

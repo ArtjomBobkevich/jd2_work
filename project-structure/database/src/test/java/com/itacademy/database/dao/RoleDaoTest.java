@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = DatabaseConfigTest.class)
@@ -35,7 +36,7 @@ public class RoleDaoTest {
                 .nameOfRole("test")
                 .build();
         roleDao.save(role);
-        assertTrue(roleDao.get(1L).isPresent());
+        assertNotNull(roleDao.get(1L));
     }
 
     @Test

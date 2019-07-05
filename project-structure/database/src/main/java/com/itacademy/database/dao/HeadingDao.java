@@ -1,7 +1,6 @@
 package com.itacademy.database.dao;
 
 import com.itacademy.database.entity.Heading;
-import com.itacademy.database.entity.Resource;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

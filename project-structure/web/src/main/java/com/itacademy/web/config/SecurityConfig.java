@@ -24,16 +24,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/person-delete","/category-delete",
-                        "/category-save","/category-update","/change-person-role","/commentaries","/heading-delete",
-                        "/heading-save","/heading-update","/person","/person-info",
+                .antMatchers("/person-delete", "/category-delete",
+                        "/category-save", "/category-update", "/change-person-role", "/commentaries", "/heading-delete",
+                        "/heading-save", "/heading-update", "/person", "/person-info",
                         "roles").hasAuthority("Admin")
-                .antMatchers("/add-heading-by-resource","/category","/category-info",
-                        "/comment-delete","/comment-info","/comment-save",
-                        "/comment-update","/filter","/find-by-heading-resource","/heading",
+                .antMatchers("/add-heading-by-resource", "/category", "/category-info",
+                        "/comment-delete", "/comment-info", "/comment-save",
+                        "/comment-update", "/filter", "/find-by-heading-resource", "/heading",
                         "/heading-info",
-                        "/person-update","/resource","/resource-delete","/resource-info","/resource-save","/resource-update",
-                        "/resources-by-criteria","/search-by-heading","/view-store-basket").hasAnyAuthority("User","Admin")
+                        "/person-update", "/resource", "/resource-delete", "/resource-info", "/resource-save", "/resource-update",
+                        "/resources-by-criteria", "/search-by-heading", "/view-store-basket").hasAnyAuthority("User", "Admin")
                 .anyRequest().permitAll()
                 .and()
                 .formLogin()

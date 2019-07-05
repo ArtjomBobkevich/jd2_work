@@ -24,9 +24,9 @@ public class CategorySaveController {
     }
 
     @PostMapping
-    public String saveCategory (CreateCategoryDto category) {
+    public String saveCategory(CreateCategoryDto category) {
 
         Long id = categoryService.saveCategory(category);
-        return "redirect:/category-info?id=" +id;
+        return "redirect:/category-info?id=" + id;
     }
 }

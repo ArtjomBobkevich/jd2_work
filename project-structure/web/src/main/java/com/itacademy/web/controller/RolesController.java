@@ -16,8 +16,8 @@ public class RolesController {
     private RoleService roleService;
 
     @GetMapping
-    public String getPage (Model model) {
-        model.addAttribute("roles",roleService.getAll());
+    public String getPage(Model model) {
+        model.addAttribute("roles", roleService.getAll());
         return "roles";
     }
 }

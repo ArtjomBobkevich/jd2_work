@@ -19,7 +19,7 @@ import java.util.List;
 @RequestMapping(UrlPath.CATEGORY_UPDATE)
 public class CategoryUpdateController {
 
-    private static List <CategoryFullDto> allCategory = new ArrayList<>();
+    private static List<CategoryFullDto> allCategory = new ArrayList<>();
 
     @Autowired
     private CategoryService categoryService;
@@ -33,7 +33,7 @@ public class CategoryUpdateController {
     }
 
     @PostMapping
-    public String updateCategory (CreateCategoryDto category) {
+    public String updateCategory(CreateCategoryDto category) {
 
         allCategory.size();
 

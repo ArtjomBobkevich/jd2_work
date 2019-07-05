@@ -45,7 +45,7 @@ public class Heading implements BaseEntity<Long> {
     @JoinColumn(name = "category_id")
     private Category category;
 
-    @ManyToMany(mappedBy = "headings",cascade = CascadeType.PERSIST)
+    @ManyToMany(mappedBy = "headings", cascade = CascadeType.PERSIST)
 //    @JoinTable(name = "resource_heading", schema = "flea_market", joinColumns = @JoinColumn(name = "heading_id"),
 //            inverseJoinColumns = @JoinColumn(name = "resource_id"))
     private Set<Resource> resources = new HashSet<>();
