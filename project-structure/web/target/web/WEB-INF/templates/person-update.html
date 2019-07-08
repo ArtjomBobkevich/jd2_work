@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -7,7 +8,7 @@
 <body>
 <div class="container">
     <form th:action="@{/person-update}" th:method="post">
-        <div>
+        <div sec:authorize-url = "/person-delete">
             <select name="id">
                 <option th:each="person: ${loginList}"
                         th:text="${person.login}"
@@ -47,7 +48,7 @@
             <input type="hidden" name="nameOfRole" value="${personRole.nameOfRole}">
         </div>
         <div>
-            <input type="submit" value="delete">
+            <input type="submit" value="update">
         </div>
     </form>
 </div>

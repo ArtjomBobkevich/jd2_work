@@ -82,7 +82,7 @@ public class PersonSaveController {
     @PostMapping
     public String savePerson(FileDto file2, MultipartFile file, CreateNewPersonDto createNewGenreDto, Identification identification, PersonRole personRole) {
 
-        file = (MultipartFile) file2.getFile();
+//        file = (MultipartFile) file2.getFile();
 
 //        uploadFile(file);
         createNewGenreDto.setAvatar("d:/1/" + file2.getFile().getName());

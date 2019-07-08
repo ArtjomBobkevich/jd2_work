@@ -45,6 +45,8 @@ public class ResourceSaveController {
         Person person = personService.findByLogin(login);
         createResourceDto.setPerson(person);
 
+        createResourceDto.setBlock("NO");
+
         Long aLong = resourceService.saveResource(createResourceDto);
         return "redirect:/resource-info?id=" + aLong;
     }

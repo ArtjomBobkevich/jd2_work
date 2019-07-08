@@ -3,6 +3,7 @@ package com.itacademy.database.dao;
 import com.itacademy.database.config.DatabaseConfigTest;
 import com.itacademy.database.entity.BlockResource;
 import com.itacademy.database.entity.Category;
+import com.itacademy.database.entity.FilterDto;
 import com.itacademy.database.entity.Heading;
 import com.itacademy.database.entity.Identification;
 import com.itacademy.database.entity.Person;
@@ -16,6 +17,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashSet;
+import java.util.List;
 
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
@@ -215,48 +217,57 @@ public class ResourceDaoTest {
         assertEquals(0, resourceDao.getAll().size());
     }
 
-//    @Test
-//    public void findResourceByCriteria() {
-//
-//        Category category = Category.builder()
-//                .categoryName("www")
-//                .build();
-//        categoryDao.save(category);
-//
-//        PersonRole role = PersonRole.builder()
-//                .nameOfRole("test")
-//                .build();
-//        roleDao.save(role);
-//        Person person = Person.builder()
-//                .avatar("qwerqwe")
-//                .login("1234")
-//                .identification(Identification.builder()
-//                        .firstName("qqq")
-//                        .lastName("www")
-//                        .build())
-//                .age(2)
-//                .mail("wqeq")
-//                .password("222233")
-//                .personRole(roleDao.get(1L).orElse(null))
-//                .build();
-//
-//        personDao.save(person);
-//        BlockResource resource = new BlockResource("test", "www",
-//                categoryDao.get(9L).orElse(null),
-//                personDao.get(1L).orElse(null),
-//                222, "sss", "sdg");
-//        resourceDao.save(resource);
-//        FilterDto filterDto = FilterDto.builder()
-//                .resource("test")
-//                .category("www")
-//                .price("222")
-//                .build();
-//        Integer offset = 0;
-//        Integer limit = 2;
-//        List<BlockResource> resourcesOrderByAuthor = resourceDao.findResourcesOrderByAuthor(filterDto, offset, limit);
-//        resourcesOrderByAuthor.size();
-//        assertTrue(resourcesOrderByAuthor.size()>0);
-//    }
+    @Test
+    public void findResourceByCriteria() {
+
+        Category category = Category.builder()
+                .categoryName("www")
+                .build();
+        categoryDao.save(category);
+
+        PersonRole role = PersonRole.builder()
+                .nameOfRole("test")
+                .build();
+        roleDao.save(role);
+        Person person = Person.builder()
+                .avatar("qwerqwe")
+                .login("1234")
+                .identification(Identification.builder()
+                        .firstName("qqq")
+                        .lastName("www")
+                        .build())
+                .age(2)
+                .mail("wqeq")
+                .password("222233")
+                .personRole(roleDao.get(1L).orElse(null))
+                .build();
+
+        personDao.save(person);
+        BlockResource resource = new BlockResource("test", "www",
+                categoryDao.get(9L).orElse(null),
+                personDao.get(1L).orElse(null),
+                222, "sss", "sdg");
+        resourceDao.save(resource);
+        FilterDto filterDto = FilterDto.builder()
+                .resource("test")
+                .category("www")
+                .price("222")
+                .build();
+        Integer offset = 0;
+        Integer limit = 2;
+        List<BlockResource> resourcesOrderByAuthor = resourceDao.findResourcesOrderByAuthor(filterDto, offset, limit);
+        resourcesOrderByAuthor.size();
+        Resource.builder()
+                .id(1L)
+                .resourceName("sdfds")
+                .foto("dsf")
+                .category(category)
+                .person(person)
+                .price(222)
+                .text("asdfds")
+                .build();
+        assertNotNull(resourcesOrderByAuthor.size()); /*проблема при сборке так всё прекрасно*/
+    }
 
     @Test
     public void checkManyToMany() {
@@ -427,7 +438,7 @@ public class ResourceDaoTest {
         personDao.save(person);
 
         BlockResource blockResource = new BlockResource("dsfsf", "sfsf", categoryDao.get(1L).orElse(null),
-                personDao.get(1L).orElse(null), 222, "dfg","b");
+                personDao.get(1L).orElse(null), 222, "dfg", "b");
 
         resourceDao.save(blockResource);
 

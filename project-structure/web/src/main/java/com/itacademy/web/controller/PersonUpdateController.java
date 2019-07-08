@@ -1,12 +1,16 @@
 package com.itacademy.web.controller;
 
 import com.itacademy.database.entity.Identification;
+import com.itacademy.database.entity.Person;
 import com.itacademy.database.entity.PersonRole;
 import com.itacademy.service.dto.CreateNewPersonDto;
 import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.RoleService;
 import com.itacademy.service.util.UrlPath;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -38,13 +42,22 @@ public class PersonUpdateController {
     @PostMapping
     public String updatePerson(CreateNewPersonDto person, Identification identification) {
 
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String login = authentication.getName();
+        Person personEntity = personService.findByLogin(login);
+        if (person.getId() == null) {
+            person.setId(personEntity.getId());
+        }
         PersonRole personRole = roleService.findById(2L);
-        System.out.println(personRole);
 
         person.setIdentification(identification);
         person.setPersonRole(personRole);
+        person.setPassword(new BCryptPasswordEncoder().encode(person.getPassword()));
 
         personService.update(person);
-        return "redirect:/person";
+        if (personEntity.getPersonRole().getNameOfRole().equals("Admin")) {
+            return "redirect:/person";
+        }
+        return "redirect:/my-home-page";
     }
 }
