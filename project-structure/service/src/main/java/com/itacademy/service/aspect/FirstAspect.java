@@ -17,7 +17,7 @@ public class FirstAspect {
         sqlLogger.info(joinPoint.getSignature());
         sqlLogger.info("method was completed");
         sqlLogger.info("all information about answer");
-        sqlLogger.info(joinPoint.proceed());
+//        sqlLogger.info(joinPoint.proceed());
         sqlLogger.info("it`s all....");
         Object result;
             result = joinPoint.proceed();
