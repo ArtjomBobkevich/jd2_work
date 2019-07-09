@@ -13,5 +13,5 @@ import java.io.File;
 @Builder
 public class FileDto {
 
-    private File file;
+    private File image;
 }

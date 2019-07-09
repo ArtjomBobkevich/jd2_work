@@ -44,6 +44,7 @@ public class PersonUpdateController {
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String login = authentication.getName();
+        person.setAvatar("image");
         Person personEntity = personService.findByLogin(login);
         if (person.getId() == null) {
             person.setId(personEntity.getId());

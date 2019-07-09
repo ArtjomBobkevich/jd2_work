@@ -6,7 +6,6 @@ com\itacademy\database\entity\Resource.class
 com\itacademy\database\entity\Heading.class
 com\itacademy\database\dao\PersonDao.class
 com\itacademy\database\entity\Resource$ResourceBuilder.class
-Main.class
 com\itacademy\database\entity\Person_.class
 com\itacademy\database\entity\FilterDto$FilterDtoBuilder.class
 com\itacademy\database\dao\CategoryDao.class

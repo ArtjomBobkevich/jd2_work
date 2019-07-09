@@ -29,7 +29,7 @@ public class PersonServiceTest {
     private RoleService roleService;
 
     @Test
-    public void save () {
+    public void save() {
 
         CreateNewPersonDto personDto = CreateNewPersonDto.builder()
                 .avatar("bung")
@@ -47,7 +47,7 @@ public class PersonServiceTest {
         personService.savePerson(personDto);
 
         List<ViewPersonFullInfoDto> allPerson = personService.findAll();
-        for (ViewPersonFullInfoDto viewPersonFullInfoDto: allPerson) {
+        for (ViewPersonFullInfoDto viewPersonFullInfoDto : allPerson) {
             if (viewPersonFullInfoDto.getLogin().equals(personDto.getLogin())) {
                 assertEquals(viewPersonFullInfoDto.getLogin(), personDto.getLogin());
             }
@@ -56,13 +56,20 @@ public class PersonServiceTest {
     }
 
     @Test
-    public void getById () {
+    public void getById() {
         assertNotNull(personService.findById(1L));
     }
 
     @Test
-    public void findAll () {
-        assertTrue(personService.findAll().size()>0);
+    public void findAll() {
+        assertTrue(personService.findAll().size() > 0);
     }
 
+    @Test
+    public void update() {
+        CreateNewPersonDto build = CreateNewPersonDto.builder()
+                .id(1L)
+                .build();
+        personService.update(build);
+    }
 }

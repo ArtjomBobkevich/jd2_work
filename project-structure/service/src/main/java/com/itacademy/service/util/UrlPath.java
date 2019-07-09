@@ -42,4 +42,5 @@ public class UrlPath {
     public static final String LOGIN = "/login";
     public static final String HOME = "/my-home-page";
     public static final String MY_RESOURCES = "/my-resources";
+    public static final String FILE = "/file";
 }

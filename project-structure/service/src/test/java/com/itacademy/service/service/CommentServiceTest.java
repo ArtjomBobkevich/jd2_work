@@ -58,4 +58,11 @@ public class CommentServiceTest {
         assertTrue(commentService.findAll().size() > 0);
     }
 
+    @Test
+    public void update () {
+        CreateCommentDto build = CreateCommentDto.builder()
+                .id(1L)
+                .build();
+        commentService.updateComment(build);
+    }
 }
