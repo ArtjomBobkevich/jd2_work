@@ -1,5 +1,6 @@
 package com.itacademy.web.controller;
 
+import com.itacademy.database.entity.Category;
 import com.itacademy.service.service.CategoryService;
 import com.itacademy.service.service.HeadingService;
 import com.itacademy.service.util.UrlPath;
@@ -24,6 +25,8 @@ public class CategoryInfoController {
     public String getPage(Model model, @RequestParam("id") Long id) {
         model.addAttribute("category", categoryService.findById(id));
         model.addAttribute("headings", headingService.findByCategoryId(id));
+        Category category = categoryService.findById(id);
+        model.addAttribute("image","/upload/"+category.getFotoUrl());
         return "category-info";
     }
 }

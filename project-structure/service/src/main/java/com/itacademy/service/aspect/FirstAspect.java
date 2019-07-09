@@ -24,6 +24,3 @@ public class FirstAspect {
         return result;
     }
 }
-
-
-

@@ -5,6 +5,7 @@ import com.itacademy.database.entity.Resource;
 import com.itacademy.service.dto.CreateNewPersonDto;
 import com.itacademy.service.dto.CreateResourceDto;
 import com.itacademy.service.dto.ResourceAddDto;
+import com.itacademy.service.dto.ResourceFullDto;
 import com.itacademy.service.service.CommentService;
 import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.ResourceService;
@@ -35,6 +36,8 @@ public class ResourceInfoController {
     @GetMapping
     public String getPage(Model model, @RequestParam("id") Long id) {
         model.addAttribute("resource", resourceService.findById(id));
+        ResourceFullDto resource = resourceService.findById(id);
+        model.addAttribute("image","/upload/"+resource.getFoto());
         model.addAttribute("commentaries", commentService.findByResourceId(id));
         return "resource-info";
     }

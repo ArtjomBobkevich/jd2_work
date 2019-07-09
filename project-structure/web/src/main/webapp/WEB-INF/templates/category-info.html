@@ -8,6 +8,7 @@
 <div class="container">
     <a>Category: </a>
     <span th:text="${category.categoryName}">category</span><br>
+    <img th:src="${image}" width="100" height="100"><br>
     <div th:each="heading: ${headings}">
         <a>Heading: </a>
         <span th:text="${heading.headingName}">Type</span><br>

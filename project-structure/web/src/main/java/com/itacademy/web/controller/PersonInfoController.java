@@ -1,5 +1,6 @@
 package com.itacademy.web.controller;
 
+import com.itacademy.service.dto.ViewPersonFullInfoDto;
 import com.itacademy.service.service.PersonService;
 import com.itacademy.service.util.UrlPath;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,8 @@ public class PersonInfoController {
     @GetMapping
     public String getPage(Model model, @RequestParam("id") Long id) {
         model.addAttribute("person", personService.findById(id));
+        ViewPersonFullInfoDto person = personService.findById(id);
+        model.addAttribute("image","/upload/"+person.getAvatar());
         return "person-info";
     }
 }

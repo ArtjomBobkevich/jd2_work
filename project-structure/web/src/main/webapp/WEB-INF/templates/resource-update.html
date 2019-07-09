@@ -9,7 +9,7 @@
     <form th:action="@{/resource-update}" th:method="post">
         <div>
             <select name="id">
-                <option th:each="resource: ${resource}"
+                <option th:each="resource: ${resources}"
                         th:text="${resource.resourceName}"
                         th:value="${resource.id}">Resource
                 </option>
@@ -21,21 +21,13 @@
         </div>
         <div>
             <span th:text="Foto ">Foto: </span>
-            <input type="text" name="foto" required placeholder="Foto">
+            <input type="file" name="image" required placeholder="Foto">
         </div>
         <div>
             <select name="categoryId">
                 <option th:each="category: ${category}"
                         th:text="${category.categoryName}"
                         th:value="${category.id}">Category
-                </option>
-            </select>
-        </div>
-        <div>
-            <select name="personId">
-                <option th:each="person: ${person}"
-                        th:text="${person.login}"
-                        th:value="${person.id}">Person
                 </option>
             </select>
         </div>
