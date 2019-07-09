@@ -7,8 +7,11 @@
 <body>
 <div class="container">
     <div th:each="comment: ${commentaries}">
+        <span>Resource: </span>
         <span th:text="${comment.resource}">Type</span><br>
+        <span>Login: </span>
         <span th:text="${comment.person}">Type</span><br>
+        <span>Comment: </span>
         <span th:text="${comment.comment}">Type</span><br>
         <a>-------------------------</a>
     </div>

@@ -7,33 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14420e3e-9432-4664-ba21-80c76cbed398" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/aspect/FirstAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itacademy/service/aspect/FirstAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CategoryInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CategoryInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CategorySaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CategorySaveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CategoryUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CategoryUpdateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/HomePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/PersonInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/PersonInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/PersonSaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/PersonSaveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/PersonUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/PersonUpdateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceSaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceSaveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceUpdateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category-info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category-save.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category-save.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category-update.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/category-update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/my-home-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/my-home-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/person-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/person-info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/person-save.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/person-save.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/person-update.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/person-update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-save.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-save.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-update.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/controller/PersonUpdateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/controller/PersonUpdateController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/database-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/database-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/lib/service-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/templates/person-update.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/templates/person-update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/person.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/person.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/controller/PersonInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/controller/PersonInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/controller/PersonSaveController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/controller/PersonSaveController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/controller/ResourceInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/controller/ResourceInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/controller/ResourceSaveController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/controller/ResourceSaveController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/controller/ResourceUpdateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/itacademy/web/controller/ResourceUpdateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/controller/PersonInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/controller/PersonInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/controller/PersonSaveController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/controller/PersonSaveController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/controller/PersonUpdateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/controller/PersonUpdateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/controller/ResourceInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/controller/ResourceInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/controller/ResourceSaveController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/controller/ResourceSaveController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/controller/ResourceUpdateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/classes/com/itacademy/web/controller/ResourceUpdateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/templates/person-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/templates/person-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/templates/person-save.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/templates/person-save.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/templates/resource-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/templates/resource-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/templates/resource-save.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/templates/resource-save.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/web/WEB-INF/templates/resource-update.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/web/WEB-INF/templates/resource-update.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -115,74 +107,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PersonSaveController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/PersonSaveController.java">
+      <file leaf-file-name="PersonController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/PersonController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="70" selection-end-column="57" />
+            <state relative-caret-position="102">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentDeleteController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CommentDeleteController.java">
+      <file leaf-file-name="person.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/person.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResourceUpdateController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceUpdateController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="66" column="60" lean-forward="true" selection-start-line="66" selection-start-column="60" selection-end-line="66" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resource-update.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-update.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="23" column="72" lean-forward="true" selection-start-line="23" selection-start-column="72" selection-end-line="23" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyResourcesController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/MyResourcesController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="23" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewStoreBasketController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ViewStoreBasketController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="45" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomePageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/HomePageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="37" lean-forward="true" selection-start-column="37" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CategorySaveController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CategorySaveController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+            <state relative-caret-position="306">
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -221,7 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/HeadingDeleteController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/HeadingSaveController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/HeadingUpdateController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/RolesController.java" />
@@ -272,6 +209,7 @@
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-info.html" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-update.html" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceUpdateController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/person.html" />
       </list>
     </option>
   </component>
@@ -898,7 +836,7 @@
       <workItem from="1562348289211" duration="1242000" />
       <workItem from="1562572407145" duration="8300000" />
       <workItem from="1562649183497" duration="22071000" />
-      <workItem from="1562689831329" duration="9301000" />
+      <workItem from="1562689831329" duration="9844000" />
     </task>
     <task id="LOCAL-00001" summary="test github by idea">
       <created>1560170806703</created>
@@ -1012,7 +950,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562588759331</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="прилага готова проверить методы и наваять красиво">
+      <created>1562699756144</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1562699756145</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1048,11 +993,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="805226000" />
+    <option name="totallyTimeSpent" value="805769000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5021962" side_tool="true" weight="0.2761905" />
@@ -1065,7 +1009,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.37460318" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37460318" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.25636193" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -1073,10 +1017,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32987747" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978038" weight="0.36666667" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978038" visible="true" weight="0.36666667" />
       <window_info anchor="bottom" id="Spring" order="15" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32799247" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49922958" visible="true" weight="0.22401172" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49922958" visible="true" weight="0.22401172" />
       <window_info id="Web" order="7" sideWeight="0.5007704" side_tool="true" weight="0.24739583" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -1150,7 +1094,8 @@
     <MESSAGE value="AOP logger complete" />
     <MESSAGE value="write not complete" />
     <MESSAGE value="42% сервис 59% дао" />
-    <option name="LAST_COMMIT_MESSAGE" value="42% сервис 59% дао" />
+    <MESSAGE value="прилага готова проверить методы и наваять красиво" />
+    <option name="LAST_COMMIT_MESSAGE" value="прилага готова проверить методы и наваять красиво" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1192,12 +1137,6 @@
           <line>24</line>
           <properties />
           <option name="timeStamp" value="482" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceUpdateController.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="505" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="506" />
@@ -1307,20 +1246,6 @@ System.out.println(resource.getId());</expression-string>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/util/UrlPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="44" column="46" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/commentaries.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="7" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/file.html" />
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/util/UtilityClass.java" />
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/FileController.java" />
@@ -1516,24 +1441,10 @@ System.out.println(resource.getId());</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ViewStoreBasketController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="45" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/com/itacademy/service/dto/ByCommentSaveDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CommentDeleteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1575,27 +1486,6 @@ System.out.println(resource.getId());</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/PersonSaveController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="70" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/MyResourcesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="23" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-update.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="23" column="72" lean-forward="true" selection-start-line="23" selection-start-column="72" selection-end-line="23" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
@@ -1610,6 +1500,41 @@ System.out.println(resource.getId());</expression-string>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceUpdateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="64" column="48" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/CommentDeleteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/PersonSaveController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="70" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/MyResourcesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="23" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ViewStoreBasketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="45" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/HomePageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1617,10 +1542,24 @@ System.out.println(resource.getId());</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/ResourceUpdateController.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/resource-update.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="66" column="60" lean-forward="true" selection-start-line="66" selection-start-column="60" selection-end-line="66" selection-end-column="60" />
+        <state relative-caret-position="180">
+          <caret line="23" column="72" lean-forward="true" selection-start-line="23" selection-start-column="72" selection-end-line="23" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/itacademy/web/controller/PersonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/templates/person.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
