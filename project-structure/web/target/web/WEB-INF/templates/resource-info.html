@@ -2,15 +2,22 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Title</title>
 </head>
 <body>
 <div class="container">
     <img th:src="${image}" width="100" height="100"><br>
+    <span>ResourceName: </span>
     <span th:text="${resource.resourceName}">heading</span><br>
+    <span>Category: </span>
     <span th:text="${resource.category}">heading</span><br>
+    <span>Author: </span>
     <span th:text="${resource.person}">heading</span><br>
+    <span>Price: </span>
     <span th:text="${resource.price}">heading</span><br>
+    <span>AboutResource: </span>
     <span th:text="${resource.text}">heading</span><br>
     <a>-------------------------</a>
 </div>
@@ -61,10 +68,10 @@
         </div>
     </form>
 </div>
-<a href="comment-update">UpdateMyCommentaries</a><br>
-<a href="resource-update">UpdateMyResources</a><br>
-<a href="my-home-page">HomePage</a><br>
-<a href="view-store-basket">MyBasket</a><br>
-<a href="resource">Return to MainPage</a><br>
+<a class="btn btn-outline-primary" href="comment-update">UpdateMyCommentaries</a><br>
+<a class="btn btn-outline-primary" href="resource-update">UpdateMyResources</a><br>
+<a class="btn btn-outline-primary" href="my-home-page">HomePage</a><br>
+<a class="btn btn-outline-primary" href="view-store-basket">MyBasket</a><br>
+<a class="btn btn-outline-primary" href="resource">Return to MainPage</a><br>
 </body>
 </html>

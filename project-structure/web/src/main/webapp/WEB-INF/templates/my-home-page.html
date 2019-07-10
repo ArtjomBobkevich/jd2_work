@@ -3,6 +3,7 @@
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Title</title>
 </head>
 <body>
@@ -20,44 +21,44 @@
 <span th:text="${person.personRole}">Type</span><br>
 </div>
 <div sec:authorize-url = "/person-delete">
-<a href="category-delete" th:text="#{home-page.categotyDelete}">CategoryDelete</a><br>
+<a class="btn btn-outline-primary" href="category-delete" th:text="#{home-page.categotyDelete}">CategoryDelete</a><br>
 </div>
 <div sec:authorize-url = "/person-delete">
-<a href="category-update" th:text="#{home-page.updateCategory}">CategoryUpdate</a><br>
+<a class="btn btn-outline-primary" href="category-update" th:text="#{home-page.updateCategory}">CategoryUpdate</a><br>
 </div>
 <div sec:authorize-url = "/person-delete">
-<a href="category-save" th:text="#{home-page.saveCategory}">CategorySave</a><br>
+<a class="btn btn-outline-primary" href="category-save" th:text="#{home-page.saveCategory}">CategorySave</a><br>
 </div>
 <div sec:authorize-url = "/person-delete">
-<a href="change-person-role">ChangePersonRole</a><br>
+<a class="btn btn-outline-primary" href="change-person-role" th:text="#{home-page.changeRole}">ChangePersonRole</a><br>
 </div>
 <div sec:authorize-url = "/person-delete">
-<a href="commentaries">AllCommentaries</a><br>
+<a class="btn btn-outline-primary" href="commentaries" th:text="#{home-page.commentaries}">AllCommentaries</a><br>
 </div>
 <div sec:authorize-url = "/person-delete">
-<a href="heading-delete">HeadingDelete</a><br>
+<a class="btn btn-outline-primary" href="heading-delete" th:text="#{home-page.headingDelete}">HeadingDelete</a><br>
 </div>
 <div sec:authorize-url = "/person-delete">
-<a href="heading-save">HeadingSave</a><br>
+<a class="btn btn-outline-primary" href="heading-save" th:text="#{home-page.headingSave}">HeadingSave</a><br>
 </div>
 <div sec:authorize-url = "/person-delete">
-<a href="heading-update">HeadingUpdate</a><br>
+<a class="btn btn-outline-primary" href="heading-update" th:text="#{home-page.headingUpdate}">HeadingUpdate</a><br>
 </div>
 <div sec:authorize-url = "/person-delete">
-<a href="person">AllPerson</a><br>
+<a class="btn btn-outline-primary" href="person" th:text="#{home-page.person}">AllPerson</a><br>
 </div>
 <div sec:authorize-url = "/person-delete">
-<a href="person-delete">PersonDelete</a><br>
+<a class="btn btn-outline-primary" href="person-delete" th:text="#{home-page.personDelete}">PersonDelete</a><br>
 </div>
-<a href="person-update">PersonUpdate</a><br>
-<a href="my-resources">AllMyResources</a><br>
-<a href="resource-save">SaveResource</a><br>
+<a class="btn btn-outline-primary" href="person-update" th:text="#{home-page.personUpdate}">PersonUpdate</a><br>
+<a class="btn btn-outline-primary" href="my-resources" th:text="#{home-page.myResources}">AllMyResources</a><br>
+<a class="btn btn-outline-primary" href="resource-save" th:text="#{home-page.resourceSave}">SaveResource</a><br>
 <div sec:authorize-url = "/person-delete">
-<a href="roles">Roles</a><br>
+<a class="btn btn-outline-primary" href="roles" th:text="#{home-page.roles}">Roles</a><br>
 </div>
-<a href="add-heading-by-resource">AddHeadingBYResource</a><br>
-<a href="resource">AllResources</a><br>
-<a href="view-store-basket">MyBasket</a><br>
-<a href="/logout">Выход</a><br>
+<a class="btn btn-outline-primary" href="add-heading-by-resource" th:text="#{home-page.addHeding}">AddHeadingBYResource</a><br>
+<a class="btn btn-outline-primary" href="resource" th:text="#{home-page.resources}">AllResources</a><br>
+<a class="btn btn-outline-primary" href="view-store-basket" th:text="#{home-page.storeBasket}">MyBasket</a><br>
+<a class="btn btn-outline-primary" href="/logout" th:text="#{person-save.logout}">Выход</a><br>
 </body>
 </html>

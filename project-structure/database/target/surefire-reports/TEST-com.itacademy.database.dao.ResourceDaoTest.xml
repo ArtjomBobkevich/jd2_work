@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="com.itacademy.database.dao.ResourceDaoTest" time="0.265" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="com.itacademy.database.dao.ResourceDaoTest" time="0.284" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2018.1.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -64,14 +64,14 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkGetEntity" time="0.02"/>
-  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkFindByHeading" time="0.01"/>
-  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkFindByResourceName" time="0.02"/>
-  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkManyToMany" time="0.014"/>
-  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="findAll" time="0.03"/>
-  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkFindResourceByLogin" time="0.035"/>
-  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkDelete" time="0.005"/>
-  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkUpdate" time="0.043"/>
-  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="findResourceByCriteria" time="0.074"/>
-  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkSaveEntity" time="0.014"/>
+  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkGetEntity" time="0.034"/>
+  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkFindByHeading" time="0.019"/>
+  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkFindByResourceName" time="0.025"/>
+  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkManyToMany" time="0.02"/>
+  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="findAll" time="0.013"/>
+  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkFindResourceByLogin" time="0.022"/>
+  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkDelete" time="0.021"/>
+  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkUpdate" time="0.011"/>
+  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="findResourceByCriteria" time="0.101"/>
+  <testcase classname="com.itacademy.database.dao.ResourceDaoTest" name="checkSaveEntity" time="0.018"/>
 </testsuite>
