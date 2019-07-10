@@ -6,22 +6,27 @@
     <title>Title</title>
 </head>
 <body>
+<div th:insert="~{fragments::language}"></div>
 <div>
 <img th:src="${image}" width="100" height="100"><br>
+    <span th:text="#{home-page.login}">Login: </span>
 <span th:text="${person.login}">Type</span><br>
 <span th:text="${person.identification}">Type</span><br>
+    <span th:text="#{home-page.age}">Age: </span>
 <span th:text="${person.age}">Type</span><br>
+    <span th:text="#{home-page.mail}">Mail: </span>
 <span th:text="${person.mail}">Type</span><br>
+    <span th:text="#{home-page.role}">Role: </span>
 <span th:text="${person.personRole}">Type</span><br>
 </div>
 <div sec:authorize-url = "/person-delete">
-<a href="category-delete">CategoryDelete</a><br>
+<a href="category-delete" th:text="#{home-page.categotyDelete}">CategoryDelete</a><br>
 </div>
 <div sec:authorize-url = "/person-delete">
-<a href="category-update">CategoryUpdate</a><br>
+<a href="category-update" th:text="#{home-page.updateCategory}">CategoryUpdate</a><br>
 </div>
 <div sec:authorize-url = "/person-delete">
-<a href="category-save">CategorySave</a><br>
+<a href="category-save" th:text="#{home-page.saveCategory}">CategorySave</a><br>
 </div>
 <div sec:authorize-url = "/person-delete">
 <a href="change-person-role">ChangePersonRole</a><br>
@@ -50,6 +55,7 @@
 <div sec:authorize-url = "/person-delete">
 <a href="roles">Roles</a><br>
 </div>
+<a href="add-heading-by-resource">AddHeadingBYResource</a><br>
 <a href="resource">AllResources</a><br>
 <a href="view-store-basket">MyBasket</a><br>
 <a href="/logout">Выход</a><br>

@@ -25,7 +25,7 @@ public class HomePageController {
         Person byLogin = personService.findByLogin(login);
         model.addAttribute("person", personService.findById(byLogin.getId()));
         Person person = personService.findByLogin(login);
-        model.addAttribute("image","/upload/"+person.getAvatar());
+        model.addAttribute("image", "/upload/" + person.getAvatar());
         return "my-home-page";
     }
 }

@@ -14,6 +14,7 @@ import java.util.List;
 
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 
 @RunWith(SpringRunner.class)
@@ -59,10 +60,20 @@ public class CommentServiceTest {
     }
 
     @Test
-    public void update () {
+    public void update() {
         CreateCommentDto build = CreateCommentDto.builder()
                 .id(1L)
                 .build();
         commentService.updateComment(build);
+    }
+
+    @Test
+    public void findByPersonId() {
+        assertNotNull(commentService.findByPersonId(1L));
+    }
+
+    @Test
+    public void findByResourceID() {
+        assertNotNull(commentService.findByResourceId(1L));
     }
 }

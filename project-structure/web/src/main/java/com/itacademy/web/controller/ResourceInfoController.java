@@ -37,7 +37,7 @@ public class ResourceInfoController {
     public String getPage(Model model, @RequestParam("id") Long id) {
         model.addAttribute("resource", resourceService.findById(id));
         ResourceFullDto resource = resourceService.findById(id);
-        model.addAttribute("image","/upload/"+resource.getFoto());
+        model.addAttribute("image", "/upload/" + resource.getFoto());
         model.addAttribute("commentaries", commentService.findByResourceId(id));
         return "resource-info";
     }

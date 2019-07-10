@@ -26,7 +26,7 @@ public class CategoryInfoController {
         model.addAttribute("category", categoryService.findById(id));
         model.addAttribute("headings", headingService.findByCategoryId(id));
         Category category = categoryService.findById(id);
-        model.addAttribute("image","/upload/"+category.getFotoUrl());
+        model.addAttribute("image", "/upload/" + category.getFotoUrl());
         return "category-info";
     }
 }

@@ -16,8 +16,7 @@ public class CommentDao extends BaseDaoImpl<Long, Comment> {
                 .list());
     }
 
-    public List<Comment> findPersonId( Long personId) {
-
+    public List<Comment> findPersonId(Long personId) {
         return getSessionFactory().getCurrentSession()
                 .createQuery("select c from Comment c join c.person p where p.id= :personId", Comment.class)
                 .setParameter("personId", personId)

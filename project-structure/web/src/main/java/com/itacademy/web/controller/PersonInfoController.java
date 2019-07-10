@@ -21,7 +21,7 @@ public class PersonInfoController {
     public String getPage(Model model, @RequestParam("id") Long id) {
         model.addAttribute("person", personService.findById(id));
         ViewPersonFullInfoDto person = personService.findById(id);
-        model.addAttribute("image","/upload/"+person.getAvatar());
+        model.addAttribute("image", "/upload/" + person.getAvatar());
         return "person-info";
     }
 }

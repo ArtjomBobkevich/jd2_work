@@ -1,7 +1,6 @@
 package com.itacademy.web.controller;
 
 import com.itacademy.database.entity.Identification;
-import com.itacademy.database.entity.Person;
 import com.itacademy.database.entity.PersonRole;
 import com.itacademy.service.dto.CreateNewPersonDto;
 import com.itacademy.service.dto.FileDto;
@@ -11,8 +10,6 @@ import com.itacademy.service.util.UrlPath;
 import lombok.SneakyThrows;
 import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -66,14 +63,8 @@ public class PersonSaveController {
             createNewGenreDto.setIdentification(identification);
             createNewGenreDto.setPassword(new BCryptPasswordEncoder().encode(createNewGenreDto.getPassword()));
 
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        String login = authentication.getName();
-        Person person = personService.findByLogin(login);
-        Long aLong = personService.savePerson(createNewGenreDto);
-        if (person.getPersonRole().getNameOfRole().equals("Admin")) {
+        personService.savePerson(createNewGenreDto);
 
-            return "redirect:/person-info?id=" + aLong;
-        }
-        return "redirect:/resource";
+        return "redirect:/login";
         }
     }

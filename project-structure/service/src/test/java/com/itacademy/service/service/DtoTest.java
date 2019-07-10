@@ -4,6 +4,7 @@ import com.itacademy.service.config.ServiceConfigTest;
 import com.itacademy.service.dto.ByCommentSaveDto;
 import com.itacademy.service.dto.CategoryDtoByUpdate;
 import com.itacademy.service.dto.CategoryFullDto;
+import com.itacademy.service.dto.ChangeRoleDto;
 import com.itacademy.service.dto.CommentFullDto;
 import com.itacademy.service.dto.CountDto;
 import com.itacademy.service.dto.FilterPredicateParametersDto;
@@ -169,5 +170,15 @@ public class DtoTest {
                 .build();
 
         assertEquals("asd", asd.getRole());
+
+        CommentFullDto commentFullDto = new CommentFullDto("sdf", "sdaf", "sadf");
+        assertTrue(commentFullDto.getPerson().equals("sdf"));
+
+        ChangeRoleDto build3 = ChangeRoleDto.builder()
+                .personId(2L)
+                .roleId(1L)
+                .build();
+
+        assertTrue(build3.getPersonId() == 1L);
     }
 }

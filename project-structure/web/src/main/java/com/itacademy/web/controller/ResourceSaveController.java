@@ -50,6 +50,7 @@ public class ResourceSaveController {
     @PostMapping
     @SneakyThrows
     public String saveResource(FileDto fileDto, CreateResourceDto createResourceDto) {
+        
         String name = fileDto.getImage().getName();
         File file = new File("d:/" + name);
         byte[] bytes;

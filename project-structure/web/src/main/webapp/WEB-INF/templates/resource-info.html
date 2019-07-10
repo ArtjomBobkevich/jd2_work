@@ -7,10 +7,15 @@
 <body>
 <div class="container">
     <img th:src="${image}" width="100" height="100"><br>
+    <span>ResourceName: </span>
     <span th:text="${resource.resourceName}">heading</span><br>
+    <span>Category: </span>
     <span th:text="${resource.category}">heading</span><br>
+    <span>Author: </span>
     <span th:text="${resource.person}">heading</span><br>
+    <span>Price: </span>
     <span th:text="${resource.price}">heading</span><br>
+    <span>AboutResource: </span>
     <span th:text="${resource.text}">heading</span><br>
     <a>-------------------------</a>
 </div>
