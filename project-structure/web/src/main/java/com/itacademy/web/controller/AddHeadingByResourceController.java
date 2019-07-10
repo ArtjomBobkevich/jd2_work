@@ -12,6 +12,8 @@ import com.itacademy.service.service.HeadingService;
 import com.itacademy.service.service.ResourceService;
 import com.itacademy.service.util.UrlPath;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,7 +33,9 @@ public class AddHeadingByResourceController {
 
     @ModelAttribute()
     public void setHeadingByResource(Model model) {
-        model.addAttribute("resources", resourceService.findAll());
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String login = authentication.getName();
+        model.addAttribute("resources", resourceService.findResourceByLogin(login));
         model.addAttribute("headingList", headingService.findAll());
     }
 

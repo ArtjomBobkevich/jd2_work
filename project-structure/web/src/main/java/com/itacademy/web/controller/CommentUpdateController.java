@@ -2,7 +2,6 @@ package com.itacademy.web.controller;
 
 import com.itacademy.database.entity.Comment;
 import com.itacademy.database.entity.Person;
-import com.itacademy.database.entity.Resource;
 import com.itacademy.service.dto.ByCommentSaveDto;
 import com.itacademy.service.dto.CreateCommentDto;
 import com.itacademy.service.service.CommentService;
@@ -10,6 +9,8 @@ import com.itacademy.service.service.PersonService;
 import com.itacademy.service.service.ResourceService;
 import com.itacademy.service.util.UrlPath;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,20 +32,22 @@ public class CommentUpdateController {
 
     @GetMapping
     public String getPage(Model model) {
-
-        model.addAttribute("personList", personService.findAll());
-        model.addAttribute("resources", resourceService.findAll());
-        model.addAttribute("commentaries", commentService.findAll());
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String login = authentication.getName();
+        model.addAttribute("resources", resourceService.findResourceByLogin(login));
+        Person byLogin = personService.findByLogin(login);
+        model.addAttribute("commentaries", commentService.findByPersonId(byLogin.getId()));
         return "comment-update";
     }
 
     @PostMapping
     public String deletePerson(Comment comment, ByCommentSaveDto deleteDto) {
-
-        Person person = personService.findByIdEntity(deleteDto.getPersonId());
-        Resource resource = resourceService.findByIdEntity(deleteDto.getResourceId());
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String login = authentication.getName();
+        Person person = personService.findByLogin(login);
         comment.setPerson(person);
-        comment.setResource(resource);
+        Comment commentServiceById = commentService.findById(deleteDto.getCommentId());
+        comment.setResource(resourceService.findByIdEntity(commentServiceById.getResource().getId()));
         comment.setComment(deleteDto.getText());
 
         CreateCommentDto updateComment = CreateCommentDto.builder()
@@ -55,6 +58,6 @@ public class CommentUpdateController {
                 .build();
 
         commentService.updateComment(updateComment);
-        return "redirect:/commentaries";
+        return "redirect:/resource-info?id=" + commentServiceById.getResource().getId();
     }
 }

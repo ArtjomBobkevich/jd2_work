@@ -16,15 +16,11 @@ public class CommentDao extends BaseDaoImpl<Long, Comment> {
                 .list());
     }
 
-    public Comment findByResourceIdAndPersonId(Long resourceId, Long personId) {
+    public List<Comment> findPersonId( Long personId) {
 
         return getSessionFactory().getCurrentSession()
-                .createQuery("select c from Comment c join c.resource r on r.id = c.id join c.person p on p.id = c.id where r.id= :resourceId and p.id= :personId", Comment.class)
-                .setParameter("resourceId", resourceId)
+                .createQuery("select c from Comment c join c.person p where p.id= :personId", Comment.class)
                 .setParameter("personId", personId)
-                .getResultList()
-                .stream()
-                .findFirst()
-                .orElse(null);
+                .list();
     }
 }

@@ -7,11 +7,16 @@
 <body>
 <div class="container">
     <div th:each="person: ${persons}">
-        <span th:text="${person.avatar}">Type</span><br>
+        <!--<span th:text="${person.avatar}">Type</span><br>-->
+        <span>Login: </span>
         <span th:text="${person.login}">Type</span><br>
+
         <span th:text="${person.identification}">Type</span><br>
+        <span>Age: </span>
         <span th:text="${person.age}">Type</span><br>
+        <span>Mail: </span>
         <span th:text="${person.mail}">Type</span><br>
+        <span>Role: </span>
         <span th:text="${person.personRole}">Type</span><br>
         <a>-------------------------</a>
     </div>
